@@ -8,7 +8,7 @@
  *              Contexte :   php 7.3
  *              Fonction :   construction des menus du site
  *   Date mise en oeuvre :   24/10/2019
- *          Dernière MàJ :   15/11/2019
+ *          Dernière MàJ :   02/12/2019
  *********************************************************************************/
 // Fonction de construction du menu horizontal
 //       Paramètres :
@@ -38,7 +38,7 @@ function fct_BuildHorizontalMenu($objPageInfos){
 	    <a class="dropdown-item" href="<?php echo $objPageInfos->getPath();?>candidat.php" title="Accéder à l'espace candidat">Espace candidat</a>
            <a class="dropdown-item" href="<?php echo $objPageInfos->getPath();?>candidat.php#bref" title="Pour les plus pressés ...">En bref</a>
            <a class="dropdown-item" href="<?php echo $objPageInfos->getPath();?>candidat.php#thema" title="Parce que j'ai plusieurs cordes à mon arc...">Thématique</a>
-           <a class="dropdown-item" href="<?php echo $objPageInfos->getPath();?>candidat.php#thema" title="&laquo; La chronologie (aussi annale, chronique) est une science de dates et d'événements historiques ou succession d'événements dans le temps. Considérée comme une discipline auxiliaire de l’histoire, la chronologie est une manière d'appréhender l'histoire par les événements.&raquo;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&mdash; source : Wikipedia">Chronologique</a>
+           <a class="dropdown-item" href="<?php echo $objPageInfos->getPath();?>candidat.php#chrono" title="&laquo; La chronologie (aussi annale, chronique) est une science de dates et d'événements historiques ou succession d'événements dans le temps. Considérée comme une discipline auxiliaire de l’histoire, la chronologie est une manière d'appréhender l'histoire par les événements.&raquo;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&mdash; source : Wikipedia">Chronologique</a>
            <div class="dropdown-divider custom-dpd-divider"></div>
            <a class="dropdown-item" href="<?php echo $objPageInfos->getPath();?>cvhtml.htm" title="Mon royaume contre un script...">Cv - Html & Css</a>
           </div>
