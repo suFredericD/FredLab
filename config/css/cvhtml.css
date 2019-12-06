@@ -1,0 +1,152 @@
+/*************************************************************************************************
+ *   	FredLab Projetcs Incorporated
+ *                Projet :   FredLab
+ *                  Page :   cvhtml.css
+ *                Chemin :   http://127.0.0.1:8080/FredLab/config/css/cvhtml.css
+ *                  Type :   page de modules
+ * 				Contexte :	 Css 3.0
+ *              Fonction :   page de styles d'affichage CSS (cvhtml.html)
+ *   Date mise en oeuvre :   14/11/2019
+ *          Dernière MàJ :   14/11/2019
+ *************************************************************************************************/
+/***** ***** ***** Containers ***** ***** *****/
+#cvHtmlMain{
+	opacity: 0.9;
+}
+#cvHtmlMain,#cvHtmlMain div,#cvHtmlMain .row{
+	background-color: #777;
+	-webkit-font-smoothing: antialiased;
+	text-shadow: 1px 1px 2px #000;
+}
+/***** ***** ***** Classes et balises ***** ***** *****/
+#cvHmtmlChoice{
+	margin-left: 10px;
+	text-align: left;
+	font-weight: bold;
+	color: #455666;
+}
+.parcourstitle{
+	padding-top: 10px;
+	font-family: "Virgo";
+	font-size: 24px;
+	letter-spacing: 0.1em;
+	color: #002A3A;
+    border-top: 2px inset #3E594B;
+}
+.parcourstitle a{
+	text-shadow: 1px 1px 3px #009175;
+}
+.parcoursrub{
+	font-family: "Virgo";
+	font-size: 22px;
+	letter-spacing: 0.08em;
+	color: #009175;
+    border-top: 1px inset #3E594B;
+    border-bottom: 1px inset #3E594B;
+}
+.parcoursrub a{
+	text-shadow: 1px 1px 3px #000;
+}
+.parcoursitem{
+	font-family: "Virgo";
+	font-size: 19px;
+}
+.parcoursitem:hover{
+	background-color: #999;
+}
+.parcoursitem a{
+	color: #455666;
+	text-shadow: 1px 1px 2px #000;
+}
+.parcoursitem a:hover{
+	color: #466645;
+	text-shadow: 1px 1px 2px #000;
+}
+.cvitemlabel{
+	line-height: 60px;
+	margin: 5px 0px 15px 0px;
+	padding: 5px 10px 5px 10px;
+	font-family: "SecretTypewriter";
+	font-size: 30px;
+	font-weight: bold;
+	color: #002A3A;
+	text-shadow: 1px 1px 3px #009175;
+	border: 1px inset #3E594B;
+	-webkit-box-shadow: 2px 2px 4px #000;
+	-moz-box-shadow: 2px 2px 4px #000;
+    box-shadow: 2px 2px 4px #000;
+}
+.cviteminfos{
+	color: #2D5F5E;
+}
+.borderbot{
+	border-bottom: 1px inset #3E594B;
+}
+.ulbold{
+	font-weight: 300;
+	color: #387573;
+}
+.ullight{
+	font-weight: lighter;
+	color: #2D5F5E;
+	font-size: smaller;
+	margin: 0px 0px 0px 20px;
+}
+.cvtext{
+	text-align: left;
+	padding-left: 0px;
+}
+.cvtext ul li{
+	font-family: "Virgo";
+}
+.cvtext,.cvtext ul,.cvtext ul li a,.cvtext p{
+	background-color: #777;
+	font-family: "Belligerent";
+	font-size: 14px;
+	letter-spacing: 0.06em;
+	color: #2D5F5E;
+	text-shadow: 1px 1px 1px #000;
+}
+
+.cvtext ul li a:hover{
+	color: #000018;
+	background-color: #2D5F5E;
+	text-shadow: 1px 1px 1px #999;
+}
+#arrowcell{
+	color: #3E594B;
+}
+/***** ***** ***** ***** ***** ***** ***** ***** *****/
+/* * *** ***** ***** Media queries ***** ***** *** * */
+/***** ***** ***** ***** ***** ***** ***** ***** *****/
+/* *** *** *** Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+}
+/* *** *** *** Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+/* *** *** *** Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+	.cvtext{
+		padding-left: 50px;
+	}
+	.cviteminfos{
+		font-size: 19px;
+	}
+	.cvtext,.cvtext ul,.cvtext ul li a,.cvtext p{
+		font-size: 20px;
+	}
+}
+/* *** *** *** Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+	.cviteminfos{
+		font-size: 21px;
+	}
+	.cvtext,.cvtext ul,.cvtext ul li a,.cvtext p{
+		font-size: 24px;
+	}
+}
+/* Extra large devices (large desktops)
+   No media query since the extra-large breakpoint has no upper bound on its width */
