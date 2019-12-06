@@ -1,0 +1,396 @@
+/*************************************************************************************************
+ *   	FredLab Projetcs Incorporated
+ *                Projet :   FredLab
+ *                  Page :   candidat.css
+ *                Chemin :   http://127.0.0.1:8080/FredLab/config/css/candidat.css
+ *                  Type :   page de modules
+ * 				Contexte :	 Css 3.0
+ *              Fonction :   page de styles d'affichage CSS (candidat.php)
+ *   Date mise en oeuvre :   13/11/2019
+ *          Dernière MàJ :   16/11/2019
+ *************************************************************************************************/
+/***** ***** ***** Containers ***** ***** *****/
+
+/***** ***** ***** Classes et balises ***** ***** *****/
+.logo{
+	height: 35px;
+	width: 35px;
+}
+.doc-icon-cell{
+	background-color: transparent;
+	border: none;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+#bref{
+	opacity: 1;
+	background-color: #C1C1C1;
+	background-image: url("../../media/pics/evolution.jpg");
+	background-size: 250px 100px;
+	-webkit-background-size: 250px 100px;
+	background-repeat: no-repeat;
+    background-position-x: 20%;
+	background-position-y: bottom;
+    background-attachment: auto;
+	padding: 15px 50px 5px 50px;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+	padding-bottom: 100px;
+	color: #002A3A;
+}
+#bref p{
+	background-color: transparent;
+	padding: 10px 0px 0px 0px;
+	margin: 0px 0px 5px 0px;
+	text-align: left;
+	font-family: "Belligerent";
+	font-size: 18px;
+	line-height: 30px;
+}
+.text-lighter{
+	color: #007083;
+}
+#bref p::first-letter {
+	margin: 0px 3px 0px 0px;
+	font-size: 30px;
+	color: #002A3D;
+	text-shadow: 2px 2px 4px #037A63;
+}
+#bref blockquote{
+	display: none;
+	background-color: transparent;
+	padding: 20px 20px 0px 20px;
+	margin: 50px -30px 10px 0px;
+	text-align: right;
+	font-family: "SecretTypewriter";
+	font-size: 20px;
+	font-weight: bold;	
+	font-style: italic;
+	line-height: 10px;
+	color: #002A3D;
+	text-shadow: 2px 2px 4px #037A63;
+}
+.cell-link-cvpages{
+	padding-top: 10px;
+	display: inline;
+	text-align: center;
+	vertical-align: middle;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+}
+.cdtrubtitle{
+	background-color: hsl(150, 31%, 35%) !important;
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#abd3bf", endColorstr="#3d7459");
+	background-image: -khtml-gradient(linear, left top, left bottom, from(#abd3bf), to(#3d7459));
+	background-image: -moz-linear-gradient(top, #abd3bf, #3d7459);
+	background-image: -ms-linear-gradient(top, #abd3bf, #3d7459);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #abd3bf), color-stop(100%, #3d7459));
+	background-image: -webkit-linear-gradient(top, #abd3bf, #3d7459);
+	background-image: -o-linear-gradient(top, #abd3bf, #3d7459);
+	background-image: linear-gradient(#abd3bf, #3d7459);
+	border-color: #3d7459 #3d7459 hsl(150, 31%, 25%);
+	color: #333 !important;
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.66);
+	-webkit-font-smoothing: antialiased;
+	-webkit-box-shadow: 6px 4px 12px #000000;
+	-moz-box-shadow: 6px 4px 12px #000000;
+	box-shadow: 6px 4px 12px #000000;
+	border-left: 1px outset #000000;
+	border-top: 1px outset #000000;
+	border-bottom: 1px inset #444444;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0.8;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+}
+.cdtrubtitle a{
+	-webkit-font-smoothing: antialiased;
+	font-family: "CaptureIt";
+	font-size: 12px;
+	color: #002A3D;
+	text-shadow: 2px 2px 4px #037A63;
+	letter-spacing: 0.085em;
+	transition-property: color,text-shadow;
+	transition-duration: 1550ms;
+}
+.cdtrubtitle a:hover{
+	color: #009DA5;
+	text-shadow: 2px 2px 3px #000000;
+}
+.cdtrubtitle-on{
+	opacity: 0.8;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: hsl(150, 7%, 24%) !important;
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#bdc6c1", endColorstr="#38413d");
+	background-image: -khtml-gradient(linear, left top, left bottom, from(#bdc6c1), to(#38413d));
+	background-image: -moz-linear-gradient(top, #bdc6c1, #38413d);
+	background-image: -ms-linear-gradient(top, #bdc6c1, #38413d);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #bdc6c1), color-stop(100%, #38413d));
+	background-image: -webkit-linear-gradient(top, #bdc6c1, #38413d);
+	background-image: -o-linear-gradient(top, #bdc6c1, #38413d);
+	background-image: linear-gradient(#bdc6c1, #38413d);
+	border-color: #38413d #38413d hsl(150, 7%, 11%);
+	color: #000 !important;
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.85);
+	-webkit-font-smoothing: antialiased;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	transition-property: box-shadow;
+	transition-delay: 1550ms;
+}
+.cdtrubtitle-on a{
+	-webkit-font-smoothing: antialiased;
+	font-family: "CaptureIt";
+	font-size: 26px;
+	color: #000;
+	text-shadow: 2px 2px 4px #037A63;
+	letter-spacing: 0.085em;
+}
+.linkcv{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "Belligerent";
+	font-size: 20px;
+	color: #002A3A;
+	text-shadow: 2px 2px 4px #037A63;
+	letter-spacing: 0.09em;
+}
+#chrono div{
+	background-color: #BBBBBB;
+}
+/***** ***** ***** Section Thématique ***** ***** *****/
+#thema{
+	opacity: 1;
+	background-color: #C1C1C1;
+	padding: 15px 50px 30px 50px;
+	border: 1px inset #002A3A;
+	-webkit-box-shadow: 6px 4px 12px #000000;
+	-moz-box-shadow: 6px 4px 12px #000000;
+	box-shadow: 6px 4px 12px #000000;
+	color: #002A3A;
+	text-shadow: 1px 1px 3px #000;
+}
+#thema .row,#thema div{
+	background-color: transparent;
+}
+.theRubTitle{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	line-height: 60px;
+	font-family: "CaptureIt";
+	font-size: 34px;
+	color: #002A3A;
+	text-shadow: 1px 1px 3px #009DA5;
+}
+.theRubText{
+
+}
+.subTitle{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 60px;
+}
+.certifDate{
+	font-family: "SecretTypewriter";
+	color: #000;
+	text-shadow: 1px 1px 3px #555;
+}
+.certifLabel{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.certifLabel a{
+	padding-left: 10px;
+	padding-right: 10px;
+	font-family: "Belligerent";
+	letter-spacing: 0.04em;
+	color: #000;
+	text-shadow: 1px 1px 3px #555;
+	transition-property: all;
+	-moz-transition-property: all;
+	-webkit-transition-property: all;
+	transition-duration: 1250ms;
+	-moz-transition-duration: 1250ms;
+	-webkit-transition-duration: 1250ms;
+}
+.certifLabel a:hover{
+	background-color: #999;
+	color: #002A3A;
+	text-shadow: 1px 1px 3px #009DA5;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+}
+.subTitle{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 10px;
+	font-family: "Belligerent";
+	color: #002A3A;
+	text-shadow: 1px 1px 3px #009DA5;
+}
+.domName{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	font-family: "SecretTypewriter";
+	letter-spacing: 0.04em;
+	color: #000;
+	text-shadow: 1px 1px 3px #555;
+}
+#vscLogo{
+	max-height: 36px;
+}
+#formationLabel{
+	padding: 5px 0px 10px 0px;
+	font-family: "SecretTypewriter";
+	letter-spacing: 0.04em;
+	color: #002A3A;
+	text-shadow: 1px 1px 3px #009DA5;
+}
+#formationLocation{
+	padding: 10px 10px 0px 10px;
+	font-family: "SecretTypewriter";
+	letter-spacing: 0.04em;
+	color: #000;
+	text-shadow: 1px 1px 3px #999;
+}
+.formationText{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.itemLabel{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	font-family: "Belligerent";
+	color: #002A3A;
+	text-shadow: 1px 1px 3px #009DA5;
+}
+.itemText{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	font-family: "Belligerent";
+	color: #000;
+	text-shadow: 1px 1px 3px #999;
+}
+
+/***** ***** ***** ***** ***** ***** ***** ***** *****/
+/* * *** ***** ***** Media queries ***** ***** *** * */
+/***** ***** ***** ***** ***** ***** ***** ***** *****/
+/* *** *** *** Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    #bref p{
+		font-size: 20px;
+	}
+	#bref blockquote{
+		display: none;
+	}
+	.logo{
+		height: 40px;
+		width: 40px;
+	}
+	.cdtrubtitle a{
+		font-size: 16px;
+	}
+}
+/* *** *** *** Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    #bref{
+		padding-bottom: 40px;
+		}
+	#bref p{
+		font-size: 22px;
+	}
+	#bref p::first-letter {
+		font-size: 34px;
+	}
+	#bref blockquote{
+		display: block;
+		font-size: 20px;
+	}
+	.linkcv{
+		font-size: 24px;
+	}
+	.logo{
+		height: 50px;
+		width: 50px;
+	}
+	.cdtrubtitle a{
+		font-size: 18px;
+	}
+	.cdtrubtitle-on a{
+		font-size: 29px;
+	}
+}
+/* *** *** *** Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    #bref{
+        padding-bottom: 20px;
+        }
+        #bref p{
+            font-size: 24px;
+        }
+        #bref p::first-letter {
+            font-size: 40px;
+        }
+        #bref blockquote{
+            font-size: 22px;
+        }
+        .cdtrubtitle a{
+            font-size: 24px;
+		}
+		.cdtrubtitle-on a{
+			font-size: 32px;
+		}
+}
+/* *** *** *** Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    #bref p{
+		font-size: 26px;
+    }
+    .cdtrubtitle a{
+		font-size: 26px;
+	}
+	.cdtrubtitle-on a{
+		font-size: 36px;
+	}
+	.theRubTitle{
+		font-size: 38px;
+	}
+	.subTitle{
+		font-size: 34px;
+	}
+	.domName{
+		font-size: 21px;
+	}
+	#formationLabel{
+		font-size: 22px;
+	}
+	#formationLocation{
+		font-size: 20px;
+	}
+	.itemLabel,.itemText{
+		font-size: 20px;
+	}
+}
+/* Extra large devices (large desktops)
+   No media query since the extra-large breakpoint has no upper bound on its width */
