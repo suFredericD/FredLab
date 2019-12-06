@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'salsaregular';
+    src: url('Salsa-Regular-webfont.eot');
+    src: url('Salsa-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Salsa-Regular-webfont.woff2') format('woff2'),
+         url('Salsa-Regular-webfont.woff') format('woff'),
+         url('Salsa-Regular-webfont.ttf') format('truetype'),
+         url('Salsa-Regular-webfont.svg#salsaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+

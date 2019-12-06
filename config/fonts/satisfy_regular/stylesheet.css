@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'satisfyregular';
+    src: url('Satisfy-Regular-webfont.eot');
+    src: url('Satisfy-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Satisfy-Regular-webfont.woff2') format('woff2'),
+         url('Satisfy-Regular-webfont.woff') format('woff'),
+         url('Satisfy-Regular-webfont.ttf') format('truetype'),
+         url('Satisfy-Regular-webfont.svg#satisfyregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
