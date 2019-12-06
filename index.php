@@ -38,6 +38,7 @@ $intFileCount = count($arrFileName)-1;                              // Position 
 $strPageFile = $arrFileName[$intFileCount];                         // Nom du fichier seul
 $objPageInfos = new Page();                                         // Incrémentation de l'objet 'Page'
 $objPageInfos->setName($strPageFile);
+echo $objPageInfos->getCssPath();
 // ***** ***** ***** PAGE HTML   ***** ***** *****
 // ***** ***** ***** En-tête HTML ***** ***** *****
 fct_BuildHeaderHtml($objPageInfos);
