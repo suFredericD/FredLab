@@ -110,41 +110,61 @@ fct_BuildHorizontalMenu($objPageInfos);
       <div class="row">
        <div class="col-xl-12 col-lg-12 subTitle">Mes domaines</div>
       </div>
-      <div class="row">
-       <div class="col-xl-4 col-lg-4"><span class="fab fa-php fa-2x"></span></div>
-       <div class="col-xl-8 col-lg-8 domName">PHP 7.3</div>
+      <div class="row domRow">
+       <div class="col-xl-2 col-lg-2 domIcon"><span class="fab fa-php fa-2x"></span></div>
+       <div class="col-xl-7 col-lg-7 domName">PHP</div>
+       <div class="col-xl-1 col-lg-1 domVersion">7.3</div>
       </div>
-      <div class="row">
-       <div class="col-xl-4 col-lg-4"><span class="fa fa-database fa-2x"></span></div>
-       <div class="col-xl-8 col-lg-8 domName">MySql 8.0</div>
+      <div class="row domRow">
+       <div class="col-xl-2 col-lg-2 domIcon"><span class="fa fa-database fa-2x"></span></div>
+       <div class="col-xl-7 col-lg-7 domName">MySql</div>
+       <div class="col-xl-1 col-lg-1 domVersion">8.0</div>
       </div>
-      <div class="row">
-       <div class="col-xl-4 col-lg-4"><span class="fab fa-js fa-2x"></span></div>
-       <div class="col-xl-8 col-lg-8 domName">JavaScript ES2015</div>
+      <div class="row domRow">
+       <div class="col-xl-2 col-lg-2 domIcon"><span class="fab fa-js fa-2x"></span></div>
+       <div class="col-xl-7 col-lg-7 domName">JavaScript</div>
+       <div class="col-xl-1 col-lg-1 domVersion">ES2015</div>
       </div>
-      <div class="row">
-       <div class="col-xl-4 col-lg-4"><span class="fab fa-html5 fa-2x"></span></div>
-       <div class="col-xl-8 col-lg-8 domName">Html 5.0</div>
+      <div class="row domRow">
+       <div class="col-xl-2 col-lg-2 domIcon"><span class="fab fa-html5 fa-2x"></span></div>
+       <div class="col-xl-7 col-lg-7 domName">HTML</div>
+       <div class="col-xl-1 col-lg-1 domVersion">5.0</div>
       </div>
-      <div class="row">
-       <div class="col-xl-4 col-lg-4"><span class="fab fa-css3 fa-2x"></span></div>
-       <div class="col-xl-8 col-lg-8 domName">Css 3.0</div>
+      <div class="row domRow">
+       <div class="col-xl-2 col-lg-2 domIcon"><span class="fab fa-css3 fa-2x"></span></div>
+       <div class="col-xl-7 col-lg-7 domName">CSS</div>
+       <div class="col-xl-1 col-lg-1 domVersion">3.0</div>
       </div>
-      <div class="row">
-       <div class="col-xl-4 col-lg-4"><span class="fab fa-bootstrap fa-2x"></span></div>
-       <div class="col-xl-8 col-lg-8 domName">BootStrap 4</div>
+      <div class="row domRow">
+       <div class="col-xl-2 col-lg-2 domIcon"><span class="fab fa-bootstrap fa-2x"></span></div>
+       <div class="col-xl-7 col-lg-7 domName">BootStrap</div>
+       <div class="col-xl-1 col-lg-1 domVersion">4.0</div>
       </div>
-      <div class="row">
-       <div class="col-xl-4 col-lg-4"><span class="fab fa-font-awesome fa-2x"></span></div>
-       <div class="col-xl-8 col-lg-8 domName">FontAwesome 5</div>
+      <div class="row domRow">
+       <div class="col-xl-2 col-lg-2 domIcon"><span class="fab fa-font-awesome fa-2x"></span></div>
+       <div class="col-xl-7 col-lg-7 domName">FontAwesome</div>
+       <div class="col-xl-1 col-lg-1 domVersion">5.11</div>
       </div>
-      <div class="row">
-       <div class="col-xl-4 col-lg-4"><span class="fa fa-chart-pie fa-2x"></span></div>
-       <div class="col-xl-8 col-lg-8 domName">jpGraph 4.2</div>
+      <div class="row domRow">
+       <div class="col-xl-2 col-lg-2 domIcon"><img class="img-fluid" id="jQLogo" src="../media/logos/jQLogo.png"></div>
+       <div class="col-xl-7 col-lg-7 domName">jQuery</div>
+       <div class="col-xl-1 col-lg-1 domVersion">3.4.1</div>
       </div>
-      <div class="row">
-       <div class="col-xl-4 col-lg-4"><img class="img-fluid" id="vscLogo" src="../media/logos/vscLogo.png"></div>
-       <div class="col-xl-8 col-lg-8 domName">Visual Studio Code 1.40</div>
+      <div class="row domRow">
+       <div class="col-xl-2 col-lg-2 domIcon"><span class="fa fa-chart-pie fa-2x"></span></div>
+       <div class="col-xl-7 col-lg-7 domName">jpGraph</div>
+       <div class="col-xl-1 col-lg-1 domVersion">4.2</div>
+      </div>
+      <div class="row domRow">
+       <div class="col-xl-2 col-lg-2 domIcon"><span class="fab fa-git-alt fa-2x"></span></div>
+       <div class="col-xl-7 col-lg-7 domName">Git</div>
+       <div class="col-xl-1 col-lg-1 domVersion">2.20</div>
+      </div>
+      <div class="row domRow">
+       <div class="col-xl-2 col-lg-2 domIcon"><img class="img-fluid" id="vscLogo" src="../media/logos/vscLogo.png"></div>
+       <div class="col-xl-7 col-lg-7 domName">Visual Studio Code</div>
+       <div class="col-xl-1 col-lg-1 domVersion">1.40</div>
+       
       </div>
      </div>
     </div>

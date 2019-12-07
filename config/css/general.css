@@ -11,26 +11,7 @@
  *************************************************************************************************/
 /*
 Palette
-	Saison 1  :		#1F3A81
-	Saison 2  :		#D13328
-	Saison 3  :		#116D86
-	Saison 4  :		#F06F45
-	Saison 5  :		#7C2880
-	Saison 6  :		#1B776A
-	Saison 7  :		#DC328A
-	Saison 8  :		#3B95D1
-	Saison 9  :		#FFCC00
-	Saison 10 :		#8F2144
 
-   background :		#61697D
-   mauve bleu :		#67617D
-   mauve rose :		#75617D
- 	     vert : 	#61777D
-		 kaki :		#777D61
-
-	 Niveau 1 :		#456958
-	 Niveau 2 :		#987D49
-	 Niveau 3 :		#7F4D5B
 */
  /***** ***** ***** Containers ***** ***** *****/
 #site-container{
@@ -46,19 +27,6 @@ Palette
 }
 /***** ***** ***** Webfonts ***** ***** *****/
 @font-face{
-	font-family: "Alphaecho";
-	src: url('../fonts/alphaecho_regular/alpha_echo-webfont.eot') format('eot'),
-		 url('../fonts/alphaecho_regular/alpha_echo-webfont.woff') format('woff'),
-		 url('../fonts/alphaecho_regular/alpha_echo-webfont.ttf') format('truetype'),
-		 url('../fonts/alphaecho_regular/alpha_echo-webfont.svg') format('svg');
-}@font-face{
-	font-family: "Magenta";
-	src: url('../fonts/magenta_regular/Magenta_BBT-webfont.eot') format('eot'),
-		 url('../fonts/magenta_regular/Magenta_BBT-webfont.woff') format('woff'),
-		 url('../fonts/magenta_regular/Magenta_BBT-webfont.ttf') format('truetype'),
-		 url('../fonts/magenta_regular/Magenta_BBT-webfont.svg') format('svg');
-}
-@font-face{
 	font-family: "3Dumb";
 	src: url('../fonts/3dumb_regular/3Dumb-webfont.eot') format('eot'),
 		 url('../fonts/3dumb_regular/3Dumb-webfont.woff') format('woff'),
@@ -66,11 +34,46 @@ Palette
 		 url('../fonts/3dumb_regular/3Dumb-webfont.svg') format('svg');
 }
 @font-face{
+	font-family: "Alphaecho";
+	src: url('../fonts/alphaecho_regular/alpha_echo-webfont.eot') format('eot'),
+		 url('../fonts/alphaecho_regular/alpha_echo-webfont.woff') format('woff'),
+		 url('../fonts/alphaecho_regular/alpha_echo-webfont.ttf') format('truetype'),
+		 url('../fonts/alphaecho_regular/alpha_echo-webfont.svg') format('svg');
+}
+@font-face{									/* Belligerent */
+	font-family: "Belligerent";
+	src: url('../fonts/belligerentmadness_regular/belligerent-webfont.eot') format('eot'),
+		 url('../fonts/belligerentmadness_regular/belligerent-webfont.woff') format('woff'),
+		 url('../fonts/belligerentmadness_regular/belligerent-webfont.ttf') format('truetype'),
+		 url('../fonts/belligerentmadness_regular/belligerent-webfont.svg') format('svg');
+}
+@font-face{
+	font-family: "CaptureIt";
+	src: url('../fonts/captureit_regular/Capture_it-webfont.eot') format('eot'),
+		 url('../fonts/captureit_regular/Capture_it-webfont.woff') format('woff'),
+		 url('../fonts/captureit_regular/Capture_it-webfont.ttf') format('truetype'),
+		 url('../fonts/captureit_regular/Capture_it-webfont.svg') format('svg');
+}
+@font-face{
+	font-family: "District";
+	src: url('../fonts/district_regular/District-webfont.eot') format('eot'),
+		 url('../fonts/district_regular/District-webfont.woff') format('woff'),
+		 url('../fonts/district_regular/District-webfont.ttf') format('truetype'),
+		 url('../fonts/district_regular/District-webfont.svg') format('svg');
+}
+@font-face{
 	font-family: "ImpactLabel";
 	src: url('../fonts/impactlabel_regular/Impact_Label-webfont.eot') format('eot'),
 		 url('../fonts/impactlabel_regular/Impact_Label-webfont.woff') format('woff'),
 		 url('../fonts/impactlabel_regular/Impact_Label-webfont.ttf') format('truetype'),
 		 url('../fonts/impactlabel_regular/Impact_Label-webfont.svg') format('svg');
+}
+@font-face{
+	font-family: "Magenta";
+	src: url('../fonts/magenta_regular/Magenta_BBT-webfont.eot') format('eot'),
+		 url('../fonts/magenta_regular/Magenta_BBT-webfont.woff') format('woff'),
+		 url('../fonts/magenta_regular/Magenta_BBT-webfont.ttf') format('truetype'),
+		 url('../fonts/magenta_regular/Magenta_BBT-webfont.svg') format('svg');
 }
 @font-face{
 	font-family: "OldStamper";
@@ -86,20 +89,6 @@ Palette
 		 url('../fonts/secrettypewriter_regular/veteran_typewriter-webfont.ttf') format('truetype'),
 		 url('../fonts/secrettypewriter_regular/veteran_typewriter-webfont.svg') format('svg');
 }
-@font-face{
-	font-family: "District";
-	src: url('../fonts/district_regular/District-webfont.eot') format('eot'),
-		 url('../fonts/district_regular/District-webfont.woff') format('woff'),
-		 url('../fonts/district_regular/District-webfont.ttf') format('truetype'),
-		 url('../fonts/district_regular/District-webfont.svg') format('svg');
-}
-@font-face{
-	font-family: "CaptureIt";
-	src: url('../fonts/captureit_regular/Capture_it-webfont.eot') format('eot'),
-		 url('../fonts/captureit_regular/Capture_it-webfont.woff') format('woff'),
-		 url('../fonts/captureit_regular/Capture_it-webfont.ttf') format('truetype'),
-		 url('../fonts/captureit_regular/Capture_it-webfont.svg') format('svg');
-}
 @font-face{									/* TechniqueBrk */
 	font-family: "TechniqueBrk";
 	src: url('../fonts/techniquebrk_normal/techniqu-webfont.eot') format('eot'),
@@ -107,12 +96,12 @@ Palette
 		 url('../fonts/techniquebrk_normal/techniqu-webfont.ttf') format('truetype'),
 		 url('../fonts/techniquebrk_normal/techniqu-webfont.svg') format('svg');
 }
-@font-face{									/* Belligerent */
-	font-family: "Belligerent";
-	src: url('../fonts/belligerentmadness_regular/belligerent-webfont.eot') format('eot'),
-		 url('../fonts/belligerentmadness_regular/belligerent-webfont.woff') format('woff'),
-		 url('../fonts/belligerentmadness_regular/belligerent-webfont.ttf') format('truetype'),
-		 url('../fonts/belligerentmadness_regular/belligerent-webfont.svg') format('svg');
+@font-face{
+	font-family: "Vanilla";
+	src: url('../fonts/vanilla_regular/Vanilla-webfont.eot') format('eot'),
+		 url('../fonts/vanilla_regular/Vanilla-webfont.woff') format('woff'),
+		 url('../fonts/vanilla_regular/Vanilla-webfont.ttf') format('truetype'),
+		 url('../fonts/vanilla_regular/Vanilla-webfont.svg') format('svg');
 }
 /***** ***** ***** Balises HTML ***** ***** *****/
 body{

@@ -245,18 +245,61 @@
 	color: #002A3A;
 	text-shadow: 1px 1px 3px #009DA5;
 }
+/* ** ** ** Bloc Domaines ** ** ** */
+.domRow{
+	margin-top: 6px;
+	border: 1px inset #555;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+	box-shadow: 1px 1px 3px #000;
+	color: #000;
+	text-shadow: 1px 1px 3px #555;
+	transition-property: all;
+	transition-duration: 1250ms;
+	-o-transition-property: all;
+	-o-transition-duration: 1250ms;
+	-moz-transition-property: all;
+	-moz-transition-duration: 1250ms;
+	-webkit-transition-property: all;
+	-webkit-transition-duration: 1250ms;
+}
+.domRow:hover{
+	border-top-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border: 1px inset #002A3D;
+	color: #002A3D;
+	text-shadow: 2px 2px 4px #037A63;
+	box-shadow: 1px 1px 3px #037A63;
+	cursor: default;
+}
+.domIcon{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 .domName{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "Vanilla";
+	font-size: 24px;
+	letter-spacing: 0.02em;
+}
+.domVersion{
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
 	font-family: "SecretTypewriter";
 	letter-spacing: 0.04em;
-	color: #000;
-	text-shadow: 1px 1px 3px #555;
 }
 #vscLogo{
 	max-height: 36px;
 }
+#jQLogo{
+	max-height: 32px;
+}
+/* ** ** ** Bloc Formation ** ** ** */
 #formationLabel{
 	padding: 5px 0px 10px 0px;
 	font-family: "SecretTypewriter";
