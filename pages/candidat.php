@@ -8,7 +8,7 @@
  *              Contexte :   php 7.3
  *              Fonction :   page d'accueil de l'espace cadidat
  *   Date mise en oeuvre :   25/10/2019
- *          Dernière MàJ :   06/12/2019
+ *          Dernière MàJ :   07/12/2019
  *********************************************************************************/
 /***** *****    INCLUSIONS ET SCRIPTS   ***** *****/
 require("../scripts/admin/variables.php");                  // Variables globales du site
@@ -93,11 +93,11 @@ fct_BuildHorizontalMenu($objPageInfos);
 <?php for ( $i = 1 ; $i <= $intCertifs ;$i++ ) {
          $objDate = new DateTime ($arrCertifs[$i]['Date']);
          $strDate = $objDate->format("d/m/Y");
+         $strAttributeTitle = "Consulter le certificat : « " . $arrCertifs[$i]['Label'] . " »" . ", obtenue le " . $strDate;
 ?>
       <div class="row">
-       <div class="col-xl-2 col-lg-2 certifDate"><?php echo $strDate;?></div>
-       <div class="col-xl-10 col-lg-10 certifLabel">
-        <a href="../docs/ocrCertifs/<?php echo $arrCertifs[$i]['File'];?>" target="_blank" title="Consulter le certificat">
+       <div class="col-xl-12 col-lg-12 certifLabel">
+        <a href="../docs/ocrCertifs/<?php echo $arrCertifs[$i]['File'];?>" target="_blank" title="<?php echo $strAttributeTitle;?>">
          <p><?php echo $arrCertifs[$i]['Label'];?></p>
         </a>
        </div>

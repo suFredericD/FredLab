@@ -7,7 +7,7 @@
  * 				Contexte :	 Css 3.0
  *              Fonction :   page de styles d'affichage CSS (candidat.php)
  *   Date mise en oeuvre :   13/11/2019
- *          Dernière MàJ :   16/11/2019
+ *          Dernière MàJ :   07/12/2019
  *************************************************************************************************/
 /***** ***** ***** Containers ***** ***** *****/
 
@@ -211,13 +211,15 @@
 }
 .certifLabel{
 	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
 }
 .certifLabel a{
 	padding-left: 10px;
 	padding-right: 10px;
+	text-align: justify;
 	font-family: "Belligerent";
+	font-size: 18px;
 	letter-spacing: 0.04em;
 	color: #000;
 	text-shadow: 1px 1px 3px #555;
@@ -232,9 +234,9 @@
 	background-color: #999;
 	color: #002A3A;
 	text-shadow: 1px 1px 3px #009DA5;
-	-webkit-border-radius: 25px;
-	-moz-border-radius: 25px;
-	border-radius: 25px;
+	box-shadow: 1px 1px 3px #002A3A;
+	border-top-right-radius: 25px;
+	border-bottom-left-radius: 25px;
 }
 .subTitle{
 	display: flex;
@@ -423,7 +425,7 @@
 		font-size: 34px;
 	}
 	.domName{
-		font-size: 21px;
+		font-size: 19px;
 	}
 	#formationLabel{
 		font-size: 22px;

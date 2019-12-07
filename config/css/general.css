@@ -7,7 +7,7 @@
  * 				Contexte :	 Css 3.0
  *              Fonction :   page de styles d'affichage CSS
  *   Date mise en oeuvre :   13/11/2019
- *          Dernière MàJ :   14/11/2019
+ *          Dernière MàJ :   07/12/2019
  *************************************************************************************************/
 /*
 Palette
@@ -53,6 +53,13 @@ Palette
 		 url('../fonts/captureit_regular/Capture_it-webfont.woff') format('woff'),
 		 url('../fonts/captureit_regular/Capture_it-webfont.ttf') format('truetype'),
 		 url('../fonts/captureit_regular/Capture_it-webfont.svg') format('svg');
+}
+@font-face{
+	font-family: "Desyrel";
+	src: url('fonts/desyrel_regular/desyrel-webfont.eot') format('eot'),
+		 url('fonts/desyrel_regular/desyrel-webfont.woff') format('woff'),
+		 url('fonts/desyrel_regular/desyrel-webfont.ttf') format('truetype'),
+		 url('fonts/desyrel_regular/desyrel-webfont.svg') format('svg');
 }
 @font-face{
 	font-family: "District";
