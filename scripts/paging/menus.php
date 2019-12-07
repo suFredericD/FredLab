@@ -8,7 +8,7 @@
  *              Contexte :   php 7.3
  *              Fonction :   construction des menus du site
  *   Date mise en oeuvre :   24/10/2019
- *          Dernière MàJ :   02/12/2019
+ *          Dernière MàJ :   07/12/2019
  *********************************************************************************/
 // Fonction de construction du menu horizontal
 //       Paramètres :
@@ -27,11 +27,11 @@ function fct_BuildHorizontalMenu($objPageInfos){
        <div class="collapse navbar-collapse justify-content-center" id="navbarFullSite">
         <ul class="navbar-nav">
 <!-- Page d'accueil -->
-         <li class="nav-item" style="padding-right:10px;">
+         <li class="nav-item">
           <a class="nav-link btn-nav" href="<?php echo $objPageInfos->getIndexPath();?>index.php" title="You are here &lArr;">Accueil</a>
          </li>
 <!-- Espace candidat -->
-         <li class="nav-item dropdown justify-content-center" style="padding-right:10px;">
+         <li class="nav-item dropdown justify-content-center">
           <a class="nav-link dropdown-toggle" href="<?php echo $objPageInfos->getPath();?>candidat.php" id="navbarCandidat" title="De l'origine de Fred juqu'à nos jours..." role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
            <span class="far fa-address-card"></span>&nbsp;&nbsp;Candidat</a>
 	   <div class="dropdown-menu dropdown-menu-right custom-dpdmenu" aria-labelledby="navbarCandidat">
@@ -40,11 +40,12 @@ function fct_BuildHorizontalMenu($objPageInfos){
            <a class="dropdown-item" href="<?php echo $objPageInfos->getPath();?>candidat.php#thema" title="Parce que j'ai plusieurs cordes à mon arc...">Thématique</a>
            <a class="dropdown-item" href="<?php echo $objPageInfos->getPath();?>candidat.php#chrono" title="&laquo; La chronologie (aussi annale, chronique) est une science de dates et d'événements historiques ou succession d'événements dans le temps. Considérée comme une discipline auxiliaire de l’histoire, la chronologie est une manière d'appréhender l'histoire par les événements.&raquo;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&mdash; source : Wikipedia">Chronologique</a>
            <div class="dropdown-divider custom-dpd-divider"></div>
+           <a class="dropdown-item" href="<?php echo $objPageInfos->getIndexPath();?>docs/FD_programmeur_anon.pdf" title="La base..." target="_blank">Cv - Pdf</a>
            <a class="dropdown-item" href="<?php echo $objPageInfos->getPath();?>cvhtml.htm" title="Mon royaume contre un script...">Cv - Html & Css</a>
           </div>
          </li>
 <!-- Espace codeur -->
-<li class="nav-item dropdown justify-content-center" style="padding-right:10px;">
+         <li class="nav-item dropdown justify-content-center">
           <a class="nav-link dropdown-toggle" href="<?php echo $objPageInfos->getPath();?>coding.php" id="navbarCoding" title="Pour les progammeurs" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
            <span class="fa fa-laptop-code"></span>&nbsp;&nbsp;Codeur</a>
 	   <div class="dropdown-menu dropdown-menu-right custom-dpdmenu" aria-labelledby="navbarCoding">

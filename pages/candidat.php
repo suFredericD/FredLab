@@ -183,10 +183,10 @@ fct_BuildHorizontalMenu($objPageInfos);
      </div>
      <div class="row">
       <div class="col-xl-8 col-lg-8" id="formationLabel">
-       <a href="<?php echo $strDiplomLinkUrl;?>" title="<?php echo $strDiplomLinkTitle;?>"><?php echo $strDiplomLinkLabel;?></a>
+       <a href="<?php echo $strDiplomLinkUrl;?>" title="<?php echo $strDiplomLinkTitle;?>" target="_blank"><?php echo $strDiplomLinkLabel;?></a>
       </div>
       <div class="col-xl-4 col-lg-4" id="formationLocation">
-       <a href="<?php echo $strAfpaLinkUrl;?>" title="<?php echo $strAfpaLinkTitle;?>"><?php echo $strAfpaLinkLabel;?></a>
+       <a href="<?php echo $strAfpaLinkUrl;?>" title="<?php echo $strAfpaLinkTitle;?>" target="_blank"><?php echo $strAfpaLinkLabel;?></a>
       </div>
      </div>
      <div class="row">

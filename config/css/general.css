@@ -222,6 +222,8 @@ h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover{
 	border-left: 1px outset #000000;
 	border-top: 1px outset #000000;
 	border-bottom: 1px inset #444444;
+	border-top-left-radius: 25px;
+	border-bottom-right-radius: 25px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -276,6 +278,8 @@ h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover{
 	border-left: 1px outset #000000;
 	border-top: 1px outset #000000;
 	border-bottom: 1px inset #444444;
+	border-top-left-radius: 25px;
+	border-bottom-right-radius: 25px;
 	color: #002A3D;
 	text-shadow: 2px 2px 4px #037A63;
 	padding-left: 0px;
@@ -287,10 +291,33 @@ h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover{
 	align-items: center;
 	font-family: "TechniqueBrk";
 }
+.nav-item{
+	padding-right: 10px;
+}
+.nav-item a{
+	transition-property: all;
+	transition-duration: 1250ms;
+	-o-transition-property: all;
+	-o-transition-duration: 1250ms;
+	-moz-transition-property: all;
+	-moz-transition-duration: 1250ms;
+	-webkit-transition-property: all;
+	-webkit-transition-duration: 1250ms;
+}
 #navbarFullSite ul li a{
 	color: #002A3A;
 	font-size: 20px;
 	text-shadow: 2px 2px 4px #009175;
+	border-top-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+	transition-property: all;
+	transition-duration: 1250ms;
+	-o-transition-property: all;
+	-o-transition-duration: 1250ms;
+	-moz-transition-property: all;
+	-moz-transition-duration: 1250ms;
+	-webkit-transition-property: all;
+	-webkit-transition-duration: 1250ms;
 }
 #navbarFullSite ul li a:hover{
 	background-color: hsl(150, 5%, 35%) !important;
@@ -304,8 +331,8 @@ h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover{
 	background-image: -o-linear-gradient(top, #bcc2bf, #545d59);
 	background-image: linear-gradient(#bcc2bf, #545d59);
 	border-color: #545d59 #545d59 hsl(150, 5%, 25%);
-	color: #002A3A;
-	text-shadow: 2px 2px 4px #037A63;
+	color: #037A63;
+	text-shadow: 2px 2px 4px #000;
 	-webkit-font-smoothing: antialiased;
 }
 .custom-dpdmenu{
@@ -321,6 +348,8 @@ h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover{
 	background-image: -o-linear-gradient(top, #699f84, #17251e);
 	background-image: linear-gradient(#699f84, #17251e);
 	border-color: #17251e #17251e hsl(150, 22%, 2%);
+	border-top-left-radius: 25px;
+	border-bottom-right-radius: 25px;
 	-webkit-font-smoothing: antialiased;
 	color: #002A3D;
 	text-shadow: 2px 2px 4px #037A63;
