@@ -66,13 +66,13 @@ fct_BuildHorizontalMenu($objPageInfos);
     </div>
    </div>
    <div class="row" id="rowLinks">
-	 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 cdtrubtitle bxshadow" style="padding-top:5px;margin-top:5px;">
+	 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 cdtrubtitle bxshadow">
 	  <a href="#bref" id="lnkBref" title="En bref : pour les deux du fond qui suivaient pas...">In Brevi</a>
 	 </div>
-    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 cdtrubtitle bxshadow" style="padding-top:5px;margin-top:5px;">
+    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 cdtrubtitle bxshadow">
 	  <a href="#thema" id="lnkThema" title="Thématique : parce que j'ai plusieurs cordes à mon arc...">Argumentum</a>
 	 </div>
-    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 cdtrubtitle bxshadow" style="padding-top:5px;margin-top:5px;">
+    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 cdtrubtitle bxshadow"">
 	  <a href="#chrono" id="lnkChrono" title="&laquo; La chronologie (aussi annale, chronique) est une science de dates et d'événements historiques ou succession d'événements dans le temps. Considérée comme une discipline auxiliaire de l’histoire, la chronologie est une manière d'appréhender l'histoire par les événements.&raquo;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&mdash; source : Wikipedia">Chronicon</a>
 	 </div>
    </div>
@@ -221,12 +221,12 @@ fct_BuildHorizontalMenu($objPageInfos);
     </div>
    </div><hr class="body-hr">
 <!-- -- -- -- -- Rubrique "Curricula vitae" -- -- -- -- -->
-   <div class="row" style="margin-top:15px;" id="cv">
+   <div class="row" id="cv">
     <div class="offset-lg-1 col-lg-10 offset-md-1 col-md-10 offset-sm-1 col-sm-10 offset-1 col-10" title="Hé oui, au pluriel ça donne ça..." style="padding-top:5px;margin-top:5px;background-color:transparent;">
      <h2>Curricula vitae</h2>
     </div>
    </div>
-   <div class="row" style="padding-top:5px;margin-bottom:10px;">
+   <div class="row can_docitem">
 	<div class="offset-lg-2 col-lg-2 offset-md-1 col-md-2 offset-sm-1 col-sm-2 offset-1 col-2 doc-icon-cell">
      <img src="../media/icons/docs.png" class="img-fluid logo" alt="logo documents">
     </div>
@@ -234,7 +234,7 @@ fct_BuildHorizontalMenu($objPageInfos);
      <a href="../docs/FD_programmeur_anon.pdf" target="_blank" class="linkcv" title="La base...">Versionem PDF</a>
     </div>
    </div>
-   <div class="row" style="padding-top:5px;margin-bottom:10px;">
+   <div class="row can_docitem">
 	 <div class="offset-lg-2 col-lg-2 offset-md-1 col-md-2 offset-sm-1 col-sm-2 offset-1 col-2 doc-icon-cell">
      <img src="../media/icons/docs.png" class="img-fluid logo" alt="logo documents">
     </div>
@@ -242,7 +242,7 @@ fct_BuildHorizontalMenu($objPageInfos);
      <a href="cvhtml.htm" class="linkcv" title="La version html/css purs (mon royaume contre un script...)">Versionem HTML</a>
     </div>
    </div>
-   <div class="row" style="margin:30px 0px 25px 0px;">
+   <div class="row bottom-buttons"">
     <div class="col-lg-3 col-md-4 col-sm-4 col-4 linktotop bxshadow" title="Haut de page" style="padding-top:5px;margin-top:5px;">
      <a href="#haut">Summitatem</a>
     </div>

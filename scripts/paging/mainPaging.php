@@ -23,7 +23,7 @@ function fct_BuildHeaderGraph($objPageInfos){?>
        <table class="table" id="tab-site-header">
         <tr class="row">
          <td class="col-lg-4 col-md-4 col-sm-4 col-2">
-          <img class="img-logosite" src="<?php echo $objPageInfos->getLogosPath().$GLOBALS['strSiteIcon'];?>">
+          <img class="img-logosite" src="<?php echo $objPageInfos->getLogosPath().$GLOBALS['strSiteLogo'];?>">
          <td class="col-lg-8 col-md-8 col-sm-8 col-10"><?php echo $GLOBALS['strSiteTitle'];?></td>
         </tr>
        </table>

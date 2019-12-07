@@ -51,7 +51,7 @@ function fct_BuildHeaderHtml($objPageInfos){
 <?php   if ( $objPageInfos->getName() != "index.php" ) {?>
      <link href="<?php echo $objPageInfos->getCssPath().$strFileCss;?>" rel="stylesheet" type="text/css"><!-- Css associée à la page courante-->
 <?php   }?>
-     <link href="<?php echo $objPageInfos->getLogosPath().$GLOBALS['strSiteIcon'];?>" rel="icon" type="image/png"><!-- Icône du site -->
+     <link rel="shortcut icon" type="image/x-icon" href="<?php echo $objPageInfos->getMediaPath() . "icons/" . $GLOBALS['strSiteLogo'];?>"><!-- Icône du site -->
      <link href="<?php echo $objPageInfos->getConfigPath().$GLOBALS['strFontAwesomeCss'];?>" rel="stylesheet"><!-- Script css FontAwesome -->
     </head>
 <!-- -- -- -- -- -- -- -- -- -- -- -- -- - -- -- -- -->
