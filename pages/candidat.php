@@ -42,6 +42,14 @@ $objPageInfos->setName($strPageFile);
 // ***** ***** ***** Variables de la page ***** ***** *****
 $arrCertifs = fct_SelectAllCertifsFromOcr();                         // Tableau des certifications OpenClassRooms
 $intCertifs = count($arrCertifs);                                    // Nombre de certifications 
+// Url, label d'affichage et attribut 'title' du lien vers la fiche détaillée de la formation
+$strDiplomLinkUrl = "https://www.afpa.fr/formation-qualifiante/concepteur-developpeur-informatique";
+$strDiplomLinkLabel = "<strong>I.U.T. Technicien Supérieur en Informatique de Gestion</strong>, option Étude et Développement";
+$strDiplomLinkTitle = "Lien vers la fiche détaillée de la formation : I.U.T. Technicien Supérieur en Informatique de Gestion";
+// Url, label d'affichage et attribut 'title' du lien vers le site de l'Afpa Beaumont
+$strAfpaLinkUrl = "https://www.afpa.fr/centre/centre-de-clermont-beaumont";
+$strAfpaLinkLabel = "Centre Afpa de Beaumont<br>Puy-de-Dôme (63)";
+$strAfpaLinkTitle = "Lien vers la page du site de l'Afpa de Beaumont (63)";
 // ***** ***** ***** PAGE HTML   ***** ***** *****
 // ***** ***** ***** En-tête HTML ***** ***** *****
 fct_BuildHeaderHtml($objPageInfos);
@@ -174,8 +182,12 @@ fct_BuildHorizontalMenu($objPageInfos);
       <div class="col-xl-12 col-lg-12 subTitle">Ma formation</div>
      </div>
      <div class="row">
-      <div class="col-xl-8 col-lg-8" id="formationLabel"><strong>I.U.T. Technicien Supérieur en Informatique de Gestion</strong>, option Étude et Développement</div>
-      <div class="col-xl-4 col-lg-4" id="formationLocation">Centre Afpa de Beaumont<br>Puy-de-Dôme (63)</div>
+      <div class="col-xl-8 col-lg-8" id="formationLabel">
+       <a href="<?php echo $strDiplomLinkUrl;?>" title="<?php echo $strDiplomLinkTitle;?>"><?php echo $strDiplomLinkLabel;?></a>
+      </div>
+      <div class="col-xl-4 col-lg-4" id="formationLocation">
+       <a href="<?php echo $strAfpaLinkUrl;?>" title="<?php echo $strAfpaLinkTitle;?>"><?php echo $strAfpaLinkLabel;?></a>
+      </div>
      </div>
      <div class="row">
 	   <div class="col-xl-12" id="formationText">

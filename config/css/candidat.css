@@ -77,8 +77,6 @@
 	display: inline;
 	text-align: center;
 	vertical-align: middle;
-	-webkit-border-radius: 25px;
-	-moz-border-radius: 25px;
 	border-radius: 25px;
 }
 .cdtrubtitle{
@@ -96,8 +94,6 @@
 	color: #333 !important;
 	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.66);
 	-webkit-font-smoothing: antialiased;
-	-webkit-box-shadow: 6px 4px 12px #000000;
-	-moz-box-shadow: 6px 4px 12px #000000;
 	box-shadow: 6px 4px 12px #000000;
 	border-left: 1px outset #000000;
 	border-top: 1px outset #000000;
@@ -106,8 +102,6 @@
 	justify-content: center;
 	align-items: center;
 	opacity: 0.8;
-	-webkit-border-radius: 25px;
-	-moz-border-radius: 25px;
 	border-radius: 25px;
 	transition-property: all;
 	transition-duration: 1250ms;
@@ -119,8 +113,8 @@
 	-webkit-transition-duration: 1250ms;
 }
 .cdtrubtitle:hover{
-	border-top-left-radius: 0px;
-	border-bottom-right-radius: 0px;
+	border-top-right-radius: 0px;
+	border-bottom-left-radius: 0px;
 	background-color: hsl(150, 7%, 24%) !important;
 	background-repeat: repeat-x;
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#bdc6c1", endColorstr="#38413d");
@@ -175,8 +169,8 @@
 	color: #000 !important;
 	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.85);
 	-webkit-font-smoothing: antialiased;
-	border-top-right-radius: 25px;
-	border-bottom-left-radius: 25px;
+	border-top-left-radius: 25px;
+	border-bottom-right-radius: 25px;
 	transition-property: all;
 	transition-duration: 1250ms;
 	-o-transition-property: all;
@@ -269,8 +263,8 @@
 	color: #002A3A;
 	text-shadow: 1px 1px 3px #009DA5;
 	box-shadow: 1px 1px 3px #002A3A;
-	border-top-right-radius: 25px;
-	border-bottom-left-radius: 25px;
+	border-top-left-radius: 25px;
+	border-bottom-right-radius: 25px;
 }
 .subTitle{
 	display: flex;
@@ -301,8 +295,8 @@
 	-webkit-transition-duration: 1250ms;
 }
 .domRow:hover{
-	border-top-left-radius: 0px;
-	border-bottom-right-radius: 0px;
+	border-top-right-radius: 0px;
+	border-bottom-left-radius: 0px;
 	border: 1px inset #002A3D;
 	color: #002A3D;
 	text-shadow: 2px 2px 4px #037A63;
@@ -339,17 +333,41 @@
 /* ** ** ** Bloc Formation ** ** ** */
 #formationLabel{
 	padding: 5px 0px 10px 0px;
+}
+#formationLabel a{
 	font-family: "SecretTypewriter";
 	letter-spacing: 0.04em;
 	color: #002A3A;
 	text-shadow: 1px 1px 3px #009DA5;
 }
+#formationLabel,#formationLabel a,#formationLocation,#formationLocation a{
+	transition-property: all;
+	transition-duration: 1250ms;
+	-o-transition-property: all;
+	-o-transition-duration: 1250ms;
+	-moz-transition-property: all;
+	-moz-transition-duration: 1250ms;
+	-webkit-transition-property: all;
+	-webkit-transition-duration: 1250ms;
+}
 #formationLocation{
 	padding: 10px 10px 0px 10px;
+}
+#formationLabel:hover,#formationLocation:hover{
+	background-color: #666;
+	border-top-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+	box-shadow: 1px 1px 3px #002A3A;
+}
+#formationLocation a{
 	font-family: "SecretTypewriter";
 	letter-spacing: 0.04em;
 	color: #000;
 	text-shadow: 1px 1px 3px #999;
+}
+#formationLabel a:hover,#formationLocation a:hover{
+	color: #009DA5;
+	text-shadow: 2px 2px 3px #000;
 }
 .formationText{
 	display: flex;
@@ -372,7 +390,10 @@
 	color: #000;
 	text-shadow: 1px 1px 3px #999;
 }
-
+/* ** ** ** Fix pointeurs ** ** ** */
+#formationLabel,#formationLocation,.formationText,.itemLabel,.itemText{
+	cursor: default;
+}
 /***** ***** ***** ***** ***** ***** ***** ***** *****/
 /* * *** ***** ***** Media queries ***** ***** *** * */
 /***** ***** ***** ***** ***** ***** ***** ***** *****/
