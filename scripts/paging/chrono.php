@@ -27,9 +27,15 @@ function fctDisplayChrono(){
       <div class="col-xl-2 col-lg-2 chr_bg" id="chr_years">
        <div class="row chr_bg">
 <?php
-    for ( $i = $intYearNow ; $i > 1998 ; $i--){?>
+    for ( $i = $intYearNow ; $i > 1998 ; $i--){
+        $arrYearActivities = fct_SelectActivitiesFromYear($i);
+        $inYearActivities = count($arrYearActivities);
+?>
         <div class="offset-xl-1 col-xl-10 offset-lg-1 col-lg-10 year_label"><?php echo $i;?></div>
+<?php   for ( $j = 1 ; $j <= $inYearActivities ; $j++){?>
+        <div class="offset-xl-1 col-xl-10 offset-lg-1 col-lg-10"><?php echo $arrYearActivities[$j]['Label'];?></div>
 <?php
+        }
     }?>
        </div>
       </div>
