@@ -30,12 +30,20 @@ function fctDisplayChrono(){
     for ( $i = $intYearNow ; $i > 1998 ; $i--){
         $arrYearActivities = fct_SelectActivitiesFromYear($i);
         $inYearActivities = count($arrYearActivities);
+        $strYearItemsId = "div" . $i;
 ?>
-        <div class="offset-xl-1 col-xl-10 offset-lg-1 col-lg-10 year_label"><?php echo $i;?></div>
-<?php   for ( $j = 1 ; $j <= $inYearActivities ; $j++){?>
-        <div class="offset-xl-1 col-xl-10 offset-lg-1 col-lg-10"><?php echo $arrYearActivities[$j]['Label'];?></div>
+        <div class="offset-xl-1 col-xl-10 offset-lg-1 col-lg-10 year_label" id="<?php echo $i;?>"><?php echo $i;?></div>
+        <div class="offset-xl-1 col-xl-10 offset-lg-1 col-lg-10 chr_bg">
+         <div class="row chr_yearitems" id="<?php echo $strYearItemsId;?>">
+<?php   for ( $j = 1 ; $j <= $inYearActivities ; $j++){
+            $strItemId = $i . "-" . $arrYearActivities[$j]['Id'];
+?>
+          <div class="col-xl-12 col-lg-12 year_item" id="<?php echo $strItemId;?>"><?php echo $arrYearActivities[$j]['Label'];?></div>
 <?php
-        }
+        }?>
+         </div>
+        </div>
+<?php
     }?>
        </div>
       </div>
@@ -75,8 +83,9 @@ function fctDisplayChrono(){
                 $strDateDiff = $datDiff->format('%y') . " ans et " . $datDiff->format('%m') . " mois";
             }
         }
+        $strActivityRowId = "activity" . $arrActivities[$i]['Id'];
 ?>
-       <div class="row chr_mainrow">
+       <div class="row chr_mainrow" id="<?php echo $strActivityRowId;?>">
 <!-- -- -- Type d'activité -- -- -->
         <label class="col-xl-3 col-lg-3">Activité</label>
         <div class="col-xl-9 col-lg-9 chr_activity">

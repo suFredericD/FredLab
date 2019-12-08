@@ -51,7 +51,7 @@ function fct_BuildHeaderHtml($objPageInfos){
 <?php   if ( $objPageInfos->getName() != "index.php" ) {?>
      <link href="<?php echo $objPageInfos->getCssPath().$strFileCss;?>" rel="stylesheet" type="text/css"><!-- Css associée à la page courante-->
 <?php   }?>
-     <link rel="shortcut icon" type="image/x-icon" href="<?php echo $objPageInfos->getMediaPath() . "icons/" . $GLOBALS['strSiteLogo'];?>"><!-- Icône du site -->
+     <link rel="shortcut icon" type="image/x-icon" href="<?php echo $objPageInfos->getMediaPath() . "icons/" . $GLOBALS['strSiteIcon'];?>"><!-- Icône du site -->
      <link href="<?php echo $objPageInfos->getConfigPath().$GLOBALS['strFontAwesomeCss'];?>" rel="stylesheet"><!-- Script css FontAwesome -->
     </head>
 <!-- -- -- -- -- -- -- -- -- -- -- -- -- - -- -- -- -->
@@ -67,9 +67,10 @@ function fct_BuildFooterHtml($objPageInfos){
 <!-- -- -- -- -- -- Fin du contenu -- -- -- -- -- -->
      </section>
 <?php   if ( $objPageInfos->getName() == "index.php" ){?>
-     <script src="<?php echo $objPageInfos->getScriptsPath();?>paging/acueilPaging.js"></script><!-- JavaScript : mise en page perso -->
+     <script src="<?php echo $objPageInfos->getScriptsPath();?>paging/acueilPaging.js"></script><!-- JavaScript : mise en page accueil -->
 <?php   } else if ( $objPageInfos->getName() == "candidat.php" ){?>
-     <script src="<?php echo $objPageInfos->getScriptsPath();?>paging/candidatPaging.js"></script><!-- JavaScript : mise en page perso -->
+     <script src="<?php echo $objPageInfos->getScriptsPath();?>paging/candidatPaging.js"></script><!-- JavaScript : mise en page candidat -->
+     <script src="<?php echo $objPageInfos->getScriptsPath();?>paging/chronoPaging.js"></script><!-- JavaScript : mise en page chronologie -->
 <?php   }?>
 <!-- -- -- -- Bootstrap Core JavaScript -- -- -- -->
      <script src="<?php echo $GLOBALS['strAjax'];?>"></script><!-- Scripting Ajax -->

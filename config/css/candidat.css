@@ -210,7 +210,9 @@
 }
 /***** ***** ***** Section Chronologie ***** ***** *****/
 #chrono,
-.chr_content,
+#chr_content{
+	background-color: transparent;
+}
 .chr_infoscell,
 .chr_infos,
 .chr_infos ul,
@@ -224,6 +226,7 @@
 .chr_activity,
 .chr_icon,
 .chr_bg,
+.chr_yearitems,
 .chr_libelle,
 .chr_duration,
 .chr_timing,
@@ -236,6 +239,12 @@
 .chl_dep{
 	background-color: #C1C1C1;
 	cursor: default;
+}
+[id*="activity"]{
+	display: none;
+}
+[id*="activity"]:target{
+	display: block;
 }
 .chr_bg{
 	display: flex;
@@ -289,9 +298,10 @@
 #chr_years{
 	display: flex;
 	justify-content: center;
-	align-items: stretch;
+	align-items: flex-start;
 }
-.year_label{background-color: hsl(150, 31%, 35%) !important;
+.year_label{
+	background-color: hsl(150, 31%, 35%) !important;
 	background-repeat: repeat-x;
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#abd3bf", endColorstr="#3d7459");
 	background-image: -khtml-gradient(linear, left top, left bottom, from(#abd3bf), to(#3d7459));
@@ -309,6 +319,13 @@
 	font-size: 26px;
 	color: #002A3A;
 	text-shadow: 1px 1px 3px #009DA5;
+}
+[class*="year_item"]{
+	background-color: #C1C1C1;
+	cursor: crosshair;
+	border: 1px inset #333;
+	border-top-left-radius: 25px;
+	border-bottom-right-radius: 25px;
 }
 .chr_timing{
 	font-family: "SecretTypewriter";

@@ -56,10 +56,10 @@ Palette
 }
 @font-face{
 	font-family: "Desyrel";
-	src: url('fonts/desyrel_regular/desyrel-webfont.eot') format('eot'),
-		 url('fonts/desyrel_regular/desyrel-webfont.woff') format('woff'),
-		 url('fonts/desyrel_regular/desyrel-webfont.ttf') format('truetype'),
-		 url('fonts/desyrel_regular/desyrel-webfont.svg') format('svg');
+	src: url('../fonts/desyrel_regular/desyrel-webfont.eot') format('eot'),
+		 url('../fonts/desyrel_regular/desyrel-webfont.woff') format('woff'),
+		 url('../fonts/desyrel_regular/desyrel-webfont.ttf') format('truetype'),
+		 url('../fonts/desyrel_regular/desyrel-webfont.svg') format('svg');
 }
 @font-face{
 	font-family: "District";
