@@ -8,7 +8,7 @@
  *              Contexte :   php 7.3
  *              Fonction :   construction de la présentation chronologique
  *   Date mise en oeuvre :   07/12/2019
- *          Dernière MàJ :   07/12/2019
+ *          Dernière MàJ :   08/12/2019
  *******************************************************************************************************/
 /***** *****    INCLUSIONS ET SCRIPTS   ***** *****/
 
@@ -37,6 +37,7 @@ function fctDisplayChrono(){
       <div class="col-xl-10 col-lg-10" id="chr_content">
 <?php
     for ( $i = 1 ; $i <= $intActivities ; $i++){
+        $arrLocations = fct_SelectAllLocationsFromActivity($arrActivities[$i]['Id']);
         if ( $arrActivities[$i]['Type'] != "Professionnelle" ){
             $strOwnerLabel = "Organisme";
             $strAltLogo = "Logo de l'organisme : " . $arrActivities[$i]['Owner'];
@@ -97,11 +98,11 @@ function fctDisplayChrono(){
 <!-- -- -- Timing -- -- -->
         <div class="col-xl-2 col-lg-2 chr_timing">
          <div class="row">
-          <div class="col-xl-12 col-lg-12"><?php echo $strDateEnd;?></div>
-          <div class="col-xl-12 col-lg-12">
+          <div class="col-xl-12 col-lg-12 chr_date"><?php echo $strDateEnd;?></div>
+          <div class="col-xl-12 col-lg-12 chr_arrow">
            <img class="img-fluid" src="../media/pics/arrow.png">
           </div>
-          <div class="col-xl-12 col-lg-12"><?php echo $datStart->format("d/m/Y");?></div>
+          <div class="col-xl-12 col-lg-12 chr_date"><?php echo $datStart->format("d/m/Y");?></div>
          </div>
         </div>
 <!-- -- -- Informations détaillées -- -- -->
@@ -113,6 +114,30 @@ function fctDisplayChrono(){
           </div>
          </div>
         </div>
+<?php
+        if ( is_array($arrLocations) ){
+            $intLocations = count($arrLocations);
+            if ( $intLocations > 1 ){
+                $strLocLabel = "Lieux d'exercice";
+            } else {
+                $strLocLabel = "Lieu d'exercice";
+            }
+?>
+<!-- -- -- Localisations -- -- -->
+        <div class="offset-xl-1 col-xl-10 offset-lg-1 col-lg-10 chr_locations">
+         <div class="row chrl_infos">
+          <label class="col-xl-12 col-lg-12"><?php echo $strLocLabel;?></label>
+<?php       for ( $j = 1 ; $j <= $intLocations ; $j++ ){
+                $strAddress = $arrLocations[$j]['Address'] . ", " . $arrLocations[$j]['City'] . " " . $arrLocations[$j]['Postal'];
+?>
+          <div class="col-xl-7 col-lg-7 chl_name" title="<?php echo $strAddress;?>"><?php echo $arrLocations[$j]['Name'];?></div>
+          <div class="col-xl-4 col-lg-4 chl_city"><?php echo $arrLocations[$j]['City'];?></div>
+          <div class="col-xl-1 col-lg-1 chl_dep"><?php echo $arrLocations[$j]['Department'];?></div>
+<?php       }?>
+         </div>
+        </div>
+<?php
+        }?>
        </div>
 <?php
     }?>

@@ -7,7 +7,7 @@
  * 				Contexte :	 Css 3.0
  *              Fonction :   page de styles d'affichage CSS (candidat.php)
  *   Date mise en oeuvre :   13/11/2019
- *          Dernière MàJ :   07/12/2019
+ *          Dernière MàJ :   08/12/2019
  *************************************************************************************************/
 /***** ***** ***** Containers ***** ***** *****/
 
@@ -211,7 +211,6 @@
 /***** ***** ***** Section Chronologie ***** ***** *****/
 #chrono,
 .chr_content,
-.chr_icon,
 .chr_infoscell,
 .chr_infos,
 .chr_infos ul,
@@ -223,10 +222,18 @@
 .chr_mainrow,
 .chr_titles,
 .chr_activity,
+.chr_icon,
 .chr_bg,
 .chr_libelle,
 .chr_duration,
-.chr_timing{
+.chr_timing,
+.chr_date,
+.chr_arrow,
+.chr_locations,
+.chrl_infos,
+.chl_name,
+.chl_city,
+.chl_dep{
 	background-color: #C1C1C1;
 	cursor: default;
 }
@@ -308,6 +315,13 @@
 	font-size: 20px;
 	color: #000;
 	text-shadow: 1px 1px 3px #777;
+	height: max-content;
+}
+.chr_date{
+	height: 50px;
+}
+.chr_arrow{
+	height: max-content;
 }
 .chr_titles,.chr_libelle{
 	display: flex;
@@ -355,6 +369,23 @@
 	margin-left: 20px;
 	padding-left: 20px;
 	font-size: 22px;
+}
+.chl_name,.chl_city,.chl_dep{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.chl_name{
+	font-family: "Belligerent";
+	font-size: 24px;
+}
+.chl_city{
+	font-family: "District";
+	font-size: 18px;
+}
+.chl_dep{
+	font-family: "SecretTypewriter";
+	font-size: 26px;
 }
 /***** ***** ***** Section Thématique ***** ***** *****/
 #thema{
