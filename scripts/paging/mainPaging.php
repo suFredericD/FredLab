@@ -29,4 +29,4 @@ function fct_BuildHeaderGraph($objPageInfos){?>
        </table>
       </header>
 <?php
-}?>
+}

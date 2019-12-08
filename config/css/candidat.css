@@ -208,8 +208,153 @@
 	text-shadow: 2px 2px 4px #037A63;
 	letter-spacing: 0.09em;
 }
+/***** ***** ***** Section Chronologie ***** ***** *****/
+#chrono,
+.chr_content,
+.chr_icon,
+.chr_infoscell,
+.chr_infos,
+.chr_infos ul,
+.details{
+	background-color: #777;
+	cursor: default;
+}
+#chrono label,
+.chr_mainrow,
+.chr_titles,
+.chr_activity,
+.chr_bg,
+.chr_libelle,
+.chr_duration,
+.chr_timing{
+	background-color: #C1C1C1;
+	cursor: default;
+}
+.chr_bg{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.chr_bg a{
+	padding-left: 20px;
+	padding-right: 20px;
+	border-top-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+	font-family: "Desyrel";
+	font-size: 26px;
+}
+.chr_bg a:hover{
+	background-color: #777;
+	color: #046259;
+	text-decoration: none;
+	text-shadow: 2px 2px 5px #000;
+}
+#chrono{
+	border-top-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+	box-shadow: 2px 2px 4px #009DA5;
+}
+.chr_mainrow{
+	margin: 10px 20px 10px 20px;
+	padding: 10px 30px 10px 4px;
+	border: 1px inset #002A3A;
+	border-top-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+}
 #chrono div{
-	background-color: #BBBBBB;
+	margin-top: 4px;
+	margin-bottom: 4px;
+	border-top-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+}
+.chr_activity,.chr_infoscell{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-top-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+	box-shadow: 2px 2px 4px #002A3A;
+}
+.chr_duration{
+	font-family: "Desyrel";
+	font-size: 20px;
+	letter-spacing: 0.06em;
+}
+#chr_years{
+	display: flex;
+	justify-content: center;
+	align-items: stretch;
+}
+.year_label{background-color: hsl(150, 31%, 35%) !important;
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#abd3bf", endColorstr="#3d7459");
+	background-image: -khtml-gradient(linear, left top, left bottom, from(#abd3bf), to(#3d7459));
+	background-image: -moz-linear-gradient(top, #abd3bf, #3d7459);
+	background-image: -ms-linear-gradient(top, #abd3bf, #3d7459);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #abd3bf), color-stop(100%, #3d7459));
+	background-image: -webkit-linear-gradient(top, #abd3bf, #3d7459);
+	background-image: -o-linear-gradient(top, #abd3bf, #3d7459);
+	background-image: linear-gradient(#abd3bf, #3d7459);
+	border-color: #3d7459 #3d7459 hsl(150, 31%, 25%);
+	-webkit-font-smoothing: antialiased;
+	border: 1px inset #002A3A;
+	box-shadow: 1px 1px 3px #333;
+	font-family: "Desyrel";
+	font-size: 26px;
+	color: #002A3A;
+	text-shadow: 1px 1px 3px #009DA5;
+}
+.chr_timing{
+	font-family: "SecretTypewriter";
+	font-size: 20px;
+	color: #000;
+	text-shadow: 1px 1px 3px #777;
+}
+.chr_titles,.chr_libelle{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "Desyrel";
+	letter-spacing: 0.06em;
+	color: #002A3A;
+	text-shadow: 1px 1px 3px #333;
+}
+.chr_titles{
+	font-size: 34px;
+}
+.chr_libelle{
+	font-size: 30px;
+}
+.chr_icon{
+	font-size: 32px;
+	color: #002A3A;
+}
+#chrono label,.details{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	-webkit-font-smoothing: antialiased;
+	border-top-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+	font-family: "ImpactLabel";
+	font-size: 26px;
+	letter-spacing: 0.010em;
+	color: #002A3A;
+	text-shadow: 2px 2px 4px #C1C1C1;
+}
+.chr_infos ul,.chr_infos ul li{
+	font-family: "Desyrel";
+	letter-spacing: 0.06em;
+	color: #002A3A;
+	text-shadow: 1px 1px 3px #333;
+}
+.chr_infos ul{
+	font-size: 30px;
+	text-align: left;
+}
+.chr_infos ul li{
+	margin-left: 20px;
+	padding-left: 20px;
+	font-size: 22px;
 }
 /***** ***** ***** Section Thématique ***** ***** *****/
 #thema{

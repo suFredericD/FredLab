@@ -17,6 +17,7 @@ require("../scripts/classes/page.php");                     // Script de défini
 require("../scripts/paging/htmlPaging.php");                // Script de construction de la structure html des pages
 require("../scripts/paging/mainPaging.php");                // Script de construction des composants graphiques
 require("../scripts/paging/menus.php");                     // Script de construction des menus
+require("../scripts/paging/chrono.php");                    // Script de construction de la présentation chronologique
 /***** *****    DECLARATIONS   ***** *****/
 $datNow = new DateTime();                                           // Timer de génération de la page (start)
 $intMinInMilli = intval( ( $datNow->format("i") * 60 ) * 1000 );    // Minutes en millisecondes
@@ -216,9 +217,9 @@ fct_BuildHorizontalMenu($objPageInfos);
    </div>
 <!-- -- -- -- -- Rubrique "Chronologie" -- -- -- -- -->
    <div class="col-lg-12-hidden col-md-12 col-sm-12 col-xs-12" id="chrono">
-	<div class="row">
-	 
-    </div>
+<?php // Fonction de construction de la chronologie
+fctDisplayChrono();
+?>	 
    </div><hr class="body-hr">
 <!-- -- -- -- -- Rubrique "Curricula vitae" -- -- -- -- -->
    <div class="row" id="cv">

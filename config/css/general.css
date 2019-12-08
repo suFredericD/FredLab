@@ -502,7 +502,7 @@ address{
 }
 /***** ***** ***** Classes Bootstrap - mofifications ***** ***** *****/
 [class*="col-"]{
-	background-color: #000018;
+	background-color: #777;
 	line-height: 40px;
 	text-align: center;
 	vertical-align: middle;
