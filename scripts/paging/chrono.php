@@ -145,7 +145,7 @@ function fctDisplayChrono(){
          <div class="row chrl_infos">
           <label class="col-xl-12 col-lg-12"><?php echo $strLocLabel;?></label>
 <?php       for ( $j = 1 ; $j <= $intLocations ; $j++ ){
-                $strAddress = $arrLocations[$j]['Address'] . ", " . $arrLocations[$j]['City'] . " " . $arrLocations[$j]['Postal'];
+                $strAddress = $arrLocations[$j]['Address'] . ", " . $arrLocations[$j]['Postal'] . " " . $arrLocations[$j]['City'];
 ?>
           <div class="col-xl-7 col-lg-7 chl_name" title="<?php echo $strAddress;?>"><?php echo $arrLocations[$j]['Name'];?></div>
           <div class="col-xl-4 col-lg-4 chl_city"><?php echo $arrLocations[$j]['City'];?></div>

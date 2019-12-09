@@ -24,6 +24,10 @@ const arrBtnYears = document.getElementsByClassName('year_label');
 // Div d'affichage de la mini-chronologie
 const rowChronoLine = document.getElementById('small_chrono');
 
+const intLastYear = arrBtnYears[0].id;
+const intFirstYearId = arrBtnYears.length - 1;
+const intFirstYear = arrBtnYears[intFirstYearId].id;
+const intYearsNumber = intLastYear - intFirstYear;
 /* *** *** *** VARIABLES *** *** *** */
 var bolDisplay = false;         // Controller d'affichage blank/full
 var intDivLastClick = 0;        // Dernière année cliquée
@@ -40,17 +44,12 @@ for ( i = 0 ; i < intDivYearItems ; i++ ){
 //  Paramètres          : none
 //  Valeur de retour    : none
 function displaySmallChrono(){
-    const intLastYear = arrBtnYears[0].id;
-    const intFirstYearId = arrBtnYears.length - 1;
-    const intFirstYear = arrBtnYears[intFirstYearId].id;
-    const intYearsNumber = intLastYear - intFirstYear;
     for ( i = intLastYear ; i >= intFirstYear ; i-- ) {
         var divChronoItem = document.createElement('div');
         divChronoItem.id = i;
         divChronoItem.className = "col-xl-1 col-lg-1 chh_year"
         divChronoItem.innerHTML = i;
         rowChronoLine.appendChild(divChronoItem);
-        
     }
     rowChronoLine.style.display = "flex";
 }
@@ -63,6 +62,7 @@ function fctDisplayFiles(intYear){
     var strDivYearId = "div" + intYear;                         // Id de l'élément cliqué
     var divYear = document.getElementById(strDivYearId);        // Bloc de l'élément cliqué
     var arrYearItems = divYear.getElementsByTagName('div');     // Tableau des labels d'activités
+
     if ( bolDisplay != true ) {         // Controller : affichage blank
         for ( i = 0 ; i < arrYearItems.length ; i++ ){
             arrYearItems[i].style.display = "flex";
@@ -126,15 +126,15 @@ function fctShowYearItems(intYear){
 //            intButton : id du bouton survolé
 //  Valeur de retour    : none
 function fctHideYearItems(intYear){
-    // Masquage de tous les labels
-    for ( i = 0 ; i < intDivYearItems ; i++ ){
-        arrDivYearItems[i].style.display = "none";
+    // Réinitialisation labels des années
+    for ( i = 0 ; i < arrBtnYears.length ; i++ ){
+        arrBtnYears[i].className = "offset-xl-1 col-xl-10 offset-lg-1 col-lg-10 year_label";
     }
 }
 
 /* *** *** *** APPELS DE FONCTIONS *** *** *** */
 displaySmallChrono();                                                   // Construction de la mini chronologie
-var arrDivSmallChrono = rowChronoLine.getElementsByTagName('div');      // Boutons de la mini chronologie
+var arrDivSmallChrono = rowChronoLine.getElementsByTagName('div');      // Tableau des boutons de la mini chronologie
 
 /* *** *** *** EVENT LISTENERS *** *** *** */
 // Souris clic des labels des années section gauche : affichage des fiches
@@ -161,7 +161,7 @@ for ( i = 0 ; i < arrBtnYears.length ; i++ ){
         fctHideYearItems(e.target.id);
     });
 }
-// Souris survol des labels des années section gauche : affichage des labels
+// Souris survol des labels des années section mini chrono : affichage des labels
 for ( i = 0 ; i < arrBtnYears.length ; i++ ){
     arrDivSmallChrono[i].addEventListener("mouseenter", function(e){
         fctShowYearItems(e.target.id);

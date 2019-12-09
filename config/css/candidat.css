@@ -111,7 +111,8 @@
 	border-left: 1px outset #000000;
 	border-top: 1px outset #000000;
 	border-bottom: 1px inset #444444;
-	border-radius: 25px;
+	border-top-left-radius: 25px;
+	border-bottom-right-radius: 25px;
 	transition-property: all;
 	transition-duration: 1250ms;
 	-o-transition-property: all;
@@ -239,6 +240,16 @@
 	background-color: #C1C1C1;
 	cursor: default;
 }
+.chl_name{
+	transition-property: all;
+	transition-duration: 1250ms;
+	-o-transition-property: all;
+	-o-transition-duration: 1250ms;
+	-moz-transition-property: all;
+	-moz-transition-duration: 1250ms;
+	-webkit-transition-property: all;
+	-webkit-transition-duration: 1250ms;
+}
 [id*="activity"]{
 	display: none;
 }
@@ -277,14 +288,14 @@
 	border-bottom-right-radius: 25px;
 }
 #chrono div{
-	margin-top: 4px;
-	margin-bottom: 4px;
+	margin-top: 2px;
+	margin-bottom: 2px;
 	border-top-left-radius: 25px;
 	border-bottom-right-radius: 25px;
 }
 .chr_activity,.chr_infoscell{
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-top: 4px;
+	padding-bottom: 4px;
 	border-top-left-radius: 25px;
 	border-bottom-right-radius: 25px;
 	box-shadow: 2px 2px 4px #002A3A;
@@ -311,7 +322,10 @@
 	border-top-left-radius: 25px;
 	border-bottom-right-radius: 25px;
 }
-.chh_year{
+.chh_year{display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 30px;
 	background-color: hsl(150, 31%, 35%) !important;
 	background-repeat: repeat-x;
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#abd3bf", endColorstr="#3d7459");
@@ -360,7 +374,7 @@
 	border-bottom-right-radius: 25px;
 }
 .year_label{
-	height: 30px;
+	height: 22px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -379,7 +393,7 @@
 	border: 1px inset #002A3A;
 	box-shadow: 1px 1px 3px #333;
 	font-family: "Vanilla";
-	font-size: 20px;
+	font-size: 16px;
 	letter-spacing: 0.09em;
 	color: #002A3A;
 	text-shadow: 1px 1px 3px #009DA5;
@@ -391,6 +405,29 @@
 	-moz-transition-duration: 1250ms;
 	-webkit-transition-property: all;
 	-webkit-transition-duration: 1250ms;
+}
+.year_label-on{
+	background-color: hsl(150, 7%, 24%) !important;
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#bdc6c1", endColorstr="#38413d");
+	background-image: -khtml-gradient(linear, left top, left bottom, from(#bdc6c1), to(#38413d));
+	background-image: -moz-linear-gradient(top, #bdc6c1, #38413d);
+	background-image: -ms-linear-gradient(top, #bdc6c1, #38413d);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #bdc6c1), color-stop(100%, #38413d));
+	background-image: -webkit-linear-gradient(top, #bdc6c1, #38413d);
+	background-image: -o-linear-gradient(top, #bdc6c1, #38413d);
+	background-image: linear-gradient(#bdc6c1, #38413d);
+	border-color: #38413d #38413d hsl(150, 7%, 11%);
+	color: #000 !important;
+	text-shadow: 2px 2px 4px #002A3A;
+	font-family: "Vanilla";
+	font-size: 20px;
+	letter-spacing: 0.09em;
+	-webkit-font-smoothing: antialiased;
+	border: 1px inset #002A3A;
+	box-shadow: 1px 1px 3px #333;
+	border-top-left-radius: 25px;
+	border-bottom-right-radius: 25px;
 }
 [class*="year_item"]{
 	opacity: 0.8;
@@ -428,7 +465,7 @@
 	text-shadow: 1px 1px 3px #333;
 }
 .chr_titles{
-	font-size: 34px;
+	font-size: 30px;
 }
 .chr_libelle{
 	font-size: 30px;
@@ -454,7 +491,7 @@
 	font-family: "Desyrel";
 	letter-spacing: 0.06em;
 	color: #002A3A;
-	text-shadow: 1px 1px 3px #333;
+	text-shadow: 1px 1px 3px #555;
 }
 .chr_infos ul{
 	font-size: 30px;
@@ -474,6 +511,11 @@
 	font-family: "Belligerent";
 	font-size: 24px;
 }
+.chl_name:hover{
+	background-color: #002A3A;
+	color: #C1C1C1;
+	text-shadow: 1px 1px 3px #009DA5;
+}
 .chl_city{
 	font-family: "District";
 	font-size: 18px;
@@ -484,7 +526,7 @@
 }
 /***** ***** ***** Section Thématique ***** ***** *****/
 #thema{
-	opacity: 1;
+	opacity: 0.9;
 	background-color: #C1C1C1;
 	padding: 15px 50px 30px 50px;
 	border: 1px inset #002A3A;
