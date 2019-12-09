@@ -269,6 +269,41 @@
 	border-bottom-right-radius: 25px;
 	box-shadow: 2px 2px 4px #009DA5;
 }
+.chr_mainrow{
+	margin: 10px 20px 10px 20px;
+	padding: 10px 30px 10px 4px;
+	border: 1px inset #002A3A;
+	border-top-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+}
+#chrono div{
+	margin-top: 4px;
+	margin-bottom: 4px;
+	border-top-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+}
+.chr_activity,.chr_infoscell{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-top-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+	box-shadow: 2px 2px 4px #002A3A;
+}
+.chr_duration{
+	font-family: "Desyrel";
+	font-size: 20px;
+	letter-spacing: 0.06em;
+}
+#chr_years{
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+.chr_yearitems{
+	background-image: url('../../media/pics/sablier_verre02.jpg');
+	background-size: contain;
+	cursor: default;
+}
 #small_chrono{
 	display: flex;
 	justify-content: center;
@@ -324,41 +359,6 @@
 	border-top-left-radius: 25px;
 	border-bottom-right-radius: 25px;
 }
-.chr_mainrow{
-	margin: 10px 20px 10px 20px;
-	padding: 10px 30px 10px 4px;
-	border: 1px inset #002A3A;
-	border-top-left-radius: 25px;
-	border-bottom-right-radius: 25px;
-}
-#chrono div{
-	margin-top: 4px;
-	margin-bottom: 4px;
-	border-top-left-radius: 25px;
-	border-bottom-right-radius: 25px;
-}
-.chr_activity,.chr_infoscell{
-	padding-top: 10px;
-	padding-bottom: 10px;
-	border-top-left-radius: 25px;
-	border-bottom-right-radius: 25px;
-	box-shadow: 2px 2px 4px #002A3A;
-}
-.chr_duration{
-	font-family: "Desyrel";
-	font-size: 20px;
-	letter-spacing: 0.06em;
-}
-#chr_years{
-	display: flex;
-	justify-content: center;
-	align-items: flex-start;
-}
-.chr_yearitems{
-	background-image: url('../../media/pics/sablier_verre02.jpg');
-	background-size: contain;
-	cursor: default;
-}
 .year_label{
 	height: 30px;
 	display: flex;
@@ -399,6 +399,11 @@
 	border: 1px inset #333;
 	border-top-left-radius: 25px;
 	border-bottom-right-radius: 25px;
+	font-family: "Desyrel";
+	font-size: 20px;
+	letter-spacing: 0.05em;
+	color: #002A3A;
+	text-shadow: 1px 1px 3px #009DA5;
 }
 .chr_timing{
 	font-family: "SecretTypewriter";

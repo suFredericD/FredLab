@@ -10,23 +10,30 @@
  *   Date mise en oeuvre :   08/12/2019
  *          Dernière MàJ :   09/12/2019
  *********************************************************************************************/
-/* *** *** *** DECLARATIONS *** *** *** */
+/* *** *** *** CONSTANTES *** *** *** */
 // Section d'affichage des informations
-const secMainDislay = document.getElementById('chr_content');
+const secMainDislay = document.getElementById('chr_content');   // Section de travail
+// Tableau des fiches d'activité
 const arrDivFiles = secMainDislay.getElementsByClassName('row chr_mainrow');
-const intDivFiles = arrDivFiles.length;
+const intDivFiles = arrDivFiles.length;                         // Nombre de fiches d'activité
+// Tableau des labels d'activité
 const arrDivYearItems = document.getElementsByClassName('col-xl-12 col-lg-12 year_item');
-const intDivYearItems = arrDivYearItems.length;
-    // Masquage de tous les labels
-    for ( i = 0 ; i < intDivYearItems ; i++ ){
-        arrDivYearItems[i].style.display = "none";
-    }
+const intDivYearItems = arrDivYearItems.length;                 // Nombre de labels d'activité
 // Tableau des boutons des années
 const arrBtnYears = document.getElementsByClassName('year_label');
 // Div d'affichage de la mini-chronologie
 const rowChronoLine = document.getElementById('small_chrono');
 
-var bolDisplay = false;
+/* *** *** *** VARIABLES *** *** *** */
+var bolDisplay = false;         // Controller d'affichage blank/full
+var intDivLastClick = 0;        // Dernière année cliquée
+
+/* *** *** *** INITIALISATIONS *** *** *** */
+// Masquage de tous les labels
+for ( i = 0 ; i < intDivYearItems ; i++ ){
+    arrDivYearItems[i].style.display = "none";
+}
+
 /* *** *** *** FONCTIONS *** *** *** */
 //  Fonction de construction de la mini chronologie
 //  EvenListener        : none
@@ -53,20 +60,10 @@ function displaySmallChrono(){
 //            intButton : id du bouton cliqué
 //  Valeur de retour    : none
 function fctDisplayFiles(intYear){
-    var strDivYearId = "div" + intYear;
-    var divYear = document.getElementById(strDivYearId);
-    var arrYearItems = divYear.getElementsByTagName('div');
-    // Masquage de toutes les fiches
-    for ( i = 1 ; i <= intDivFiles ; i++ ){
-        var strActvityId = "activity" + i;
-        var divToHide = document.getElementById(strActvityId);
-        divToHide.style.display = "none";
-    }
-    // Masquage de tous les labels
-    for ( i = 0 ; i < intDivYearItems ; i++ ){
-        arrDivYearItems[i].style.display = "none";
-    }
-    if ( bolDisplay != true ) {
+    var strDivYearId = "div" + intYear;                         // Id de l'élément cliqué
+    var divYear = document.getElementById(strDivYearId);        // Bloc de l'élément cliqué
+    var arrYearItems = divYear.getElementsByTagName('div');     // Tableau des labels d'activités
+    if ( bolDisplay != true ) {         // Controller : affichage blank
         for ( i = 0 ; i < arrYearItems.length ; i++ ){
             arrYearItems[i].style.display = "flex";
         }
@@ -78,8 +75,32 @@ function fctDisplayFiles(intYear){
             divToDisplay.style.display = "flex";
         }
         bolDisplay = true;
-    } else {
-        bolDisplay = false;
+        intDivLastClick = intYear;
+    } else {                            // Controller : affichage full
+        // Masquage de toutes les fiches
+        for ( i = 1 ; i <= intDivFiles ; i++ ){
+            var strActvityId = "activity" + i;
+            var divToHide = document.getElementById(strActvityId);
+            divToHide.style.display = "none";
+        }
+        // Masquage de tous les labels
+        for ( i = 0 ; i < intDivYearItems ; i++ ){
+            arrDivYearItems[i].style.display = "none";
+        }
+        if ( intDivLastClick != intYear ) {
+            // Affichage des fiches sélectionnées
+            for ( i = 0 ; i < arrYearItems.length ; i++ ){
+                var intItemId = arrYearItems[i].id;
+                var strActvityId = "activity" + intItemId.split("-")[1];
+                var divToDisplay = document.getElementById(strActvityId);
+                divToDisplay.style.display = "flex";
+            }
+            bolDisplay = true;
+            intDivLastClick = intYear;
+        } else {
+            bolDisplay = false;
+            intDivLastClick = 0;
+        }
     }
 }
 //  Fonction d'affichage des labels des années section gauche au survol
@@ -99,16 +120,23 @@ function fctShowYearItems(intYear){
         arrYearItems[i].style.display = "flex";
     }
 }
+//  Fonction de masquage des labels des années section gauche au survol
+//  EvenListener        : mouseout
+//  Paramètres          : none
+//            intButton : id du bouton survolé
+//  Valeur de retour    : none
 function fctHideYearItems(intYear){
     // Masquage de tous les labels
     for ( i = 0 ; i < intDivYearItems ; i++ ){
         arrDivYearItems[i].style.display = "none";
     }
 }
+
 /* *** *** *** APPELS DE FONCTIONS *** *** *** */
-displaySmallChrono();
-/* *** *** *** EVENT LISTENERS *** *** *** */
+displaySmallChrono();                                                   // Construction de la mini chronologie
 var arrDivSmallChrono = rowChronoLine.getElementsByTagName('div');      // Boutons de la mini chronologie
+
+/* *** *** *** EVENT LISTENERS *** *** *** */
 // Souris clic des labels des années section gauche : affichage des fiches
 for ( i = 0 ; i < arrBtnYears.length ; i++ ){
     arrBtnYears[i].addEventListener("click", function(e){
