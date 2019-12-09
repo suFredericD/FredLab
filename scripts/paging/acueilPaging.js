@@ -41,7 +41,8 @@ function fctChangeLabels(intBloc){
         } else {                    // Changement du bloc sélectionné
             lblToChange.className = "col-xl-12 col-lg-12";      // Changement de la classe
             lnkToChange.style.color = "#000";                   // Changement de la couleur
-            lnkToChange.style.borderRadius = "25px";            // Changement de la bordure
+            lnkToChange.style.borderTopLeftRadius = "25px";     // Changement de la bordure
+            lnkToChange.style.borderBottomRightRadius = "25px"; // Changement de la bordure
         }
     }
 }

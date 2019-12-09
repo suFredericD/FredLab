@@ -387,6 +387,8 @@ footer{
 	-webkit-box-shadow: 6px 4px 12px #000000;
 	-moz-box-shadow: 6px 4px 12px #000000;
 	box-shadow: 6px 4px 12px #000000;
+	border-top-left-radius: 25px;
+	border-bottom-right-radius: 25px;
 	border-left: 1px outset #000000;
 	border-top: 1px outset #000000;
 	border-bottom: 1px inset #444444;
@@ -450,9 +452,8 @@ address{
 	color: #333 !important;
 	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.85);
 	-webkit-font-smoothing: antialiased;
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	border-radius: 10px;
+	border-top-left-radius: 25px;
+	border-bottom-right-radius: 25px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -583,12 +584,16 @@ address{
 	margin-top: 20px;
 	padding-top: 10px;
 	margin-bottom: 30px;
+	border-top-left-radius: 25px;
+	border-bottom-right-radius: 25px;
 	-webkit-box-shadow: 6px 4px 12px #000000;
 	-moz-box-shadow: 6px 4px 12px #000000;
 	box-shadow: 6px 4px 12px #000000;
 }
 #secAccueilMain label{
 	background-color: transparent;
+	border-top-left-radius: 25px;
+	border-bottom-right-radius: 25px;
 }
 #secAccueilMain label a{
 	display: flex;
@@ -615,6 +620,8 @@ address{
 	letter-spacing: 0.08em;
 	color: #046259;
 	text-shadow: 2px 2px 5px #000018;
+	border-top-left-radius: 25px;
+	border-bottom-right-radius: 25px;
 	transition-property: all;
 	-moz-transition-property: all;
 	-webkit-transition-property: all;
@@ -643,9 +650,8 @@ address{
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.82);
     -webkit-font-smoothing: antialiased;
 	padding: 15px 50px 5px 50px;
-	-webkit-border-radius: 25px;
-	-moz-border-radius: 25px;
-	border-radius: 25px;
+	border-top-left-radius: 25px;
+	border-bottom-right-radius: 25px;
 	padding-bottom: 40px;
 	margin-bottom: 40px;
 	color: #002A3A;
@@ -665,6 +671,8 @@ address{
 	font-size: 38px;
 	color: #002A3D;
 	text-shadow: 1px 1px 3px #046259;
+	border-top-left-radius: 25px;
+	border-bottom-right-radius: 25px;
 }
 .accRubText{
 	background-color: transparent;
