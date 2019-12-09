@@ -74,6 +74,13 @@ function fctDisplayFiles(intYear){
             var divToDisplay = document.getElementById(strActvityId);
             divToDisplay.style.display = "flex";
         }
+        
+        var divYearTitle = document.createElement('div');
+        divYearTitle.id = "year_title";
+        divYearTitle.className = "col-xl-12 col-lg-12 chi_title";
+        divYearTitle.innerHTML = intYear;
+        rowChronoLine.insertAdjacentElement("afterend", divYearTitle);
+
         bolDisplay = true;
         intDivLastClick = intYear;
     } else {                            // Controller : affichage full
@@ -95,9 +102,11 @@ function fctDisplayFiles(intYear){
                 var divToDisplay = document.getElementById(strActvityId);
                 divToDisplay.style.display = "flex";
             }
+            document.getElementById("year_title").innerHTML = intYear;
             bolDisplay = true;
             intDivLastClick = intYear;
         } else {
+            document.getElementById("year_title").remove();
             bolDisplay = false;
             intDivLastClick = 0;
         }
