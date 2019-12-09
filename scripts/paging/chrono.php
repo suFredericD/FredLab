@@ -25,7 +25,7 @@ function fctDisplayChrono(){
 	 <div class="row">
 <!-- -- -- Section gauche : années -- -- -->
       <div class="col-xl-2 col-lg-2 chr_bg" id="chr_years">
-       <div class="row chr_bg">
+       <div class="row chr_bg" id="chy_container">
 <?php
     for ( $i = $intYearNow ; $i > 1998 ; $i--){
         $arrYearActivities = fct_SelectActivitiesFromYear($i);
@@ -85,6 +85,8 @@ function fctDisplayChrono(){
         }
         $strActivityRowId = "activity" . $arrActivities[$i]['Id'];
 ?>
+<!-- -- -- Mini-chronologie -- -- -->
+       <div class="row" id="small_chrono"></div>
        <div class="row chr_mainrow" id="<?php echo $strActivityRowId;?>">
 <!-- -- -- Type d'activité -- -- -->
         <label class="col-xl-3 col-lg-3">Activité</label>
