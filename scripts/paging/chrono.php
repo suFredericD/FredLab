@@ -29,7 +29,12 @@ function fctDisplayChrono(){
 <?php
     for ( $i = $intYearNow ; $i > 1998 ; $i--){
         $arrYearActivities = fct_SelectActivitiesFromYear($i);
-        $inYearActivities = count($arrYearActivities);
+        if ( is_array($arrYearActivities) ){
+            $inYearActivities = count($arrYearActivities);
+        } else {
+            $inYearActivities = 0;
+        }
+        
         $strYearItemsId = "div" . $i;
 ?>
         <div class="offset-xl-1 col-xl-10 offset-lg-1 col-lg-10 year_label" id="<?php echo $i;?>"><?php echo $i;?></div>

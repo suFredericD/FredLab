@@ -128,6 +128,10 @@ function fctShowYearItems(intYear){
     for ( i = 0 ; i < arrYearItems.length ; i++ ){
         arrYearItems[i].style.display = "flex";
     }
+    var divBubble = document.createElement('div');
+    divBubble.innerHTML = "bleblablable";
+    divBubble.style.position = "absolute";
+    secMainDislay.insertAdjacentElement("afterbegin", divBubble);
 }
 //  Fonction de masquage des labels des années section gauche au survol
 //  EvenListener        : mouseout
