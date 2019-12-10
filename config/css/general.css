@@ -816,6 +816,12 @@ address{
 	.linktotop a{
 		font-size: 16px;
 	}
+	#accWelcome{
+		font-size: 70px;
+	}
+	#accWelcomeSub{
+		font-size: 50px;
+	}
 	#secAccueilMain label a{
 		font-size: 26px;
 	}
@@ -829,6 +835,9 @@ address{
 		height: 128px;
 	}
 	.site-author{
+		font-size: 28px;
+	}
+	#php-version{
 		font-size: 26px;
 	}
 	h1,h1 a{
@@ -841,13 +850,19 @@ address{
 		font-size: 32px;
 	}
 	#navbarFullSite ul li a{
-		font-size: 18px;
+		font-size: 20px;
 	}
 	.linktotop a{
 		font-size: 18px;
 	}
 	#secAccueilMain label a{
 		font-size: 32px;
+	}
+	#accWelcome{
+		font-size: 80px;
+	}
+	#accWelcomeSub{
+		font-size: 60px;
 	}
 	#acc_welcometext{
 		background-color: hsl(153, 33%, 29%) !important;
@@ -862,6 +877,10 @@ address{
 		background-image: linear-gradient(#5fae8b, #31624c);
 		border-color: #31624c #31624c hsl(153, 33%, 23%);
 		-webkit-font-smoothing: antialiased;
+		font-size: 20px;
+	}
+	#acc_welcometext a{
+		font-size: 24px;
 	}
 	#accCandidat,#accCoding{
 		background-color: hsl(96, 0%, 20%) !important;
