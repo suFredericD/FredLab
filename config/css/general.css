@@ -41,6 +41,13 @@ Palette
 		 url('../fonts/3dumb_regular/3Dumb-webfont.svg') format('svg');
 }
 @font-face{
+	font-family: "Acme";
+	src: url('../fonts/acme_regular/Acme-Regular-webfont.eot') format('eot'),
+		 url('../fonts/acme_regular/Acme-Regular-webfont.woff') format('woff'),
+		 url('../fonts/acme_regular/Acme-Regular-webfont.ttf') format('truetype'),
+		 url('../fonts/acme_regular/Acme-Regular-webfont.svg') format('svg');
+}
+@font-face{
 	font-family: "Alphaecho";
 	src: url('../fonts/alphaecho_regular/alpha_echo-webfont.eot') format('eot'),
 		 url('../fonts/alphaecho_regular/alpha_echo-webfont.woff') format('woff'),
@@ -594,7 +601,7 @@ address{
 	letter-spacing: 0.05em;
 }
 #acc_welcometext{
-	opacity: 0.8;
+	opacity: 0.85;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -613,7 +620,7 @@ address{
 	letter-spacing: 0.09em;
 	text-align: center;
 	color: #002A3D !important;
-	text-shadow: 2px 2px 4px #000;
+	text-shadow: 1px 1px 3px #000;
 }
 #acc_welcometext p::first-letter{
 	font-family: "Vanilla";
@@ -716,8 +723,9 @@ address{
 	align-items: center;
 	background-color: transparent;
 	padding-top: 20px;
-	font-family: "Belligerent";
-	font-size: 24px;
+	font-family: "OldStamper";
+	font-size: 28px;
+	letter-spacing: 0.055em;
 	color: #002A3D;
 	text-shadow: 1px 1px 3px #046259;
 	border-top-left-radius: 25px;
@@ -729,8 +737,11 @@ address{
 	padding-left: 10px;
 	padding-right: 10px;
 	text-align: justify;
-	font-family: "Belligerent";
-	font-size: 18px;
+	font-family: "Acme";
+	font-size: 22px;
+	letter-spacing: 0.045em;
+	color: #002A3D;
+	text-shadow: 1px 1px 3px #999;
 }
 .accRubText::first-letter{
 	margin: 0px 3px 0px 0px;
@@ -738,13 +749,20 @@ address{
 	color: #002A3D;
 	text-shadow: 2px 2px 4px #037A63;
 }
+#accParcours{
+	display: inline-block;
+	text-align: center;
+}
 .accRubText a,#accParcours a{
 	background-color: transparent;
 	font-family: inherit;
 	font-size: inherit;
-	color: inherit;
-	text-shadow: inherit;
+	color: #037A63;
+	text-shadow: 1px 1px 2px #000;
 	text-decoration: underline;
+}
+#accParcours a{
+	letter-spacing: 0.05em;
 }
 .accRubText a:hover,#accParcours a:hover{
 	color: #009DA5;
@@ -926,6 +944,12 @@ address{
 	}
 	.linktotop a{
 		font-size: 20px;
+	}
+	.accRubTitle{
+		font-size: 30px;
+	}
+	.accRubText{
+		font-size: 24px;
 	}
 }
 /* Extra large devices (large desktops)

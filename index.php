@@ -74,17 +74,16 @@ fct_BuildHorizontalMenu($objPageInfos);
           <img class="img-fluid img-thumbnail" src="media/pics/fred.jpg" alt="Photo de moi" title="Oui c'est moi :)">
          </div>
          <p class=" col-xl-8 accRubTitle">Toutes les rubriques de ma candidature virtuelle</p>
-         <hr class="body-hr">
          <p class="accRubText" style="margin-top:30px;">Principalement à destination des <strong title="Oui oui, c'est vous... :o)">recruteurs</strong>,&nbsp;
           <a href="pages/candidat.php" title="Accéder à l'espace candidat">l'espace candidat</a>&nbsp;
           consiste en une synthèse de <strong>mon parcours</strong> et de <strong>mes compétences</strong>&nbsp;
           au travers de quelques pages et scripts associés que <strong title="C'est Bibi ^^">j'ai entièrement mis au point</strong>.</p>
 <!-- -- -- -- Présentation du parcours -- -- -- -->
          <div class="offset-xl-1 col-xl-9 subLabel">Mon parcours</div>
-         <p class="accRubText" id="accParcours">Découvrez un parcours <strong>riche</strong> et <strong>atypique</strong>, et consultez-le <strong>comme vous le souhaitez</strong> :&nbsp;
-          <a href="pages/candidat.php#bref" title="Pour les plus pressés ...">en bref</a>,
-          <a href="pages/candidat.php#thema" title="Parce que j'ai plusieurs cordes à mon arc...">thématique</a> ou
-          <a href="pages/candidat.php#chrono" title="&laquo; La chronologie (aussi annale, chronique) est une science de dates et d'événements historiques ou succession d'événements dans le temps. Considérée comme une discipline auxiliaire de l’histoire, la chronologie est une manière d'appréhender l'histoire par les événements.&raquo;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&mdash; source : Wikipedia">chronologique</a>.
+         <p class="accRubText" id="accParcours">Découvrez un parcours <strong>riche</strong> et <strong>atypique</strong>, et consultez-le <strong>comme vous le souhaitez</strong> :<br>
+          <a href="pages/candidat.php#bref" title="Pour les plus pressés ...">En bref</a>,
+          <a href="pages/candidat.php#thema" title="Parce que j'ai plusieurs cordes à mon arc...">Thématique</a> ou
+          <a href="pages/candidat.php#chrono" title="&laquo; La chronologie (aussi annale, chronique) est une science de dates et d'événements historiques ou succession d'événements dans le temps. Considérée comme une discipline auxiliaire de l’histoire, la chronologie est une manière d'appréhender l'histoire par les événements.&raquo;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&mdash; source : Wikipedia">Chronologique</a>.
          </p>
 <!-- -- -- -- Présentation des cv -- -- -- -->
          <div class="offset-xl-1 col-xl-9 subLabel">Curriculum vitae</div>
