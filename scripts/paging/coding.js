@@ -1,8 +1,8 @@
 /*********************************************************************************************
- *   FredLab Projetcs Incorporated
+ *   	FredLab Projects Incorporated
  *                Projet :   FredLab
  *                  Page :   coding.js
- *                Chemin :   http://127.0.0.1:8080/gAm3/scripts/paging/coding.js
+ *                Chemin :   http://www.fred-lab.com/scripts/paging/coding.js
  *        Page référente :   index.php
  *                  Type :   page de script
  *              Contexte :   JavaScript

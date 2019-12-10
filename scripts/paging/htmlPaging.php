@@ -1,14 +1,14 @@
 <?php
 /*******************************************************************************************************
- *   FredLab Projetcs Incorporated
+ *   FredLab Projects Incorporated
  *                Projet :   FredLab
  *                  Page :   htmlPaging.php
- *                Chemin :   http://127.0.0.1:8080/FredLab/scripts/paging/htmlPaging.php
+ *                Chemin :   http://www.fred-lab.com/scripts/paging/htmlPaging.php
  *                  Type :   page de script
  *              Contexte :   php 7.3
  *              Fonction :   construction de la structure des pages html
  *   Date mise en oeuvre :   24/10/2019
- *          Dernière MàJ :   15/11/2019
+ *          Dernière MàJ :   10/12/2019
  *******************************************************************************************************/
 /***** *****    INCLUSIONS ET SCRIPTS   ***** *****/
 
@@ -50,8 +50,11 @@ function fct_BuildHeaderHtml($objPageInfos){
      <link href="<?php echo $objPageInfos->getCssPath().$GLOBALS['strMainCss'];?>" rel="stylesheet" type="text/css"><!-- Page css principale -->
 <?php   if ( $objPageInfos->getName() != "index.php" ) {?>
      <link href="<?php echo $objPageInfos->getCssPath().$strFileCss;?>" rel="stylesheet" type="text/css"><!-- Css associée à la page courante-->
+<?php     if ( $objPageInfos->getName() === "coding.php" ) {?>
+     <link href="<?php echo $objPageInfos->getCssPath();?>fonts.css" rel="stylesheet" type="text/css"><!-- Css associée à la page courante-->
+<?php     }?>     
 <?php   }?>
-     <link rel="shortcut icon" type="image/x-icon" href="<?php echo $objPageInfos->getMediaPath() . "icons/" . $GLOBALS['strSiteIcon'];?>"><!-- Icône du site -->
+     <link rel="icon" type="image/icon" href="<?php echo $objPageInfos->getMediaPath() . "icons/" . $GLOBALS['strSiteIcon'];?>"><!-- Icône du site -->
      <link href="<?php echo $objPageInfos->getConfigPath().$GLOBALS['strFontAwesomeCss'];?>" rel="stylesheet"><!-- Script css FontAwesome -->
     </head>
 <!-- -- -- -- -- -- -- -- -- -- -- -- -- - -- -- -- -->

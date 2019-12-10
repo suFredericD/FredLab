@@ -1,0 +1,1453 @@
+/*********************************************************************************************
+ *   	FredLab Projects Incorporated
+ *                Projet :   FredLab
+ *                  Page :   fonts.css
+ *                Chemin :   http://www.fred-lab.com/config/css/fonts.css
+ *                  Type :   page de modules
+ *              Fonction :   page de styles d'affichage CSS
+ *   Date mise en oeuvre :   04/08/2019
+ *          Dernière MàJ :   10/12/2019
+ *********************************************************************************************/
+#haut{
+	color: #5E99F9;
+	font-size: 38px;
+	font-weight: bold;
+	margin: 10px 0px 20px 0px;
+	text-shadow: 0px 0px 9px #2980B9;
+}
+#haut:hover{
+	color: #5E99F9;
+	font-size: 38px;
+	font-weight: bold;
+	text-shadow: 0px 0px 9px #2980B9;
+}
+.font-label{
+	font-size: 30px;
+	font-weight: bold;
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	margin: 5px 0px 5px 0px;
+	-webkit-box-shadow: 0px 0px 10px 0px #2980B9;
+	-moz-box-shadow: 0px 0px 10px 0px #2980B9;
+    box-shadow: 0px 0px 10px 0px #2980B9;
+	text-shadow: 0px 0px 16px #2F80BF;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+}
+.font-dld{
+	font-size: 18px;
+	font-weight: bold;
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	margin: 5px 0px 5px 0px;
+	border: none;
+}
+.font-dld a{
+	transition-property: color, text-shadow;
+	transition-duration: 1850ms;
+	color: #CCCCCC;
+	text-shadow: 1px 1px 10px #2187C8;
+}
+.font-dld a:hover{
+	color: #2187C8;
+	text-shadow: 2px 2px 6px #CCCCCC;
+}
+.border-custom{
+	-webkit-box-shadow: 0px 0px 10px 0px #2980B9;
+	-moz-box-shadow: 0px 0px 10px 0px #2980B9;
+    box-shadow: 0px 0px 10px 0px #2980B9;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;	
+}
+.font-page-explain{
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	text-shadow: 1px 1px 10px #2187C8;
+	-webkit-box-shadow: 0px 0px 10px 0px #2980B9;
+	-moz-box-shadow: 0px 0px 10px 0px #2980B9;
+    box-shadow: 0px 0px 10px 0px #2980B9;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;	
+	border: none;
+}
+.page-explain-label{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;	
+	border: none;
+}
+.page-explain-label p{
+	padding: 10px 0px 10px 0px;
+	font-family: "3Dumb";
+	font-weight: bold;
+	font-size: 26px;
+	text-shadow: none;
+	letter-spacing: 0.1em;
+}
+.page-explain-a{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.page-explain-a a{
+	transition-property: color,text-shadow,font-weight;
+	transition-duration: 2250ms;
+	font-family: "WalkwayBlack";
+	font-size: 24px;
+	color: #2187C8;
+	text-shadow: 1px 1px 3px #CCCCCC;
+	letter-spacing: 0.1em;
+}
+.page-explain-a a:hover{
+	color: #000018;
+	text-shadow: 2px 2px 4px #2980B9;
+	font-weight: bold;
+}
+.font-explain-label{
+	transition-property: color, text-shadow;
+	transition-duration: 1850ms;
+	background-color: #000018;
+	font-size: 30px;
+	font-weight: bold;
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	margin: 5px 0px 5px 0px;
+	-webkit-box-shadow: 0px 0px 10px 0px #2980B9;
+	-moz-box-shadow: 0px 0px 10px 0px #2980B9;
+    box-shadow: 0px 0px 10px 0px #2980B9;
+	text-shadow: 0px 0px 16px #2F80BF;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+}
+.font-explain-label:hover{
+	color: #1333A4;
+	text-decoration: none;
+	text-shadow: 3px 2px 5px #2F7FC0;
+}
+.font-explain-dld{
+	font-size: 18px;
+	font-weight: bold;
+	color: #CCCCCC;
+	text-shadow: 1px 1px 10px #2187C8;
+	-webkit-box-shadow: 0px 0px 10px 0px #2980B9;
+	-moz-box-shadow: 0px 0px 10px 0px #2980B9;
+    box-shadow: 0px 0px 10px 0px #2980B9;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;	
+}
+.font-explain-dld:hover{
+	color: #2187C8;
+	text-shadow: 2px 2px 6px #CCCCCC;
+}
+.font-explain{
+	font-size: 18px;
+	text-shadow: 1px 1px 10px #2187C8;
+	-webkit-box-shadow: 0px 0px 10px 0px #2980B9;
+	-moz-box-shadow: 0px 0px 10px 0px #2980B9;
+    box-shadow: 0px 0px 10px 0px #2980B9;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;	
+	border: none;
+}
+.fa-fred-cstm{
+	text-shadow: 1px 1px 4px #DDDDDD;
+}
+.fonts-supports{
+	text-align: left;
+}
+.fonts-supports li{
+	background-color: transparent;
+}
+.fonts-supports .custom-badge{
+	background-color: #2187C8;
+	color: #000018;
+}
+.page-explain-license{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "3Dumb";
+	font-size: 26px;
+	font-weight: bold;
+	letter-spacing: -0.55em;
+	writing-mode: vertical-rl;
+	text-orientation: upright;
+	text-shadow: none;
+}
+
+/***** ***** Déclarations des polices ***** *****/
+@font-face{
+	font-family: "2Dumb";
+	src: url('../fonts/2dumb_regular/2Dumb-webfont.eot') format('eot'),
+		 url('../fonts/2dumb_regular/2Dumb-webfont.woff') format('woff'),
+		 url('../fonts/2dumb_regular/2Dumb-webfont.ttf') format('truetype'),
+		 url('../fonts/2dumb_regular/2Dumb-webfont.svg') format('svg');
+}
+@font-face{
+	font-family: "3Dumb";
+	src: url('../fonts/3dumb_regular/3Dumb-webfont.eot') format('eot'),
+		 url('../fonts/3dumb_regular/3Dumb-webfont.woff') format('woff'),
+		 url('../fonts/3dumb_regular/3Dumb-webfont.ttf') format('truetype'),
+		 url('../fonts/3dumb_regular/3Dumb-webfont.svg') format('svg');
+}
+@font-face{
+	font-family: "Db20";
+	src: url('../fonts/20db_regular/20db-webfont.eot') format('eot'),
+		 url('../fonts/20db_regular/20db-webfont.woff') format('woff'),
+		 url('../fonts/20db_regular/20db-webfont.ttf') format('truetype'),
+		 url('../fonts/20db_regular/20db-webfont.svg') format('svg');
+}
+@font-face{
+	font-family: "1942Report";
+	src: url('../fonts/1942report_regular/1942-webfont.eot') format('eot'),
+		 url('../fonts/1942report_regular/1942-webfont.woff') format('woff'),
+		 url('../fonts/1942report_regular/1942-webfont.ttf') format('truetype'),
+		 url('../fonts/1942report_regular/1942-webfont.svg') format('svg');
+}
+@font-face{
+	font-family: "Abel";
+	src: url('../fonts/abel_regular/abel-regular-webfont.eot') format('eot'),
+		 url('../fonts/abel_regular/abel-regular-webfont.woff') format('woff'),
+		 url('../fonts/abel_regular/abel-regular-webfont.ttf') format('truetype'),
+		 url('../fonts/abel_regular/abel-regular-webfont.svg') format('svg');
+}
+@font-face{
+	font-family: "Acme";
+	src: url('../fonts/acme_regular/Acme-Regular-webfont.eot') format('eot'),
+		 url('../fonts/acme_regular/Acme-Regular-webfont.woff') format('woff'),
+		 url('../fonts/acme_regular/Acme-Regular-webfont.ttf') format('truetype'),
+		 url('../fonts/acme_regular/Acme-Regular-webfont.svg') format('svg');
+}
+@font-face{
+	font-family: "Airstream";
+	src: url('../fonts/airstream_regular/Airstream-webfont.eot') format('eot'),
+		 url('../fonts/airstream_regular/Airstream-webfont.woff') format('woff'),
+		 url('../fonts/airstream_regular/Airstream-webfont.ttf') format('truetype'),
+		 url('../fonts/airstream_regular/Airstream-webfont.svg') format('svg');
+}
+@font-face{
+	font-family: "Alphaecho";
+	src: url('../fonts/alphaecho_regular/alpha_echo-webfont.eot') format('eot'),
+		 url('../fonts/alphaecho_regular/alpha_echo-webfont.woff') format('woff'),
+		 url('../fonts/alphaecho_regular/alpha_echo-webfont.ttf') format('truetype'),
+		 url('../fonts/alphaecho_regular/alpha_echo-webfont.svg') format('svg');
+}
+@font-face{
+	font-family: "ArmaLiteRifle";
+	src: url('../fonts/armaliterifle_regular/armalite_rifle-webfont.eot') format('eot'),
+		 url('../fonts/armaliterifle_regular/armalite_rifle-webfont.woff') format('woff'),
+		 url('../fonts/armaliterifle_regular/armalite_rifle-webfont.ttf') format('truetype'),
+		 url('../fonts/armaliterifle_regular/armalite_rifle-webfont.svg') format('svg');
+}
+@font-face{
+	font-family: "Banksia";
+	src: url('../fonts/banksia_regular/banksia-webfont.eot') format('eot'),
+		 url('../fonts/banksia_regular/banksia-webfont.woff') format('woff'),
+		 url('../fonts/banksia_regular/banksia-webfont.ttf') format('truetype'),
+		 url('../fonts/banksia_regular/banksia-webfont.svg') format('svg');
+}
+@font-face{
+	font-family: "Belligerent";
+	src: url('../fonts/belligerentmadness_regular/belligerent-webfont.eot') format('eot'),
+		 url('../fonts/belligerentmadness_regular/belligerent-webfont.woff') format('woff'),
+		 url('../fonts/belligerentmadness_regular/belligerent-webfont.ttf') format('truetype'),
+		 url('../fonts/belligerentmadness_regular/belligerent-webfont.svg') format('svg');
+}
+
+@font-face{
+	font-family: "BlockLetterBalPen";
+	src: url('../fonts/bloklettersbalpen/Blokletters-Balpent-webfont.eot') format('eot'),
+		 url('../fonts/bloklettersbalpen/Blokletters-Balpen-webfont.woff') format('woff'),
+		 url('../fonts/bloklettersbalpen/Blokletters-Balpen-webfont.ttf') format('truetype'),
+		 url('../fonts/bloklettersbalpen/Blokletters-Balpen-webfont.svg') format('svg');
+}
+@font-face{
+	font-family: "BrushStrokePlain";
+	src: url('../fonts/brushstrokeplain_plain/BRUSHSTP-webfont.eot') format('eot'),
+		 url('../fonts/brushstrokeplain_plain/BRUSHSTP-webfont.woff') format('woff'),
+		 url('../fonts/brushstrokeplain_plain/BRUSHSTP-webfont.ttf') format('truetype'),
+		 url('../fonts/brushstrokeplain_plain/BRUSHSTP-webfont.svg') format('svg');
+}
+@font-face{
+	font-family: "CalliGraffiti";
+	src: url('../fonts/calligraffiti_regular/Calligraffiti-webfont.eot') format('eot'),
+		 url('../fonts/calligraffiti_regular/Calligraffiti-webfont.woff') format('woff'),
+		 url('../fonts/calligraffiti_regular/Calligraffiti-webfont.ttf') format('truetype'),
+		 url('../fonts/calligraffiti_regular/Calligraffiti-webfont.svg') format('svg');
+}
+@font-face{
+	font-family: "CaptureIt";
+	src: url('../fonts/captureit_regular/Capture_it-webfont.eot') format('eot'),
+		 url('../fonts/captureit_regular/Capture_it-webfont.woff') format('woff'),
+		 url('../fonts/captureit_regular/Capture_it-webfont.ttf') format('truetype'),
+		 url('../fonts/captureit_regular/Capture_it-webfont.svg') format('svg');
+}
+@font-face{
+	font-family: "CaptureItInvert";
+	src: url('../fonts/captureit2_regular/Capture_it_2-webfont.eot') format('eot'),
+		 url('../fonts/captureit2_regular/Capture_it_2-webfont.woff') format('woff'),
+		 url('../fonts/captureit2_regular/Capture_it_2-webfont.ttf') format('truetype'),
+		 url('../fonts/captureit2_regular/Capture_it_2-webfont.svg') format('svg');
+}
+@font-face{
+	font-family: "CarbonType";
+	src: url('../fonts/carbontype_regular/carbontype-webfont.eot') format('eot'),
+		 url('../fonts/carbontype_regular/carbontype-webfont.woff') format('woff'),
+		 url('../fonts/carbontype_regular/carbontype-webfont.ttf') format('truetype'),
+		 url('../fonts/carbontype_regular/carbontype-webfont.svg') format('svg');
+}
+@font-face{
+	font-family: "CaviarDreams";
+	src: url('../fonts/caviardreams_regular/CaviarDreams-webfont.eot') format('eot'),
+		 url('../fonts/caviardreams_regular/CaviarDreams-webfont.woff') format('woff'),
+		 url('../fonts/caviardreams_regular/CaviarDreams-webfont.ttf') format('truetype'),
+		 url('../fonts/caviardreams_regular/CaviarDreams-webfont.svg') format('svg');
+}
+@font-face{
+	font-family: "Destroy";
+	src: url('../fonts/destroy_regular/DESTROY_-webfont.eot') format('eot'),
+		 url('../fonts/destroy_regular/DESTROY_-webfont.woff') format('woff'),
+		 url('../fonts/destroy_regular/DESTROY_-webfont.ttf') format('truetype'),
+		 url('../fonts/destroy_regular/DESTROY_-webfont.svg') format('svg');
+}
+@font-face{
+	font-family: "Desyrel";
+	src: url('../fonts/desyrel_regular/desyrel-webfont.eot') format('eot'),
+		 url('../fonts/desyrel_regular/desyrel-webfont.woff') format('woff'),
+		 url('../fonts/desyrel_regular/desyrel-webfont.ttf') format('truetype'),
+		 url('../fonts/desyrel_regular/desyrel-webfont.svg') format('svg');
+}
+@font-face{
+	font-family: "District";
+	src: url('../fonts/district_regular/District-webfont.eot') format('eot'),
+		 url('../fonts/district_regular/District-webfont.woff') format('woff'),
+		 url('../fonts/district_regular/District-webfont.ttf') format('truetype'),
+		 url('../fonts/district_regular/District-webfont.svg') format('svg');
+}
+@font-face{
+	font-family: "DroidSansMono";
+	src: url('../fonts/droidsansmono_regular/DroidSansMono-webfont.eot') format('eot'),
+		 url('../fonts/droidsansmono_regular/DroidSansMono-webfont.woff') format('woff'),
+		 url('../fonts/droidsansmono_regular/DroidSansMono-webfont.ttf') format('truetype'),
+		 url('../fonts/droidsansmono_regular/DroidSansMono-webfont.svg') format('svg');
+}
+@font-face{
+	font-family: "Eraser";
+	src: url('../fonts/eraser_regular/EraserRegular-webfont.eot') format('eot'),
+		 url('../fonts/eraser_regular/EraserRegular-webfont.woff') format('woff'),
+		 url('../fonts/eraser_regular/EraserRegular-webfont.ttf') format('truetype'),
+		 url('../fonts/eraser_regular/EraserRegular-webfont.svg') format('svg');
+}
+@font-face{
+	font-family: "ImpactLabel";
+	src: url('../fonts/impactlabel_regular/Impact_Label-webfont.eot') format('eot'),
+		 url('../fonts/impactlabel_regular/Impact_Label-webfont.woff') format('woff'),
+		 url('../fonts/impactlabel_regular/Impact_Label-webfont.ttf') format('truetype'),
+		 url('../fonts/impactlabel_regular/Impact_Label-webfont.svg') format('svg');
+}
+@font-face{
+	font-family: "Karatula";
+	src: url('../fonts/karatula_normal/KARAN___-webfont.eot') format('eot'),
+		 url('../fonts/karatula_normal/KARAN___-webfont.woff') format('woff'),
+		 url('../fonts/karatula_normal/KARAN___-webfont.ttf') format('truetype'),
+		 url('../fonts/karatula_normal/KARAN___-webfont.svg') format('svg');
+}
+@font-face{
+	font-family: "KingThingsPrintingKit";
+	src: url('../fonts/kingthingsprintingkit_regular/Kingthings_Printingkit-webfont.eot') format('eot'),
+		 url('../fonts/kingthingsprintingkit_regular/Kingthings_Printingkit-webfont.woff') format('woff'),
+		 url('../fonts/kingthingsprintingkit_regular/Kingthings_Printingkit-webfont.ttf') format('truetype'),
+		 url('../fonts/kingthingsprintingkit_regular/Kingthings_Printingkit-webfont.svg') format('svg');
+}
+@font-face{
+	font-family: "KomikaDisplay";
+	src: url('../fonts/komikadisplay_regular/Komika_display-webfont.eot') format('eot'),
+		 url('../fonts/komikadisplay_regular/Komika_display-webfont.woff') format('woff'),
+		 url('../fonts/komikadisplay_regular/Komika_display-webfont.ttf') format('truetype'),
+		 url('../fonts/komikadisplay_regular/Komika_display-webfont.svg') format('svg');
+}
+@font-face{
+	font-family: "Magenta";
+	src: url('../fonts/magenta_regular/Magenta_BBT-webfont.eot') format('eot'),
+		 url('../fonts/magenta_regular/Magenta_BBT-webfont.woff') format('woff'),
+		 url('../fonts/magenta_regular/Magenta_BBT-webfont.ttf') format('truetype'),
+		 url('../fonts/magenta_regular/Magenta_BBT-webfont.svg') format('svg');
+}
+@font-face{
+	font-family: "MomsTypewriter";
+	src: url('../fonts/mom_regular/Moms_typewriter-webfont.eot') format('eot'),
+		 url('../fonts/mom_regular/Moms_typewriter-webfont.woff') format('woff'),
+		 url('../fonts/mom_regular/Moms_typewriter-webfont.ttf') format('truetype'),
+		 url('../fonts/mom_regular/Moms_typewriter-webfont.svg') format('svg');
+}
+@font-face{
+	font-family: "NewCicleFina";
+	src: url('../fonts/newcicle_fina/New_Cicle_Fina-webfont.eot') format('eot'),
+		 url('../fonts/newcicle_fina/New_Cicle_Fina-webfont.woff') format('woff'),
+		 url('../fonts/newcicle_fina/New_Cicle_Fina-webfont.ttf') format('truetype'),
+		 url('../fonts/newcicle_fina/New_Cicle_Fina-webfont.svg') format('svg');
+}
+@font-face{
+	font-family: "NoteThis";
+	src: url('../fonts/notethis_regular/Note_this-webfont.eot') format('eot'),
+		 url('../fonts/notethis_regular/Note_this-webfont.woff') format('woff'),
+		 url('../fonts/notethis_regular/Note_this-webfont.ttf') format('truetype'),
+		 url('../fonts/notethis_regular/Note_this-webfont.svg') format('svg');
+}
+@font-face{
+	font-family: "OldStamper";
+	src: url('../fonts/oldstamper_regular/old_stamper-webfont.eot') format('eot'),
+		 url('../fonts/oldstamper_regular/old_stamper-webfont.woff') format('woff'),
+		 url('../fonts/oldstamper_regular/old_stamper-webfont.ttf') format('truetype'),
+		 url('../fonts/oldstamper_regular/old_stamper-webfont.svg') format('svg');
+}
+@font-face{
+	font-family: "PaeteRound";
+	src: url('../fonts/paeteround_regular/PAETRRG_-webfont.eot') format('eot'),
+		 url('../fonts/paeteround_regular/PAETRRG_-webfont.woff') format('woff'),
+		 url('../fonts/paeteround_regular/PAETRRG_-webfont.ttf') format('truetype'),
+		 url('../fonts/paeteround_regular/PAETRRG_-webfont.svg') format('svg');
+}
+@font-face{
+	font-family: "Peralta";
+	src: url('../fonts/peralta_regular/peralta-regular-webfont.eot') format('eot'),
+		 url('../fonts/peralta_regular/peralta-regular-webfont.woff') format('woff'),
+		 url('../fonts/peralta_regular/peralta-regular-webfont.ttf') format('truetype'),
+		 url('../fonts/peralta_regular/peralta-regular-webfont.svg') format('svg');
+}
+@font-face{
+	font-family: "Permanentmarker";
+	src: url('../fonts/permanentmarker_regular/PermanentMarker-webfont.eot') format('eot'),
+		 url('../fonts/permanentmarker_regular/PermanentMarker-webfont.woff') format('woff'),
+		 url('../fonts/permanentmarker_regular/PermanentMarker-webfont.ttf') format('truetype'),
+		 url('../fonts/permanentmarker_regular/PermanentMarker-webfont.svg') format('svg');
+}
+@font-face{
+	font-family: "Philosopher";
+	src: url('../fonts/philosopher_regular/Philosopher-Regular-webfont.eot') format('eot'),
+		 url('../fonts/philosopher_regular/Philosopher-Regular-webfont.woff') format('woff'),
+		 url('../fonts/philosopher_regular/Philosopher-Regular-webfont.ttf') format('truetype'),
+		 url('../fonts/philosopher_regular/Philosopher-Regular-webfont.svg') format('svg');
+}
+@font-face{
+	font-family: "PleasantlyPlump";
+	src: url('../fonts/pleasantlyplump_normal/PLUMP-webfont.eot') format('eot'),
+		 url('../fonts/pleasantlyplump_normal/PLUMP-webfont.woff') format('woff'),
+		 url('../fonts/pleasantlyplump_normal/PLUMP-webfont.ttf') format('truetype'),
+		 url('../fonts/pleasantlyplump_normal/PLUMP-webfont.svg') format('svg');
+}
+@font-face{
+	font-family: "RockSalt";
+	src: url('../fonts/rocksalt_regular/RockSalt-webfont.eot') format('eot'),
+		 url('../fonts/rocksalt_regular/RockSalt-webfont.woff') format('woff'),
+		 url('../fonts/rocksalt_regular/RockSalt-webfont.ttf') format('truetype'),
+		 url('../fonts/rocksalt_regular/RockSalt-webfont.svg') format('svg');
+}
+@font-face{
+	font-family: "Salsa";
+	src: url('../fonts/salsa_regular/Salsa-Regular-webfont.eot') format('eot'),
+		 url('../fonts/salsa_regular/Salsa-Regular-webfont.woff') format('woff'),
+		 url('../fonts/salsa_regular/Salsa-Regular-webfont.ttf') format('truetype'),
+		 url('../fonts/salsa_regular/Salsa-Regular-webfont.svg') format('svg');
+}
+@font-face{
+	font-family: "Satisfy";
+	src: url('../fonts/satisfy_regular/Satisfy-Regular-webfont.eot') format('eot'),
+		 url('../fonts/satisfy_regular/Satisfy-Regular-webfont.woff') format('woff'),
+		 url('../fonts/satisfy_regular/Satisfy-Regular-webfont.ttf') format('truetype'),
+		 url('../fonts/satisfy_regular/Satisfy-Regular-webfont.svg') format('svg');
+}
+@font-face{
+	font-family: "SecretTypewriter";
+	src: url('../fonts/secrettypewriter_regular/veteran_typewriter-webfont.eot') format('eot'),
+		 url('../fonts/secrettypewriter_regular/veteran_typewriter-webfont.woff') format('woff'),
+		 url('../fonts/secrettypewriter_regular/veteran_typewriter-webfont.ttf') format('truetype'),
+		 url('../fonts/secrettypewriter_regular/veteran_typewriter-webfont.svg') format('svg');
+}
+@font-face{
+	font-family: "SFArcheryBlack";
+	src: url('../fonts/sfarcheryblack_regular/SF_Archery_Black-webfont.eot') format('eot'),
+		 url('../fonts/sfarcheryblack_regular/SF_Archery_Black-webfont.woff') format('woff'),
+		 url('../fonts/sfarcheryblack_regular/SF_Archery_Black-webfont.ttf') format('truetype'),
+		 url('../fonts/sfarcheryblack_regular/SF_Archery_Black-webfont.svg') format('svg');
+}
+@font-face{
+	font-family: "SFCollegiate";
+	src: url('../fonts/sfcollegiate_regular/SF_Collegiate-webfont.eot') format('eot'),
+		 url('../fonts/sfcollegiate_regular/SF_Collegiate-webfont.woff') format('woff'),
+		 url('../fonts//SF_Colsfcollegiate_regularlegiate-webfont.ttf') format('truetype'),
+		 url('../fonts/sfcollegiate_regular/SF_Collegiate-webfont.svg') format('svg');
+}
+@font-face{
+	font-family: "SFCollegiateSolid";
+	src: url('../fonts/sfcollegiatesolid_regular/SF_Collegiate_Solid-webfont.eot') format('eot'),
+		 url('../fonts/sfcollegiatesolid_regular/SF_Collegiate_Solid-webfont.woff') format('woff'),
+		 url('../fonts/sfcollegiatesolid_regular/SF_Collegiate_Solid-webfont.ttf') format('truetype'),
+		 url('../fonts/sfcollegiatesolid_regular/SF_Collegiate_Solid-webfont.svg') format('svg');
+}
+@font-face{
+	font-family: "SFShaifontai";
+	src: url('../fonts/sfshaifontai_regular/SF_Shai_Fontai-webfont.eot') format('eot'),
+		 url('../fonts/sfshaifontai_regular/SF_Shai_Fontai-webfont.woff') format('woff'),
+		 url('../fonts/sfshaifontai_regular/SF_Shai_Fontai-webfont.ttf') format('truetype'),
+		 url('../fonts/sfshaifontai_regular/SF_Shai_Fontai-webfont.svg') format('svg');
+}
+@font-face{
+	font-family: "SFSlapStickComic";
+	src: url('../fonts/sfslapstickcomic_regular/SF_Slapstick_Comic-webfont.eot') format('eot'),
+		 url('../fonts/sfslapstickcomic_regular/SF_Slapstick_Comic-webfont.woff') format('woff'),
+		 url('../fonts/sfslapstickcomic_regular/SF_Slapstick_Comic-webfont.ttf') format('truetype'),
+		 url('../fonts/sfslapstickcomic_regular/SF_Slapstick_Comic-webfont.svg') format('svg');
+}
+@font-face{
+	font-family: "SFWasabi";
+	src: url('../fonts/sfwasabi_regular/SF_Wasabi-webfont.eot') format('eot'),
+		 url('../fonts/sfwasabi_regular/SF_Wasabi-webfont.woff') format('woff'),
+		 url('../fonts/sfwasabi_regular/SF_Wasabi-webfont.ttf') format('truetype'),
+		 url('../fonts/sfwasabi_regular/SF_Wasabi-webfont.svg') format('svg');
+}
+@font-face{
+	font-family: "SilkScreenBold";
+	src: url('../fonts/silkscreen_bold/slkscrb-webfont.eot') format('eot'),
+		 url('../fonts/silkscreen_bold/slkscrb-webfont.woff') format('woff'),
+		 url('../fonts/silkscreen_bold/slkscrb-webfont.ttf') format('truetype'),
+		 url('../fonts/silkscreen_bold/slkscrb-webfont.svg') format('svg');
+}
+@font-face{
+	font-family: "SilkScreen";
+	src: url('../fonts/silkscreen_normal/slkscr-webfont.eot') format('eot'),
+		 url('../fonts/silkscreen_normal/slkscr-webfont.woff') format('woff'),
+		 url('../fonts/silkscreen_normal/slkscr-webfont.ttf') format('truetype'),
+		 url('../fonts/silkscreen_normal/slkscr-webfont.svg') format('svg');
+}
+@font-face{
+	font-family: "TechniqueBrk";
+	src: url('../fonts/techniquebrk_normal/techniqu-webfont.eot') format('eot'),
+		 url('../fonts/techniquebrk_normal/techniqu-webfont.woff') format('woff'),
+		 url('../fonts/techniquebrk_normal/techniqu-webfont.ttf') format('truetype'),
+		 url('../fonts/techniquebrk_normal/techniqu-webfont.svg') format('svg');
+}
+@font-face{
+	font-family: "Tinet";
+	src: url('../fonts/tinet_regular/TungusFont_Tinet-webfont.eot') format('eot'),
+		 url('../fonts/tinet_regular/TungusFont_Tinet-webfont.woff') format('woff'),
+		 url('../fonts/tinet_regular/TungusFont_Tinet-webfont.ttf') format('truetype'),
+		 url('../fonts/tinet_regular/TungusFont_Tinet-webfont.svg') format('svg');
+}
+@font-face{
+	font-family: "TrueCrime";
+	src: url('../fonts/truecrimes_regular/true-crimes-webfont.eot') format('eot'),
+		 url('../fonts/truecrimes_regular/true-crimes-webfont.woff') format('woff'),
+		 url('../fonts/truecrimes_regular/true-crimes-webfont.ttf') format('truetype'),
+		 url('../fonts/truecrimes_regular/true-crimes-webfont.svg') format('svg');
+}
+@font-face{
+	font-family: "TopSecret";
+	src: url('../fonts/topsecret_bold/Top_Secret-webfont.eot') format('eot'),
+		 url('../fonts/topsecret_bold/Top_Secret-webfont.woff') format('woff'),
+		 url('../fonts/topsecret_bold/Top_Secret-webfont.ttf') format('truetype'),
+		 url('../fonts/topsecret_bold/Top_Secret-webfont.svg') format('svg');
+}
+@font-face{
+	font-family: "UpperEastSide";
+	src: url('../fonts/uppereastside_regular/UpperEastSide-webfont.eot') format('eot'),
+		 url('../fonts/uppereastside_regular/UpperEastSide-webfont.woff') format('woff'),
+		 url('../fonts/uppereastside_regular/UpperEastSide-webfont.ttf') format('truetype'),
+		 url('../fonts/uppereastside_regular/UpperEastSide-webfont.svg') format('svg');
+}
+@font-face{
+	font-family: "Vanilla";
+	src: url('../fonts/vanilla_regular/Vanilla-webfont.eot') format('eot'),
+		 url('../fonts/vanilla_regular/Vanilla-webfont.woff') format('woff'),
+		 url('../fonts/vanilla_regular/Vanilla-webfont.ttf') format('truetype'),
+		 url('../fonts/vanilla_regular/Vanilla-webfont.svg') format('svg');
+}
+@font-face{
+	font-family: "VeraSansMonoRoman";
+	src: url('../fonts/bitstreamverasansmono_roman/VeraMono-webfont.eot') format('eot'),
+		 url('../fonts/bitstreamverasansmono_roman/VeraMono-webfont.woff') format('woff'),
+		 url('../fonts/bitstreamverasansmono_roman/VeraMono-webfont.ttf') format('truetype'),
+		 url('../fonts/bitstreamverasansmono_roman/VeraMono-webfont.svg') format('svg');
+}
+@font-face{
+	font-family: "Virgo";
+	src: url('../fonts/virgo01_regular/virgo-webfont.eot') format('eot'),
+		 url('../fonts/virgo01_regular/virgo-webfont.woff') format('woff'),
+		 url('../fonts/virgo01_regular/virgo-webfont.ttf') format('truetype'),
+		 url('../fonts/virgo01_regular/virgo-webfont.svg') format('svg');
+}
+@font-face{
+	font-family: "WalkwayBlack";
+	src: url('../fonts/walkwayblack_regular/Walkway_Black-webfont.eot') format('eot'),
+		 url('../fonts/walkwayblack_regular/Walkway_Black-webfont.woff') format('woff'),
+		 url('../fonts/walkwayblack_regular/Walkway_Black-webfont.ttf') format('truetype'),
+		 url('../fonts/walkwayblack_regular/Walkway_Black-webfont.svg') format('svg');
+}
+@font-face{
+	font-family: "WalterTurncoat";
+	src: url('../fonts/walterturncoat_regular/walterturncoat-webfont.eot') format('eot'),
+		 url('../fonts/walterturncoat_regular/walterturncoat-webfont.woff') format('woff'),
+		 url('../fonts/walterturncoat_regular/walterturncoat-webfont.ttf') format('truetype'),
+		 url('../fonts/walterturncoat_regular/walterturncoat-webfont.svg') format('svg');
+}
+@font-face{
+	font-family: "WcRoughTrad";
+	src: url('../fonts/wcroughtrad_bold/WC_RoughTrad-webfont.eot') format('eot'),
+		 url('../fonts/wcroughtrad_bold/WC_RoughTrad-webfont.woff') format('woff'),
+		 url('../fonts/wcroughtrad_bold/WC_RoughTrad-webfont.ttf') format('truetype'),
+		 url('../fonts/wcroughtrad_bold/WC_RoughTrad-webfont.svg') format('svg');
+}
+
+/***** ***** Classes d'affichage des polices ***** *****/
+#dumbtwod{
+	color: #000000;
+	background-color: #BBDFFF;
+	font-family: "2Dumb";
+	font-size: 30px;
+	margin: 5px 0px 5px 0px;
+	padding: 5px 0px 10px 0px;
+	-webkit-box-shadow: 0px 0px 10px 0px #2980B9;
+	-moz-box-shadow: 0px 0px 10px 0px #2980B9;
+    box-shadow: 0px 0px 10px 0px #2980B9;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;	
+}
+#dumbthreed{
+	color: #000000;
+	background-color: #BBDFFF;
+	font-family: "3Dumb";
+	font-size: 30px;
+	margin: 5px 0px 5px 0px;
+	padding: 5px 0px 10px 0px;
+	-webkit-box-shadow: 0px 0px 10px 0px #2980B9;
+	-moz-box-shadow: 0px 0px 10px 0px #2980B9;
+    box-shadow: 0px 0px 10px 0px #2980B9;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+}
+#db{
+	color: #000000;
+	background-color: #BBDFFF;
+	font-family: "Db20";
+	font-size: 24px;
+	margin: 5px 0px 5px 0px;
+	padding: 5px 0px 10px 0px;
+	-webkit-box-shadow: 0px 0px 10px 0px #2980B9;
+	-moz-box-shadow: 0px 0px 10px 0px #2980B9;
+    box-shadow: 0px 0px 10px 0px #2980B9;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+}
+#report{
+	color: #000000;
+	background-color: #BBDFFF;
+	font-family: "1942Report";
+	font-size: 30px;
+	margin: 5px 0px 5px 0px;
+	padding: 5px 0px 10px 0px;
+	-webkit-box-shadow: 0px 0px 10px 0px #2980B9;
+	-moz-box-shadow: 0px 0px 10px 0px #2980B9;
+    box-shadow: 0px 0px 10px 0px #2980B9;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+}
+#abel{
+	color: #000000;
+	background-color: #BBDFFF;
+	font-family: "Abel";
+	font-size: 30px;
+	margin: 5px 0px 5px 0px;
+	padding: 5px 0px 10px 0px;
+	-webkit-box-shadow: 0px 0px 10px 0px #2980B9;
+	-moz-box-shadow: 0px 0px 10px 0px #2980B9;
+    box-shadow: 0px 0px 10px 0px #2980B9;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+}
+#acme{
+	color: #000000;
+	background-color: #BBDFFF;
+	font-family: "Acme";
+	font-size: 30px;
+	margin: 5px 0px 5px 0px;
+	padding: 5px 0px 10px 0px;
+	-webkit-box-shadow: 0px 0px 10px 0px #2980B9;
+	-moz-box-shadow: 0px 0px 10px 0px #2980B9;
+    box-shadow: 0px 0px 10px 0px #2980B9;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+}
+#airstream{
+	color: #000000;
+	background-color: #BBDFFF;
+	font-family: "Airstream";
+	font-size: 38px;
+	margin: 5px 0px 5px 0px;
+	padding: 5px 0px 10px 0px;
+	-webkit-box-shadow: 0px 0px 10px 0px #2980B9;
+	-moz-box-shadow: 0px 0px 10px 0px #2980B9;
+    box-shadow: 0px 0px 10px 0px #2980B9;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+}
+#alphaecho{
+	color: #000000;
+	background-color: #BBDFFF;
+	font-family: "Alphaecho";
+	font-size: 30px;
+	margin: 5px 0px 5px 0px;
+	padding: 5px 0px 10px 0px;
+	-webkit-box-shadow: 0px 0px 10px 0px #2980B9;
+	-moz-box-shadow: 0px 0px 10px 0px #2980B9;
+    box-shadow: 0px 0px 10px 0px #2980B9;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+}
+#armaliterifle{
+	color: #000000;
+	background-color: #BBDFFF;
+	font-family: "ArmaLiteRifle";
+	font-size: 30px;
+	margin: 5px 0px 5px 0px;
+	padding: 5px 0px 10px 0px;
+	-webkit-box-shadow: 0px 0px 10px 0px #2980B9;
+	-moz-box-shadow: 0px 0px 10px 0px #2980B9;
+    box-shadow: 0px 0px 10px 0px #2980B9;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+}
+#banksia{
+	color: #000000;
+	background-color: #BBDFFF;
+	font-family: "Banksia";
+	font-size: 30px;
+	margin: 5px 0px 5px 0px;
+	padding: 5px 0px 10px 0px;
+	-webkit-box-shadow: 0px 0px 10px 0px #2980B9;
+	-moz-box-shadow: 0px 0px 10px 0px #2980B9;
+    box-shadow: 0px 0px 10px 0px #2980B9;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+}
+#bloklettersbalpen{
+	color: #000000;
+	background-color: #BBDFFF;
+	font-family: "BlockLetterBalPen";
+	font-size: 28px;
+	margin: 5px 0px 5px 0px;
+	padding: 5px 0px 10px 0px;
+	-webkit-box-shadow: 0px 0px 10px 0px #2980B9;
+	-moz-box-shadow: 0px 0px 10px 0px #2980B9;
+    box-shadow: 0px 0px 10px 0px #2980B9;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+}
+#belligerent{
+	color: #000000;
+	background-color: #BBDFFF;
+	font-family: "Belligerent";
+	font-size: 30px;
+	margin: 5px 0px 5px 0px;
+	padding: 5px 0px 10px 0px;
+	-webkit-box-shadow: 0px 0px 10px 0px #2980B9;
+	-moz-box-shadow: 0px 0px 10px 0px #2980B9;
+    box-shadow: 0px 0px 10px 0px #2980B9;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+}
+#brushstrokeplain{
+	color: #000000;
+	background-color: #BBDFFF;
+	font-family: "BrushStrokePlain";
+	font-size: 30px;
+	margin: 5px 0px 5px 0px;
+	padding: 5px 0px 10px 0px;
+	-webkit-box-shadow: 0px 0px 10px 0px #2980B9;
+	-moz-box-shadow: 0px 0px 10px 0px #2980B9;
+    box-shadow: 0px 0px 10px 0px #2980B9;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+}
+#calligraffiti{
+	color: #000000;
+	background-color: #BBDFFF;
+	font-family: "CalliGraffiti";
+	font-size: 30px;
+	margin: 5px 0px 5px 0px;
+	padding: 5px 0px 10px 0px;
+	-webkit-box-shadow: 0px 0px 10px 0px #2980B9;
+	-moz-box-shadow: 0px 0px 10px 0px #2980B9;
+    box-shadow: 0px 0px 10px 0px #2980B9;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+}
+#captureit{
+	color: #000000;
+	background-color: #BBDFFF;
+	font-family: "CaptureIt";
+	font-size: 30px;
+	margin: 5px 0px 5px 0px;
+	padding: 5px 0px 10px 0px;
+	-webkit-box-shadow: 0px 0px 10px 0px #2980B9;
+	-moz-box-shadow: 0px 0px 10px 0px #2980B9;
+    box-shadow: 0px 0px 10px 0px #2980B9;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+}
+#captureitinvert{
+	color: #000000;
+	background-color: #BBDFFF;
+	font-family: "CaptureItInvert";
+	font-size: 30px;
+	margin: 5px 0px 5px 0px;
+	padding: 5px 0px 10px 0px;
+	-webkit-box-shadow: 0px 0px 10px 0px #2980B9;
+	-moz-box-shadow: 0px 0px 10px 0px #2980B9;
+    box-shadow: 0px 0px 10px 0px #2980B9;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+}
+#carbontype{
+	color: #000000;
+	background-color: #BBDFFF;
+	font-family: "CarbonType";
+	font-size: 30px;
+	margin: 5px 0px 5px 0px;
+	padding: 5px 0px 10px 0px;
+	-webkit-box-shadow: 0px 0px 10px 0px #2980B9;
+	-moz-box-shadow: 0px 0px 10px 0px #2980B9;
+    box-shadow: 0px 0px 10px 0px #2980B9;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+}
+#caviardreams{
+	color: #000000;
+	background-color: #BBDFFF;
+	font-family: "CaviarDreams";
+	font-size: 30px;
+	margin: 5px 0px 5px 0px;
+	padding: 5px 0px 10px 0px;
+	-webkit-box-shadow: 0px 0px 10px 0px #2980B9;
+	-moz-box-shadow: 0px 0px 10px 0px #2980B9;
+    box-shadow: 0px 0px 10px 0px #2980B9;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+}
+#destroy{
+	color: #000000;
+	background-color: #BBDFFF;
+	font-family: "Destroy";
+	font-size: 28px;
+	margin: 5px 0px 5px 0px;
+	padding: 5px 0px 10px 0px;
+	-webkit-box-shadow: 0px 0px 10px 0px #2980B9;
+	-moz-box-shadow: 0px 0px 10px 0px #2980B9;
+    box-shadow: 0px 0px 10px 0px #2980B9;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+}
+#desyrel{
+	color: #000000;
+	background-color: #BBDFFF;
+	font-family: "Desyrel";
+	font-size: 30px;
+	margin: 5px 0px 5px 0px;
+	padding: 5px 0px 10px 0px;
+	-webkit-box-shadow: 0px 0px 10px 0px #2980B9;
+	-moz-box-shadow: 0px 0px 10px 0px #2980B9;
+    box-shadow: 0px 0px 10px 0px #2980B9;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+}
+#district{
+	color: #000000;
+	background-color: #BBDFFF;
+	font-family: "District";
+	font-size: 30px;
+	margin: 5px 0px 5px 0px;
+	padding: 5px 0px 10px 0px;
+	-webkit-box-shadow: 0px 0px 10px 0px #2980B9;
+	-moz-box-shadow: 0px 0px 10px 0px #2980B9;
+    box-shadow: 0px 0px 10px 0px #2980B9;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+}
+#droidsansmono{
+	color: #000000;
+	background-color: #BBDFFF;
+	font-family: "DroidSansMono";
+	font-size: 30px;
+	margin: 5px 0px 5px 0px;
+	padding: 5px 0px 10px 0px;
+	-webkit-box-shadow: 0px 0px 10px 0px #2980B9;
+	-moz-box-shadow: 0px 0px 10px 0px #2980B9;
+    box-shadow: 0px 0px 10px 0px #2980B9;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+}
+#eraser{
+	color: #000000;
+	background-color: #BBDFFF;
+	font-family: "Eraser";
+	font-size: 30px;
+	margin: 5px 0px 5px 0px;
+	padding: 5px 0px 10px 0px;
+	-webkit-box-shadow: 0px 0px 10px 0px #2980B9;
+	-moz-box-shadow: 0px 0px 10px 0px #2980B9;
+    box-shadow: 0px 0px 10px 0px #2980B9;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+}
+#impactlabel{
+	color: #000000;
+	background-color: #BBDFFF;
+	font-family: "ImpactLabel";
+	font-size: 30px;
+	margin: 5px 0px 5px 0px;
+	padding: 5px 0px 10px 0px;
+	-webkit-box-shadow: 0px 0px 10px 0px #2980B9;
+	-moz-box-shadow: 0px 0px 10px 0px #2980B9;
+    box-shadow: 0px 0px 10px 0px #2980B9;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+}
+#karatula{
+	color: #000000;
+	background-color: #BBDFFF;
+	font-family: "Karatula";
+	font-size: 28px;
+	margin: 5px 0px 5px 0px;
+	padding: 5px 0px 10px 0px;
+	-webkit-box-shadow: 0px 0px 10px 0px #2980B9;
+	-moz-box-shadow: 0px 0px 10px 0px #2980B9;
+    box-shadow: 0px 0px 10px 0px #2980B9;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+}
+#kingthingsprintingkit{
+	color: #000000;
+	background-color: #BBDFFF;
+	font-family: "KingThingsPrintingKit";
+	font-size: 30px;
+	margin: 5px 0px 5px 0px;
+	padding: 5px 0px 10px 0px;
+	-webkit-box-shadow: 0px 0px 10px 0px #2980B9;
+	-moz-box-shadow: 0px 0px 10px 0px #2980B9;
+    box-shadow: 0px 0px 10px 0px #2980B9;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+}
+#komika{
+	color: #000000;
+	background-color: #BBDFFF;
+	font-family: "KomikaDisplay";
+	font-size: 30px;
+	margin: 5px 0px 5px 0px;
+	padding: 5px 0px 10px 0px;
+	-webkit-box-shadow: 0px 0px 10px 0px #2980B9;
+	-moz-box-shadow: 0px 0px 10px 0px #2980B9;
+    box-shadow: 0px 0px 10px 0px #2980B9;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+}
+#magenta{
+	color: #000000;
+	background-color: #BBDFFF;
+	font-family: "Magenta";
+	font-size: 44px;
+	margin: 5px 0px 5px 0px;
+	padding: 5px 0px 10px 0px;
+	-webkit-box-shadow: 0px 0px 10px 0px #2980B9;
+	-moz-box-shadow: 0px 0px 10px 0px #2980B9;
+    box-shadow: 0px 0px 10px 0px #2980B9;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+}
+#momstypewriter{
+	color: #000000;
+	background-color: #BBDFFF;
+	font-family: "MomsTypewriter";
+	font-size: 30px;
+	margin: 5px 0px 5px 0px;
+	padding: 5px 0px 10px 0px;
+	-webkit-box-shadow: 0px 0px 10px 0px #2980B9;
+	-moz-box-shadow: 0px 0px 10px 0px #2980B9;
+    box-shadow: 0px 0px 10px 0px #2980B9;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+}
+#newciclefina{
+	color: #000000;
+	background-color: #BBDFFF;
+	font-family: "NewCicleFina";
+	font-size: 32px;
+	margin: 5px 0px 5px 0px;
+	padding: 5px 0px 10px 0px;
+	-webkit-box-shadow: 0px 0px 10px 0px #2980B9;
+	-moz-box-shadow: 0px 0px 10px 0px #2980B9;
+    box-shadow: 0px 0px 10px 0px #2980B9;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+}
+#notethis{
+	color: #000000;
+	background-color: #BBDFFF;
+	font-family: "NoteThis";
+	font-size: 30px;
+	margin: 5px 0px 5px 0px;
+	padding: 5px 0px 10px 0px;
+	-webkit-box-shadow: 0px 0px 10px 0px #2980B9;
+	-moz-box-shadow: 0px 0px 10px 0px #2980B9;
+    box-shadow: 0px 0px 10px 0px #2980B9;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+}
+#oldstamper{
+	color: #000000;
+	background-color: #BBDFFF;
+	font-family: "OldStamper";
+	font-size: 30px;
+	margin: 5px 0px 5px 0px;
+	padding: 5px 0px 10px 0px;
+	-webkit-box-shadow: 0px 0px 10px 0px #2980B9;
+	-moz-box-shadow: 0px 0px 10px 0px #2980B9;
+    box-shadow: 0px 0px 10px 0px #2980B9;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+}
+#paeteround{
+	color: #000000;
+	background-color: #BBDFFF;
+	font-family: "PaeteRound";
+	font-size: 28px;
+	margin: 5px 0px 5px 0px;
+	padding: 5px 0px 10px 0px;
+	-webkit-box-shadow: 0px 0px 10px 0px #2980B9;
+	-moz-box-shadow: 0px 0px 10px 0px #2980B9;
+    box-shadow: 0px 0px 10px 0px #2980B9;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+}
+#peralta{
+	color: #000000;
+	background-color: #BBDFFF;
+	font-family: "Peralta";
+	font-size: 28px;
+	margin: 5px 0px 5px 0px;
+	padding: 5px 0px 10px 0px;
+	-webkit-box-shadow: 0px 0px 10px 0px #2980B9;
+	-moz-box-shadow: 0px 0px 10px 0px #2980B9;
+    box-shadow: 0px 0px 10px 0px #2980B9;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+}
+#permanentmarker{
+	color: #000000;
+	background-color: #BBDFFF;
+	font-family: "Permanentmarker";
+	font-size: 30px;
+	margin: 5px 0px 5px 0px;
+	padding: 5px 0px 10px 0px;
+	-webkit-box-shadow: 0px 0px 10px 0px #2980B9;
+	-moz-box-shadow: 0px 0px 10px 0px #2980B9;
+    box-shadow: 0px 0px 10px 0px #2980B9;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+}
+#philosopher{
+	color: #000000;
+	background-color: #BBDFFF;
+	font-family: "Philosopher";
+	font-size: 30px;
+	margin: 5px 0px 5px 0px;
+	padding: 5px 0px 10px 0px;
+	-webkit-box-shadow: 0px 0px 10px 0px #2980B9;
+	-moz-box-shadow: 0px 0px 10px 0px #2980B9;
+    box-shadow: 0px 0px 10px 0px #2980B9;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+}
+#pleasantlyplump{
+	color: #000000;
+	background-color: #BBDFFF;
+	font-family: "PleasantlyPlump";
+	font-size: 24px;
+	margin: 5px 0px 5px 0px;
+	padding: 5px 0px 10px 0px;
+	-webkit-box-shadow: 0px 0px 10px 0px #2980B9;
+	-moz-box-shadow: 0px 0px 10px 0px #2980B9;
+    box-shadow: 0px 0px 10px 0px #2980B9;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+}
+#rocksalt{
+	color: #000000;
+	background-color: #BBDFFF;
+	font-family: "RockSalt";
+	font-size: 24px;
+	margin: 5px 0px 5px 0px;
+	padding: 5px 0px 10px 0px;
+	-webkit-box-shadow: 0px 0px 10px 0px #2980B9;
+	-moz-box-shadow: 0px 0px 10px 0px #2980B9;
+    box-shadow: 0px 0px 10px 0px #2980B9;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+}
+#salsa{
+	color: #000000;
+	background-color: #BBDFFF;
+	font-family: "Salsa";
+	font-size: 30px;
+	margin: 5px 0px 5px 0px;
+	padding: 5px 0px 10px 0px;
+	-webkit-box-shadow: 0px 0px 10px 0px #2980B9;
+	-moz-box-shadow: 0px 0px 10px 0px #2980B9;
+    box-shadow: 0px 0px 10px 0px #2980B9;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+}
+#satisfy{
+	color: #000000;
+	background-color: #BBDFFF;
+	font-family: "Satisfy";
+	font-size: 30px;
+	margin: 5px 0px 5px 0px;
+	padding: 5px 0px 10px 0px;
+	-webkit-box-shadow: 0px 0px 10px 0px #2980B9;
+	-moz-box-shadow: 0px 0px 10px 0px #2980B9;
+    box-shadow: 0px 0px 10px 0px #2980B9;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+}
+#secrettypewriter{
+	color: #000000;
+	background-color: #BBDFFF;
+	font-family: "SecretTypewriter";
+	font-size: 30px;
+	margin: 5px 0px 5px 0px;
+	padding: 5px 0px 10px 0px;
+	-webkit-box-shadow: 0px 0px 10px 0px #2980B9;
+	-moz-box-shadow: 0px 0px 10px 0px #2980B9;
+    box-shadow: 0px 0px 10px 0px #2980B9;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+}
+#sfarcheryblack{
+	color: #000000;
+	background-color: #BBDFFF;
+	font-family: "SFArcheryBlack";
+	font-size: 30px;
+	margin: 5px 0px 5px 0px;
+	padding: 5px 0px 10px 0px;
+	-webkit-box-shadow: 0px 0px 10px 0px #2980B9;
+	-moz-box-shadow: 0px 0px 10px 0px #2980B9;
+    box-shadow: 0px 0px 10px 0px #2980B9;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+}
+#sfcollegiate{
+	color: #000000;
+	background-color: #BBDFFF;
+	font-family: "SFCollegiate";
+	font-size: 30px;
+	margin: 5px 0px 5px 0px;
+	padding: 5px 0px 10px 0px;
+	-webkit-box-shadow: 0px 0px 10px 0px #2980B9;
+	-moz-box-shadow: 0px 0px 10px 0px #2980B9;
+    box-shadow: 0px 0px 10px 0px #2980B9;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+}
+#sfcollegiatesolid{
+	color: #000000;
+	background-color: #BBDFFF;
+	font-family: "SFCollegiateSolid";
+	font-size: 32px;
+	margin: 5px 0px 5px 0px;
+	padding: 5px 0px 10px 0px;
+	-webkit-box-shadow: 0px 0px 10px 0px #2980B9;
+	-moz-box-shadow: 0px 0px 10px 0px #2980B9;
+    box-shadow: 0px 0px 10px 0px #2980B9;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+}
+#sfshaifontai{
+	color: #000000;
+	background-color: #BBDFFF;
+	font-family: "SFShaifontai";
+	font-size: 44px;
+	margin: 5px 0px 5px 0px;
+	padding: 5px 0px 10px 0px;
+	-webkit-box-shadow: 0px 0px 10px 0px #2980B9;
+	-moz-box-shadow: 0px 0px 10px 0px #2980B9;
+    box-shadow: 0px 0px 10px 0px #2980B9;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+}
+#sfslapstickcomic{
+	color: #000000;
+	background-color: #BBDFFF;
+	font-family: "SFSlapStickComic";
+	font-size: 38px;
+	margin: 5px 0px 5px 0px;
+	padding: 5px 0px 10px 0px;
+	-webkit-box-shadow: 0px 0px 10px 0px #2980B9;
+	-moz-box-shadow: 0px 0px 10px 0px #2980B9;
+    box-shadow: 0px 0px 10px 0px #2980B9;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+}
+#sfwasabi{
+	color: #000000;
+	background-color: #BBDFFF;
+	font-family: "SFWasabi";
+	font-size: 30px;
+	margin: 5px 0px 5px 0px;
+	padding: 5px 0px 10px 0px;
+	-webkit-box-shadow: 0px 0px 10px 0px #2980B9;
+	-moz-box-shadow: 0px 0px 10px 0px #2980B9;
+    box-shadow: 0px 0px 10px 0px #2980B9;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+}
+#silkscreenbold{
+	color: #000000;
+	background-color: #BBDFFF;
+	font-family: "SilkScreenBold";
+	font-size: 30px;
+	margin: 5px 0px 5px 0px;
+	padding: 5px 0px 10px 0px;
+	-webkit-box-shadow: 0px 0px 10px 0px #2980B9;
+	-moz-box-shadow: 0px 0px 10px 0px #2980B9;
+    box-shadow: 0px 0px 10px 0px #2980B9;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+}
+#silkscreen{
+	color: #000000;
+	background-color: #BBDFFF;
+	font-family: "SilkScreen";
+	font-size: 30px;
+	margin: 5px 0px 5px 0px;
+	padding: 5px 0px 10px 0px;
+	-webkit-box-shadow: 0px 0px 10px 0px #2980B9;
+	-moz-box-shadow: 0px 0px 10px 0px #2980B9;
+    box-shadow: 0px 0px 10px 0px #2980B9;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+}
+#techniquebrk{
+	color: #000000;
+	background-color: #BBDFFF;
+	font-family: "TechniqueBrk";
+	font-size: 28px;
+	margin: 5px 0px 5px 0px;
+	padding: 5px 0px 10px 0px;
+	-webkit-box-shadow: 0px 0px 10px 0px #2980B9;
+	-moz-box-shadow: 0px 0px 10px 0px #2980B9;
+    box-shadow: 0px 0px 10px 0px #2980B9;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+}
+#tinet{
+	color: #000000;
+	background-color: #BBDFFF;
+	font-family: "Tinet";
+	font-size: 32px;
+	margin: 5px 0px 5px 0px;
+	padding: 5px 0px 10px 0px;
+	-webkit-box-shadow: 0px 0px 10px 0px #2980B9;
+	-moz-box-shadow: 0px 0px 10px 0px #2980B9;
+    box-shadow: 0px 0px 10px 0px #2980B9;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+}
+#truecrime{
+	color: #000000;
+	background-color: #BBDFFF;
+	font-family: "TrueCrime";
+	font-size: 32px;
+	margin: 5px 0px 5px 0px;
+	padding: 5px 0px 10px 0px;
+	-webkit-box-shadow: 0px 0px 10px 0px #2980B9;
+	-moz-box-shadow: 0px 0px 10px 0px #2980B9;
+    box-shadow: 0px 0px 10px 0px #2980B9;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+}
+#topsecret{
+	color: #000000;
+	background-color: #BBDFFF;
+	font-family: "TopSecret";
+	font-size: 32px;
+	margin: 5px 0px 5px 0px;
+	padding: 5px 0px 10px 0px;
+	-webkit-box-shadow: 0px 0px 10px 0px #2980B9;
+	-moz-box-shadow: 0px 0px 10px 0px #2980B9;
+    box-shadow: 0px 0px 10px 0px #2980B9;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+}
+#uppereastside{
+	color: #000000;
+	background-color: #BBDFFF;
+	font-family: "UpperEastSide";
+	font-size: 48px;
+	margin: 5px 0px 5px 0px;
+	padding: 5px 0px 10px 0px;
+	-webkit-box-shadow: 0px 0px 10px 0px #2980B9;
+	-moz-box-shadow: 0px 0px 10px 0px #2980B9;
+    box-shadow: 0px 0px 10px 0px #2980B9;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+}
+#vanilla{
+	color: #000000;
+	background-color: #BBDFFF;
+	font-family: "Vanilla";
+	font-size: 28px;
+	margin: 5px 0px 5px 0px;
+	padding: 5px 0px 10px 0px;
+	-webkit-box-shadow: 0px 0px 10px 0px #2980B9;
+	-moz-box-shadow: 0px 0px 10px 0px #2980B9;
+    box-shadow: 0px 0px 10px 0px #2980B9;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+}
+#verasansmonoroman{
+	color: #000000;
+	background-color: #BBDFFF;
+	font-family: "VeraSansMonoRoman";
+	font-size: 30px;
+	margin: 5px 0px 5px 0px;
+	padding: 5px 0px 10px 0px;
+	-webkit-box-shadow: 0px 0px 10px 0px #2980B9;
+	-moz-box-shadow: 0px 0px 10px 0px #2980B9;
+    box-shadow: 0px 0px 10px 0px #2980B9;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+}
+#virgo{
+	color: #000000;
+	background-color: #BBDFFF;
+	font-family: "Virgo";
+	font-size: 30px;
+	margin: 5px 0px 5px 0px;
+	padding: 5px 0px 10px 0px;
+	-webkit-box-shadow: 0px 0px 10px 0px #2980B9;
+	-moz-box-shadow: 0px 0px 10px 0px #2980B9;
+    box-shadow: 0px 0px 10px 0px #2980B9;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+}
+#walkwayblack{
+	color: #000000;
+	background-color: #BBDFFF;
+	font-family: "WalkwayBlack";
+	font-size: 30px;
+	margin: 5px 0px 5px 0px;
+	padding: 5px 0px 10px 0px;
+	-webkit-box-shadow: 0px 0px 10px 0px #2980B9;
+	-moz-box-shadow: 0px 0px 10px 0px #2980B9;
+    box-shadow: 0px 0px 10px 0px #2980B9;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+}
+#walterturncoat{
+	color: #000000;
+	background-color: #BBDFFF;
+	font-family: "WalterTurncoat";
+	font-size: 30px;
+	margin: 5px 0px 5px 0px;
+	padding: 5px 0px 10px 0px;
+	-webkit-box-shadow: 0px 0px 10px 0px #2980B9;
+	-moz-box-shadow: 0px 0px 10px 0px #2980B9;
+    box-shadow: 0px 0px 10px 0px #2980B9;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+}
+#wcroughtrad{
+	color: #000000;
+	background-color: #BBDFFF;
+	font-family: "WcRoughTrad";
+	font-size: 30px;
+	margin: 5px 0px 5px 0px;
+	padding: 5px 0px 10px 0px;
+	-webkit-box-shadow: 0px 0px 10px 0px #2980B9;
+	-moz-box-shadow: 0px 0px 10px 0px #2980B9;
+    box-shadow: 0px 0px 10px 0px #2980B9;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+}

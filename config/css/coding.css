@@ -1,8 +1,8 @@
 /*************************************************************************************************
- *   	FredLab Projetcs Incorporated
+ *   	FredLab Projects Incorporated
  *                Projet :   FredLab
  *                  Page :   coding.css
- *                Chemin :   http://127.0.0.1:8080/FredLab/config/css/coding.css
+ *                Chemin :   http://www.fred-lab.com/config/css/coding.css
  *                  Type :   page de modules
  * 				Contexte :	 Css 3.0
  *              Fonction :   page de styles d'affichage CSS (coding.php)
@@ -10,9 +10,74 @@
  *          Dernière MàJ :   10/12/2019
  *************************************************************************************************/
 /***** ***** ***** Containers ***** ***** *****/
-
+#sec_codingmain{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin: 0px 20px 10px 20px;
+    padding-bottom: 10px;
+    border-top-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+}
 /***** ***** ***** Classes et balises ***** ***** *****/
 
+/***** ***** ***** Vue principale ***** ***** *****/
+#cod_toolbox,#cod_ressources,
+.tbx_links,#cod_toolbox a,#cod_ressources a
+{
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+.tbx_links,#cod_toolbox a,#cod_ressources a
+{
+	transition-property: all;
+	transition-duration: 1250ms;
+	-o-transition-property: all;
+	-o-transition-duration: 1250ms;
+	-moz-transition-property: all;
+	-moz-transition-duration: 1250ms;
+	-webkit-transition-property: all;
+	-webkit-transition-duration: 1250ms;
+}
+#sec_codingmain label{
+    background-color: transparent;
+}
+#cod_toolbox,
+#cod_ressources{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 2px outset #002A3A;
+    box-shadow: 2px 2px 4px #037A63;
+}
+#cod_toolbox label,
+#cod_ressources label{
+    font-family: "OldStamper";
+    font-size: 36px;
+    color: #002A3A;
+}
+.tbx_links{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px inset #002A3A;
+}
+#cod_toolbox a,
+#cod_ressources a{
+    padding: 6px 12px 6px 12px;
+    font-family: "Belligerent";
+    font-size: 34px;
+    color: #002A3A;
+}
+.tbx_links:hover{
+    background-color: #555;
+}
+#cod_toolbox a:hover,
+#cod_ressources a:hover{
+    background-color: #333;
+    color: #037A63;
+    text-shadow: 2px 2px 4px #002A3A;;
+}
 /***** ***** ***** ***** ***** ***** ***** ***** *****/
 /* * *** ***** ***** Media queries ***** ***** *** * */
 /***** ***** ***** ***** ***** ***** ***** ***** *****/

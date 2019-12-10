@@ -1,8 +1,8 @@
 /*************************************************************************************************
- *   	FredLab Projetcs Incorporated
+ *   	FredLab Projects Incorporated
  *                Projet :   FredLab
  *                  Page :   candidat.css
- *                Chemin :   http://127.0.0.1:8080/FredLab/config/css/candidat.css
+ *                Chemin :   http://www.fred-lab.com/config/css/candidat.css
  *                  Type :   page de modules
  * 				Contexte :	 Css 3.0
  *              Fonction :   page de styles d'affichage CSS (candidat.php)
@@ -34,9 +34,8 @@
 	background-position-y: bottom;
     background-attachment: auto;
 	padding: 15px 50px 5px 50px;
-	-webkit-border-radius: 25px;
-	-moz-border-radius: 25px;
-	border-radius: 25px;
+	border-top-left-radius: 25px;
+	border-bottom-right-radius: 25px;
 	padding-bottom: 100px;
 	color: #002A3A;
 }

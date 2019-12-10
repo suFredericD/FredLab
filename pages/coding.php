@@ -1,9 +1,9 @@
 <?php
 /*********************************************************************************
- *   FredLab Projetcs Incorporated
+ *   	FredLab Projects Incorporated
  *                Projet :   FredLab
  *                  Page :   coding.php
- *                Chemin :   http://127.0.0.1:8080/FredLab/coding.php
+ *                Chemin :   http://www.fred-lab.com/pages/coding.php
  *                  Type :   page utilisateur
  *              Contexte :   php 7.3
  *              Fonction :   page d'accueil de l'espace codeur
@@ -17,7 +17,7 @@ require("../scripts/classes/page.php");                     // Script de défini
 require("../scripts/paging/htmlPaging.php");                // Script de construction de la structure html des pages
 require("../scripts/paging/mainPaging.php");                // Script de construction des composants graphiques
 require("../scripts/paging/menus.php");                     // Script de construction des menus
-
+require("../scripts/paging/webFonts.php");                  // Script de construction de la vue : webfonts
 /***** *****    DECLARATIONS   ***** *****/
 $datNow = new DateTime();                                           // Timer de génération de la page (start)
 $intMinInMilli = intval( ( $datNow->format("i") * 60 ) * 1000 );    // Minutes en millisecondes
@@ -50,11 +50,27 @@ fct_BuildHeaderGraph($objPageInfos);
 // ***** ***** ***** Menu principal ***** ***** *****
 fct_BuildHorizontalMenu($objPageInfos);
 // ***** ***** ***** Corps du contenu ***** ***** *****
+if ( !isset($_GET['view']) ){
 ?>
-      <section class="row" id="secAccueilTitle">
-      
+<!-- -- -- -- Section : principale -- -- -- -->
+      <section class="row" id="sec_codingmain">
+       <label class="col-xl-12 col-lg-12" for="sec_codingmain"><h1>Espace codeurs</h1></label>
+<!-- -- -- -- Section gauche : la boîte à outils -- -- -- -->
+       <div class="col-xl-5 col-lg-5" id="cod_toolbox">
+        <label class="col-xl-12 col-lg-12" for="cod_toolbox">La ToolBox</label>
+        <div class="offset-xl-1 col-xl-10 offset-lg-1 col-lg-10 tbx_links" id="tbx_webfonts">
+         <a href="coding.php?view=fonts" title="Retrouvez une sélection de fonts pour vos sites...">WebFonts kits</a>
+        </div>
+       </div>
+<!-- -- -- -- Section droite : les ressources-- -- -- -->
+       <div class="offset-xl-1 col-xl-5 offset-lg-1 col-lg-5" id="cod_ressources">
+        <label class="col-xl-12 col-lg-12" for="cod_ressources">Les ressources</label>
+       </div>
       </section>
 <?php
+} elseif ( $_GET['view'] == "fonts" ) {
+    fctDisplayWebFonts($objPageInfos);
+}
 // ***** ***** ***** Footer HTML ***** ***** *****
 fct_BuildFooterHtml($objPageInfos);
 ?>
