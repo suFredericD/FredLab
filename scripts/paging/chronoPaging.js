@@ -8,7 +8,7 @@
  *              Contexte :   JavaScript
  *              Fonction :   script de mise en page et animation de la chronologie
  *   Date mise en oeuvre :   08/12/2019
- *          Dernière MàJ :   09/12/2019
+ *          Dernière MàJ :   10/12/2019
  *********************************************************************************************/
 /* *** *** *** CONSTANTES *** *** *** */
 // Section d'affichage des informations
@@ -62,7 +62,6 @@ function fctDisplayFiles(intYear){
     var strDivYearId = "div" + intYear;                         // Id de l'élément cliqué
     var divYear = document.getElementById(strDivYearId);        // Bloc de l'élément cliqué
     var arrYearItems = divYear.getElementsByTagName('div');     // Tableau des labels d'activités
-
     if ( bolDisplay != true ) {         // Controller : affichage blank
         for ( i = 0 ; i < arrYearItems.length ; i++ ){
             arrYearItems[i].style.display = "flex";
@@ -70,11 +69,11 @@ function fctDisplayFiles(intYear){
         // Affichage des fiches sélectionnées
         for ( i = 0 ; i < arrYearItems.length ; i++ ){
             var intItemId = arrYearItems[i].id;
+            console.log("test : " + intItemId);
             var strActvityId = "activity" + intItemId.split("-")[1];
             var divToDisplay = document.getElementById(strActvityId);
             divToDisplay.style.display = "flex";
         }
-        
         var divYearTitle = document.createElement('div');
         divYearTitle.id = "year_title";
         divYearTitle.className = "col-xl-12 col-lg-12 chi_title";

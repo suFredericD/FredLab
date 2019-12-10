@@ -8,7 +8,7 @@
  *              Contexte :   php 7.3
  *              Fonction :   page d'accueil
  *   Date mise en oeuvre :   24/10/2019
- *          Dernière MàJ :   09/12/2019
+ *          Dernière MàJ :   10/12/2019
  *********************************************************************************/
 /***** *****    INCLUSIONS ET SCRIPTS   ***** *****/
 require("scripts/admin/variables.php");                             // Variables globales du site
@@ -38,7 +38,6 @@ $intFileCount = count($arrFileName)-1;                              // Position 
 $strPageFile = $arrFileName[$intFileCount];                         // Nom du fichier seul
 $objPageInfos = new Page();                                         // Incrémentation de l'objet 'Page'
 $objPageInfos->setName($strPageFile);
-echo $objPageInfos->getCssPath();
 // ***** ***** ***** PAGE HTML   ***** ***** *****
 // ***** ***** ***** En-tête HTML ***** ***** *****
 fct_BuildHeaderHtml($objPageInfos);

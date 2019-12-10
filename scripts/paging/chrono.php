@@ -8,7 +8,7 @@
  *              Contexte :   php 7.3
  *              Fonction :   construction de la présentation chronologique
  *   Date mise en oeuvre :   07/12/2019
- *          Dernière MàJ :   08/12/2019
+ *          Dernière MàJ :   10/12/2019
  *******************************************************************************************************/
 /***** *****    INCLUSIONS ET SCRIPTS   ***** *****/
 
@@ -34,7 +34,6 @@ function fctDisplayChrono(){
         } else {
             $inYearActivities = 0;
         }
-        
         $strYearItemsId = "div" . $i;
 ?>
         <div class="offset-xl-1 col-xl-10 offset-lg-1 col-lg-10 year_label" id="<?php echo $i;?>"><?php echo $i;?></div>
