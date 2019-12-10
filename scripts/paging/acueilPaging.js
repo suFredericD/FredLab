@@ -8,7 +8,7 @@
  *              Contexte :   JavaScript
  *              Fonction :   script de mise en page et animation
  *   Date mise en oeuvre :   14/11/2019
- *          Dernière MàJ :   14/11/2019
+ *          Dernière MàJ :   09/12/2019
  *********************************************************************************************/
 /* *** *** *** DECLARATIONS *** *** *** */
 const secMain = document.getElementById("secAccueilMain");              // Bloc section principale

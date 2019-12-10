@@ -8,7 +8,7 @@
  *              Contexte :   php 7.3
  *              Fonction :   page d'accueil
  *   Date mise en oeuvre :   24/10/2019
- *          Dernière MàJ :   14/11/2019
+ *          Dernière MàJ :   09/12/2019
  *********************************************************************************/
 /***** *****    INCLUSIONS ET SCRIPTS   ***** *****/
 require("scripts/admin/variables.php");                             // Variables globales du site
@@ -54,6 +54,15 @@ fct_BuildHorizontalMenu($objPageInfos);
       </section>
       <hr class="body-hr">
       <section class="row" id="secAccueilMain">
+<!-- -- -- -- Section : accueil présentation -- -- -- -->
+       <article class="offset-xl-1 col-xl-10 offset-lg-1 col-lg-10" id="acc_welcometext">
+        <p>Ici, chaque ligne de code
+           est amoureusement bichonnèe,
+           tapèe <em>à la main</em> par <a href="index.php#accCandidat" title="Voir qui c'est ce gars...">un artisan passioné</a>,
+           à partir de languages <em>rigoureusement sèlectionnès</em>
+           pour vous garantir une expèrience
+           de navigation <em>bio</em> de qualitè supèrieure.</p>
+       </article>
 <!-- -- -- -- Section : Espace candidat -- -- -- -->
        <label class="offset-xl-3 col-xl-6 offset-lg-3 col-lg-6" for="accCandidat">
         <a href="index.php#accCandidat" title="Tout savoir de l'origine de Fred juqu'à nos jours...">
@@ -62,7 +71,7 @@ fct_BuildHorizontalMenu($objPageInfos);
        <div class="col-xl-12-hidden" id="accCandidat">
         <div class="row">
 <!-- -- -- -- Présentation de l'espace candidat -- -- -- -->
-         <div class="col-xl-2 no-bg-no-bd">
+         <div class="col-xl-2 no-bg-no-bd" id="acc_divme">
           <img class="img-fluid img-thumbnail" src="media/pics/fred.jpg" alt="Photo de moi" title="Oui c'est moi :)">
          </div>
          <p class=" col-xl-8 accRubTitle">Toutes les rubriques de ma candidature virtuelle</p>
@@ -97,6 +106,7 @@ fct_BuildHorizontalMenu($objPageInfos);
          </div>
          <p class="col-xl-10 accRubTitle">Toutes les rubriques pour les codeurs</p>
          <hr class="body-hr">
+         <p class="col-xl-10 accRubTitle">Bientôt disponible...</p>
         </div>
        </div>
       </section>

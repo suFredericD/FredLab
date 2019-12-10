@@ -7,7 +7,7 @@
  * 				Contexte :	 Css 3.0
  *              Fonction :   page de styles d'affichage CSS
  *   Date mise en oeuvre :   13/11/2019
- *          Dernière MàJ :   07/12/2019
+ *          Dernière MàJ :   10/12/2019
  *************************************************************************************************/
 /*
 Palette
@@ -26,6 +26,13 @@ Palette
 	border-bottom: 1px inset #444444;
 }
 /***** ***** ***** Webfonts ***** ***** *****/
+@font-face{
+	font-family: "2Dumb";
+	src: url('../fonts/2dumb_regular/2Dumb-webfont.eot') format('eot'),
+		 url('../fonts/2dumb_regular/2Dumb-webfont.woff') format('woff'),
+		 url('../fonts/2dumb_regular/2Dumb-webfont.ttf') format('truetype'),
+		 url('../fonts/2dumb_regular/2Dumb-webfont.svg') format('svg');
+}
 @font-face{
 	font-family: "3Dumb";
 	src: url('../fonts/3dumb_regular/3Dumb-webfont.eot') format('eot'),
@@ -81,6 +88,13 @@ Palette
 		 url('../fonts/magenta_regular/Magenta_BBT-webfont.woff') format('woff'),
 		 url('../fonts/magenta_regular/Magenta_BBT-webfont.ttf') format('truetype'),
 		 url('../fonts/magenta_regular/Magenta_BBT-webfont.svg') format('svg');
+}
+@font-face{
+	font-family: "NoteThis";
+	src: url('../fonts/notethis_regular/Note_this-webfont.eot') format('eot'),
+		 url('../fonts/notethis_regular/Note_this-webfont.woff') format('woff'),
+		 url('../fonts/notethis_regular/Note_this-webfont.ttf') format('truetype'),
+		 url('../fonts/notethis_regular/Note_this-webfont.svg') format('svg');
 }
 @font-face{
 	font-family: "OldStamper";
@@ -540,16 +554,16 @@ address{
 }
 /* * *** ***** ***** Animation des couleurs ***** ***** *** * */
 @keyframes wheelHueGreen{
-    from, to { color: hsl(174, 95%, 10%);}
-    10%      { color: hsl(174, 95%, 14%);}
-    20%      { color: hsl(174, 95%, 18%);}
-    30%      { color: hsl(174, 95%, 22%);}
-    40%      { color: hsl(174, 95%, 26%);}
-    50%      { color: hsl(174, 95%, 30%);}
-    60%      { color: hsl(174, 95%, 26%);}
-    70%      { color: hsl(174, 95%, 22%);}
-    80%      { color: hsl(174, 95%, 18%);}
-    90%      { color: hsl(174, 95%, 14%);}
+    from, to { color: hsl(174, 95%, 30%);}
+    10%      { color: hsl(174, 95%, 26%);}
+    20%      { color: hsl(174, 95%, 22%);}
+    30%      { color: hsl(174, 95%, 18%);}
+    40%      { color: hsl(174, 95%, 14%);}
+    50%      { color: hsl(174, 95%, 18%);}
+    60%      { color: hsl(174, 95%, 22%);}
+    70%      { color: hsl(174, 95%, 26%);}
+    80%      { color: hsl(174, 95%, 30%);}
+    90%      { color: hsl(174, 95%, 34%);}
 }
 .animated-green{
     color: hsl(174, 95%, 10%);
@@ -557,25 +571,69 @@ address{
 }
 /***** ***** ***** Page d'accueil ***** ***** *****/
 #accWelcome,#accWelcomeSub{
+	opacity: 0.9;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	background-color: transparent;
 	font-family: "Magenta";
 	letter-spacing: 0.08em;
-	background-color: transparent;
-	
-	text-shadow: 2px 2px 5px #000;
+	text-shadow: 2px 2px 4px #000;
 }
 #accWelcome{
 	margin-top: 20px;
 	margin-bottom: 10px;
-	font-size: 90px;
+	font-size: 50px;
 }
 #accWelcomeSub{
 	margin-top: 10px;
 	margin-bottom: 20px;
-	font-size: 64px;
+	font-size: 40px;
 	letter-spacing: 0.05em;
+}
+#acc_welcometext{
+	opacity: 0.8;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 0px;
+	margin-bottom: 30px;
+	padding: 20px 20px 20px 20px;
+	background-color: #53966C;
+	border: 3px outset #002A3D;
+	border-top-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+	-webkit-box-shadow: 6px 4px 12px #000;
+	-moz-box-shadow: 6px 4px 12px #000;
+	box-shadow: 6px 4px 12px #000;
+	font-family: "2Dumb";
+	font-size: 16px;
+	letter-spacing: 0.09em;
+	text-align: center;
+	color: #002A3D !important;
+	text-shadow: 2px 2px 4px #000;
+}
+#acc_welcometext p::first-letter{
+	font-family: "Vanilla";
+	font-size: 22px;
+	color: #046259;
+	text-shadow: 3px 3px 4px #000;
+}
+#acc_welcometext em{
+	color: rgb(0, 64, 94);
+	text-shadow: 1px 1px 2px #000;
+}
+#acc_welcometext a{
+	font-family: "NoteThis";
+	font-size: 20px;
+	color: #000;
+	text-shadow: 1px 1px 2px #C1C1C1;
+	text-decoration: underline;
+}
+#acc_welcometext a:hover{
+	text-decoration: none;
+	color: #C1C1C1;
+	text-shadow: 3px 3px 4px #000;
 }
 #secAccueilMain{
 	display: flex;
@@ -599,9 +657,7 @@ address{
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	padding-left: 30px;
+	padding: 10px 0px 10px 30px;
 	background-color: hsl(96, 0%, 20%) !important;
     background-repeat: repeat-x;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b2b2b2", endColorstr="#333333");
@@ -616,9 +672,9 @@ address{
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.82);
     -webkit-font-smoothing: antialiased;
 	font-family: "CaptureIt";
-	font-size: 38px;
+	font-size: 20px;
 	letter-spacing: 0.08em;
-	color: #046259;
+	color: #046259 !important;
 	text-shadow: 2px 2px 5px #000018;
 	border-top-left-radius: 25px;
 	border-bottom-right-radius: 25px;
@@ -633,28 +689,19 @@ address{
 	color: #000018;
 	text-shadow: 2px 2px 5px #046259;
 }
+#acc_divme img{
+	height: 140px;
+}
 /* ** Gestion des blocs ** */
 #accCandidat,#accCoding{
 	opacity: 0.9;
-	background-color: hsl(96, 0%, 20%) !important;
-    background-repeat: repeat-x;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b2b2b2", endColorstr="#333333");
-    background-image: -khtml-gradient(linear, left top, left bottom, from(#b2b2b2), to(#333333));
-    background-image: -moz-linear-gradient(top, #b2b2b2, #333333);
-    background-image: -ms-linear-gradient(top, #b2b2b2, #333333);
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #b2b2b2), color-stop(100%, #333333));
-    background-image: -webkit-linear-gradient(top, #b2b2b2, #333333);
-    background-image: -o-linear-gradient(top, #b2b2b2, #333333);
-    background-image: linear-gradient(#b2b2b2, #333333);
-    border-color: #333333 #333333 hsl(96, 0%, 7.5%);
-    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.82);
-    -webkit-font-smoothing: antialiased;
+	background-color: #999;
 	padding: 15px 50px 5px 50px;
 	border-top-left-radius: 25px;
 	border-bottom-right-radius: 25px;
 	padding-bottom: 40px;
 	margin-bottom: 40px;
-	color: #002A3A;
+	color: #002A3A !important;
 }
 #accCandidat:target,#accCoding:target{
 	display: flex;
@@ -668,7 +715,7 @@ address{
 	background-color: transparent;
 	padding-top: 20px;
 	font-family: "Belligerent";
-	font-size: 38px;
+	font-size: 24px;
 	color: #002A3D;
 	text-shadow: 1px 1px 3px #046259;
 	border-top-left-radius: 25px;
@@ -677,15 +724,15 @@ address{
 .accRubText{
 	background-color: transparent;
 	margin-bottom: 10px;
-	padding-left: 10%;
-	padding-right: 10%;
+	padding-left: 10px;
+	padding-right: 10px;
 	text-align: justify;
 	font-family: "Belligerent";
-	font-size: 24px;
+	font-size: 18px;
 }
 .accRubText::first-letter{
 	margin: 0px 3px 0px 0px;
-	font-size: 32px;
+	font-size: 28px;
 	color: #002A3D;
 	text-shadow: 2px 2px 4px #037A63;
 }
@@ -709,7 +756,7 @@ address{
 	margin-top: 10px;
 	background-color: transparent;
 	font-family: "CaptureIt";
-	font-size: 28px;
+	font-size: 24px;
 	color: #002A3D;
 	text-shadow: 2px 2px 4px #037A63;
 }
@@ -735,6 +782,12 @@ address{
 	}
 	.site-author,.site-powering{
 		font-size: 22px;
+	}
+	#accWelcome{
+		font-size: 50px;
+	}
+	#accWelcomeSub{
+		font-size: 40px;
 	}
 }
 /* *** *** *** Medium devices (tablets, 768px and up) */
@@ -762,6 +815,9 @@ address{
 	}
 	.linktotop a{
 		font-size: 16px;
+	}
+	#secAccueilMain label a{
+		font-size: 26px;
 	}
 }
 /* *** *** *** Large devices (desktops, 992px and up) */
@@ -792,6 +848,35 @@ address{
 	}
 	#secAccueilMain label a{
 		font-size: 32px;
+	}
+	#acc_welcometext{
+		background-color: hsl(153, 33%, 29%) !important;
+		background-repeat: repeat-x;
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5fae8b", endColorstr="#31624c");
+		background-image: -khtml-gradient(linear, left top, left bottom, from(#5fae8b), to(#31624c));
+		background-image: -moz-linear-gradient(top, #5fae8b, #31624c);
+		background-image: -ms-linear-gradient(top, #5fae8b, #31624c);
+		background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #5fae8b), color-stop(100%, #31624c));
+		background-image: -webkit-linear-gradient(top, #5fae8b, #31624c);
+		background-image: -o-linear-gradient(top, #5fae8b, #31624c);
+		background-image: linear-gradient(#5fae8b, #31624c);
+		border-color: #31624c #31624c hsl(153, 33%, 23%);
+		-webkit-font-smoothing: antialiased;
+	}
+	#accCandidat,#accCoding{
+		background-color: hsl(96, 0%, 20%) !important;
+		background-repeat: repeat-x;
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b2b2b2", endColorstr="#333333");
+		background-image: -khtml-gradient(linear, left top, left bottom, from(#b2b2b2), to(#333333));
+		background-image: -moz-linear-gradient(top, #b2b2b2, #333333);
+		background-image: -ms-linear-gradient(top, #b2b2b2, #333333);
+		background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #b2b2b2), color-stop(100%, #333333));
+		background-image: -webkit-linear-gradient(top, #b2b2b2, #333333);
+		background-image: -o-linear-gradient(top, #b2b2b2, #333333);
+		background-image: linear-gradient(#b2b2b2, #333333);
+		border-color: #333333 #333333 hsl(96, 0%, 7.5%);
+		text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.82);
+		-webkit-font-smoothing: antialiased;
 	}
 }
 /* *** *** *** Extra large devices (large desktops, 1200px and up) */
