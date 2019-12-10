@@ -40,12 +40,20 @@ class Page{
 			"index.php" => array(
 				"title" => "FredLab - Accueil",
 				"description" => "Bienvenue",
-				"keywords" => "informaticien, programmeur, projets, programmation, php, javascript")
+				"keywords" => "informaticien, programmeur, projets, programmation, php, javascript, languages"),
+			"candidat.php" => array(
+				"title" => "FredLab - Candidat",
+				"description" => "Bienvenue dans l'espace candidat",
+				"keywords" => "informaticien, programmeur, projets, programmation, php, javascript, languages"),
+			"coding.php" => array(
+				"title" => "FredLab - Codeurs",
+				"description" => "Bienvenue dans l'espace codeur",
+				"keywords" => "informaticien, programmeur, projets, programmation, php, javascript, languages")
 			);
 		$this->setTitle($arrPages[$strNewName]['title']);					// Titre de la page
 		$this->setDescription($arrPages[$strNewName]['description']);		// Rôle de la page
 		$this->setKeywords($arrPages[$strNewName]['keywords']);				// Mots-clés de la page
-		if( $strNewName == "index.php" ){
+		if ( $strNewName == "index.php" ){
 			$this->strPath = "pages/";
 			$this->strIndexPath = "";
 			$this->strMediaPath = $GLOBALS['strMediaPath'];
@@ -54,7 +62,7 @@ class Page{
 			$this->strConfigPath = $GLOBALS['strConfigPath'];
 			$this->strCssPath = $GLOBALS['strCssPath'];
 			$this->strScriptsPath = $GLOBALS['strScriptsPath'];
-		}else{
+		} else {
 			$this->strPath = "";
 			$this->strIndexPath = "../";
 			$this->strMediaPath = "../".$GLOBALS['strMediaPath'];

@@ -8,7 +8,7 @@
  *              Contexte :   php 7.3
  *              Fonction :   construction des menus du site
  *   Date mise en oeuvre :   24/10/2019
- *          Dernière MàJ :   07/12/2019
+ *          Dernière MàJ :   10/12/2019
  *********************************************************************************/
 // Fonction de construction du menu horizontal
 //       Paramètres :
@@ -36,6 +36,7 @@ function fct_BuildHorizontalMenu($objPageInfos){
            <span class="far fa-address-card"></span>&nbsp;&nbsp;Candidat</a>
 	   <div class="dropdown-menu dropdown-menu-right custom-dpdmenu" aria-labelledby="navbarCandidat">
 	    <a class="dropdown-item" href="<?php echo $objPageInfos->getPath();?>candidat.php" title="Accéder à l'espace candidat">Espace candidat</a>
+           <div class="dropdown-divider custom-dpd-divider"></div>
            <a class="dropdown-item" href="<?php echo $objPageInfos->getPath();?>candidat.php#bref" title="Pour les plus pressés ...">En bref</a>
            <a class="dropdown-item" href="<?php echo $objPageInfos->getPath();?>candidat.php#thema" title="Parce que j'ai plusieurs cordes à mon arc...">Thématique</a>
            <a class="dropdown-item" href="<?php echo $objPageInfos->getPath();?>candidat.php#chrono" title="&laquo; La chronologie (aussi annale, chronique) est une science de dates et d'événements historiques ou succession d'événements dans le temps. Considérée comme une discipline auxiliaire de l’histoire, la chronologie est une manière d'appréhender l'histoire par les événements.&raquo;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&mdash; source : Wikipedia">Chronologique</a>
@@ -49,8 +50,8 @@ function fct_BuildHorizontalMenu($objPageInfos){
           <a class="nav-link dropdown-toggle" href="<?php echo $objPageInfos->getPath();?>coding.php" id="navbarCoding" title="Pour les progammeurs" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
            <span class="fa fa-laptop-code"></span>&nbsp;&nbsp;Codeur</a>
 	   <div class="dropdown-menu dropdown-menu-right custom-dpdmenu" aria-labelledby="navbarCoding">
-
-          <div class="dropdown-divider custom-dpd-divider"></div>
+           <a class="dropdown-item" href="<?php echo $objPageInfos->getPath();?>coding.php" title="Accéder à l'espace codeurs...">Espace Codeurs</a>
+           <div class="dropdown-divider custom-dpd-divider"></div>
 
           </div>
          </li>

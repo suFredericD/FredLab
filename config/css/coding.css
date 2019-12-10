@@ -1,0 +1,36 @@
+/*************************************************************************************************
+ *   	FredLab Projetcs Incorporated
+ *                Projet :   FredLab
+ *                  Page :   coding.css
+ *                Chemin :   http://127.0.0.1:8080/FredLab/config/css/coding.css
+ *                  Type :   page de modules
+ * 				Contexte :	 Css 3.0
+ *              Fonction :   page de styles d'affichage CSS (coding.php)
+ *   Date mise en oeuvre :   10/12/2019
+ *          Dernière MàJ :   10/12/2019
+ *************************************************************************************************/
+/***** ***** ***** Containers ***** ***** *****/
+
+/***** ***** ***** Classes et balises ***** ***** *****/
+
+/***** ***** ***** ***** ***** ***** ***** ***** *****/
+/* * *** ***** ***** Media queries ***** ***** *** * */
+/***** ***** ***** ***** ***** ***** ***** ***** *****/
+/* *** *** *** Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+}
+/* *** *** *** Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+/* *** *** *** Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+/* *** *** *** Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
+/* Extra large devices (large desktops)
+   No media query since the extra-large breakpoint has no upper bound on its width */

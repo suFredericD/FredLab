@@ -66,12 +66,14 @@ function fct_BuildFooterHtml($objPageInfos){
 <!-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -->
 <!-- -- -- -- -- -- Fin du contenu -- -- -- -- -- -->
      </section>
-<?php   if ( $objPageInfos->getName() == "index.php" ){?>
+<?php     if ( $objPageInfos->getName() == "index.php" ){?>
      <script src="<?php echo $objPageInfos->getScriptsPath();?>paging/acueilPaging.js"></script><!-- JavaScript : mise en page accueil -->
-<?php   } else if ( $objPageInfos->getName() == "candidat.php" ){?>
+<?php     } else if ( $objPageInfos->getName() == "candidat.php" ){?>
      <script src="<?php echo $objPageInfos->getScriptsPath();?>paging/candidatPaging.js"></script><!-- JavaScript : mise en page candidat -->
      <script src="<?php echo $objPageInfos->getScriptsPath();?>paging/chronoPaging.js"></script><!-- JavaScript : mise en page chronologie -->
-<?php   }?>
+<?php     } else if ( $objPageInfos->getName() == "coding.php" ){?>
+     <script src="<?php echo $objPageInfos->getScriptsPath();?>paging/coding.js"></script><!-- JavaScript : mise en page coding -->
+<?php     }?>
 <!-- -- -- -- Bootstrap Core JavaScript -- -- -- -->
      <script src="<?php echo $GLOBALS['strAjax'];?>"></script><!-- Scripting Ajax -->
      <script src="<?php echo $objPageInfos->getConfigPath().$GLOBALS['strBootStrapJs'];?>"></script><!-- Script js BootStrap -->
