@@ -94,10 +94,10 @@ fct_BuildHorizontalMenu($objPageInfos);
 <!-- -- -- -- -- Certifications -- -- -- -- -->
      <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 theRubText">
       <div class="row">
-       <div class="col-xl-2 col-lg-2 subTitle">
+       <div class="col-xl-2 col-lg-3 subTitle">
         <a href="https://www.openclassrooms.com/fr/" target="_blank"><img class="img-fluid" id="ocrLogo" src="../media/logos/openclassrooms.png"></a>
        </div>
-       <div class="col-xl-10 col-lg-10 subTitle">Mes certifications</div>
+       <div class="col-xl-10 col-lg-9 subTitle">Mes certifications</div>
       </div>
 <?php for ( $i = 1 ; $i <= $intCertifs ;$i++ ) {
          $objDate = new DateTime ($arrCertifs[$i]['Date']);
@@ -107,7 +107,7 @@ fct_BuildHorizontalMenu($objPageInfos);
       <div class="row">
        <div class="col-xl-12 col-lg-12 certifLabel">
         <a href="../docs/ocrCertifs/<?php echo $arrCertifs[$i]['File'];?>" target="_blank" title="<?php echo $strAttributeTitle;?>">
-         <p><?php echo $arrCertifs[$i]['Label'];?></p>
+         <p><span class="fa fa-external-link-alt"></span>&nbsp;<?php echo $arrCertifs[$i]['Label'];?></p>
         </a>
        </div>
       </div>
@@ -120,59 +120,59 @@ fct_BuildHorizontalMenu($objPageInfos);
        <div class="col-xl-12 col-lg-12 subTitle">Mes domaines</div>
       </div>
       <div class="row domRow">
-       <div class="col-xl-2 col-lg-2 domIcon"><span class="fab fa-php fa-2x"></span></div>
-       <div class="col-xl-7 col-lg-7 domName">PHP</div>
-       <div class="col-xl-1 col-lg-1 domVersion">7.3</div>
+       <div class="col-xl-2 col-lg-2 col-md-2 col-sm-3 col-3 domIcon"><span class="fab fa-php fa-2x"></span></div>
+       <div class="col-xl-7 col-lg-7 col-md-7 col-sm-6 col-6 domName">PHP</div>
+       <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-1 domVersion">7.3</div>
       </div>
       <div class="row domRow">
-       <div class="col-xl-2 col-lg-2 domIcon"><span class="fa fa-database fa-2x"></span></div>
-       <div class="col-xl-7 col-lg-7 domName">MySql</div>
-       <div class="col-xl-1 col-lg-1 domVersion">8.0</div>
+       <div class="col-xl-2 col-lg-2 col-md-2 col-sm-3 col-3 domIcon"><span class="fa fa-database fa-2x"></span></div>
+       <div class="col-xl-7 col-lg-7 col-md-7 col-sm-6 col-6 domName">MySql</div>
+       <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-1 domVersion">8.0</div>
       </div>
       <div class="row domRow">
-       <div class="col-xl-2 col-lg-2 domIcon"><span class="fab fa-js fa-2x"></span></div>
-       <div class="col-xl-7 col-lg-7 domName">JavaScript</div>
-       <div class="col-xl-1 col-lg-1 domVersion">ES2015</div>
+       <div class="col-xl-2 col-lg-2 col-md-2 col-sm-3 col-3 domIcon"><span class="fab fa-js fa-2x"></span></div>
+       <div class="col-xl-7 col-lg-7 col-md-7 col-sm-6 col-6 domName">JavaScript</div>
+       <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-1 domVersion">ES2015</div>
       </div>
       <div class="row domRow">
-       <div class="col-xl-2 col-lg-2 domIcon"><span class="fab fa-html5 fa-2x"></span></div>
-       <div class="col-xl-7 col-lg-7 domName">HTML</div>
-       <div class="col-xl-1 col-lg-1 domVersion">5.0</div>
+       <div class="col-xl-2 col-lg-2 col-md-2 col-sm-3 col-3 domIcon"><span class="fab fa-html5 fa-2x"></span></div>
+       <div class="col-xl-7 col-lg-7 col-md-7 col-sm-6 col-6 domName">HTML</div>
+       <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-1 domVersion">5.0</div>
       </div>
       <div class="row domRow">
-       <div class="col-xl-2 col-lg-2 domIcon"><span class="fab fa-css3 fa-2x"></span></div>
-       <div class="col-xl-7 col-lg-7 domName">CSS</div>
-       <div class="col-xl-1 col-lg-1 domVersion">3.0</div>
+       <div class="col-xl-2 col-lg-2 col-md-2 col-sm-3 col-3 domIcon"><span class="fab fa-css3 fa-2x"></span></div>
+       <div class="col-xl-7 col-lg-7 col-md-7 col-sm-6 col-6 domName">CSS</div>
+       <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-1 domVersion">3.0</div>
       </div>
       <div class="row domRow">
-       <div class="col-xl-2 col-lg-2 domIcon"><span class="fab fa-bootstrap fa-2x"></span></div>
-       <div class="col-xl-7 col-lg-7 domName">BootStrap</div>
-       <div class="col-xl-1 col-lg-1 domVersion">4.0</div>
+       <div class="col-xl-2 col-lg-2 col-md-2 col-sm-3 col-3 domIcon"><span class="fab fa-bootstrap fa-2x"></span></div>
+       <div class="col-xl-7 col-lg-7 col-md-7 col-sm-6 col-6 domName">BootStrap</div>
+       <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-1 domVersion">4.0</div>
       </div>
       <div class="row domRow">
-       <div class="col-xl-2 col-lg-2 domIcon"><span class="fab fa-font-awesome fa-2x"></span></div>
-       <div class="col-xl-7 col-lg-7 domName">FontAwesome</div>
-       <div class="col-xl-1 col-lg-1 domVersion">5.11</div>
+       <div class="col-xl-2 col-lg-2 col-md-2 col-sm-3 col-3 domIcon"><span class="fab fa-font-awesome fa-2x"></span></div>
+       <div class="col-xl-7 col-lg-7 col-md-7 col-sm-6 col-6 domName">FontAwesome</div>
+       <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-1 domVersion">5.11</div>
       </div>
       <div class="row domRow">
-       <div class="col-xl-2 col-lg-2 domIcon"><img class="img-fluid" id="jQLogo" src="../media/logos/jQLogo.png"></div>
-       <div class="col-xl-7 col-lg-7 domName">jQuery</div>
-       <div class="col-xl-1 col-lg-1 domVersion">3.4.1</div>
+       <div class="col-xl-2 col-lg-2 col-md-2 col-sm-3 col-3 domIcon"><img class="img-fluid" id="jQLogo" src="../media/logos/jQLogo.png"></div>
+       <div class="col-xl-7 col-lg-7 col-md-7 col-sm-6 col-6 domName">jQuery</div>
+       <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-1 domVersion">3.4.1</div>
       </div>
       <div class="row domRow">
-       <div class="col-xl-2 col-lg-2 domIcon"><span class="fa fa-chart-pie fa-2x"></span></div>
-       <div class="col-xl-7 col-lg-7 domName">jpGraph</div>
-       <div class="col-xl-1 col-lg-1 domVersion">4.2</div>
+       <div class="col-xl-2 col-lg-2 col-md-2 col-sm-3 col-3 domIcon"><span class="fa fa-chart-pie fa-2x"></span></div>
+       <div class="col-xl-7 col-lg-7 col-md-7 col-sm-6 col-6 domName">jpGraph</div>
+       <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-1 domVersion">4.2</div>
       </div>
       <div class="row domRow">
-       <div class="col-xl-2 col-lg-2 domIcon"><span class="fab fa-git-alt fa-2x"></span></div>
-       <div class="col-xl-7 col-lg-7 domName">Git</div>
-       <div class="col-xl-1 col-lg-1 domVersion">2.20</div>
+       <div class="col-xl-2 col-lg-2 col-md-2 col-sm-3 col-3 domIcon"><span class="fab fa-git-alt fa-2x"></span></div>
+       <div class="col-xl-7 col-lg-7 col-md-7 col-sm-6 col-6 domName">Git</div>
+       <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-1 domVersion">2.20</div>
       </div>
       <div class="row domRow">
-       <div class="col-xl-2 col-lg-2 domIcon"><img class="img-fluid" id="vscLogo" src="../media/logos/vscLogo.png"></div>
-       <div class="col-xl-7 col-lg-7 domName">Visual Studio Code</div>
-       <div class="col-xl-1 col-lg-1 domVersion">1.40</div>
+       <div class="col-xl-2 col-lg-2 col-md-2 col-sm-3 col-3 domIcon"><img class="img-fluid" id="vscLogo" src="../media/logos/vscLogo.png"></div>
+       <div class="col-xl-7 col-lg-7 col-md-7 col-sm-6 col-6 domName">Visual Studio Code</div>
+       <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-1 domVersion">1.40</div>
        
       </div>
      </div>

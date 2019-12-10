@@ -7,7 +7,7 @@
  * 				Contexte :	 Css 3.0
  *              Fonction :   page de styles d'affichage CSS (candidat.php)
  *   Date mise en oeuvre :   13/11/2019
- *          Dernière MàJ :   09/12/2019
+ *          Dernière MàJ :   10/12/2019
  *************************************************************************************************/
 /***** ***** ***** Containers ***** ***** *****/
 
@@ -559,8 +559,10 @@
 #thema{
 	opacity: 0.9;
 	background-color: #C1C1C1;
-	padding: 15px 50px 30px 50px;
+	padding: 10px 10px 10px 10px;
 	border: 1px inset #002A3A;
+	border-top-left-radius: 25px;
+	border-bottom-right-radius: 25px;
 	-webkit-box-shadow: 6px 4px 12px #000000;
 	-moz-box-shadow: 6px 4px 12px #000000;
 	box-shadow: 6px 4px 12px #000000;
@@ -569,6 +571,9 @@
 }
 #thema .row,#thema div{
 	background-color: transparent;
+}
+#ocrLogo{
+	height: 80px;
 }
 .theRubTitle{
 	display: flex;
@@ -586,11 +591,6 @@
 	align-items: center;
 	height: 60px;
 }
-.certifDate{
-	font-family: "SecretTypewriter";
-	color: #000;
-	text-shadow: 1px 1px 3px #555;
-}
 .certifLabel{
 	display: flex;
 	justify-content: flex-start;
@@ -601,7 +601,7 @@
 	padding-right: 10px;
 	text-align: justify;
 	font-family: "Belligerent";
-	font-size: 18px;
+	font-size: 14px;
 	letter-spacing: 0.04em;
 	color: #000;
 	text-shadow: 1px 1px 3px #555;
@@ -631,7 +631,7 @@
 }
 /* ** ** ** Bloc Domaines ** ** ** */
 .domRow{
-	margin-top: 6px;
+	margin: 6px 8px 0px 6px;
 	border: 1px inset #555;
 	-webkit-border-radius: 25px;
 	-moz-border-radius: 25px;
@@ -661,13 +661,14 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	font-size: 16px;
 }
 .domName{
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	font-family: "Vanilla";
-	font-size: 24px;
+	font-size: 14px;
 	letter-spacing: 0.02em;
 }
 .domVersion{
@@ -675,14 +676,14 @@
 	justify-content: flex-start;
 	align-items: center;
 	font-family: "SecretTypewriter";
-	font-size: 20px;
+	font-size: 14px;
 	letter-spacing: 0.04em;
 }
 #vscLogo{
 	max-height: 36px;
 }
 #jQLogo{
-	max-height: 32px;
+	max-height: 34px;
 }
 /* ** ** ** Bloc Formation ** ** ** */
 #formationLabel{
@@ -785,6 +786,19 @@
 	.cdtrubtitle a{
 		font-size: 16px;
 	}
+	.subTitle{
+		margin-top: 10px;
+		font-size: 28px;
+	}
+	.certifLabel a{
+		font-size: 18px;
+	}
+	.domIcon,.domName,.domVersion{
+		font-size: 18px;
+	}
+	.itemLabel,.itemText{
+		font-size: 20px;
+	}
 }
 /* *** *** *** Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
@@ -814,6 +828,9 @@
 	.cdtrubtitle-on a{
 		font-size: 29px;
 	}
+	.certifLabel a{
+		font-size: 22px;
+	}
 }
 /* *** *** *** Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
@@ -834,6 +851,12 @@
 		}
 		.cdtrubtitle-on a{
 			font-size: 32px;
+		}
+		.subTitle{
+			font-size: 32px;
+		}
+		.itemLabel,.itemText{
+			font-size: 24px;
 		}
 }
 /* *** *** *** Extra large devices (large desktops, 1200px and up) */
