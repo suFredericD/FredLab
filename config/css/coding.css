@@ -67,7 +67,7 @@
     padding: 6px 12px 6px 12px;
     font-family: "Belligerent";
     font-size: 34px;
-    color: #002A3A;
+    color: #002A3D;
 }
 .tbx_links:hover{
     background-color: #555;
@@ -79,11 +79,15 @@
     text-shadow: 2px 2px 4px #002A3A;;
 }
 /***** ***** ***** Vue : webfonts ***** ***** *****/
-#wft_main,#wft_main article{
+#wft_main,#wft_main article,
+#wft_welcome,#wft_welcome article,#wft_welcome div,
+#wft_welcome label,#wft_welcome ul,#wft_welcome li,
+.page-explain-license,.page-explain-label{
     border-top-left-radius: 25px;
     border-bottom-right-radius: 25px;
+    cursor: default;
 }
-.wft_link,#wft_main a{
+.wft_link,#wft_main a,#wft_welcome li span{
     transition-property: all;
 	transition-duration: 1250ms;
 	-o-transition-property: all;
@@ -97,46 +101,99 @@
     opacity: 0.9;
     background-color: transparent;
 }
-#wft_main article{
+#wft_welcome{
+    background-color: #777;
+    border: 2px inset #002A3D;
+    box-shadow: 1px 1px 2px #000;
+}
+#wft_welcome li{
+    background-color: transparent;
+    border: none;
+}
+#wft_welcome li span{
+    padding: 10px 20px 10px 20px;
+}
+#wft_welcome li span:hover{
+    background-color: #037A63;
+    color: #002A3D;
+}
+#wft_main article,#wft_welcome article,#wft_welcome .row{
     margin: 10px 10px 10px 10px;
+}
+#wft_welcome,#wft_welcome article{
+    margin: 20px 20px 20px 20px;
+}
+#wft_welcome label,.page-explain-label,.page-explain-license{
+    display: flex;
+	justify-content: center;
+    align-items: center;
+    background-color: #C1C1C1;
+    border: 1px inset #002A3D;
+    font-family: "3Dumb";
+    font-weight: bold;
+    text-shadow: none;
+}
+#wft_welcome label{
+    padding-top: 10px;
+    padding-bottom: 10px;
+	font-size: 18px;
+    letter-spacing: 0.05em;
+}
+.page-explain-label{
+	padding: 10px 0px 10px 0px;
+	font-size: 18px;
+	letter-spacing: 0.1em;
+}
+.page-explain-license{
+	font-size: 18px;
+	font-weight: bold;
+	letter-spacing: -0.55em;
+	writing-mode: vertical-rl;
+	text-orientation: upright;
+    border: 1px inset #002A3D;
 }
 .wft_infos,.wft_example{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px inset #002A3A;
+    border: 1px inset #002A3D;
 }
-.wft_infos{
+.wft_infos,.wft_infos .row,.wft_index{
     border-top-left-radius: 25px;
 }
-.badge_custom{
-    background-color: #002A3A;
-    font-size: 28px;
+.badge_custom,.bdg_custitem{
+    background-color: #002A3D;
     color: #037A63;
     text-shadow: 1px 1px 2px #555;
     box-shadow: 1px 1px 2px #037A63;
     border-top-left-radius: 25px;
     border-bottom-right-radius: 25px;
 }
+.badge_custom{
+    font-size: 12px;
+}
+.bdg_custitem{
+    font-size: 6px;
+}
 .wft_index{
     display: flex;
     justify-content: flex-start;
-    align-items: flex-start;
-    height: 80px;
+    align-items: center;
+    height: 60px;
 }
 .wft_name{
     display: flex;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
     font-family: "WalkwayBlack";
-    font-size: 28px;
+    font-size: 18px;
     letter-spacing: 0.05em;
 }
 .wft_link{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 6px 0px 6px 0px;
+    padding: 2px 0px 2px 0px;
     background-color: hsl(96, 0%, 20%) !important;
     background-repeat: repeat-x;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b2b2b2", endColorstr="#333333");
@@ -158,7 +215,7 @@
 }
 #wft_main a{
     font-family: "WalkwayBlack";
-    font-size: 26px;
+    font-size: 14px;
 }
 .wft_link:hover{
     background-color: hsl(0, 0%, 12%) !important;
@@ -185,26 +242,99 @@
     border-bottom-right-radius: 25px;
 }
 .wft_example p{
-    font-size: 24px;
+    font-size: 12px;
+}
+.squirrel_link{
+    display: flex;
+	justify-content: center;
+	align-items: center;
 }
 /***** ***** ***** ***** ***** ***** ***** ***** *****/
 /* * *** ***** ***** Media queries ***** ***** *** * */
 /***** ***** ***** ***** ***** ***** ***** ***** *****/
 /* *** *** *** Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-
+    #wft_welcome label{
+        font-size: 28px;
+    }
+    .page-explain-label,.page-explain-license{
+        font-size: 28px;
+    }
+    .badge_custom{
+        font-size: 28px;
+    }
+    .bdg_custitem{
+        font-size: 14px;
+    }
+    .wft_name{
+        font-size: 26px;
+    }
+    #wft_main a{
+        font-size: 28px;
+    }
+    .wft_example p{
+        font-size: 18px;
+    }
 }
 /* *** *** *** Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-
+    #wft_welcome label{
+        font-size: 28px;
+    }
+    .page-explain-label,.page-explain-license{
+        font-size: 28px;
+    }
+    .badge_custom{
+        font-size: 28px;
+    }
+    .bdg_custitem{
+        font-size: 18px;
+    }
+    #wft_main a{
+        font-size: 28px;
+    }
+    .wft_example p{
+        font-size: 22px;
+    }
 }
 /* *** *** *** Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-
+    #wft_welcome label{
+        font-size: 28px;
+    }
+    .page-explain-label,.page-explain-license{
+        font-size: 28px;
+    }
+    .page-explain-license{
+        padding-bottom: 10px;
+    }
+    .badge_custom{
+        font-size: 28px;
+    }
+    #wft_main a{
+        font-size: 28px;
+    }
+    .wft_example p{
+        font-size: 22px;
+    }
 }
 /* *** *** *** Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-
+    #wft_welcome label{
+        font-size: 28px;
+    }
+    .page-explain-label,.page-explain-license{
+        font-size: 28px;
+    }
+    .badge_custom{
+        font-size: 28px;
+    }
+    #wft_main a{
+        font-size: 28px;
+    }
+    .wft_example p{
+        font-size: 22px;
+    }
 }
 /* Extra large devices (large desktops)
    No media query since the extra-large breakpoint has no upper bound on its width */

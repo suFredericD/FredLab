@@ -52,7 +52,7 @@ function fct_BuildHorizontalMenu($objPageInfos){
 	   <div class="dropdown-menu dropdown-menu-right custom-dpdmenu" aria-labelledby="navbarCoding">
            <a class="dropdown-item" href="<?php echo $objPageInfos->getPath();?>coding.php" title="Accéder à l'espace codeurs...">Espace Codeurs</a>
            <div class="dropdown-divider custom-dpd-divider"></div>
-
+           <a class="dropdown-item" href="<?php echo $objPageInfos->getPath();?>coding.php?view=fonts" title="Voir toutes les Webfonts...">Les Webfonts</a>
           </div>
          </li>
         </ul>
