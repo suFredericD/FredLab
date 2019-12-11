@@ -7,7 +7,7 @@
  * 				Contexte :	 Css 3.0
  *              Fonction :   page de styles d'affichage CSS
  *   Date mise en oeuvre :   13/11/2019
- *          Dernière MàJ :   10/12/2019
+ *          Dernière MàJ :   11/12/2019
  *************************************************************************************************/
 /*
 Palette
@@ -130,6 +130,13 @@ Palette
 		 url('../fonts/vanilla_regular/Vanilla-webfont.woff') format('woff'),
 		 url('../fonts/vanilla_regular/Vanilla-webfont.ttf') format('truetype'),
 		 url('../fonts/vanilla_regular/Vanilla-webfont.svg') format('svg');
+}
+@font-face{
+	font-family: "WalkwayBlack";
+	src: url('../fonts/walkwayblack_regular/Walkway_Black-webfont.eot') format('eot'),
+		 url('../fonts/walkwayblack_regular/Walkway_Black-webfont.woff') format('woff'),
+		 url('../fonts/walkwayblack_regular/Walkway_Black-webfont.ttf') format('truetype'),
+		 url('../fonts/walkwayblack_regular/Walkway_Black-webfont.svg') format('svg');
 }
 /***** ***** ***** Balises HTML ***** ***** *****/
 body{
