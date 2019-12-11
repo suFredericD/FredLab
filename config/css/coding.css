@@ -82,7 +82,7 @@
 #wft_main,#wft_main article,
 #wft_welcome,#wft_welcome article,#wft_welcome div,
 #wft_welcome label,#wft_welcome ul,#wft_welcome li,
-.page-explain-license,.page-explain-label{
+.page-explain-license,.page-explain-label,#sec_webfonts label{
     border-top-left-radius: 25px;
     border-bottom-right-radius: 25px;
     cursor: default;
@@ -96,6 +96,31 @@
 	-moz-transition-duration: 1250ms;
 	-webkit-transition-property: all;
 	-webkit-transition-duration: 1250ms;
+}
+#sec_webfonts label{
+    opacity: 0.9;
+    padding-top: 14px;
+    padding-bottom: 20px;
+    background-color: hsl(96, 0%, 20%) !important;
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b2b2b2", endColorstr="#333333");
+    background-image: -khtml-gradient(linear, left top, left bottom, from(#b2b2b2), to(#333333));
+    background-image: -moz-linear-gradient(top, #b2b2b2, #333333);
+    background-image: -ms-linear-gradient(top, #b2b2b2, #333333);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #b2b2b2), color-stop(100%, #333333));
+    background-image: -webkit-linear-gradient(top, #b2b2b2, #333333);
+    background-image: -o-linear-gradient(top, #b2b2b2, #333333);
+    background-image: linear-gradient(#b2b2b2, #333333);
+    border-color: #333333 #333333 hsl(96, 0%, 7.5%);
+    color: #000 !important;
+    -webkit-font-smoothing: antialiased;
+    font-family: "3Dumb";
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 0.055em;
+    text-shadow: none;
+    border: 1px inset #000;
+    box-shadow: 1px 1px 2px #000;
 }
 #wft_main{
     opacity: 0.9;
@@ -254,6 +279,9 @@
 /***** ***** ***** ***** ***** ***** ***** ***** *****/
 /* *** *** *** Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
+    #sec_webfonts label{
+        font-size: 32px;
+    }
     #wft_welcome label{
         font-size: 28px;
     }
@@ -278,6 +306,9 @@
 }
 /* *** *** *** Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+    #sec_webfonts label{
+        font-size: 40px;
+    }
     #wft_welcome label{
         font-size: 28px;
     }
@@ -299,6 +330,9 @@
 }
 /* *** *** *** Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+    #sec_webfonts label{
+        font-size: 50px;
+    }
     #wft_welcome label{
         font-size: 28px;
     }
@@ -320,6 +354,11 @@
 }
 /* *** *** *** Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+    #sec_webfonts label{
+        font-size: 54px;
+        padding-top: 18px;
+        padding-bottom: 24px;
+    }
     #wft_welcome label{
         font-size: 28px;
     }

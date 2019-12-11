@@ -24,6 +24,7 @@ function fctDisplayWebFonts($objPageInfos){
 ?>
 <!-- -- -- -- Section principale : WebFonts -- -- -- -->
     <section class="row" id="sec_webfonts">
+     <label class="col-xl-12 col-lg-12" id="wft_mainlabel">Les WebFonts</label>
      <div class="col-xl-12 col-lg-12" id="wft_main">
 <!-- -- -- -- Section principale : WebFonts -- -- -- -->
      <article class="col-xl-12 col-lg-12" id="wft_welcome">

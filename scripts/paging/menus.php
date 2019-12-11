@@ -8,7 +8,7 @@
  *              Contexte :   php 7.3
  *              Fonction :   construction des menus du site
  *   Date mise en oeuvre :   24/10/2019
- *          Dernière MàJ :   10/12/2019
+ *          Dernière MàJ :   11/12/2019
  *********************************************************************************/
 // Fonction de construction du menu horizontal
 //       Paramètres :
