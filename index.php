@@ -74,13 +74,13 @@ fct_BuildHorizontalMenu($objPageInfos);
           <img class="img-fluid img-thumbnail" src="media/pics/fred.jpg" alt="Photo de moi" title="Oui c'est moi :)">
          </div>
          <p class=" col-xl-8 accRubTitle">Toutes les rubriques de ma candidature virtuelle</p>
-         <p class="accRubText" style="margin-top:30px;">Principalement à destination des <strong title="Oui oui, c'est vous... :o)">recruteurs</strong>,&nbsp;
+         <p class="accRubText">Principalement à destination des <strong title="Oui oui, c'est vous... :o)">recruteurs</strong>,&nbsp;
           <a href="pages/candidat.php" title="Accéder à l'espace candidat">l'espace candidat</a>&nbsp;
           consiste en une synthèse de <strong>mon parcours</strong> et de <strong>mes compétences</strong>&nbsp;
           au travers de quelques pages et scripts associés que <strong title="C'est Bibi ^^">j'ai entièrement mis au point</strong>.</p>
 <!-- -- -- -- Présentation du parcours -- -- -- -->
          <div class="offset-xl-1 col-xl-9 subLabel">Mon parcours</div>
-         <p class="accRubText" id="accParcours">Découvrez un parcours <strong>riche</strong> et <strong>atypique</strong>, et consultez-le <strong>comme vous le souhaitez</strong> :<br>
+          <p class="accRubText" id="accParcours">Découvrez un parcours <strong>riche</strong> et <strong>atypique</strong>, et consultez-le <strong>comme vous le souhaitez</strong> :<br>
           <a href="pages/candidat.php#bref" title="Pour les plus pressés ...">En bref</a>,
           <a href="pages/candidat.php#thema" title="Parce que j'ai plusieurs cordes à mon arc...">Thématique</a> ou
           <a href="pages/candidat.php#chrono" title="&laquo; La chronologie (aussi annale, chronique) est une science de dates et d'événements historiques ou succession d'événements dans le temps. Considérée comme une discipline auxiliaire de l’histoire, la chronologie est une manière d'appréhender l'histoire par les événements.&raquo;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&mdash; source : Wikipedia">Chronologique</a>.
@@ -100,11 +100,18 @@ fct_BuildHorizontalMenu($objPageInfos);
         <div class="row">
 <!-- -- -- -- Présentation de l'espace coding -- -- -- -->
          <div class="col-xl-2 no-bg-no-bd">
-          <img class="img-fluid" src="media/pics/animated_code.gif" alt="Photo de moi" title="Oui c'est moi :)">
+          <img class="img-fluid" src="media/pics/animated_code.gif" alt="Image d'illustration" title="Prends la pillule bleue...">
          </div>
          <p class="col-xl-10 accRubTitle">Toutes les rubriques pour les codeurs</p>
-         <hr class="body-hr">
-         <p class="col-xl-10 accRubTitle">Bientôt disponible...</p>
+         <p class="col-xl-12 accRubText">Principalement à destination des <strong title="Oui oui, c'est vous aussi... :o)">développeurs</strong>, retrouvez dans
+          <a href="pages/coding.php" title="Accéder à l'espace codeur">l'espace codeur</a>&nbsp;
+          tout ce qui va bien pour triturer vos méninges, chouchouter votre code et développer <em>oklm</em> :
+          <ul class="offset-xl-1 col-xl-10" id="accUlText">
+            <li><a href="pages/coding.php#cod_toolbox" title="Accéder à la ToolBox">les outils</a> bien pratiques,</li>
+            <li>les références de la bibliographie,</li>
+            <li>et bien d'autres ressources...</li>
+          </ul>
+         </p>
         </div>
        </div>
       </section>

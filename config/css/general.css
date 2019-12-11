@@ -718,6 +718,7 @@ address{
 	padding-bottom: 40px;
 	margin-bottom: 40px;
 	color: #002A3A !important;
+	cursor: default;
 }
 #accCandidat:target,#accCoding:target{
 	display: flex;
@@ -740,6 +741,7 @@ address{
 }
 .accRubText{
 	background-color: transparent;
+	margin-top: 20px;
 	margin-bottom: 10px;
 	padding-left: 10px;
 	padding-right: 10px;
@@ -749,12 +751,38 @@ address{
 	letter-spacing: 0.045em;
 	color: #002A3D;
 	text-shadow: 1px 1px 3px #999;
+	cursor: default;
 }
 .accRubText::first-letter{
 	margin: 0px 3px 0px 0px;
 	font-size: 28px;
 	color: #002A3D;
 	text-shadow: 2px 2px 4px #037A63;
+}
+#accUlText{
+	padding-left: 15%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-top-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+	text-align: justify;
+	font-family: "Acme";
+	font-size: 22px;
+	letter-spacing: 0.045em;
+	color: #002A3D;
+	text-shadow: 1px 1px 3px #999;
+}
+#accUlText li{
+	vertical-align: middle;
+}
+#accUlText li a{
+	background-color: transparent;
+	font-family: inherit;
+	font-size: inherit;
+	vertical-align: top;
+	color: #037A63;
+	text-shadow: 1px 1px 2px #000;
+	text-decoration: none;
 }
 #accParcours{
 	display: inline-block;
@@ -764,6 +792,7 @@ address{
 	background-color: transparent;
 	font-family: inherit;
 	font-size: inherit;
+	vertical-align: top;
 	color: #037A63;
 	text-shadow: 1px 1px 2px #000;
 	text-decoration: underline;
@@ -771,7 +800,7 @@ address{
 #accParcours a{
 	letter-spacing: 0.05em;
 }
-.accRubText a:hover,#accParcours a:hover{
+.accRubText a:hover,#accParcours a:hover,#accUlText li a:hover{
 	color: #009DA5;
 	text-shadow: 1px 1px 3px #000;
 	text-decoration: none;
