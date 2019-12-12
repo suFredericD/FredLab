@@ -1,14 +1,14 @@
 <?php
 /*******************************************************************************************************
- *   FredLab Projetcs Incorporated
+ *   FredLab Projects Incorporated
  *                Projet :   FredLab
  *                  Page :   mainPaging.php
- *                Chemin :   http://127.0.0.1:8080/FredLab/scripts/paging/mainPaging.php
+ *                Chemin :   http://www.fred-lab.com/scripts/paging/mainPaging.php
  *                  Type :   page de script
  *              Contexte :   php 7.3
  *              Fonction :   construction des composants graphiques des pages
  *   Date mise en oeuvre :   13/11/2019
- *          Dernière MàJ :   07/12/2019
+ *          Dernière MàJ :   12/12/2019
  *******************************************************************************************************/
 /***** *****    INCLUSIONS ET SCRIPTS   ***** *****/
 

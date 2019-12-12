@@ -399,75 +399,136 @@ h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover{
 /***** ***** ***** Footer html ***** ***** *****/
 footer{
 	z-index: 30;
-	opacity: 0.8;
-    background-color: hsl(96, 0%, 20%) !important;
-    background-repeat: repeat-x;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b2b2b2", endColorstr="#333333");
-    background-image: -khtml-gradient(linear, left top, left bottom, from(#b2b2b2), to(#333333));
-    background-image: -moz-linear-gradient(top, #b2b2b2, #333333);
-    background-image: -ms-linear-gradient(top, #b2b2b2, #333333);
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #b2b2b2), color-stop(100%, #333333));
-    background-image: -webkit-linear-gradient(top, #b2b2b2, #333333);
-    background-image: -o-linear-gradient(top, #b2b2b2, #333333);
-    background-image: linear-gradient(#b2b2b2, #333333);
-    border-color: #333333 #333333 hsl(96, 0%, 7.5%);
-    color: #fff !important;
-    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.82);
-    -webkit-font-smoothing: antialiased;
-	-webkit-box-shadow: 6px 4px 12px #000000;
-	-moz-box-shadow: 6px 4px 12px #000000;
-	box-shadow: 6px 4px 12px #000000;
-	border-top-left-radius: 25px;
-	border-bottom-right-radius: 25px;
-	border-left: 1px outset #000000;
-	border-top: 1px outset #000000;
-	border-bottom: 1px inset #444444;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	opacity: 0.85;
 	width: 90%;
 	margin-left: 5%;
 	margin-top: 15px;
 	position: relative;
 	bottom: 0px;
+	background-image: url("../../media/gifs/efBO7L.gif");
+	background-size: cover;
+	background-repeat: no-repeat;
+	-webkit-box-shadow: 6px 4px 12px #000;
+	-moz-box-shadow: 6px 4px 12px #000;
+	box-shadow: 6px 4px 12px #000;
+	border-top-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+	border-left: 1px outset #000;
+	border-top: 1px outset #000;
+	border-bottom: 1px inset #444444;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
-address{
-	padding-top: 15px;
+#footer,#copy{
+	background-color: transparent;
 }
-.site-author{
-	font-family: "TechniqueBrk";
-	font-size: 14px;
+#footer{
+	width: 100%;
+	padding: 20px 30px 0px 40px;
+}
+#powering,#contacts{
+	opacity: 0.65;
+	background-color: transparent;
+}
+#contacts .row{
+	display: flex;
+	justify-content: center;
+	align-items: stretch;
+}
+#footer article,#contacts label,#powering label{
+	margin-bottom: 10px;
+	padding: 10px 0px 10px 0px;
+	border-top-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+}
+#contacts label,#powering label{
+	background-color: hsl(150, 7%, 24%) !important;
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#bdc6c1", endColorstr="#38413d");
+	background-image: -khtml-gradient(linear, left top, left bottom, from(#bdc6c1), to(#38413d));
+	background-image: -moz-linear-gradient(top, #bdc6c1, #38413d);
+	background-image: -ms-linear-gradient(top, #bdc6c1, #38413d);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #bdc6c1), color-stop(100%, #38413d));
+	background-image: -webkit-linear-gradient(top, #bdc6c1, #38413d);
+	background-image: -o-linear-gradient(top, #bdc6c1, #38413d);
+	background-image: linear-gradient(#bdc6c1, #38413d);
+	border-color: #38413d #38413d hsl(150, 7%, 11%);
+	-webkit-font-smoothing: antialiased;
+	color: #002A3A !important;
+	text-shadow:  1px 1px 3px #000;
+	font-family: "OldStamper";
+	letter-spacing: 0.035em;
+	box-shadow: 2px 2px 6px #000;
+}
+#contacts label{
+	font-size: 34px;
+}
+#powering label{
+	font-size: 30px;
+}
+#contacts address{
+	opacity: 0.85;
+	padding-top: 4px; 
+	padding-bottom: 4px;
+	background-color: #777;
+	border-top-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+	border: 1px outset #037A63;
+	box-shadow: 1px 1px 3px #000;
+}
+#contacts address a{
+	padding: 4px 20px 4px 20px;
+	border-top-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+	font-family: "2Dumb";
+	font-size: 18px;
+	font-weight: bold;
+	letter-spacing: 0.085em;
 	color: #002A3D;
 	text-shadow: 2px 2px 4px #037A63;
 }
-.site-author i{
-	font-family: "SecretTypewriter";
+#contacts address a:hover{
+	background-color: #002A3D;
+	color: #C1C1C1;
+	text-shadow: 2px 2px 4px #037A63;
+}
+.site-author,.site-powering,.site-powering p{
+	cursor: default;
+}
+.site-author{
+	opacity: 0.7;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	background-color: transparent;
+	font-family: "OldStamper";
+	font-size: 14px;
+	color: #C1C1C1;
+	text-shadow: 2px 2px 4px #037A63;
 }
 .site-powering{
+	opacity: 0.85;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin-left: 30px;
+	margin-right: 30px;
+	background-color: #777;
+	border-top-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+	border: 1px outset #037A63;
+	box-shadow: 1px 1px 3px #000;
 	font-family: "SecretTypewriter";
 	color: #002A3A;
 	text-shadow: 2px 2px 4px #037A63;
 }
-#php-version{
+.site-powering p{
+	font-size: 18px;
+}
+.linktotop{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	color: #002A3A;
-	text-shadow: 2px 2px 4px #037A63;
-	font-size: 16px;
-}
-.footer-hr{
-	width: 100%;
-	height: 2px;
-	background-color: #002A3A;
-	-webkit-box-shadow: 2px 2px 4px #037A63;
-	-moz-box-shadow: 2px 2px 4px #037A63;
-	box-shadow: 2px 2px 4px #037A63;
-}
-.linktotop{
 	background-color: hsl(150, 7%, 24%) !important;
 	background-repeat: repeat-x;
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#bdc6c1", endColorstr="#38413d");
@@ -484,10 +545,7 @@ address{
 	-webkit-font-smoothing: antialiased;
 	border-top-left-radius: 25px;
 	border-bottom-right-radius: 25px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	transition-property: box-shadow;
+	transition-property: all;
 	transition-delay: 1550ms;
 }
 .linktotop:hover{
@@ -509,17 +567,8 @@ address{
 	color: #037A63;
 	text-shadow: 2px 2px 3px #002A3D;
 }
-.footer-hr{
-	margin-top: 15px;
-	width: 85%;
-}
 /*****  Boutons *****/
-.btn-fred1{
-	background-color: #1F85DE;
-}
-.btn-fred2{
-	background-color:#6946E3;
-}
+
 /*****  Classes persos Bootsrap-like *****/
 .col-1-hidden, .col-2-hidden, .col-3-hidden, .col-4-hidden, .col-5-hidden, .col-6-hidden, .col-7-hidden, .col-8-hidden, .col-9-hidden, .col-10-hidden, .col-11-hidden, .col-12-hidden, .col-sm-1-hidden, .col-sm-2-hidden, .col-sm-3-hidden, .col-sm-4-hidden, .col-sm-5-hidden, .col-sm-6-hidden, .col-sm-7-hidden, .col-sm-8-hidden, .col-sm-9-hidden, .col-sm-10-hidden, .col-sm-11-hidden, .col-sm-12-hidden, .col-md-1-hidden, .col-md-2-hidden, .col-md-3-hidden, .col-md-4-hidden, .col-md-5-hidden, .col-md-6-hidden, .col-md-7-hidden, .col-md-8-hidden, .col-md-9-hidden, .col-md-10-hidden, .col-md-11-hidden, .col-md-12-hidden, .col-lg-1-hidden, .col-lg-2-hidden, .col-lg-3-hidden, .col-lg-4-hidden, .col-lg-5-hidden, .col-lg-6-hidden, .col-lg-7-hidden, .col-lg-8-hidden, .col-lg-9-hidden, .col-lg-10-hidden, .col-lg-11-hidden, .col-lg-12-hidden, .col-xl-1-hidden, .col-xl-2-hidden, .col-xl-3-hidden, .col-xl-4-hidden, .col-xl-5-hidden, .col-xl-6-hidden, .col-xl-7-hidden, .col-xl-8-hidden, .col-xl-9-hidden, .col-xl-10-hidden, .col-xl-11-hidden, .col-xl-12-hidden{
 	position: relative;
@@ -963,8 +1012,11 @@ address{
 		width: 70%;
 		margin-left: 15%;
 	}
+	#contacts address a{
+		font-size: 16px;
+	}
 	.site-author{
-		font-size: 30px;
+		font-size: 34px;
 	}
 	h1,h1 a{
 		font-size: 46px;
@@ -986,6 +1038,12 @@ address{
 	}
 	.accRubText{
 		font-size: 24px;
+	}
+	#acc_welcometext{
+		padding: 20px 40px 20px 40px;
+	}
+	#acc_welcometext p{
+		line-height: 50px;
 	}
 }
 /* Extra large devices (large desktops)

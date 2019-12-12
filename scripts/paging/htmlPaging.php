@@ -8,7 +8,7 @@
  *              Contexte :   php 7.3
  *              Fonction :   construction de la structure des pages html
  *   Date mise en oeuvre :   24/10/2019
- *          Dernière MàJ :   10/12/2019
+ *          Dernière MàJ :   11/12/2019
  *******************************************************************************************************/
 /***** *****    INCLUSIONS ET SCRIPTS   ***** *****/
 
@@ -82,15 +82,69 @@ function fct_BuildFooterHtml($objPageInfos){
      <script src="<?php echo $objPageInfos->getConfigPath().$GLOBALS['strBootStrapJs'];?>"></script><!-- Script js BootStrap -->
      <script src="<?php echo $objPageInfos->getConfigPath().$GLOBALS['strFontAwesomeJs'];?>" crossorigin="anonymous"></script><!-- Script js FontAwesome -->
     </body>
- <!-- -- -- -- Footer Html -- -- -- -->
-    <footer>
-     <address>
-      <p class="site-author">FredLab&nbsp;Inc.<i>&nbsp;&#x24b8;</i>&nbsp;2019</p>
-      <p class="site-powering">&#9889;&nbsp;Powered by&nbsp;&nbsp;
-       <span class="fab fa-php fa-4x" id="php-version"></span>&nbsp;<?php echo $GLOBALS['strPhpVersionDisplay'];?>
-      </p>
-     </address>
+<!-- -- -- -- Footer Html -- -- -- -->
+    <footer class="container">
+     <section class="row" id ="footer">
+<!-- -- -- -- Technologies -- -- -- -->
+      <article class="offset-xl-2 col-xl-4" id="powering">
+       <label class="col-xl-10">&#9889;&nbsp;Powered by&nbsp;</label>
+       <p class="site-powering">
+        <span class="fab fa-php fa-lg"></span>&nbsp;&nbsp;<?php echo $GLOBALS['strPhpVersionDisplay'];?>&nbsp;/
+        MySql 8.0&nbsp;&nbsp;<span class="fa fa-database"></span>
+       </p>
+       <p class="site-powering">
+        <span class="fab fa-html5"></span>&nbsp;&nbsp;HTML 5&nbsp;/
+        CSS 3&nbsp;&nbsp;<span class="fab fa-css3"></span>
+       </p>
+       <p class="site-powering"><span class="fab fa-js"></span>&nbsp;JavaScript ES2015</p>
+       <p class="site-powering"><span class="fab fa-bootstrap"></span>&nbsp;BootStrap 4.0</p>
+       <p class="site-powering"><span class="fab fa-font-awesome"></span>&nbsp;FontAwesome 5.11</p>
+      </article>
+<!-- -- -- -- Contacts -- -- -- -->
+      <article class="offset-xl-1 col-xl-4" id="contacts">
+       <div class="row">
+        <label class="col-xl-10"><span class="far fa-address-book fa-lg"></span>&nbsp;Contacts&nbsp;</label>
+        <address class="col-xl-10 contact_links">
+         <a href="https://www.facebook.com/FredLaboratory" title="Vers la page Facebook de FredLab..." target="_blank">
+          <span class="fab fa-facebook-square"></span>&nbsp;FredLab@Facebook
+         </a>
+        </address>
+        <address class="col-xl-10 contact_links">
+         <a href="https://github.com/suFredericD/FredLab" title="Vers le dépôt de FredLab sur GitHub.com..." target="_blank">
+          <span class="fab fa-github-square"></span>&nbsp;FredLab@GitHub
+         </a>
+        </address>
+        <address class="col-xl-10 contact_links">
+         <a href="https://www.linkedin.com/in/frédéric-daniau-10baba184" title="Vers mon profil LinkedIn..." target="_blank">
+          <span class="fab fa-linkedin"></span>&nbsp;Fred@LinkedIn
+         </a>
+        </address>
+       </div>
+      </article>
+<!-- -- -- -- Mentions -- -- -- -->
+      <article class="col-xl-12" id="copy">
+       <p class="site-author">&nbsp;FredLab&nbsp;Projects&nbsp;Inc.<i>&nbsp;&#x24b8;</i>&nbsp;2019&nbsp;</p>
+      </article>
+     </section>
     </footer>
+<!-- -- -- -- Fin de page -- -- -- -->
 </html>
 <?php
-}?>
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
