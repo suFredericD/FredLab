@@ -11,6 +11,7 @@
  *          Dernière MàJ :   13/12/2019
  *********************************************************************************************/
 /* *** *** *** CONSTANTES *** *** *** */
+const divSiteTitle = document.getElementById("main_title");
 const secMain = document.getElementById("secAccueilMain");                  // Bloc section principale
 
 const lblCandidat = secMain.getElementsByTagName("label")[0];               // Label du bloc 'Espace candidat'
@@ -28,14 +29,21 @@ const divLogoSite = document.getElementById("accLogo_cell");                // C
 const imgLogoSite = document.createElement("img");                          // Image : logo du site
 const strLogoSite = "media/logos/Flogo10a_small.png";                       // Fichier source du logo
 
+const intAmimationStartDelay = 5000;                                        // Délai animation du logo d'accueil
 /* *** *** *** INITIALISATIONS *** *** *** */
-imgLogoSite.id = "accLogo";
+divSiteTitle.style.display = "none";                // Masquage : titre du site
+
+imgLogoSite.id = "accLogo";                         // Logo d'accueil animé
 imgLogoSite.src = strLogoSite;
 imgLogoSite.className = "img-fluid";
 imgLogoSite.alt = "Logo du site";
 imgLogoSite.style.display = "none";
 divLogoSite.insertAdjacentElement('afterbegin', imgLogoSite);
-$("#accLogo").show("slide", 4000);
+
+/* *** *** *** ANIMATIONS DES ELEMENTS *** *** *** */
+//$("#main_title").show("pulsate", intAmimationStartDelay);
+$("#main_title").show("pulsate",intAmimationStartDelay);
+$("#accLogo").show("clip", intAmimationStartDelay);
 var intDegrees = 10;
 var itvLogoAnimeTimeOut = setTimeout(function(){
     var itvLogoAnime = setInterval(function(){
@@ -45,8 +53,7 @@ var itvLogoAnimeTimeOut = setTimeout(function(){
             intDegrees = 0;
         }    
     },100);
-},4000);
-
+},intAmimationStartDelay);
 /* *** *** *** FONCTIONS *** *** *** */
 //  Fonction de redisposition des labels des blocs non-sélectionnés
 //  EvenListener        : none
