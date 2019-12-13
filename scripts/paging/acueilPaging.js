@@ -24,7 +24,17 @@ const divCoding = document.getElementById("accCoding");                     // B
 const strLinkBaseColor = getComputedStyle(lnkCandidat).color;               // Couleur d'origine des liens de bloc
 const strLabelBaseClass = lblCandidat.className;                            // Classe d'origine des labels de bloc
 
-const imgLogoSite = document.getElementsByClassName("img-logosite")[0];     // Image : logo du site
+const imgLogoSite = document.getElementById("accLogo");                     // Image : logo du site
+
+var intDegrees = 10;
+var itvLogoAnime = setInterval(function(){
+    imgLogoSite.style.transform = "rotateY(" + intDegrees + "deg)";
+    intDegrees += 10;
+    if ( intDegrees > 360 ) {
+           intDegrees = 0;
+    }    
+},100);
+
 /* *** *** *** FONCTIONS *** *** *** */
 //  Fonction de redisposition des labels des blocs non-sélectionnés
 //  EvenListener        : none

@@ -48,8 +48,19 @@ fct_BuildHorizontalMenu($objPageInfos);
 // ***** ***** ***** Corps du contenu ***** ***** *****
 ?>
       <section class="row" id="secAccueilTitle">
-       <div class="offset-xl-1 col-xl-10 col-lg-12 animated-green" id="accWelcome">Bienvenue</div>
-       <div class="offset-xl-1 col-xl-10 col-lg-12 animated-green" id="accWelcomeSub">dans mon laboratoire virtuel</div>
+       <div class="offset-xl-1 col-xl-10 col-lg-12">
+        <div class="row">
+          <div class="offset-xl-1 col-xl-2 offset-lg-1 col-lg-2 col-md-2 col-sm-2 col-4" id="accLogo_cell">
+            <img class="img-fluid" id="accLogo" src="<?php echo $objPageInfos->getLogosPath();?>Flogo10a_small.png" alt="Logo du site">
+          </div>
+          <div class="col-xl-9 col-lg-8 col-md-10 col-sm-10 col-8">
+           <div class="row">
+            <div class="offset-xl-1 col-xl-10 col-lg-12 animated-green" id="accWelcome">Bienvenue</div>
+            <div class="offset-xl-1 col-xl-10 col-lg-12 animated-green" id="accWelcomeSub">dans mon laboratoire virtuel</div>
+           </div>
+          </div>
+        </div>
+       </div>
       </section>
 <!-- -- -- -- Section : accueil présentation -- -- -- -->
       <section class="row" id="secAccueilMain">
@@ -70,10 +81,10 @@ fct_BuildHorizontalMenu($objPageInfos);
        <div class="col-xl-12-hidden" id="accCandidat">
         <div class="row">
 <!-- -- -- -- Présentation de l'espace candidat -- -- -- -->
-         <div class="col-xl-2 no-bg-no-bd" id="acc_divme">
+         <div class="col-xl-2 col-lg-3 col-md-4 col-sm-4 col-5 no-bg-no-bd" id="acc_divme">
           <img class="img-fluid img-thumbnail" src="media/pics/fred.jpg" alt="Photo de moi" title="Oui c'est moi :)">
          </div>
-         <p class=" col-xl-8 accRubTitle">Toutes les rubriques de ma candidature virtuelle</p>
+         <p class=" col-xl-10 col-lg-9 col-md-8 col-sm-8 col-7 accRubTitle">Toutes les rubriques de ma candidature virtuelle</p>
          <p class="accRubText">Principalement à destination des <strong title="Oui oui, c'est vous... :o)">recruteurs</strong>,&nbsp;
           <a href="pages/candidat.php" title="Accéder à l'espace candidat">l'espace candidat</a>&nbsp;
           consiste en une synthèse de <strong>mon parcours</strong> et de <strong>mes compétences</strong>&nbsp;

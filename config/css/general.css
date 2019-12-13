@@ -636,28 +636,35 @@ footer{
     animation: wheelHueGreen 90s infinite;
 }
 /***** ***** ***** Page d'accueil ***** ***** *****/
+#secAccueilTitle,#secAccueilTitle div,
+#accWelcome,#accWelcomeSub,
+#accLogo_cell{
+	background-color: transparent;
+}
 #accWelcome,#accWelcomeSub{
 	opacity: 0.9;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: transparent;
 	font-family: "Magenta";
 	letter-spacing: 0.08em;
 	text-shadow: 2px 2px 4px #000;
 }
+#accLogo_cell{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 #accWelcome{
 	margin-top: 20px;
-	margin-bottom: 10px;
-	font-size: 50px;
+	font-size: 40px;
 }
 #accWelcome,#accWelcomeSub,
 #acc_welcometext,#acc_welcometext p{
 	cursor: default;
 }
 #accWelcomeSub{
-	margin-top: 10px;
-	font-size: 40px;
+	font-size: 32px;
 	letter-spacing: 0.05em;
 }
 #acc_welcometext{
@@ -666,7 +673,7 @@ footer{
 	justify-content: center;
 	align-items: center;
 	margin-top: 0px;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 	padding: 20px 20px 20px 20px;
 	background-color: #53966C;
 	border: 3px outset #002A3D;
@@ -715,7 +722,7 @@ footer{
 	text-shadow: 1px 1px 2px #C1C1C1;
 }
 #acc_welcometext strong{
-	font-size: x-large;
+	font-size: larger;
 	text-shadow: 1px 1px 2px #000;
 }
 #secAccueilMain{
@@ -724,7 +731,7 @@ footer{
 	align-items: center;
 	margin-top: 20px;
 	padding-top: 10px;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 	border-top-left-radius: 25px;
 	border-bottom-right-radius: 25px;
 	-webkit-box-shadow: 6px 4px 12px #000000;
@@ -787,7 +794,7 @@ footer{
 	color: #002A3A !important;
 	cursor: default;
 }
-#accCandidat:target,#accCoding:target{
+#accCandidat:target,#accCoding:target,#acc_divme{
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -799,7 +806,7 @@ footer{
 	background-color: transparent;
 	padding-top: 20px;
 	font-family: "OldStamper";
-	font-size: 28px;
+	font-size: 16px;
 	letter-spacing: 0.055em;
 	color: #002A3D;
 	text-shadow: 1px 1px 3px #046259;
@@ -912,6 +919,9 @@ footer{
 	#accWelcomeSub{
 		font-size: 40px;
 	}
+	.accRubTitle{
+		font-size: 20px;
+	}
 }
 /* *** *** *** Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
@@ -947,6 +957,9 @@ footer{
 	}
 	#secAccueilMain label a{
 		font-size: 26px;
+	}
+	.accRubTitle{
+		font-size: 28px;
 	}
 }
 /* *** *** *** Large devices (desktops, 992px and up) */
@@ -1020,6 +1033,9 @@ footer{
 		text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.82);
 		-webkit-font-smoothing: antialiased;
 	}
+	.accRubTitle{
+		font-size: 30px;
+	}
 }
 /* *** *** *** Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
@@ -1065,6 +1081,9 @@ footer{
 	}
 	#acc_welcometext p cite{
 		font-size: 24px;
+	}
+	.accRubTitle{
+		font-size: 34px;
 	}
 }
 /* Extra large devices (large desktops)
