@@ -7,7 +7,7 @@
  * 				Contexte :	 Css 3.0
  *              Fonction :   page de styles d'affichage CSS (cvhtml.html)
  *   Date mise en oeuvre :   14/11/2019
- *          Dernière MàJ :   14/11/2019
+ *          Dernière MàJ :   12/12/2019
  *************************************************************************************************/
 /***** ***** ***** Containers ***** ***** *****/
 #cvHtmlMain{
@@ -56,6 +56,7 @@
 }
 .parcoursitem a{
 	color: #455666;
+	letter-spacing: 0.085em;
 	text-shadow: 1px 1px 2px #000;
 }
 .parcoursitem a:hover{

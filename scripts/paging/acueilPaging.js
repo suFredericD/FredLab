@@ -8,21 +8,23 @@
  *              Contexte :   JavaScript
  *              Fonction :   script de mise en page et animation
  *   Date mise en oeuvre :   14/11/2019
- *          Dernière MàJ :   09/12/2019
+ *          Dernière MàJ :   12/12/2019
  *********************************************************************************************/
 /* *** *** *** DECLARATIONS *** *** *** */
-const secMain = document.getElementById("secAccueilMain");              // Bloc section principale
+const secMain = document.getElementById("secAccueilMain");                  // Bloc section principale
 
-const lblCandidat = secMain.getElementsByTagName("label")[0];           // Label du bloc 'Espace candidat'
-const lnkCandidat = lblCandidat.getElementsByTagName("a")[0];           // Lien  du bloc 'Espace candidat'
-const divCandidat = document.getElementById("accCandidat");             // Bloc 'Espace candidat'
+const lblCandidat = secMain.getElementsByTagName("label")[0];               // Label du bloc 'Espace candidat'
+const lnkCandidat = lblCandidat.getElementsByTagName("a")[0];               // Lien  du bloc 'Espace candidat'
+const divCandidat = document.getElementById("accCandidat");                 // Bloc 'Espace candidat'
 
-const lblCoding = secMain.getElementsByTagName("label")[1];             // Label du bloc 'Espace coding'
-const lnkCoding = lblCoding.getElementsByTagName("a")[0];               // Lien  du bloc 'Espace coding'
-const divCoding = document.getElementById("accCoding");                 // Bloc 'Espace coding'
+const lblCoding = secMain.getElementsByTagName("label")[1];                 // Label du bloc 'Espace coding'
+const lnkCoding = lblCoding.getElementsByTagName("a")[0];                   // Lien  du bloc 'Espace coding'
+const divCoding = document.getElementById("accCoding");                     // Bloc 'Espace coding'
 
-const strLinkBaseColor = getComputedStyle(lnkCandidat).color;           // Couleur d'origine des liens de bloc
-const strLabelBaseClass = lblCandidat.className;                        // Classe d'origine des labels de bloc
+const strLinkBaseColor = getComputedStyle(lnkCandidat).color;               // Couleur d'origine des liens de bloc
+const strLabelBaseClass = lblCandidat.className;                            // Classe d'origine des labels de bloc
+
+const imgLogoSite = document.getElementsByClassName("img-logosite")[0];     // Image : logo du site
 /* *** *** *** FONCTIONS *** *** *** */
 //  Fonction de redisposition des labels des blocs non-sélectionnés
 //  EvenListener        : none
@@ -37,7 +39,6 @@ function fctChangeLabels(intBloc){
         if ( i != intBloc ) {       // Changement des blocs non-sélectionnés
             lblToChange.className = strLabelBaseClass;          // Rétablissement classe d'origine
             lnkToChange.style.color = strLinkBaseColor;         // Rétablissement couleur d'origine
-            lnkToChange.style.borderRadius = "0px";             // Rétablissement bordure d'origine
         } else {                    // Changement du bloc sélectionné
             lblToChange.className = "col-xl-12 col-lg-12";      // Changement de la classe
             lnkToChange.style.color = "#000";                   // Changement de la couleur

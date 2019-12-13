@@ -1,12 +1,13 @@
+<!DOCTYPE html>
 <!--***************************************************************************************
  *   	Frédéric DANIAU
  *                Projet :   FredLab
  *                  Page :   cvhtml.htm
- *                Chemin :   https://fredportal.pagesperso-orange.fr/candidat/cvhtml.htm
+ *                Chemin :   https://www.fred-lab.com/pages/cvhtml.htm
  *                  Type :   page utilisateur
  *              Fonction :   page d'affichage du cv version HTML
  *   Date mise en oeuvre :   18/07/2019
- *          Dernière MàJ :   15/11/2019
+ *          Dernière MàJ :   12/12/2019
  ***************************************************************************************-->
 <!-- -- -- -- En-tête HTML -- -- -- -->
 <html lang="fr">
@@ -28,7 +29,7 @@
   <meta name="robots" content="all">
   <link href="../config/css/general.css" rel="stylesheet" type="text/css">
   <link href="../config/css/cvhtml.css" rel="stylesheet" type="text/css">
-  <link href="../media/logos/deathstar.png" rel="icon" type="image/png">
+  <link href="../media/icons/Flogo10a.ico" rel="icon" type="image/ico">
   <link href="../config/fontawesome/css/all.css" rel="stylesheet">
  </head>
 <!-- -- -- -- Corps de contenu HTML -- -- -- -->
@@ -39,37 +40,52 @@
 	<table class="table" id="tab-site-header">
 	 <tr class="row">
 	  <td class="col-lg-4 col-md-4 col-sm-4 col-2">
-	   <img class="img-logosite" src="../media/logos/deathstar.png">
+	   <img class="img-logosite" src="../media/logos/Flogo11_mid.png">
 	  <td class="col-lg-8 col-md-8 col-sm-8 col-10">FredLab</td>
 	 </tr>
 	</table>
    </header>
-<!-- -- -- -- Menu horizontal -- -- -- -->
-   <nav class="navbar navbar-expand-xl navbar-expand-lg" id="navbarMain" role="navigation">
-    <a class="navbar-brand custom-brand" id="haut" href="#"></a>
-    <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarFullSite" aria-controls="navbarFullSite" aria-expanded="false" aria-label="Toggle navigation">
-     <img src="../media/logos/deathstar.png" class="navbar-toggler-icon">
-    </button>
-    <div class="collapse navbar-collapse justify-content-center" id="navbarFullSite">
-     <ul class="navbar-nav">
-      <li class="nav-item">
-       <a class="nav-link btn-nav" href="../index.php" title="&laquo;&nbsp;La page d'accueil (ou page d'entrée, home page en anglais) est la page principale d'un site web, elle se distingue des autres pages du site par le fait qu'elle est censée représenter, à l'internaute visiteur, le site sur lequel il se trouve de manière claire et forte.&nbsp;&raquo;&nbsp;&nbsp;&mdash;&nbsp;source&nbsp;:&nbsp;Wikipedia">Accueil</a>
-      </li>
-      <li class="nav-item dropdown justify-content-center">
-       <a class="nav-link dropdown-toggle" href="candidat.php" id="navbarCandidat" title="De l'origine de Fred juqu'à nos jours..." role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Espace candidat
-       </a>
-	   <div class="dropdown-menu dropdown-menu-right custom-dpdmenu" aria-labelledby="navbarCandidat">
-	    <a class="dropdown-item" href="candidat.php">Espace candidat</a>
-        <a class="dropdown-item" href="candidat.php#chrono">Chronologie</a>
-        <a class="dropdown-item" href="candidat.php#thema">Parcours</a>
-		<a class="dropdown-item" href="candidat.php#bref">En bref</a>
-        <div class="dropdown-divider custom-dpd-divider"></div>
-        <a class="dropdown-item" href="cvhtml.htm" title="You are here &lArr;">Cv - Html Css</a>
-       </div>
-      </li>
-     </ul>
-    </div>
+<!-- -- -- -- -- Menu principal -- -- -- -- -->
+<nav class="navbar navbar-expand-xl navbar-expand-lg navbar-expand-md" id="navbarMain" role="navigation">
+	<a class="navbar-brand custom-brand" id="haut" href="#"></a><!-- Ancre pour les liens back-to-top -->
+<!-- Bouton de réduction du menu pour les rescales petits formats -->
+	<button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarFullSite" aria-controls="navbarFullSite" aria-expanded="false" aria-label="Toggle navigation">
+	 <img src="../media/logos/Flogo11.png" class="navbar-toggler-icon">
+	</button>
+<!-- Barre de menu -->
+	<div class="collapse navbar-collapse justify-content-center" id="navbarFullSite">
+	 <ul class="navbar-nav">
+<!-- Page d'accueil -->
+	  <li class="nav-item">
+	   <a class="nav-link btn-nav" href="../index.php" title="You are here &lArr;">Accueil</a>
+	  </li>
+<!-- Espace candidat -->
+	  <li class="nav-item dropdown justify-content-center">
+	   <a class="nav-link dropdown-toggle" href="candidat.php" id="navbarCandidat" title="De l'origine de Fred juqu'à nos jours..." role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		<span class="far fa-address-card"></span>&nbsp;&nbsp;Candidat</a>
+	<div class="dropdown-menu dropdown-menu-right custom-dpdmenu" aria-labelledby="navbarCandidat">
+	 <a class="dropdown-item" href="candidat.php" title="Accéder à l'espace candidat">Espace candidat</a>
+		<div class="dropdown-divider custom-dpd-divider"></div>
+		<a class="dropdown-item" href="candidat.php#bref" title="Pour les plus pressés ...">En bref</a>
+		<a class="dropdown-item" href="candidat.php#thema" title="Parce que j'ai plusieurs cordes à mon arc...">Thématique</a>
+		<a class="dropdown-item" href="candidat.php#chrono" title="&laquo; La chronologie (aussi annale, chronique) est une science de dates et d'événements historiques ou succession d'événements dans le temps. Considérée comme une discipline auxiliaire de l’histoire, la chronologie est une manière d'appréhender l'histoire par les événements.&raquo;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&mdash; source : Wikipedia">Chronologique</a>
+		<div class="dropdown-divider custom-dpd-divider"></div>
+		<a class="dropdown-item" href="../docs/FD_programmeur_anon.pdf" title="La base..." target="_blank">Cv - Pdf</a>
+		<a class="dropdown-item" href="cvhtml.htm" title="Mon royaume contre un script...">Cv - Html & Css</a>
+	   </div>
+	  </li>
+<!-- Espace codeur -->
+	  <li class="nav-item dropdown justify-content-center">
+	   <a class="nav-link dropdown-toggle" href="coding.php" id="navbarCoding" title="Pour les progammeurs" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		<span class="fa fa-laptop-code"></span>&nbsp;&nbsp;Codeur</a>
+	<div class="dropdown-menu dropdown-menu-right custom-dpdmenu" aria-labelledby="navbarCoding">
+		<a class="dropdown-item" href="coding.php" title="Accéder à l'espace codeurs...">Espace Codeurs</a>
+		<div class="dropdown-divider custom-dpd-divider"></div>
+		<a class="dropdown-item" href="coding.php?view=fonts" title="Voir toutes les Webfonts...">Les Webfonts</a>
+	   </div>
+	  </li>
+	 </ul>
+	</div>
    </nav>
 <!-- -- -- -- Présentation du contenu -- -- -- -->
  <div class="row" style="margin-top:10px" id="cvHtmlMain">
@@ -555,13 +571,45 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="../config/bootstrap/js/bootstrap.min.js"></script>
  </body>
-<!-- -- -- -- Pied de page HTML -- -- -- -->
-<footer>
-	<address>
-	 <p class="site-author">FredLab&nbsp;Inc.<i>&nbsp;&#x24b8;</i>&nbsp;2019</p>
-	 <p class="site-powering">&#9889;&nbsp;Powered by&nbsp;&nbsp;
-	  <span class="fab fa-php fa-3x" id="php-version">7.3</span>
-	 </p>
-	</address>
+<!-- -- -- -- Footer Html -- -- -- -->
+	<footer class="container">
+	<section class="row" id ="footer">
+<!-- -- -- -- Technologies -- -- -- -->
+	 <article class="offset-xl-2 col-xl-4" id="powering">
+	  <label class="col-xl-10">&#9889;&nbsp;Powered by&nbsp;</label>
+	  <p class="site-powering">
+	   <span class="fab fa-html5"></span>&nbsp;&nbsp;HTML 5&nbsp;/
+	   CSS 3&nbsp;&nbsp;<span class="fab fa-css3"></span>
+	  </p>
+	  <p class="site-powering"><span class="fab fa-bootstrap"></span>&nbsp;BootStrap 4.0</p>
+	  <p class="site-powering"><span class="fab fa-font-awesome"></span>&nbsp;FontAwesome 5.11</p>
+	 </article>
+<!-- -- -- -- Contacts -- -- -- -->
+	 <article class="offset-xl-1 col-xl-4" id="contacts">
+	  <div class="row">
+	   <label class="col-xl-10"><span class="far fa-address-book fa-lg"></span>&nbsp;Contacts&nbsp;</label>
+	   <address class="col-xl-10 contact_links">
+		<a href="https://www.facebook.com/FredLaboratory" title="Vers la page Facebook de FredLab..." target="_blank">
+		 <span class="fab fa-facebook-square"></span>&nbsp;FredLab@Facebook
+		</a>
+	   </address>
+	   <address class="col-xl-10 contact_links">
+		<a href="https://github.com/suFredericD/FredLab" title="Vers le dépôt de FredLab sur GitHub.com..." target="_blank">
+		 <span class="fab fa-github-square"></span>&nbsp;FredLab@GitHub
+		</a>
+	   </address>
+	   <address class="col-xl-10 contact_links">
+		<a href="https://www.linkedin.com/in/frédéric-daniau-10baba184" title="Vers mon profil LinkedIn..." target="_blank">
+		 <span class="fab fa-linkedin"></span>&nbsp;Fred@LinkedIn
+		</a>
+	   </address>
+	  </div>
+	 </article>
+<!-- -- -- -- Mentions -- -- -- -->
+	 <article class="col-xl-12" id="copy">
+	  <p class="site-author">&nbsp;FredLab&nbsp;Projects&nbsp;Inc.<i>&nbsp;&#x24b8;</i>&nbsp;2019&nbsp;</p>
+	 </article>
+	</section>
    </footer>
+<!-- -- -- -- Fin de page -- -- -- -->
 </html>

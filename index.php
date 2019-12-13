@@ -51,16 +51,16 @@ fct_BuildHorizontalMenu($objPageInfos);
        <div class="offset-xl-1 col-xl-10 col-lg-12 animated-green" id="accWelcome">Bienvenue</div>
        <div class="offset-xl-1 col-xl-10 col-lg-12 animated-green" id="accWelcomeSub">dans mon laboratoire virtuel</div>
       </section>
-      <hr class="body-hr">
-      <section class="row" id="secAccueilMain">
 <!-- -- -- -- Section : accueil présentation -- -- -- -->
+      <section class="row" id="secAccueilMain">
        <article class="offset-xl-1 col-xl-10 offset-lg-1 col-lg-10" id="acc_welcometext">
         <p>Ici, chaque ligne de code
            est amoureusement bichonnèe,
            tapèe <em>à la main</em> par <a href="index.php#accCandidat" title="Voir qui c'est ce gars...">un artisan passioné</a>,
            à partir de languages <em>rigoureusement sèlectionnès</em>
            pour vous garantir une expèrience
-           de navigation <em>bio</em> de qualitè supèrieure.</p>
+           de navigation <em>bio</em> de qualitè supèrieure.<br><br>
+           &laquo;&nbsp;<cite>Et le code source, ça se partage !</cite>&nbsp;&raquo;&nbsp;&#9472;&nbsp;<strong>Aristote</strong></p>
        </article>
 <!-- -- -- -- Section : Espace candidat -- -- -- -->
        <label class="offset-xl-3 col-xl-6 offset-lg-3 col-lg-6" for="accCandidat">
