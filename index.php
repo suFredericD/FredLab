@@ -46,6 +46,7 @@ fct_BuildHeaderGraph($objPageInfos);
 // ***** ***** ***** Menu principal ***** ***** *****
 fct_BuildHorizontalMenu($objPageInfos);
 // ***** ***** ***** Corps du contenu ***** ***** *****
+$strArtisanLinkTitle = "Voir sa ganache...";
 ?>
       <section class="row" id="secAccueilTitle">
        <div class="offset-xl-1 col-xl-10 col-lg-12">
@@ -66,7 +67,7 @@ fct_BuildHorizontalMenu($objPageInfos);
        <article class="offset-xl-1 col-xl-10 offset-lg-1 col-lg-10" id="acc_welcometext">
         <p>Ici, chaque ligne de code
            est amoureusement bichonnèe,
-           tapèe <em>à la main</em> par <a href="index.php#accCandidat" title="Voir qui c'est ce gars...">un artisan passioné</a>,
+           tapèe <em>à la main</em> par <a href="index.php#accCandidat" data-toggle="meBubble" data-animation="true" html="true" title="<?php echo $strArtisanLinkTitle;?>">un artisan passioné</a>,
            à partir de languages <em>rigoureusement sèlectionnès</em>
            pour vous garantir une expèrience
            de navigation de <em>qualitè supèrieure</em>.<br><br>

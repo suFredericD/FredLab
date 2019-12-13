@@ -11,38 +11,37 @@
  *          Dernière MàJ :   13/12/2019
  *********************************************************************************************/
 /* *** *** *** CONSTANTES *** *** *** */
-const divSiteTitle = document.getElementById("main_title");
-const secMain = document.getElementById("secAccueilMain");                  // Bloc section principale
+const divSiteTitle = document.getElementById("main_title");                 // Bloc : titre du site
+const secMain = document.getElementById("secAccueilMain");                  // Bloc : section principale
 
 const lblCandidat = secMain.getElementsByTagName("label")[0];               // Label du bloc 'Espace candidat'
 const lnkCandidat = lblCandidat.getElementsByTagName("a")[0];               // Lien  du bloc 'Espace candidat'
-const divCandidat = document.getElementById("accCandidat");                 // Bloc 'Espace candidat'
+const divCandidat = document.getElementById("accCandidat");                 // Bloc : Espace candidat
 
 const lblCoding = secMain.getElementsByTagName("label")[1];                 // Label du bloc 'Espace coding'
 const lnkCoding = lblCoding.getElementsByTagName("a")[0];                   // Lien  du bloc 'Espace coding'
-const divCoding = document.getElementById("accCoding");                     // Bloc 'Espace coding'
+const divCoding = document.getElementById("accCoding");                     // Bloc : Espace coding
 
 const strLinkBaseColor = getComputedStyle(lnkCandidat).color;               // Couleur d'origine des liens de bloc
 const strLabelBaseClass = lblCandidat.className;                            // Classe d'origine des labels de bloc
 
-const divLogoSite = document.getElementById("accLogo_cell");                // Cellule : logo du site
+const divLogoSite = document.getElementById("accLogo_cell");                // Bloc : logo du site
 const imgLogoSite = document.createElement("img");                          // Image : logo du site
 const strLogoSite = "media/logos/Flogo10a_small.png";                       // Fichier source du logo
 
 const intAmimationStartDelay = 5000;                                        // Délai animation du logo d'accueil
 /* *** *** *** MASQUAGES *** *** *** */
-divSiteTitle.style.display = "none";                // Titre du site
-imgLogoSite.style.display = "none";                 // Logo d'acceuil animé
+divSiteTitle.style.display = "none";                                // Titre du site
+imgLogoSite.style.display = "none";                                 // Logo d'acceuil animé
+document.getElementById("accWelcome").style.display = "none";       // Titre d'accueil
+document.getElementById("accWelcomeSub").style.display = "none";    // Sous-titre d'accueil
+document.getElementById("acc_welcometext").style.display = "none";  // Texte d'accueil
 
-document.getElementById("accWelcome").style.display = "none";
-document.getElementById("accWelcomeSub").style.display = "none";
-document.getElementById("acc_welcometext").style.display = "none";
 /* *** *** *** INITIALISATIONS *** *** *** */
-imgLogoSite.id = "accLogo";                         // Logo d'accueil animé
+imgLogoSite.id = "accLogo";                         // Logo d'accueil animé : styles
 imgLogoSite.src = strLogoSite;
 imgLogoSite.className = "img-fluid";
 imgLogoSite.alt = "Logo du site";
-
 divLogoSite.insertAdjacentElement('afterbegin', imgLogoSite);
 
 /* *** *** *** AFFICHAGE DES ELEMENTS *** *** *** */
@@ -50,7 +49,8 @@ $("#main_title").show("pulsate",intAmimationStartDelay);    // Affichage : titre
 $("#accLogo").show("clip", intAmimationStartDelay);         // Affichage : logo d'acceuil animé
 $("#accWelcome").fadeIn(intAmimationStartDelay);
 $("#accWelcomeSub").fadeIn(intAmimationStartDelay);
-$("#acc_welcometext").show("slide", intAmimationStartDelay);  
+$("#acc_welcometext").show("slide", intAmimationStartDelay);
+$('[data-toggle="meBubble"]').tooltip();
 /* *** *** *** ANIMATIONS DES ELEMENTS *** *** *** */
 var intDegrees = 10;
 var itvLogoAnimeTimeOut = setTimeout(function(){
@@ -62,6 +62,7 @@ var itvLogoAnimeTimeOut = setTimeout(function(){
         }    
     },100);
 },intAmimationStartDelay);
+
 /* *** *** *** FONCTIONS *** *** *** */
 //  Fonction de redisposition des labels des blocs non-sélectionnés
 //  EvenListener        : none
