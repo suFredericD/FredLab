@@ -438,8 +438,8 @@ footer{
 	align-items: stretch;
 }
 #footer article,#contacts label,#powering label{
-	margin-bottom: 10px;
-	padding: 10px 0px 10px 0px;
+	margin-bottom: 4px;
+	padding: 4px 0px 4px 0px;
 	border-top-left-radius: 25px;
 	border-bottom-right-radius: 25px;
 }
@@ -459,19 +459,14 @@ footer{
 	color: #002A3A !important;
 	text-shadow:  1px 1px 3px #000;
 	font-family: "OldStamper";
+	font-size: 28px;
 	letter-spacing: 0.035em;
 	box-shadow: 2px 2px 6px #000;
 }
-#contacts label{
-	font-size: 34px;
-}
-#powering label{
-	font-size: 30px;
-}
 #contacts address{
 	opacity: 0.85;
-	padding-top: 4px; 
-	padding-bottom: 4px;
+	padding-top: 2px; 
+	padding-bottom: 2px;
 	background-color: #777;
 	border-top-left-radius: 25px;
 	border-bottom-right-radius: 25px;
@@ -479,7 +474,7 @@ footer{
 	box-shadow: 1px 1px 3px #000;
 }
 #contacts address a{
-	padding: 4px 20px 4px 20px;
+	padding: 2px 10px 2px 10px;
 	border-top-left-radius: 25px;
 	border-bottom-right-radius: 25px;
 	font-family: "2Dumb";
@@ -922,6 +917,28 @@ footer{
 	.accRubTitle{
 		font-size: 20px;
 	}
+	#footer article,#contacts label,#powering label{
+		margin-bottom: 4px;
+		padding: 4px 0px 4px 0px;
+	}
+	#powering label{
+		font-size: 16px;
+	}
+	#powering p{
+		font-size: 11px;
+	}
+	#contacts label{
+		font-size: 22px;
+	}
+	#contacts address{
+		padding-top: 2px; 
+		padding-bottom: 2px;
+	}
+	#contacts address a{
+		padding: 2px 10px 2px 10px;
+		font-size: 10px;
+		letter-spacing: 0.035em;
+	}
 }
 /* *** *** *** Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
@@ -932,7 +949,7 @@ footer{
 		height: 96px;
 	}
 	.site-author{
-		font-size: 24px;
+		font-size: 28px;
 	}
 	h1,h1 a{
 		font-size: 38px;
@@ -960,6 +977,20 @@ footer{
 	}
 	.accRubTitle{
 		font-size: 28px;
+	}
+	#powering label{
+		font-size: 20px;
+	}
+	#powering p{
+		font-size: 13px;
+	}
+	#contacts label{
+		padding: 6px 0px 6px 0px;
+		font-size: 28px;
+	}
+	#contacts address a{
+		font-size: 15px;
+		letter-spacing: 0.035em;
 	}
 }
 /* *** *** *** Large devices (desktops, 992px and up) */
@@ -1036,6 +1067,19 @@ footer{
 	.accRubTitle{
 		font-size: 30px;
 	}
+	#powering label{
+		font-size: 22px;
+	}
+	#powering p{
+		font-size: 15px;
+	}
+	#contacts label{
+		font-size: 28px;
+	}
+	#contacts address a{
+		font-size: 14px;
+		letter-spacing: 0.035em;
+	}
 }
 /* *** *** *** Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
@@ -1084,6 +1128,12 @@ footer{
 	}
 	.accRubTitle{
 		font-size: 34px;
+	}
+	#contacts label{
+		font-size: 34px;
+	}
+	#powering label{
+		font-size: 30px;
 	}
 }
 /* Extra large devices (large desktops)

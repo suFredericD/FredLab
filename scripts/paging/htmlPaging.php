@@ -86,8 +86,8 @@ function fct_BuildFooterHtml($objPageInfos){
     <footer class="container">
      <section class="row" id ="footer">
 <!-- -- -- -- Technologies -- -- -- -->
-      <article class="offset-xl-2 col-xl-4" id="powering">
-       <label class="col-xl-10">&#9889;&nbsp;Powered by&nbsp;</label>
+      <article class="offset-xl-2 col-xl-4 offset-lg-2 col-lg-3 offset-md-2 col-md-4 col-sm-6" id="powering">
+       <label class="col-xl-10 col-sm-12">&#9889;&nbsp;Powered by&nbsp;</label>
        <p class="site-powering">
         <span class="fab fa-php fa-lg"></span>&nbsp;&nbsp;<?php echo $GLOBALS['strPhpVersionDisplay'];?>&nbsp;/
         MySql 8.0&nbsp;&nbsp;<span class="fa fa-database"></span>
@@ -101,7 +101,7 @@ function fct_BuildFooterHtml($objPageInfos){
        <p class="site-powering"><span class="fab fa-font-awesome"></span>&nbsp;FontAwesome 5.11</p>
       </article>
 <!-- -- -- -- Contacts -- -- -- -->
-      <article class="offset-xl-1 col-xl-4" id="contacts">
+      <article class="offset-xl-1 col-xl-4 offset-lg-1 col-lg-4 offset-md-1 col-md-5 offset-sm-1 col-sm-5" id="contacts">
        <div class="row">
         <label class="col-xl-10"><span class="far fa-address-book fa-lg"></span>&nbsp;Contacts&nbsp;</label>
         <address class="col-xl-10 contact_links">

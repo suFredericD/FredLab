@@ -8,7 +8,7 @@
  *              Contexte :   php 7.3
  *              Fonction :   construction des composants graphiques des pages
  *   Date mise en oeuvre :   13/11/2019
- *          Dernière MàJ :   12/12/2019
+ *          Dernière MàJ :   13/12/2019
  *******************************************************************************************************/
 /***** *****    INCLUSIONS ET SCRIPTS   ***** *****/
 
@@ -22,9 +22,9 @@ function fct_BuildHeaderGraph($objPageInfos){?>
       <header id="site-header">
        <table class="table" id="tab-site-header">
         <tr class="row">
-         <td class="col-lg-4 col-md-4 col-sm-4 col-2">
+         <td class="col-lg-4 col-md-4 col-sm-4 col-4">
           <img class="img-logosite" src="<?php echo $objPageInfos->getLogosPath().$GLOBALS['strSiteLogo'];?>">
-         <td class="col-lg-8 col-md-8 col-sm-8 col-10"><?php echo $GLOBALS['strSiteTitle'];?></td>
+         <td class="col-lg-8 col-md-8 col-sm-8 col-8"><?php echo $GLOBALS['strSiteTitle'];?></td>
         </tr>
        </table>
       </header>

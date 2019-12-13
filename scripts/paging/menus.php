@@ -21,7 +21,7 @@ function fct_BuildHorizontalMenu($objPageInfos){
        <a class="navbar-brand custom-brand" id="haut" href="#"></a><!-- Ancre pour les liens back-to-top -->
 <!-- Bouton de réduction du menu pour les rescales petits formats -->
        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarFullSite" aria-controls="navbarFullSite" aria-expanded="false" aria-label="Toggle navigation">
-        <img src="<?php echo $objPageInfos->getLogosPath().$GLOBALS['strSiteLogo'];?>" class="navbar-toggler-icon">
+        <img src="<?php echo $objPageInfos->getLogosPath()."Flogo10a_small.png";?>" class="navbar-toggler-icon">
        </button>
 <!-- Barre de menu -->
        <div class="collapse navbar-collapse justify-content-center" id="navbarFullSite">
