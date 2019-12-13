@@ -30,20 +30,28 @@ const imgLogoSite = document.createElement("img");                          // I
 const strLogoSite = "media/logos/Flogo10a_small.png";                       // Fichier source du logo
 
 const intAmimationStartDelay = 5000;                                        // Délai animation du logo d'accueil
-/* *** *** *** INITIALISATIONS *** *** *** */
-divSiteTitle.style.display = "none";                // Masquage : titre du site
+/* *** *** *** MASQUAGES *** *** *** */
+divSiteTitle.style.display = "none";                // Titre du site
+imgLogoSite.style.display = "none";                 // Logo d'acceuil animé
 
+document.getElementById("accWelcome").style.display = "none";
+document.getElementById("accWelcomeSub").style.display = "none";
+document.getElementById("acc_welcometext").style.display = "none";
+/* *** *** *** INITIALISATIONS *** *** *** */
 imgLogoSite.id = "accLogo";                         // Logo d'accueil animé
 imgLogoSite.src = strLogoSite;
 imgLogoSite.className = "img-fluid";
 imgLogoSite.alt = "Logo du site";
-imgLogoSite.style.display = "none";
+
 divLogoSite.insertAdjacentElement('afterbegin', imgLogoSite);
 
+/* *** *** *** AFFICHAGE DES ELEMENTS *** *** *** */
+$("#main_title").show("pulsate",intAmimationStartDelay);    // Affichage : titre du site
+$("#accLogo").show("clip", intAmimationStartDelay);         // Affichage : logo d'acceuil animé
+$("#accWelcome").fadeIn(intAmimationStartDelay);
+$("#accWelcomeSub").fadeIn(intAmimationStartDelay);
+$("#acc_welcometext").show("slide", intAmimationStartDelay);  
 /* *** *** *** ANIMATIONS DES ELEMENTS *** *** *** */
-//$("#main_title").show("pulsate", intAmimationStartDelay);
-$("#main_title").show("pulsate",intAmimationStartDelay);
-$("#accLogo").show("clip", intAmimationStartDelay);
 var intDegrees = 10;
 var itvLogoAnimeTimeOut = setTimeout(function(){
     var itvLogoAnime = setInterval(function(){
