@@ -650,6 +650,9 @@ footer{
 	justify-content: center;
 	align-items: center;
 }
+#accLogo_cell img{
+	opacity: 0.8;
+}
 #accWelcome{
 	margin-top: 20px;
 	font-size: 40px;

@@ -8,7 +8,7 @@
  *              Contexte :   php 7.3
  *              Fonction :   construction de la structure des pages html
  *   Date mise en oeuvre :   24/10/2019
- *          Dernière MàJ :   11/12/2019
+ *          Dernière MàJ :   13/12/2019
  *******************************************************************************************************/
 /***** *****    INCLUSIONS ET SCRIPTS   ***** *****/
 
@@ -47,6 +47,7 @@ function fct_BuildHeaderHtml($objPageInfos){
      <meta property="og:site_name" content="<?php echo $GLOBALS['strSiteTitle'];?>">
 <!-- Liens de mise en forme et scripts -->
      <link href="<?php echo $objPageInfos->getConfigPath().$GLOBALS['strBootStrapCss'];?>" rel="stylesheet"><!-- Script css BootStrap -->
+     <link href="<?php echo $objPageInfos->getConfigPath().$GLOBALS['strjQueryUiCss'];?>" rel="stylesheet"><!-- Script css jQueryUi -->
      <link href="<?php echo $objPageInfos->getCssPath().$GLOBALS['strMainCss'];?>" rel="stylesheet" type="text/css"><!-- Page css principale -->
 <?php   if ( $objPageInfos->getName() != "index.php" ) {?>
      <link href="<?php echo $objPageInfos->getCssPath().$strFileCss;?>" rel="stylesheet" type="text/css"><!-- Css associée à la page courante-->
@@ -64,11 +65,21 @@ function fct_BuildHeaderHtml($objPageInfos){
 <?php
 }
 // *** *** *** *** *** Footer Html *** *** *** *** *** //
+// Fonction de construction du footer Html
+//       Paramètres :
+//         objPageInfos : objet contenant les infos de la page (classe 'Page')
+// Valeur de retour : code html
 function fct_BuildFooterHtml($objPageInfos){
 ?>
 <!-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -->
 <!-- -- -- -- -- -- Fin du contenu -- -- -- -- -- -->
      </section>
+<!-- -- -- -- Bootstrap Core JavaScript -- -- -- -->
+     <script src="<?php echo $GLOBALS['strAjax'];?>"></script><!-- Scripting Ajax -->
+     <script src="<?php echo $objPageInfos->getConfigPath().$GLOBALS['strBootStrapJs'];?>"></script><!-- Script js BootStrap -->
+     <script src="<?php echo $objPageInfos->getConfigPath().$GLOBALS['strFontAwesomeJs'];?>" crossorigin="anonymous"></script><!-- Script js FontAwesome -->
+     <script src="<?php echo $objPageInfos->getConfigPath().$GLOBALS['strjQueryJs'];?>"></script><!-- Script js jQuery -->
+     <script src="<?php echo $objPageInfos->getConfigPath().$GLOBALS['strjQueryUiJs'];?>"></script><!-- Script js jQueryUi -->
 <?php     if ( $objPageInfos->getName() == "index.php" ){?>
      <script src="<?php echo $objPageInfos->getScriptsPath();?>paging/acueilPaging.js"></script><!-- JavaScript : mise en page accueil -->
 <?php     } else if ( $objPageInfos->getName() == "candidat.php" ){?>
@@ -77,10 +88,7 @@ function fct_BuildFooterHtml($objPageInfos){
 <?php     } else if ( $objPageInfos->getName() == "coding.php" ){?>
      <script src="<?php echo $objPageInfos->getScriptsPath();?>paging/coding.js"></script><!-- JavaScript : mise en page coding -->
 <?php     }?>
-<!-- -- -- -- Bootstrap Core JavaScript -- -- -- -->
-     <script src="<?php echo $GLOBALS['strAjax'];?>"></script><!-- Scripting Ajax -->
-     <script src="<?php echo $objPageInfos->getConfigPath().$GLOBALS['strBootStrapJs'];?>"></script><!-- Script js BootStrap -->
-     <script src="<?php echo $objPageInfos->getConfigPath().$GLOBALS['strFontAwesomeJs'];?>" crossorigin="anonymous"></script><!-- Script js FontAwesome -->
+
     </body>
 <!-- -- -- -- Footer Html -- -- -- -->
     <footer class="container">

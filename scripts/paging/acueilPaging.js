@@ -1,16 +1,16 @@
 /*********************************************************************************************
- *   FredLab Projetcs Incorporated
+ *   FredLab Projects Incorporated
  *                Projet :   FredLab
  *                  Page :   acueilPaging.js
- *                Chemin :   http://127.0.0.1:8080/gAm3/scripts/paging/acueilPaging.js
+ *                Chemin :   https://www.fred-lab.com/scripts/paging/acueilPaging.js
  *        Page référente :   index.php
  *                  Type :   page de script
  *              Contexte :   JavaScript
- *              Fonction :   script de mise en page et animation
+ *              Fonction :   script de mise en page et animation de la page d'accueil
  *   Date mise en oeuvre :   14/11/2019
- *          Dernière MàJ :   12/12/2019
+ *          Dernière MàJ :   13/12/2019
  *********************************************************************************************/
-/* *** *** *** DECLARATIONS *** *** *** */
+/* *** *** *** CONSTANTES *** *** *** */
 const secMain = document.getElementById("secAccueilMain");                  // Bloc section principale
 
 const lblCandidat = secMain.getElementsByTagName("label")[0];               // Label du bloc 'Espace candidat'
@@ -24,16 +24,28 @@ const divCoding = document.getElementById("accCoding");                     // B
 const strLinkBaseColor = getComputedStyle(lnkCandidat).color;               // Couleur d'origine des liens de bloc
 const strLabelBaseClass = lblCandidat.className;                            // Classe d'origine des labels de bloc
 
-const imgLogoSite = document.getElementById("accLogo");                     // Image : logo du site
+const divLogoSite = document.getElementById("accLogo_cell");                // Cellule : logo du site
+const imgLogoSite = document.createElement("img");                          // Image : logo du site
+const strLogoSite = "media/logos/Flogo10a_small.png";                       // Fichier source du logo
 
+/* *** *** *** INITIALISATIONS *** *** *** */
+imgLogoSite.id = "accLogo";
+imgLogoSite.src = strLogoSite;
+imgLogoSite.className = "img-fluid";
+imgLogoSite.alt = "Logo du site";
+imgLogoSite.style.display = "none";
+divLogoSite.insertAdjacentElement('afterbegin', imgLogoSite);
+$("#accLogo").show("slide", 4000);
 var intDegrees = 10;
-var itvLogoAnime = setInterval(function(){
-    imgLogoSite.style.transform = "rotateY(" + intDegrees + "deg)";
-    intDegrees += 10;
-    if ( intDegrees > 360 ) {
-           intDegrees = 0;
-    }    
-},100);
+var itvLogoAnimeTimeOut = setTimeout(function(){
+    var itvLogoAnime = setInterval(function(){
+        imgLogoSite.style.transform = "rotateY(" + intDegrees + "deg)";
+        intDegrees += 10;
+        if ( intDegrees > 360 ) {
+            intDegrees = 0;
+        }    
+    },100);
+},4000);
 
 /* *** *** *** FONCTIONS *** *** *** */
 //  Fonction de redisposition des labels des blocs non-sélectionnés
@@ -43,7 +55,7 @@ var itvLogoAnime = setInterval(function(){
 //  Valeur de retour    : none
 function fctChangeLabels(intBloc){
     var intLabelNumber = secMain.getElementsByTagName("label").length;      // Nombre total d'items
-    for ( i=0 ; i < intLabelNumber ; i++ ) {
+    for ( i = 0 ; i < intLabelNumber ; i++ ) {
         var lblToChange = secMain.getElementsByTagName("label")[i];         // Label à modifier
         var lnkToChange = lblToChange.getElementsByTagName("a")[0];         // Label à modifier
         if ( i != intBloc ) {       // Changement des blocs non-sélectionnés
@@ -63,6 +75,7 @@ function fctChangeLabels(intBloc){
 //  Valeur de retour    : none
 function fctChangeCandidatLabel(){
     fctChangeLabels(0);
+    fctHideBlocs();
 }
 //  Fonction de redisposition du label du bloc 'Espace coding'
 //  EvenListener        : click

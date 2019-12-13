@@ -50,9 +50,8 @@ fct_BuildHorizontalMenu($objPageInfos);
       <section class="row" id="secAccueilTitle">
        <div class="offset-xl-1 col-xl-10 col-lg-12">
         <div class="row">
-          <div class="offset-xl-1 col-xl-2 offset-lg-1 col-lg-2 col-md-2 col-sm-2 col-4" id="accLogo_cell">
-            <img class="img-fluid" id="accLogo" src="<?php echo $objPageInfos->getLogosPath();?>Flogo10a_small.png" alt="Logo du site">
-          </div>
+<!-- -- -- -- Logo animé d'accueil -- -- -- -->
+          <div class="offset-xl-1 col-xl-2 offset-lg-1 col-lg-2 col-md-2 col-sm-2 col-4" id="accLogo_cell"></div>
           <div class="col-xl-9 col-lg-8 col-md-10 col-sm-10 col-8">
            <div class="row">
             <div class="offset-xl-1 col-xl-10 col-lg-12 animated-green" id="accWelcome">Bienvenue</div>
@@ -70,7 +69,7 @@ fct_BuildHorizontalMenu($objPageInfos);
            tapèe <em>à la main</em> par <a href="index.php#accCandidat" title="Voir qui c'est ce gars...">un artisan passioné</a>,
            à partir de languages <em>rigoureusement sèlectionnès</em>
            pour vous garantir une expèrience
-           de navigation <em>bio</em> de qualitè supèrieure.<br><br>
+           de navigation de <em>qualitè supèrieure</em>.<br><br>
            &laquo;&nbsp;<cite>Et le code source, ça se partage !</cite>&nbsp;&raquo;&nbsp;&#9472;&nbsp;<strong>Aristote</strong></p>
        </article>
 <!-- -- -- -- Section : Espace candidat -- -- -- -->

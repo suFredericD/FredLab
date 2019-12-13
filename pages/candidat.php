@@ -1,14 +1,14 @@
 <?php
 /*********************************************************************************
- *   FredLab Projetcs Incorporated
+ *   FredLab Projects Incorporated
  *                Projet :   FredLab
  *                  Page :   candidat.php
- *                Chemin :   http://127.0.0.1:8080/FredLab/candidat.php
+ *                Chemin :   https://www.fred-lab.com/pages/candidat.php
  *                  Type :   page utilisateur
  *              Contexte :   php 7.3
  *              Fonction :   page d'accueil de l'espace cadidat
  *   Date mise en oeuvre :   25/10/2019
- *          Dernière MàJ :   07/12/2019
+ *          Dernière MàJ :   13/12/2019
  *********************************************************************************/
 /***** *****    INCLUSIONS ET SCRIPTS   ***** *****/
 require("../scripts/admin/variables.php");                  // Variables globales du site
@@ -91,29 +91,7 @@ fct_BuildHorizontalMenu($objPageInfos);
    <div class="col-lg-12-hidden col-md-12 col-sm-12 col-xs-12" id="thema">
 	 <div class="row">
 	  <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 theRubTitle" title="La passion depuis toujours">L'informatique</div>
-<!-- -- -- -- -- Certifications -- -- -- -- -->
-     <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 theRubText">
-      <div class="row">
-       <div class="col-xl-2 col-lg-3 subTitle">
-        <a href="https://www.openclassrooms.com/fr/" target="_blank"><img class="img-fluid" id="ocrLogo" src="../media/logos/openclassrooms.png"></a>
-       </div>
-       <div class="col-xl-10 col-lg-9 subTitle">Mes certifications</div>
-      </div>
-<?php for ( $i = 1 ; $i <= $intCertifs ;$i++ ) {
-         $objDate = new DateTime ($arrCertifs[$i]['Date']);
-         $strDate = $objDate->format("d/m/Y");
-         $strAttributeTitle = "Consulter le certificat : « " . $arrCertifs[$i]['Label'] . " »" . ", obtenue le " . $strDate;
-?>
-      <div class="row">
-       <div class="col-xl-12 col-lg-12 certifLabel">
-        <a href="../docs/ocrCertifs/<?php echo $arrCertifs[$i]['File'];?>" target="_blank" title="<?php echo $strAttributeTitle;?>">
-         <p><span class="fa fa-external-link-alt"></span>&nbsp;<?php echo $arrCertifs[$i]['Label'];?></p>
-        </a>
-       </div>
-      </div>
 
-<?php }?>
-     </div>
 <!-- -- -- -- -- Mes domaines -- -- -- -- -->
      <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12 theRubText">
       <div class="row">
@@ -176,8 +154,30 @@ fct_BuildHorizontalMenu($objPageInfos);
        
       </div>
      </div>
-    </div>
-<!-- -- -- -- -- Ma formation -- -- -- -- -->
+<!-- -- -- -- -- Certifications -- -- -- -- -->
+     <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 theRubText">
+      <div class="row">
+       <div class="col-xl-2 col-lg-3 subTitle">
+        <a href="https://www.openclassrooms.com/fr/" target="_blank"><img class="img-fluid" id="ocrLogo" src="../media/logos/openclassrooms.png"></a>
+       </div>
+       <div class="col-xl-10 col-lg-9 subTitle">Mes certifications</div>
+      </div>
+<?php for ( $i = 1 ; $i <= $intCertifs ;$i++ ) {
+         $objDate = new DateTime ($arrCertifs[$i]['Date']);
+         $strDate = $objDate->format("d/m/Y");
+         $strAttributeTitle = "Consulter le certificat : « " . $arrCertifs[$i]['Label'] . " »" . ", obtenue le " . $strDate;
+?>
+<!-- -- -- -- -- Certification : <?php echo $arrCertifs[$i]['Label'];?> -- -- -- -- -->
+      <div class="row">
+       <div class="col-xl-12 col-lg-12 certifLabel">
+        <a href="../docs/ocrCertifs/<?php echo $arrCertifs[$i]['File'];?>" target="_blank" title="<?php echo $strAttributeTitle;?>">
+         <p><span class="fa fa-external-link-alt"></span>&nbsp;<?php echo $arrCertifs[$i]['Label'];?></p>
+        </a>
+       </div>
+      </div>
+<?php }?>
+     </div>
+    <!-- -- -- -- -- Ma formation -- -- -- -- -->
     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 theRubText">
      <div class="row">
       <div class="col-xl-12 col-lg-12 subTitle">Ma formation</div>
