@@ -64,23 +64,23 @@ fct_BuildHorizontalMenu($objPageInfos);
    <h1><a href="candidat.php"  title="Espace candidat">Regio candidatum</a></h1><hr class="body-hr">
    <div class="row" id="rowlinkedin">
     <div class="col-xl-1" id="profil"></div>
-    <div class="col-xl-4" id="linkedin">
+    <div class="col-xl-4 col-lg-5 col-md-5 col-12" id="linkedin">
      <div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="fr_FR" data-type="horizontal" data-theme="dark" data-vanity="frédéric-daniau"><a class="LI-simple-link" href='https://fr.linkedin.com/in/fr%C3%A9d%C3%A9ric-daniau?trk=profile-badge'>Frédéric DANIAU @ LinkedIn</a></div>
     </div>
-    <div class="offset-xl-1 col-xl-5" id="resumate">
+    <div class="offset-xl-1 col-xl-5 offset-lg-1 col-lg-6 col-md-7 col-12" id="resumate">
      <div class="row">
-      <div class="col-xl-3">
+      <div class="col-xl-3 col-3">
        <span class="fa fa-clipboard-list fa-lg"></span>
       </div>
-      <div class="col-xl-9">Responsable et rigoureux</div>
-      <div class="col-xl-3">
+      <div class="col-xl-9 col-9">Responsable et rigoureux</div>
+      <div class="col-xl-3 col-3">
        <span class="fa fa-user-cog fa-lg"></span>
       </div>
-      <div class="col-xl-9">Curieux et autodidacte</div>
-      <div class="col-xl-3">
+      <div class="col-xl-9 col-9">Curieux et autodidacte</div>
+      <div class="col-xl-3 col-3">
       <span class="fa fa-user-friends fa-lg"></span>
       </div>
-      <div class="col-xl-9">Bon sens du contact</div>
+      <div class="col-xl-9 col-9">Bon sens du contact</div>
      </div> 
     </div>
    </div><hr class="body-hr">

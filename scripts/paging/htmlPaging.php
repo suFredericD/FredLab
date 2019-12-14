@@ -111,7 +111,7 @@ function fct_BuildFooterHtml($objPageInfos){
 <!-- -- -- -- Contacts -- -- -- -->
       <article class="offset-xl-1 col-xl-4 offset-lg-1 col-lg-4 offset-md-1 col-md-5 offset-sm-1 col-sm-5" id="contacts">
        <div class="row">
-        <label class="col-xl-10"><span class="far fa-address-book fa-lg"></span>&nbsp;Contacts&nbsp;</label>
+        <label class="col-xl-10 col-md-9"><span class="far fa-address-book fa-lg"></span>&nbsp;Contacts&nbsp;</label>
         <address class="col-xl-10 contact_links">
          <a href="https://www.facebook.com/FredLaboratory" title="Vers la page Facebook de FredLab..." target="_blank">
           <span class="fab fa-facebook-square"></span>&nbsp;FredLab@Facebook

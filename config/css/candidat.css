@@ -31,7 +31,7 @@
 	margin-top: 20px;
 }
 #linkedin{
-	background-color: #222;
+	background-color: transparent;
 	padding: 0px;
 	margin: 0px;
 }
@@ -48,7 +48,7 @@
 	border-top-left-radius: 25px;
 	border-bottom-right-radius: 25px;
 	font-family: "Abel";
-	font-size: 24px;
+	font-size: 14px;
 	font-weight: bold;
 	color: #C1C1C1;
 	text-shadow: 1px 1px 3px #007083;
@@ -73,7 +73,7 @@
 	justify-content: center;
 	align-items: center;
 	font-family: "Abel";
-	font-size: 26px;
+	font-size: 14px;
 	font-weight: bold;
 	color: #C1C1C1;
 	text-shadow: 1px 1px 3px #007083;
@@ -853,6 +853,9 @@
 	.itemLabel,.itemText{
 		font-size: 20px;
 	}
+	#linkedin a,#resumate div{
+		font-size: 24px;
+	}
 }
 /* *** *** *** Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
@@ -884,6 +887,9 @@
 	}
 	.certifLabel a{
 		font-size: 22px;
+	}
+	#linkedin a,#resumate div{
+		font-size: 24px;
 	}
 }
 /* *** *** *** Large devices (desktops, 992px and up) */
