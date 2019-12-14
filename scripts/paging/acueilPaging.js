@@ -62,6 +62,12 @@ var itvLogoAnimeTimeOut = setTimeout(function(){
         }    
     },100);
 },intAmimationStartDelay);
+var itvAnimeTitleDelay = setInterval(function(){
+    $("#main_title").toggle();
+    var itvAnimeTitle = setInterval(function(){
+        $("#main_title").show("pulsate",500);
+    }, 1000);
+}, 3000);
 
 /* *** *** *** FONCTIONS *** *** *** */
 //  Fonction de redisposition des labels des blocs non-sélectionnés
