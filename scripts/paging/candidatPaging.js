@@ -1,14 +1,14 @@
 /*********************************************************************************************
- *   FredLab Projetcs Incorporated
+ *   FredLab Projects Incorporated
  *                Projet :   FredLab
  *                  Page :   candidatPaging.js
- *                Chemin :   http://127.0.0.1:8080/gAm3/scripts/paging/candidatPaging.js
+ *                Chemin :   https://www.fred-lab.com/scripts/paging/candidatPaging.js
  *        Page référente :   index.php
  *                  Type :   page de script
  *              Contexte :   JavaScript
- *              Fonction :   script de mise en page et animation
+ *              Fonction :   script de mise en page et animation de la page candidat.php
  *   Date mise en oeuvre :   15/11/2019
- *          Dernière MàJ :   15/11/2019
+ *          Dernière MàJ :   14/12/2019
  *********************************************************************************************/
 /* *** *** *** DECLARATIONS *** *** *** */
 const rowLinksContainer = document.getElementById("rowLinks");
@@ -23,6 +23,11 @@ const arrLinks = [lnkBref, lnkThema, lnkChrono];
 const arrTitles = [divBrefTitle, divThemaTitle, divChronoTitle];
 const strLinkBaseClasse = divBrefTitle.className;
 
+const intAmimationStartDelay = 500;                                        // Délai animation du logo d'accueil
+var itvAnimeTitle = setInterval(function(){
+    $("#main_title").toggle("pulsate",intAmimationStartDelay);
+    $("#main_title").show("pulsate",intAmimationStartDelay);
+}, 4000);
 
 /* *** *** *** FONCTIONS *** *** *** */
 //  Fonction de redisposition des labels des blocs non-sélectionnés
