@@ -23,7 +23,8 @@ const arrLinks = [lnkBref, lnkThema, lnkChrono];
 const arrTitles = [divBrefTitle, divThemaTitle, divChronoTitle];
 const strLinkBaseClasse = divBrefTitle.className;
 
-const intAmimationStartDelay = 500;                                        // Délai animation du logo d'accueil
+// Animation du titre header
+const intAmimationStartDelay = 500;
 var itvAnimeTitle = setInterval(function(){
     $("#main_title").toggle("pulsate",intAmimationStartDelay);
     $("#main_title").show("pulsate",intAmimationStartDelay);

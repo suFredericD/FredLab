@@ -7,7 +7,7 @@
  * 				Contexte :	 Css 3.0
  *              Fonction :   page de styles d'affichage CSS
  *   Date mise en oeuvre :   13/11/2019
- *          Dernière MàJ :   11/12/2019
+ *          Dernière MàJ :   14/12/2019
  *************************************************************************************************/
 /*
 Palette
@@ -39,6 +39,13 @@ Palette
 		 url('../fonts/3dumb_regular/3Dumb-webfont.woff') format('woff'),
 		 url('../fonts/3dumb_regular/3Dumb-webfont.ttf') format('truetype'),
 		 url('../fonts/3dumb_regular/3Dumb-webfont.svg') format('svg');
+}
+@font-face{
+	font-family: "Abel";
+	src: url('../fonts/abel_regular/abel-regular-webfont.eot') format('eot'),
+		 url('../fonts/abel_regular/abel-regular-webfont.woff') format('woff'),
+		 url('../fonts/abel_regular/abel-regular-webfont.ttf') format('truetype'),
+		 url('../fonts/abel_regular/abel-regular-webfont.svg') format('svg');
 }
 @font-face{
 	font-family: "Acme";

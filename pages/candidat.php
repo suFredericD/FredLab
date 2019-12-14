@@ -8,7 +8,7 @@
  *              Contexte :   php 7.3
  *              Fonction :   page d'accueil de l'espace cadidat
  *   Date mise en oeuvre :   25/10/2019
- *          Dernière MàJ :   13/12/2019
+ *          Dernière MàJ :   14/12/2019
  *********************************************************************************/
 /***** *****    INCLUSIONS ET SCRIPTS   ***** *****/
 require("../scripts/admin/variables.php");                  // Variables globales du site
@@ -60,7 +60,30 @@ fct_BuildHeaderGraph($objPageInfos);
 fct_BuildHorizontalMenu($objPageInfos);
 // ***** ***** ***** Corps du contenu ***** ***** *****
 ?>
+   
    <h1><a href="candidat.php"  title="Espace candidat">Regio candidatum</a></h1><hr class="body-hr">
+   <div class="row" id="rowlinkedin">
+    <div class="col-xl-1" id="profil"></div>
+    <div class="col-xl-4" id="linkedin">
+     <div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="fr_FR" data-type="horizontal" data-theme="dark" data-vanity="frédéric-daniau"><a class="LI-simple-link" href='https://fr.linkedin.com/in/fr%C3%A9d%C3%A9ric-daniau?trk=profile-badge'>Frédéric DANIAU @ LinkedIn</a></div>
+    </div>
+    <div class="offset-xl-1 col-xl-5" id="resumate">
+     <div class="row">
+      <div class="col-xl-3">
+       <span class="fa fa-clipboard-list fa-lg"></span>
+      </div>
+      <div class="col-xl-9">Responsable et rigoureux</div>
+      <div class="col-xl-3">
+       <span class="fa fa-user-cog fa-lg"></span>
+      </div>
+      <div class="col-xl-9">Curieux et autodidacte</div>
+      <div class="col-xl-3">
+      <span class="fa fa-user-friends fa-lg"></span>
+      </div>
+      <div class="col-xl-9">Bon sens du contact</div>
+     </div> 
+    </div>
+   </div><hr class="body-hr">
    <div class="row">
     <div class="offset-lg-1 col-lg-10 offset-md-1 col-md-10 offset-sm-1 col-sm-10 offset-1 col-10" title="Un homme, des parcours" style="padding-top:5px;margin-top:5px;background-color:transparent;">
      <h2>Cursus</h2>
@@ -220,7 +243,7 @@ fct_BuildHorizontalMenu($objPageInfos);
 <?php // Fonction de construction de la chronologie
 fctDisplayChrono();
 ?>	 
-   </div><hr class="body-hr">
+   </div></div><hr class="body-hr">
 <!-- -- -- -- -- Rubrique "Curricula vitae" -- -- -- -- -->
    <div class="row" id="cv">
     <div class="offset-lg-1 col-lg-10 offset-md-1 col-md-10 offset-sm-1 col-sm-10 offset-1 col-10" title="Hé oui, au pluriel ça donne ça..." style="padding-top:5px;margin-top:5px;background-color:transparent;">
@@ -251,6 +274,7 @@ fctDisplayChrono();
      <a href="../index.php">Ostium</a>
     </div>
    </div>
+   <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 <?php
 // ***** ***** ***** Footer HTML ***** ***** *****
 fct_BuildFooterHtml($objPageInfos);

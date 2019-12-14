@@ -67,7 +67,7 @@ var itvAnimeTitleDelay = setInterval(function(){
     var itvAnimeTitle = setInterval(function(){
         $("#main_title").show("pulsate",500);
     }, 1000);
-}, 3000);
+}, 4000);
 
 /* *** *** *** FONCTIONS *** *** *** */
 //  Fonction de redisposition des labels des blocs non-sélectionnés
