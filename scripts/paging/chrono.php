@@ -21,6 +21,7 @@ function fctDisplayChrono(){
     $intYearNow = $datNow->format("Y");
     $arrActivities = fct_SelectAllActivitiesDesc();
     $intActivities = count($arrActivities);
+    print_r($arrActivities);
 ?>
 	 <div class="row">
 <!-- -- -- Section gauche : années -- -- -->
@@ -165,6 +166,6 @@ function fctDisplayChrono(){
       </div>
 
 <!-- -- -- Fin : chronologie -- -- -->
-     </div>
+     </div></div>
 <?php
 }

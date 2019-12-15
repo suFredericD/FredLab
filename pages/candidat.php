@@ -19,17 +19,7 @@ require("../scripts/paging/mainPaging.php");                // Script de constru
 require("../scripts/paging/menus.php");                     // Script de construction des menus
 require("../scripts/paging/chrono.php");                    // Script de construction de la présentation chronologique
 /***** *****    DECLARATIONS   ***** *****/
-$datNow = new DateTime();                                           // Timer de génération de la page (start)
-$intMinInMilli = intval( ( $datNow->format("i") * 60 ) * 1000 );    // Minutes en millisecondes
-$intSecInMilli = intval($datNow->format("s")*1000);                 // Secondes en millisecondes
-$intMilliSec = $datNow->format("v");                                // Millisecondes
-$intStartMilliSec = $intMinInMilli + $intSecInMilli + $intMilliSec; // Timer en millisecondes (start)
 //***** *****   Informations de la page
-if ( $_SERVER["SCRIPT_NAME"] === "/FredLab/index.php" ) {            // Comparaison du nom du script
-	$strPathFile = $_SERVER["CONTEXT_PREFIX"]."/";                  // Affectation du path si index.php
-}else{
-	$strPathFile = $_SERVER["CONTEXT_PREFIX"]."/pages/";            // Affectation du path si autre fichier
-}
 if ( isset($_SERVER["HTTP_REFERER"]) ) {                            // Récupération de la page précédente
     $strHttpReferer = $_SERVER["HTTP_REFERER"];
 }else{
@@ -80,7 +70,7 @@ fct_BuildHorizontalMenu($objPageInfos);
       <div class="col-xl-3 col-3">
       <span class="fa fa-user-friends fa-lg"></span>
       </div>
-      <div class="col-xl-9 col-9">Bon sens du contact</div>
+      <div class="col-xl-9 col-9">Facilité de contact</div>
      </div> 
     </div>
    </div><hr class="body-hr">
@@ -243,7 +233,7 @@ fct_BuildHorizontalMenu($objPageInfos);
 <?php // Fonction de construction de la chronologie
 fctDisplayChrono();
 ?>	 
-   </div></div><hr class="body-hr">
+   </div><hr class="body-hr">
 <!-- -- -- -- -- Rubrique "Curricula vitae" -- -- -- -- -->
    <div class="row" id="cv">
     <div class="offset-lg-1 col-lg-10 offset-md-1 col-md-10 offset-sm-1 col-sm-10 offset-1 col-10" title="Hé oui, au pluriel ça donne ça..." style="padding-top:5px;margin-top:5px;background-color:transparent;">
