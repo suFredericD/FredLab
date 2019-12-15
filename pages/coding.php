@@ -80,7 +80,11 @@ if ( !isset($_GET['view']) ){
 <?php
         for ($j = 1 ; $j <= $intUlinksTypes ; $j++ ){
             $arrUlinksFromTypeRef = fct_SelectUlinksFromTypeAndRef($arrUlinksTypes[$j]['Id'], $arrUlinksReferers[$i]['Id']);
-            $intUlinksFromTypeRef = count($arrUlinksFromTypeRef);
+            if ( is_array($arrUlinksFromTypeRef) ){
+                $intUlinksFromTypeRef = count($arrUlinksFromTypeRef);
+            } else {
+                $intUlinksFromTypeRef = 0;
+            }
 ?>
          <div class="col-xl-12 ulk_types">
           <article class="row">

@@ -8,7 +8,7 @@
  *              Contexte :   JavaScript
  *              Fonction :   script de mise en page et animation de la page d'accueil
  *   Date mise en oeuvre :   14/11/2019
- *          Dernière MàJ :   13/12/2019
+ *          Dernière MàJ :   15/12/2019
  *********************************************************************************************/
 /* *** *** *** CONSTANTES *** *** *** */
 const divSiteTitle = document.getElementById("main_title");                 // Bloc : titre du site
