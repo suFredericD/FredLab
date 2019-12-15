@@ -312,11 +312,11 @@ background-color: transparent;
 #sec_utilslinks,#ulk_main,.ulk_referer{
     padding: 10px 10px 10px 10px;
 }
-#sec_utilslinks{
-    opacity: 0.9;
+#sec_utilslinks,.ulk_referer{
     display: none;
+    opacity: 0.9;
 }
-#sec_utilslinks label{
+#ulk_mainlabel,.ulk_typelabel{
     background-color: hsl(0, 0%, 34%) !important;
     background-repeat: repeat-x;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c6c6c6", endColorstr="#565656");
@@ -343,7 +343,50 @@ background-color: transparent;
 .ulk_reflabel{
     margin-top: 10px;
     padding: 6px 0px 6px 0px;
+    background-color: hsl(150, 22%, 12%) !important;
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#699f84", endColorstr="#17251e");
+	background-image: -khtml-gradient(linear, left top, left bottom, from(#699f84), to(#17251e));
+	background-image: -moz-linear-gradient(top, #699f84, #17251e);
+	background-image: -ms-linear-gradient(top, #699f84, #17251e);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #699f84), color-stop(100%, #17251e));
+	background-image: -webkit-linear-gradient(top, #699f84, #17251e);
+	background-image: -o-linear-gradient(top, #699f84, #17251e);
+	background-image: linear-gradient(#699f84, #17251e);
+	border-color: #17251e #17251e hsl(150, 22%, 2%);
+	-webkit-font-smoothing: antialiased;
+	box-shadow: 6px 4px 12px #000;
+	border-left: 1px outset #000;
+	border-top: 1px outset #000;
+	border-bottom: 1px inset #444;
+    color: #000 !important;
+    font-family: "Belligerent";
     font-size: 20px;
+    letter-spacing: 0.055em;
+    text-shadow: 1px 1px 3px #777;
+    transition-property: all;
+	transition-duration: 1250ms;
+	-o-transition-property: all;
+	-o-transition-duration: 1250ms;
+	-moz-transition-property: all;
+	-moz-transition-duration: 1250ms;
+	-webkit-transition-property: all;
+    -webkit-transition-duration: 1250ms;
+    cursor: pointer;
+}
+.ulk_reflabel:hover{
+    background-color: hsl(0, 0%, 34%) !important;
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c6c6c6", endColorstr="#565656");
+    background-image: -khtml-gradient(linear, left top, left bottom, from(#c6c6c6), to(#565656));
+    background-image: -moz-linear-gradient(top, #c6c6c6, #565656);
+    background-image: -ms-linear-gradient(top, #c6c6c6, #565656);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #c6c6c6), color-stop(100%, #565656));
+    background-image: -webkit-linear-gradient(top, #c6c6c6, #565656);
+    background-image: -o-linear-gradient(top, #c6c6c6, #565656);
+    background-image: linear-gradient(#c6c6c6, #565656);
+    border-color: #565656 #565656 hsl(0, 0%, 23%);
+    color: #002A3D !important;
     text-shadow: 1px 1px 3px #037A6D;
 }
 .ulk_typelabel{

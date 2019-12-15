@@ -13,26 +13,35 @@
 /* *** *** *** ELEMENTS *** *** *** */
 const liUtilsLinks = document.getElementById("utils_links");        // Bouton : liens utiles
 const secUtilsLinks = document.getElementById("sec_utilslinks");    // Section : liens utiles
-const lblUtilsLins = document.getElementById("ulk_mainlabel");      // Label principal : section liens utiles
+const lblUtilsLinks = document.getElementById("ulk_mainlabel");     // Label principal : section liens utiles
 // Tableau des labels de catégories de liens utiles
 const arrReferersLabels = document.getElementsByClassName("offset-xl-2 col-xl-8 offset-lg-2 col-lg-8 offset-md-1 col-md-10 ulk_reflabel");
+const arrReferersBlocks = document.getElementsByClassName("row ulk_referer");
 
 /* *** *** *** PARAMETRES *** *** *** */
 const intDisplayFadeIn = 2000;      // Timer animation show
 const intDisplayFadeOut = 1150;     // Timer animation hide
 /* *** *** *** VARIABLES *** *** *** */
-var bolDisplayUtilsLinks = false;
+var bolDisplayUtilsLinks = false;               // Controller d'affichage : section liens utiles
+var arrDisplayReferers = new Array();           // Controller d'affichage : rubriques des liens utiles
 
 /* *** *** *** INITIALISATIONS *** *** *** */
+for ( i = 0 ; i < arrReferersLabels.length ; i++ ) {
+    arrDisplayReferers[i] = false;
+}
+
+/* *** *** *** ANIMATIONS *** *** *** */
 // Animation du titre header
 const intAmimationStartDelay = 500;
 var itvAnimeTitle = setInterval(function(){
     $("#main_title").toggle("pulsate",intAmimationStartDelay);
     $("#main_title").show("pulsate",intAmimationStartDelay);
+    
 }, 4000);
+
 /* *** *** *** FONCTIONS *** *** *** */
-//  Fonction d'affichage du bloc liens utiles
-//  EvenListener        : none
+//  Fonction d'affichage/masquage de la section liens utiles
+//  EvenListener        : liUtilsLinks, lblUtilsLinks
 //  Paramètres          : none
 //  Valeur de retour    : none
 function fctDisplayUtilsLinks(){
@@ -43,10 +52,31 @@ function fctDisplayUtilsLinks(){
         $("#sec_utilslinks").hide("pulsate", intDisplayFadeOut);
         bolDisplayUtilsLinks = false;
     }
-    
+}
+/* *** *** *** FONCTIONS *** *** *** */
+//  Fonction d'affichage/masquage d'une rubrique de la section liens utiles
+//  EvenListener        : arrReferersLabels
+//  Paramètres          : intRefererId
+//  Valeur de retour    : none
+function fctDisplayReferersLinks(intRefererId){
+    var strRefererId = "#referer" + intRefererId;
+    if ( arrDisplayReferers[intRefererId] != false ) {
+        $(strRefererId).hide("pulsate", 500);
+        arrDisplayReferers[intRefererId] = false;
+    } else {
+        $(strRefererId).show("pulsate", 1000);
+        arrDisplayReferers[intRefererId] = true;
+        //arrReferersLabels[intRefererId].getElementsByTagName("span")[1].className = "far fa-caret-square-down fa-xs";
+    }
 }
 /* *** *** *** APPELS DE FONCTIONS *** *** *** */
 
 /* *** *** *** EVENT LISTENERS *** *** *** */
-liUtilsLinks.addEventListener("click", fctDisplayUtilsLinks);
-lblUtilsLins.addEventListener("click", fctDisplayUtilsLinks);
+liUtilsLinks.addEventListener("click", fctDisplayUtilsLinks);       // Clic : bouton liens utiles
+lblUtilsLinks.addEventListener("click", fctDisplayUtilsLinks);      // Clic : label liens utiles
+
+for ( i = 0 ; i < arrReferersLabels.length ; i++ ) {
+    arrReferersLabels[i].addEventListener("click", function(e){
+        fctDisplayReferersLinks(e.target.id);
+    });
+}

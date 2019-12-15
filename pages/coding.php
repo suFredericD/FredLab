@@ -43,6 +43,7 @@ fct_BuildHeaderGraph($objPageInfos);
 // ***** ***** ***** Menu principal ***** ***** *****
 fct_BuildHorizontalMenu($objPageInfos);
 // ***** ***** ***** Corps du contenu ***** ***** *****
+$strClaLinkOfficial = "col-xl-8 col-lg-8 col-md-8 col-sm-8 ulk_official";
 if ( !isset($_GET['view']) ){
 ?>
 <!-- -- -- -- Section : principale -- -- -- -->
@@ -72,10 +73,10 @@ if ( !isset($_GET['view']) ){
         $strDivRefererId = "referer" . $i;
 ?>
 <!-- -- -- -- Article n°<?php echo $i . " : " . $arrUlinksReferers[$i]['Label'];?> -- -- -- -->
-        <label class="offset-xl-2 col-xl-8 offset-lg-2 col-lg-8 offset-md-1 col-md-10 ulk_reflabel"><span class="<?php echo $arrUlinksReferers[$i]['Icon'];?>"></span>&nbsp;<?php echo $arrUlinksReferers[$i]['Label'];?></label>
-        <diV class="row ulk_referer" id="<?php echo $strDivRefererId;?>">
-         
-         
+        <label class="offset-xl-2 col-xl-8 offset-lg-2 col-lg-8 offset-md-1 col-md-10 ulk_reflabel" id="<?php echo $i;?>">
+         <span class="<?php echo $arrUlinksReferers[$i]['Icon'];?>"></span>&nbsp;<?php echo $arrUlinksReferers[$i]['Label'];?>
+        </label>
+        <div class="row ulk_referer" id="<?php echo $strDivRefererId;?>">
 <?php
         for ($j = 1 ; $j <= $intUlinksTypes ; $j++ ){
             $arrUlinksFromTypeRef = fct_SelectUlinksFromTypeAndRef($arrUlinksTypes[$j]['Id'], $arrUlinksReferers[$i]['Id']);
@@ -83,11 +84,11 @@ if ( !isset($_GET['view']) ){
 ?>
          <div class="col-xl-12 ulk_types">
           <article class="row">
-           
+<!-- -- -- -- <!-- -- -- -- Article n°<?php echo $i . " : rubrique " . $arrUlinksTypes[$j]['Label'];?> -- -- -- -->           
 <?php       if ( $j == 1 ){
                 if ( $arrUlinksReferers[$i]['Label'] != "Général" ){?>
           <label class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-6 ulk_typelabel"><span class="<?php echo $arrUlinksTypes[$j]['Icon'];?>"></span>&nbsp;<?php echo $arrUlinksTypes[$j]['Label'];?></label>
-           <a class="col-xl-8 col-lg-8 col-md-8 col-sm-8 ulk_official" href="<?php echo $arrUlinksFromTypeRef[$j]['Url'];?>" title="<?php echo $arrUlinksFromTypeRef[$j]['Title'];?>" target="_blank">
+           <a class="<?php echo $strClaLinkOfficial;?>" href="<?php echo $arrUlinksFromTypeRef[$j]['Url'];?>" title="<?php echo $arrUlinksFromTypeRef[$j]['Title'];?>" target="_blank">
             <?php echo $arrUlinksFromTypeRef[$j]['Label'];?>
            </a>
 <?php           }?>
