@@ -60,7 +60,7 @@ if ( !isset($_GET['view']) ){
        <div class="offset-xl-1 col-xl-5 offset-lg-1 col-lg-5" id="cod_ressources">
         <label class="col-xl-12 col-lg-12" for="cod_ressources"><span class="fa fa-book-reader"></span>&nbsp;Les ressources</label>
         <ul class="col-xl-12">
-         <li id="utils_links"><span class="far fa-bookmark"></span>&nbsp;&nbsp;Liens utiles</li>
+         <li id="utils_links"><span class="far fa-bookmark" title="Retrouvez une sélection de liens utiles pour coder oklm..."></span>&nbsp;&nbsp;Liens utiles</li>
         </ul>
        </div>
       </section>

@@ -8,7 +8,7 @@
  *              Contexte :   php 7.3
  *              Fonction :   construction de la vue : webfonts
  *   Date mise en oeuvre :   10/12/2019
- *          Dernière MàJ :   11/12/2019
+ *          Dernière MàJ :   15/12/2019
  *******************************************************************************************************/
 /***** *****    INCLUSIONS ET SCRIPTS   ***** *****/
 
@@ -29,7 +29,8 @@ function fctDisplayWebFonts($objPageInfos){
 <!-- -- -- -- Section principale : WebFonts -- -- -- -->
      <article class="col-xl-12 col-lg-12" id="wft_welcome">
       <div class="row">
-       <label class="col-xl-12 col-lg-12" for="wft_welcome"><span class="fa fa-sign-in-alt"></span>&nbsp;&nbsp;&nbsp;Téléchargements libres</label>
+       <label class="col-xl-11 col-lg-11" for="wft_welcome"><span class="fa fa-sign-in-alt"></span>&nbsp;&nbsp;&nbsp;Téléchargements libres</label>
+       <div class="col-xl-1 col-lg-1" id="wft_welclose"><span class="far fa-times-circle fa-2x"></span></div>
        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 page-explain-license">Licenses</div>
        <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10">
 	    <ul class="list-group">
@@ -77,5 +78,6 @@ function fctDisplayWebFonts($objPageInfos){
 ?>
      </div>
     </section>
+    <script src="../scripts/paging/webFonts.js"></script><!-- Script : animation webfonts.php -->
 <?php
 }

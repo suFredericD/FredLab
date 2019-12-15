@@ -109,6 +109,7 @@ $strArtisanLinkTitle = "Voir sa ganache...";
           tout ce qui va bien pour triturer vos méninges, chouchouter votre code et développer <em>oklm</em> :
           <ul class="offset-xl-1 col-xl-10" id="accUlText">
             <li><a href="pages/coding.php#cod_toolbox" title="Accéder à la ToolBox">les outils</a> bien pratiques,</li>
+            <li><a href="pages/coding.php#cod_ressources" title="Accéder à la rubrique 'Liens Utiles'">des liens utiles</a> au quotidien,</li>
             <li>les références de la bibliographie,</li>
             <li>et bien d'autres ressources...</li>
           </ul>

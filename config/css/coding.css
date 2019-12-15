@@ -62,18 +62,45 @@
 }
 #cod_toolbox a,#cod_ressources li{
     padding: 6px 12px 6px 12px;
-    background-color: #C1C1C1;
-    border: 1px inset #002A3A;
+    background-color: hsl(150, 22%, 12%) !important;
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#699f84", endColorstr="#17251e");
+	background-image: -khtml-gradient(linear, left top, left bottom, from(#699f84), to(#17251e));
+	background-image: -moz-linear-gradient(top, #699f84, #17251e);
+	background-image: -ms-linear-gradient(top, #699f84, #17251e);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #699f84), color-stop(100%, #17251e));
+	background-image: -webkit-linear-gradient(top, #699f84, #17251e);
+	background-image: -o-linear-gradient(top, #699f84, #17251e);
+	background-image: linear-gradient(#699f84, #17251e);
+	border-color: #17251e #17251e hsl(150, 22%, 2%);
+	-webkit-font-smoothing: antialiased;
+	box-shadow: 2px 2px 4px #037A63;
+	border-left: 1px outset #002A3A;
+	border-top: 1px outset #002A3A;
+	border-bottom: 1px inset #444;
+	border-top-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+	color: #002A3D !important;
     font-family: "Belligerent";
     font-size: 34px;
-    color: #002A3D;
-    text-shadow: none;
+    text-shadow: 1px 1px 2px #037A63;
 }
 #cod_toolbox a:hover,
 #cod_ressources li:hover{
-    background-color: #333;
-    color: #037A63;
-    text-shadow: 1px 1px 2px #777;;
+    background-color: hsl(0, 0%, 0%) !important;
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#8e8e8e", endColorstr="#000000");
+    background-image: -khtml-gradient(linear, left top, left bottom, from(#8e8e8e), to(#000000));
+    background-image: -moz-linear-gradient(top, #8e8e8e, #000000);
+    background-image: -ms-linear-gradient(top, #8e8e8e, #000000);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #8e8e8e), color-stop(100%, #000000));
+    background-image: -webkit-linear-gradient(top, #8e8e8e, #000000);
+    background-image: -o-linear-gradient(top, #8e8e8e, #000000);
+    background-image: linear-gradient(#8e8e8e, #000000);
+    border-color: #000000 #000000 hsl(0, 0%, -14%);
+    box-shadow: 3px 3px 8px #000;
+    color: #037A63 !important;
+    text-shadow: 1px 1px 2px #000;;
 }
 #cod_ressources ul{
     margin-top: 0px;
@@ -87,14 +114,15 @@
 }
 /***** ***** ***** Vue : webfonts ***** ***** *****/
 #wft_main,#wft_main article,
-#wft_welcome,#wft_welcome article,#wft_welcome div,
+#wft_welcome article,
 #wft_welcome label,#wft_welcome ul,#wft_welcome li,
 .page-explain-license,.page-explain-label,#sec_webfonts label{
     border-top-left-radius: 25px;
     border-bottom-right-radius: 25px;
     cursor: default;
 }
-.wft_link,#wft_main a,#wft_welcome li span{
+.wft_link,#wft_main a,#wft_welcome li span,
+#wft_welclose{
     transition-property: all;
 	transition-duration: 1250ms;
 	-o-transition-property: all;
@@ -118,7 +146,6 @@
     background-image: -webkit-linear-gradient(top, #b2b2b2, #333333);
     background-image: -o-linear-gradient(top, #b2b2b2, #333333);
     background-image: linear-gradient(#b2b2b2, #333333);
-    border-color: #333333 #333333 hsl(96, 0%, 7.5%);
     color: #000 !important;
     -webkit-font-smoothing: antialiased;
     font-family: "3Dumb";
@@ -137,6 +164,21 @@
     background-color: #777;
     border: 2px inset #002A3D;
     box-shadow: 1px 1px 2px #000;
+}
+#wft_welclose{
+    display: flex;
+	justify-content: center;
+    align-items: center;
+    padding-top: 14px;
+    padding-bottom: 20px;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    font-size: 30px;
+    cursor: pointer;
+}
+#wft_welclose:hover{
+    background-color: #333;
+    color: #037A6D;
 }
 #wft_welcome li{
     background-color: transparent;
@@ -379,8 +421,8 @@ background-color: transparent;
     background-image: -o-linear-gradient(top, #c6c6c6, #565656);
     background-image: linear-gradient(#c6c6c6, #565656);
     border-color: #565656 #565656 hsl(0, 0%, 23%);
-    color: #002A3D !important;
-    text-shadow: 1px 1px 3px #037A6D;
+    color: #037A6D !important;
+    text-shadow: 2px 2px 4px #000;
 }
 .ulk_typelabel{
     padding: 2px 0px 2px 0px;

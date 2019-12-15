@@ -46,10 +46,10 @@ var itvAnimeTitle = setInterval(function(){
 //  Valeur de retour    : none
 function fctDisplayUtilsLinks(){
     if ( bolDisplayUtilsLinks != true ) {
-        $("#sec_utilslinks").show("puff", intDisplayFadeIn);
+        $("#sec_utilslinks").show("fold", intDisplayFadeIn);
         bolDisplayUtilsLinks = true;
     } else {
-        $("#sec_utilslinks").hide("pulsate", intDisplayFadeOut);
+        $("#sec_utilslinks").hide("fold", intDisplayFadeOut);
         bolDisplayUtilsLinks = false;
     }
 }
@@ -61,7 +61,7 @@ function fctDisplayUtilsLinks(){
 function fctDisplayReferersLinks(intRefererId){
     var strRefererId = "#referer" + intRefererId;
     if ( arrDisplayReferers[intRefererId] != false ) {
-        $(strRefererId).hide("pulsate", 500);
+        $(strRefererId).hide("fold", 1000);
         arrDisplayReferers[intRefererId] = false;
     } else {
         $(strRefererId).show("pulsate", 1000);

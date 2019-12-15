@@ -44,6 +44,9 @@ imgLogoSite.className = "img-fluid";
 imgLogoSite.alt = "Logo du site";
 divLogoSite.insertAdjacentElement('afterbegin', imgLogoSite);
 
+var itvIntroButtonClose = setTimeout(function(){
+    fctInsertCloseButton();                        // Bouton de fermeture du paragraphe d'accueil
+}, 6000);
 /* *** *** *** AFFICHAGE DES ELEMENTS *** *** *** */
 $("#main_title").show("pulsate",intAmimationStartDelay);    // Affichage : titre du site
 $("#accLogo").show("clip", intAmimationStartDelay);         // Affichage : logo d'acceuil animé
@@ -70,6 +73,21 @@ var itvAnimeTitleDelay = setInterval(function(){
 }, 4000);
 
 /* *** *** *** FONCTIONS *** *** *** */
+//  Fonction de création du bouton de fermeture du paragraphe d'accueil
+//  Paramètres          : none
+//  Valeur de retour    : none
+function fctInsertCloseButton(){
+    var btnCloseIntro = document.createElement("div");
+    var icoCloseIntro = document.createElement("span");
+    btnCloseIntro.id = "acc_welcomeclose";
+    btnCloseIntro.className = "col-xl-1 btn_close";
+    btnCloseIntro.style.display = "none";
+    icoCloseIntro.className = "far fa-times-circle fa-2x";
+
+    btnCloseIntro.insertAdjacentElement("afterbegin", icoCloseIntro);
+    document.getElementById("acc_welcometext").insertAdjacentElement("beforeend", btnCloseIntro);
+    $("#acc_welcomeclose").show("pulsate", 2000);
+}
 //  Fonction de redisposition des labels des blocs non-sélectionnés
 //  EvenListener        : none
 //  Paramètres          :
@@ -107,7 +125,11 @@ function fctChangeCodingLabel(){
     fctChangeLabels(1);
 }
 /* *** *** *** EVENT LISTENERS *** *** *** */
-lnkCandidat.addEventListener("click", fctChangeCandidatLabel);
-lnkCoding.addEventListener("click", fctChangeCodingLabel);
-
+lnkCandidat.addEventListener("click", fctChangeCandidatLabel);      // Clic : label Candidat
+lnkCoding.addEventListener("click", fctChangeCodingLabel);          // Clic : label Codeur
+var itvCloseButtonclick = setTimeout(function(){                    // Clic : fermeture paragraphe d'intro
+    document.getElementById("acc_welcomeclose").addEventListener("click", function(){
+        $("#acc_welcometext").hide("fold", 1850);
+    });
+}, 6100);
 /* *** *** *** APPELS DE FONCTIONS *** *** *** */
