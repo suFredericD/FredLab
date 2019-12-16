@@ -8,7 +8,7 @@
  *              Contexte :   php 7.3
  *              Fonction :   page d'accueil de l'espace cadidat
  *   Date mise en oeuvre :   25/10/2019
- *          Dernière MàJ :   14/12/2019
+ *          Dernière MàJ :   16/12/2019
  *********************************************************************************/
 /***** *****    INCLUSIONS ET SCRIPTS   ***** *****/
 require("../scripts/admin/variables.php");                  // Variables globales du site
@@ -32,7 +32,10 @@ $objPageInfos = new Page();                                         // Incrémen
 $objPageInfos->setName($strPageFile);
 // ***** ***** ***** Variables de la page ***** ***** *****
 $arrCertifs = fct_SelectAllCertifsFromOcr();                         // Tableau des certifications OpenClassRooms
-$intCertifs = count($arrCertifs);                                    // Nombre de certifications 
+$intCertifs = count($arrCertifs);                                    // Nombre de certifications
+$arrSubCertifs = fct_SelectAllCertifSubjects();                      // Tableau des sukets de certifications
+$intSubCertifs = count($arrSubCertifs);                              // Nombre de sujets de certifications
+
 // Url, label d'affichage et attribut 'title' du lien vers la fiche détaillée de la formation
 $strDiplomLinkUrl = "https://www.afpa.fr/formation-qualifiante/concepteur-developpeur-informatique";
 $strDiplomLinkLabel = "<strong>I.U.T. Technicien Supérieur en Informatique de Gestion</strong>, option Étude et Développement";
@@ -49,6 +52,10 @@ fct_BuildHeaderGraph($objPageInfos);
 // ***** ***** ***** Menu principal ***** ***** *****
 fct_BuildHorizontalMenu($objPageInfos);
 // ***** ***** ***** Corps du contenu ***** ***** *****
+$strChronoTitle = "&laquo; La chronologie (aussi annale, chronique) est une science de dates "
+                . "et d'événements historiques ou succession d'événements dans le temps. Considérée "
+                . "comme une discipline auxiliaire de l’histoire, la chronologie est une manière d'appréhender "
+                . "l'histoire par les événements.&raquo;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&mdash; source : Wikipedia";
 ?>
    
    <h1><a href="candidat.php"  title="Espace candidat">Regio candidatum</a></h1><hr class="body-hr">
@@ -80,15 +87,9 @@ fct_BuildHorizontalMenu($objPageInfos);
     </div>
    </div>
    <div class="row" id="rowLinks">
-	 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 cdtrubtitle bxshadow">
-	  <a href="#bref" id="lnkBref" title="En bref : pour les deux du fond qui suivaient pas...">In Brevi</a>
-	 </div>
-    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 cdtrubtitle bxshadow">
-	  <a href="#thema" id="lnkThema" title="Thématique : parce que j'ai plusieurs cordes à mon arc...">Argumentum</a>
-	 </div>
-    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 cdtrubtitle bxshadow"">
-	  <a href="#chrono" id="lnkChrono" title="&laquo; La chronologie (aussi annale, chronique) est une science de dates et d'événements historiques ou succession d'événements dans le temps. Considérée comme une discipline auxiliaire de l’histoire, la chronologie est une manière d'appréhender l'histoire par les événements.&raquo;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&mdash; source : Wikipedia">Chronicon</a>
-	 </div>
+	 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 cdtrubtitle bxshadow" id="lnkBref" title="En bref : pour les deux du fond qui suivaient pas...">In Brevi</div>
+    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 cdtrubtitle bxshadow" id="lnkThema" title="Thématique : parce que j'ai plusieurs cordes à mon arc...">Argumentum</div>
+    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 cdtrubtitle bxshadow" id="lnkChrono" title="<?php echo $strChronoTitle;?>">Chronicon</div>
    </div>
 <!-- -- -- -- -- Rubrique "En Bref" -- -- -- -- -->
    <div class="row" style="margin-top:5px;">
@@ -175,20 +176,33 @@ fct_BuildHorizontalMenu($objPageInfos);
        </div>
        <div class="col-xl-10 col-lg-9 subTitle">Mes certifications</div>
       </div>
-<?php for ( $i = 1 ; $i <= $intCertifs ;$i++ ) {
-         $objDate = new DateTime ($arrCertifs[$i]['Date']);
-         $strDate = $objDate->format("d/m/Y");
-         $strAttributeTitle = "Consulter le certificat : « " . $arrCertifs[$i]['Label'] . " »" . ", obtenue le " . $strDate;
+<?php for ( $j = 1 ; $j <= $intSubCertifs ; $j++ ) {
+         $strSubjectRowId = "subject" . $j;
 ?>
-<!-- -- -- -- -- Certification : <?php echo $arrCertifs[$i]['Label'];?> -- -- -- -- -->
-      <div class="row">
-       <div class="col-xl-12 col-lg-12 certifLabel">
-        <a href="../docs/ocrCertifs/<?php echo $arrCertifs[$i]['File'];?>" target="_blank" title="<?php echo $strAttributeTitle;?>">
-         <p><span class="fa fa-external-link-alt"></span>&nbsp;<?php echo $arrCertifs[$i]['Label'];?></p>
-        </a>
+      <label class="col-xl-12 sublabel" id="<?php echo $j;?>"><?php echo $arrSubCertifs[$j]['Subject'];?></label>
+      <div class="row subcertif" id ="<?php echo $strSubjectRowId;?>">
+       <div class="col-xl-12">
+<?php
+         for ( $i = 1 ; $i <= $intCertifs ;$i++ ) {
+            if ( intval($arrCertifs[$i]['SubjectId']) == $j ){
+               $objDate = new DateTime ($arrCertifs[$i]['Date']);
+               $strDate = $objDate->format("d/m/Y");
+               $strAttributeTitle = "Consulter le certificat : « " . $arrCertifs[$i]['Label'] . " »" . ", obtenue le " . $strDate;
+?>
+<!-- -- -- -- -- Certification n°<?php echo $i . " : " . $arrCertifs[$i]['Label'];?> -- -- -- -- -->
+        <div class="row">
+         <div class="col-xl-12 col-lg-12 certifLabel">
+          <a href="../docs/ocrCertifs/<?php echo $arrCertifs[$i]['File'];?>" target="_blank" title="<?php echo $strAttributeTitle;?>">
+           <p><span class="fa fa-external-link-alt"></span>&nbsp;<?php echo $arrCertifs[$i]['Label'];?></p>
+          </a>
+         </div>
+        </div>
+<?php       }
+         }?>
        </div>
       </div>
-<?php }?>
+<?php
+      }?>
      </div>
     <!-- -- -- -- -- Ma formation -- -- -- -- -->
     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 theRubText">

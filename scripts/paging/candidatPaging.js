@@ -8,87 +8,89 @@
  *              Contexte :   JavaScript
  *              Fonction :   script de mise en page et animation de la page candidat.php
  *   Date mise en oeuvre :   15/11/2019
- *          Dernière MàJ :   14/12/2019
+ *          Dernière MàJ :   16/12/2019
  *********************************************************************************************/
-/* *** *** *** DECLARATIONS *** *** *** */
+/* *** *** *** CONSTANTES *** *** *** */
 const rowLinksContainer = document.getElementById("rowLinks");
-const lnkBref = document.getElementById("lnkBref");
-const divBrefTitle = lnkBref.parentNode;
-const lnkThema = document.getElementById("lnkThema");
-const divThemaTitle = lnkThema.parentNode;
-const lnkChrono = document.getElementById("lnkChrono");
-const divChronoTitle = lnkChrono.parentNode;
+const lnkBref = document.getElementById("lnkBref");         // Bouton : rubrique Bref
+const divBrefTitle = document.getElementById("bref");       // Bloc : rubrique Bref
+const lnkThema = document.getElementById("lnkThema");       // Bouton : rubrique Thématique
+const divThemaTitle = document.getElementById("thema");     // Bloc : rubrique Thématique
+const lnkChrono = document.getElementById("lnkChrono");     // Bouton : rubrique Chronologie
+const divChronoTitle = document.getElementById("chrono");   // Bloc : rubrique Chronologie
 
-const arrLinks = [lnkBref, lnkThema, lnkChrono];
-const arrTitles = [divBrefTitle, divThemaTitle, divChronoTitle];
-const strLinkBaseClasse = divBrefTitle.className;
+const arrLinks = [lnkBref, lnkThema, lnkChrono];                    // Tableau des boutons de rubriques
+const arrTitles = [divBrefTitle, divThemaTitle, divChronoTitle];    // Tableau des blocs de rubriques
+const strLinkBaseClasse = divBrefTitle.className;                   // Classe de base des boutons de rubriques
 
+const arrSubjectsLabels = document.getElementsByClassName("col-xl-12 sublabel");
+const arrSubjectsBlocks = document.getElementsByClassName("row subcertif");
+/* *** *** *** VARIABLES *** *** *** */
+var arrDisplaySubjects = new Array();           // Controller : display catégories de certifications
+for ( i = 1 ; i <= arrSubjectsLabels.length ; i++ ) {
+    arrDisplaySubjects[i] = false;
+}
+var arrDisplayCursus = new Array();             // Controller : display types de cursus affiché
+for ( i = 1 ; i <= arrTitles.length ; i++ ) {
+    arrDisplayCursus[i] = false;
+}
+/* *** *** *** INITIALISATIONS *** *** *** */
+
+/* *** *** *** ANIMATIONS *** *** *** */
 // Animation du titre header
 const intAmimationStartDelay = 500;
 var itvAnimeTitle = setInterval(function(){
     $("#main_title").toggle("pulsate",intAmimationStartDelay);
     $("#main_title").show("pulsate",intAmimationStartDelay);
 }, 4000);
-
 /* *** *** *** FONCTIONS *** *** *** */
-//  Fonction de redisposition des labels des blocs non-sélectionnés
+//  Fonction d'affichage des rubriques du cursus sélectionnées
 //  EvenListener        : click
 //  Paramètres          : none
-//              intBloc : id du bloc sélectionné
+//            strBlocId : id du bloc sélectionné
 //  Valeur de retour    : none
-function fctChangeAllLabels(intBloc){
-    rowLinksContainer.innerHTML = "";
-    switch ( intBloc ){
-        case 0:
-            arrTitles[0].className = "col-xl-12 cdtrubtitle-on bxshadow";
-            arrTitles[1].className = "col-xl-6 cdtrubtitle bxshadow";
-            arrTitles[2].className = "col-xl-6 cdtrubtitle bxshadow";
-            rowLinksContainer.insertAdjacentElement("afterBegin", arrTitles[1]);
-            rowLinksContainer.insertAdjacentElement("beforeEnd", arrTitles[2]);
-            rowLinksContainer.insertAdjacentElement("beforeEnd", arrTitles[0]);
-            break;
-        case 1:
-            arrTitles[1].className = "col-xl-12 cdtrubtitle-on bxshadow";
-            arrTitles[0].className = "col-xl-6 cdtrubtitle bxshadow";
-            arrTitles[2].className = "col-xl-6 cdtrubtitle bxshadow";
-            rowLinksContainer.insertAdjacentElement("afterBegin", arrTitles[0]);
-            rowLinksContainer.insertAdjacentElement("beforeEnd", arrTitles[2]);
-            rowLinksContainer.insertAdjacentElement("beforeEnd", arrTitles[1]);
-            break;
-        case 2:
-            arrTitles[0].className = "col-xl-6 cdtrubtitle bxshadow";
-            arrTitles[1].className = "col-xl-6 cdtrubtitle bxshadow";
-            arrTitles[2].className = "col-xl-12 cdtrubtitle-on bxshadow";
-            rowLinksContainer.insertAdjacentElement("afterBegin", arrTitles[0]);
-            rowLinksContainer.insertAdjacentElement("beforeEnd", arrTitles[1]);
-            rowLinksContainer.insertAdjacentElement("beforeEnd", arrTitles[2]);
-            break;
+function fctDisplayCursus(strLinkId){
+    for ( i = 0 ; i < arrLinks.length ; i++ ) {
+        var strBlocId = "#" + arrTitles[i].id;
+        if ( arrLinks[i].id === strLinkId ){
+            if ( arrDisplayCursus[i] != true ) {    // Affichage du bloc sélectionné
+                $(strBlocId).show("fold", 1850);
+                arrDisplayCursus[i] = true;
+            } else {                                // Masquage du bloc affiché quand reclic sur label
+                $(strBlocId).hide("fold", 1050);
+                arrDisplayCursus[i] = false;
+            }
+        } else {                                    // Masquage du bloc affiché pour remplacement
+            if ( arrDisplayCursus[i] != false ) {
+                $(strBlocId).hide("fold", 1050);
+                arrDisplayCursus[i] = false;
+            }
+        }
     }
 }
-//  Fonction de redisposition du label du bloc 'en bref'
-//  EvenListener        : lnkBref.click
+//  Fonction d'affichage du bloc du sujet sélectionné dans la section Certifications
+//  EvenListener        : click on arrSubjectsLabels
 //  Paramètres          : none
 //  Valeur de retour    : none
-function fctChangeBrefLabel(){
-    fctChangeAllLabels(0);
-}
-//  Fonction de redisposition du label du bloc 'en bref'
-//  EvenListener        : lnkThemaclick
-//  Paramètres          : none
-//  Valeur de retour    : none
-function fctChangeThemaLabel(){
-    fctChangeAllLabels(1);
-}
-//  Fonction de redisposition du label du bloc 'en bref'
-//  EvenListener        : lnkChrono.click
-//  Paramètres          : none
-//  Valeur de retour    : none
-function fctChangeChronoLabel(){
-    fctChangeAllLabels(2);
+function fctDisplaySubject(intIndex){
+    var strIndex = "#subject" + intIndex;
+    if ( arrDisplaySubjects[intIndex] != true ) {
+        $(strIndex).show("fold", 1550);
+        arrDisplaySubjects[intIndex] = true;
+    } else {
+        $(strIndex).hide("fold", 1050);
+        arrDisplaySubjects[intIndex] = false;
+    }
 }
 /* *** *** *** EVENT LISTENERS *** *** *** */
-lnkBref.addEventListener("click", fctChangeBrefLabel);
-lnkThema.addEventListener("click", fctChangeThemaLabel);
-lnkChrono.addEventListener("click", fctChangeChronoLabel);
-
+for ( i = 0 ; i < arrLinks.length ; i++ ) {                 // Clic : boutons d'afficahge des cursus
+    arrLinks[i].addEventListener("click", function(e){
+        fctDisplayCursus(e.target.id);
+    });
+}
+for ( i = 0 ; i < arrSubjectsLabels.length ; i++ ) {        // Clic : boutons d'affichage des catégories de certifications
+    arrSubjectsLabels[i].addEventListener("click", function(e){
+        fctDisplaySubject(e.target.id);
+    });
+}
 /* *** *** *** APPELS DE FONCTIONS *** *** *** */

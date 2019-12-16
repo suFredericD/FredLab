@@ -7,7 +7,7 @@
  * 				Contexte :	 Css 3.0
  *              Fonction :   page de styles d'affichage CSS (candidat.php)
  *   Date mise en oeuvre :   13/11/2019
- *          Dernière MàJ :   14/12/2019
+ *          Dernière MàJ :   16/12/2019
  *************************************************************************************************/
 /***** ***** ***** Containers ***** ***** *****/
 
@@ -142,11 +142,26 @@
 	vertical-align: middle;
 	border-radius: 25px;
 }
-.cdtrubtitle{
+.cdtrubtitle,.cdtrubtitle-on{
+	cursor: pointer;
 	opacity: 0.8;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	font-family: "CaptureIt";
+	font-size: 12px;
+	letter-spacing: 0.085em;
+	-webkit-font-smoothing: antialiased;
+	transition-property: all;
+	transition-duration: 1250ms;
+	-o-transition-property: all;
+	-o-transition-duration: 1250ms;
+	-moz-transition-property: all;
+	-moz-transition-duration: 1250ms;
+	-webkit-transition-property: all;
+	-webkit-transition-duration: 1250ms;
+}
+.cdtrubtitle{
 	padding-top: 5px;
 	margin-bottom: 10px;
 	background-color: hsl(150, 31%, 35%) !important;
@@ -160,68 +175,18 @@
 	background-image: -o-linear-gradient(top, #abd3bf, #3d7459);
 	background-image: linear-gradient(#abd3bf, #3d7459);
 	border-color: #3d7459 #3d7459 hsl(150, 31%, 25%);
-	color: #333 !important;
-	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.66);
-	-webkit-font-smoothing: antialiased;
 	box-shadow: 6px 4px 12px #000000;
 	border-left: 1px outset #000000;
 	border-top: 1px outset #000000;
 	border-bottom: 1px inset #444444;
 	border-top-left-radius: 25px;
 	border-bottom-right-radius: 25px;
-	transition-property: all;
-	transition-duration: 1250ms;
-	-o-transition-property: all;
-	-o-transition-duration: 1250ms;
-	-moz-transition-property: all;
-	-moz-transition-duration: 1250ms;
-	-webkit-transition-property: all;
-	-webkit-transition-duration: 1250ms;
-}
-.cdtrubtitle:hover{
-	border-top-right-radius: 0px;
-	border-bottom-left-radius: 0px;
-	background-color: hsl(150, 7%, 24%) !important;
-	background-repeat: repeat-x;
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#bdc6c1", endColorstr="#38413d");
-	background-image: -khtml-gradient(linear, left top, left bottom, from(#bdc6c1), to(#38413d));
-	background-image: -moz-linear-gradient(top, #bdc6c1, #38413d);
-	background-image: -ms-linear-gradient(top, #bdc6c1, #38413d);
-	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #bdc6c1), color-stop(100%, #38413d));
-	background-image: -webkit-linear-gradient(top, #bdc6c1, #38413d);
-	background-image: -o-linear-gradient(top, #bdc6c1, #38413d);
-	background-image: linear-gradient(#bdc6c1, #38413d);
-	border-color: #38413d #38413d hsl(150, 7%, 11%);
-	color: #000 !important;
-	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.85);
-	-webkit-font-smoothing: antialiased;
-	box-shadow: 6px 4px 12px #037A63;
-}
-.cdtrubtitle a{
-	-webkit-font-smoothing: antialiased;
-	font-family: "CaptureIt";
-	font-size: 12px;
 	color: #002A3D;
 	text-shadow: 2px 2px 4px #037A63;
-	letter-spacing: 0.085em;
-	transition-property: all;
-	transition-duration: 1250ms;
-	-o-transition-property: all;
-	-o-transition-duration: 1250ms;
-	-moz-transition-property: all;
-	-moz-transition-duration: 1250ms;
-	-webkit-transition-property: all;
-	-webkit-transition-duration: 1250ms;
 }
-.cdtrubtitle a:hover{
-	color: #009DA5;
-	text-shadow: 2px 2px 3px #000000;
-}
-.cdtrubtitle-on{
-	opacity: 0.8;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+.cdtrubtitle:hover{
+	border-top-right-radius: 25px;
+	border-bottom-left-radius: 25px;
 	background-color: hsl(150, 7%, 24%) !important;
 	background-repeat: repeat-x;
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#bdc6c1", endColorstr="#38413d");
@@ -233,27 +198,25 @@
 	background-image: -o-linear-gradient(top, #bdc6c1, #38413d);
 	background-image: linear-gradient(#bdc6c1, #38413d);
 	border-color: #38413d #38413d hsl(150, 7%, 11%);
-	color: #000 !important;
-	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.85);
-	-webkit-font-smoothing: antialiased;
-	border-top-left-radius: 25px;
-	border-bottom-right-radius: 25px;
-	transition-property: all;
-	transition-duration: 1250ms;
-	-o-transition-property: all;
-	-o-transition-duration: 1250ms;
-	-moz-transition-property: all;
-	-moz-transition-duration: 1250ms;
-	-webkit-transition-property: all;
-	-webkit-transition-duration: 1250ms;
+	color: #009DA5;
+	text-shadow: 2px 2px 3px #000000;
+	box-shadow: 6px 4px 12px #037A63;
 }
-.cdtrubtitle-on a{
-	-webkit-font-smoothing: antialiased;
-	font-family: "CaptureIt";
-	font-size: 26px;
+.cdtrubtitle-on{
+	background-color: hsl(150, 7%, 24%) !important;
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#bdc6c1", endColorstr="#38413d");
+	background-image: -khtml-gradient(linear, left top, left bottom, from(#bdc6c1), to(#38413d));
+	background-image: -moz-linear-gradient(top, #bdc6c1, #38413d);
+	background-image: -ms-linear-gradient(top, #bdc6c1, #38413d);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #bdc6c1), color-stop(100%, #38413d));
+	background-image: -webkit-linear-gradient(top, #bdc6c1, #38413d);
+	background-image: -o-linear-gradient(top, #bdc6c1, #38413d);
+	background-image: linear-gradient(#bdc6c1, #38413d);
+	border-color: #38413d #38413d hsl(150, 7%, 11%);
 	color: #000;
 	text-shadow: 2px 2px 4px #037A63;
-	letter-spacing: 0.085em;
+	border-radius: 25px;
 }
 .linkcv{
 	display: flex;
@@ -646,16 +609,76 @@
 	justify-content: center;
 	align-items: center;
 	height: 60px;
+	margin-bottom: 20px;
+}
+.sublabel{
+	padding: 10px 0px 10px 0px;
+	margin-bottom: 16px;
+	border-top-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+	border: 1px outset #000;
+	box-shadow: 4px 6px 8px #002A3A;
+	background-color: hsl(150, 31%, 35%) !important;
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#abd3bf", endColorstr="#3d7459");
+	background-image: -khtml-gradient(linear, left top, left bottom, from(#abd3bf), to(#3d7459));
+	background-image: -moz-linear-gradient(top, #abd3bf, #3d7459);
+	background-image: -ms-linear-gradient(top, #abd3bf, #3d7459);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #abd3bf), color-stop(100%, #3d7459));
+	background-image: -webkit-linear-gradient(top, #abd3bf, #3d7459);
+	background-image: -o-linear-gradient(top, #abd3bf, #3d7459);
+	background-image: linear-gradient(#abd3bf, #3d7459);
+	-webkit-font-smoothing: antialiased;
+	font-family: "Magenta";
+	font-size: 44px;
+	color: #002A3D !important;
+	text-shadow: 2px 2px 4px #009DA5;
+	letter-spacing: 0.055em;
+	transition-property: all;
+	transition-duration: 1250ms;
+	-o-transition-property: all;
+	-o-transition-duration: 1250ms;
+	-moz-transition-property: all;
+	-moz-transition-duration: 1250ms;
+	-webkit-transition-property: all;
+	-webkit-transition-duration: 1250ms;
+}
+.sublabel:hover{
+	border-top-right-radius: 25px;
+	border-bottom-left-radius: 25px;
+	border: 1px inset #002A3D;
+	box-shadow: 1px 1px 2px #000;
+	background-color: hsl(150, 7%, 24%) !important;
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#bdc6c1", endColorstr="#38413d");
+	background-image: -khtml-gradient(linear, left top, left bottom, from(#bdc6c1), to(#38413d));
+	background-image: -moz-linear-gradient(top, #bdc6c1, #38413d);
+	background-image: -ms-linear-gradient(top, #bdc6c1, #38413d);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #bdc6c1), color-stop(100%, #38413d));
+	background-image: -webkit-linear-gradient(top, #bdc6c1, #38413d);
+	background-image: -o-linear-gradient(top, #bdc6c1, #38413d);
+	background-image: linear-gradient(#bdc6c1, #38413d);
+	border-color: #38413d #38413d hsl(150, 7%, 11%);
+	color: #C1C1C1 !important;
+	text-shadow: 2px 2px 4px #000;
+}
+.subcertif{
+	display: none;
+	margin: 10px 10px 20px 20px;
+	padding: 10px 10px 10px 10px;
+	border-top-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+	border: 1px inset #000;
+	box-shadow: 2px 4px 8px #000;
 }
 .certifLabel{
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
+	padding: 4px 0px 4px 0px;
 }
 .certifLabel a{
-	padding-left: 10px;
-	padding-right: 10px;
-	text-align: justify;
+	padding: 10px 16px 0px 16px;
 	font-family: "Belligerent";
 	font-size: 14px;
 	letter-spacing: 0.04em;
@@ -676,6 +699,10 @@
 	border-top-left-radius: 25px;
 	border-bottom-right-radius: 25px;
 }
+.certifLabel a p{
+	text-align: justify;
+	vertical-align: middle;
+}
 .subTitle{
 	display: flex;
 	justify-content: center;
@@ -689,9 +716,8 @@
 .domRow{
 	margin: 6px 8px 0px 6px;
 	border: 1px inset #555;
-	-webkit-border-radius: 25px;
-	-moz-border-radius: 25px;
-	border-radius: 25px;
+	border-top-left-radius: 25px;
+	border-bottom-right-radius: 25px;
 	box-shadow: 1px 1px 3px #000;
 	color: #000;
 	text-shadow: 1px 1px 3px #555;
@@ -705,8 +731,8 @@
 	-webkit-transition-duration: 1250ms;
 }
 .domRow:hover{
-	border-top-right-radius: 0px;
-	border-bottom-left-radius: 0px;
+	border-top-right-radius: 25px;
+	border-bottom-left-radius: 25px;
 	border: 1px inset #002A3D;
 	color: #002A3D;
 	text-shadow: 2px 2px 4px #037A63;
@@ -839,7 +865,7 @@
 		height: 40px;
 		width: 40px;
 	}
-	.cdtrubtitle a{
+	.cdtrubtitle{
 		font-size: 16px;
 	}
 	.subTitle{
@@ -881,10 +907,10 @@
 		height: 50px;
 		width: 50px;
 	}
-	.cdtrubtitle a{
+	.cdtrubtitle{
 		font-size: 18px;
 	}
-	.cdtrubtitle-on a{
+	.cdtrubtitle-on{
 		font-size: 29px;
 	}
 	.certifLabel a{
@@ -908,10 +934,10 @@
         #bref blockquote{
             font-size: 22px;
         }
-        .cdtrubtitle a{
+        .cdtrubtitle{
             font-size: 24px;
 		}
-		.cdtrubtitle-on a{
+		.cdtrubtitle-on{
 			font-size: 32px;
 		}
 		.subTitle{
@@ -926,10 +952,10 @@
     #bref p{
 		font-size: 26px;
     }
-    .cdtrubtitle a{
+    .cdtrubtitle{
 		font-size: 26px;
 	}
-	.cdtrubtitle-on a{
+	.cdtrubtitle-on{
 		font-size: 36px;
 	}
 	.theRubTitle{
