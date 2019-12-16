@@ -18,7 +18,8 @@
 }
 .doc-icon-cell,
 #rowlinkedin,#profil,
-#resumate div,#resumate p{
+#resumate div,#resumate p,
+#seclinkedin{
 	background-color: transparent;
 }
 .doc-icon-cell{
@@ -26,6 +27,9 @@
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
+}
+#seclinkedin{
+	display: none;
 }
 #rowlinkedin{
 	margin-top: 20px;

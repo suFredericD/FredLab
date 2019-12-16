@@ -59,6 +59,7 @@ $strChronoTitle = "&laquo; La chronologie (aussi annale, chronique) est une scie
 ?>
    
    <h1><a href="candidat.php"  title="Espace candidat">Regio candidatum</a></h1><hr class="body-hr">
+   <div class="col-xl-12" id="seclinkedin">
    <div class="row" id="rowlinkedin">
     <div class="col-xl-1" id="profil"></div>
     <div class="col-xl-4 col-lg-5 col-md-5 col-12" id="linkedin">
@@ -80,7 +81,7 @@ $strChronoTitle = "&laquo; La chronologie (aussi annale, chronique) est une scie
       <div class="col-xl-9 col-9">Facilité de contact</div>
      </div> 
     </div>
-   </div><hr class="body-hr">
+   </div></div><hr class="body-hr">
    <div class="row">
     <div class="offset-lg-1 col-lg-10 offset-md-1 col-md-10 offset-sm-1 col-sm-10 offset-1 col-10" title="Un homme, des parcours" style="padding-top:5px;margin-top:5px;background-color:transparent;">
      <h2>Cursus</h2>

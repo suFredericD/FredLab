@@ -44,6 +44,7 @@ $( document ).ready(function() {
         $("#main_title").toggle("pulsate",intAmimationStartDelay);
         $("#main_title").show("pulsate",intAmimationStartDelay);
     }, 4000);
+    $("#seclinkedin").show("fold", 2250);
 });
 /* *** *** *** FONCTIONS *** *** *** */
 //  Fonction d'affichage des rubriques du cursus sélectionnées
