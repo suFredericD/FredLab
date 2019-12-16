@@ -8,7 +8,7 @@
  *              Contexte :   JavaScript
  *              Fonction :   script de mise en page et animation de la page coding.php
  *   Date mise en oeuvre :   10/12/2019
- *          Dernière MàJ :   15/12/2019
+ *          Dernière MàJ :   16/12/2019
  *********************************************************************************************/
 /* *** *** *** ELEMENTS *** *** *** */
 const liUtilsLinks = document.getElementById("utils_links");        // Bouton : liens utiles
@@ -33,12 +33,12 @@ for ( i = 0 ; i < arrReferersLabels.length ; i++ ) {
 /* *** *** *** ANIMATIONS *** *** *** */
 // Animation du titre header
 const intAmimationStartDelay = 500;
-var itvAnimeTitle = setInterval(function(){
-    $("#main_title").toggle("pulsate",intAmimationStartDelay);
-    $("#main_title").show("pulsate",intAmimationStartDelay);
-    
-}, 4000);
-
+$( document ).ready(function() {
+    var itvAnimeTitle = setInterval(function(){
+        $("#main_title").toggle("pulsate",intAmimationStartDelay);
+        $("#main_title").show("pulsate",intAmimationStartDelay);
+    }, 4000);
+});
 /* *** *** *** FONCTIONS *** *** *** */
 //  Fonction d'affichage/masquage de la section liens utiles
 //  EvenListener        : liUtilsLinks, lblUtilsLinks

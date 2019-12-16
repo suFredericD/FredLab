@@ -39,10 +39,12 @@ for ( i = 1 ; i <= arrTitles.length ; i++ ) {
 /* *** *** *** ANIMATIONS *** *** *** */
 // Animation du titre header
 const intAmimationStartDelay = 500;
-var itvAnimeTitle = setInterval(function(){
-    $("#main_title").toggle("pulsate",intAmimationStartDelay);
-    $("#main_title").show("pulsate",intAmimationStartDelay);
-}, 4000);
+$( document ).ready(function() {
+    var itvAnimeTitle = setInterval(function(){
+        $("#main_title").toggle("pulsate",intAmimationStartDelay);
+        $("#main_title").show("pulsate",intAmimationStartDelay);
+    }, 4000);
+});
 /* *** *** *** FONCTIONS *** *** *** */
 //  Fonction d'affichage des rubriques du cursus sélectionnées
 //  EvenListener        : click

@@ -8,7 +8,7 @@
  *              Contexte :   JavaScript
  *              Fonction :   script de mise en page et animation de la page d'accueil
  *   Date mise en oeuvre :   14/11/2019
- *          Dernière MàJ :   15/12/2019
+ *          Dernière MàJ :   16/12/2019
  *********************************************************************************************/
 /* *** *** *** CONSTANTES *** *** *** */
 const divSiteTitle = document.getElementById("main_title");                 // Bloc : titre du site
@@ -43,10 +43,11 @@ imgLogoSite.src = strLogoSite;
 imgLogoSite.className = "img-fluid";
 imgLogoSite.alt = "Logo du site";
 divLogoSite.insertAdjacentElement('afterbegin', imgLogoSite);
-
-var itvIntroButtonClose = setTimeout(function(){
-    fctInsertCloseButton();                        // Bouton de fermeture du paragraphe d'accueil
-}, 6000);
+$( document ).ready(function() {
+    var itvIntroButtonClose = setTimeout(function(){
+        fctInsertCloseButton();                        // Bouton de fermeture du paragraphe d'accueil
+    }, 6000);
+});
 /* *** *** *** AFFICHAGE DES ELEMENTS *** *** *** */
 $("#main_title").show("pulsate",intAmimationStartDelay);    // Affichage : titre du site
 $("#accLogo").show("clip", intAmimationStartDelay);         // Affichage : logo d'acceuil animé
