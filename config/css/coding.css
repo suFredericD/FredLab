@@ -82,7 +82,7 @@
 	border-bottom-right-radius: 25px;
 	color: #002A3D !important;
     font-family: "Belligerent";
-    font-size: 34px;
+    font-size: 20px;
     text-shadow: 1px 1px 2px #037A63;
 }
 #cod_toolbox a:hover,
@@ -498,6 +498,9 @@ background-color: transparent;
     }
     .bdg_custitem{
         font-size: 14px;
+    }
+    #cod_toolbox a,#cod_ressources li{
+        font-size: 30px;
     }
     .wft_name{
         font-size: 26px;

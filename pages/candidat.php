@@ -272,10 +272,10 @@ fctDisplayChrono();
     </div>
    </div>
    <div class="row bottom-buttons"">
-    <div class="col-lg-3 col-md-4 col-sm-4 col-4 linktotop bxshadow" title="Haut de page" style="padding-top:5px;margin-top:5px;">
+    <div class="col-lg-3 col-md-4 col-sm-4 col-4 linktotop" title="Haut de page" style="padding-top:5px;margin-top:5px;">
      <a href="#haut">Summitatem</a>
     </div>
-    <div class="offset-lg-6 col-lg-3 offset-md-4 col-md-4 offset-sm-4 col-sm-4 offset-4 col-4 linktotop bxshadow" title="Accueil" style="padding-top:5px;margin-top:5px;">
+    <div class="offset-lg-6 col-lg-3 offset-md-4 col-md-4 offset-sm-4 col-sm-4 offset-4 col-4 linktotop" title="Accueil" style="padding-top:5px;margin-top:5px;">
      <a href="../index.php">Ostium</a>
     </div>
    </div>
