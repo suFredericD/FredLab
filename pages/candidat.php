@@ -8,7 +8,7 @@
  *              Contexte :   php 7.3
  *              Fonction :   page d'accueil de l'espace cadidat
  *   Date mise en oeuvre :   25/10/2019
- *          Dernière MàJ :   16/12/2019
+ *          Dernière MàJ :   17/12/2019
  *********************************************************************************/
 /***** *****    INCLUSIONS ET SCRIPTS   ***** *****/
 require("../scripts/admin/variables.php");                  // Variables globales du site
@@ -57,15 +57,14 @@ $strChronoTitle = "&laquo; La chronologie (aussi annale, chronique) est une scie
                 . "comme une discipline auxiliaire de l’histoire, la chronologie est une manière d'appréhender "
                 . "l'histoire par les événements.&raquo;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&mdash; source : Wikipedia";
 ?>
-   
    <h1><a href="candidat.php"  title="Espace candidat">Regio candidatum</a></h1><hr class="body-hr">
    <div class="col-xl-12" id="seclinkedin">
    <div class="row" id="rowlinkedin">
     <div class="col-xl-1" id="profil"></div>
-    <div class="col-xl-4 col-lg-5 col-md-5 col-12" id="linkedin">
+    <div class="col-xl-4 col-lg-5 col-md-6 col-12" id="linkedin">
      <div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="fr_FR" data-type="horizontal" data-theme="dark" data-vanity="frédéric-daniau"><a class="LI-simple-link" href='https://fr.linkedin.com/in/fr%C3%A9d%C3%A9ric-daniau?trk=profile-badge'>Frédéric DANIAU @ LinkedIn</a></div>
     </div>
-    <div class="offset-xl-1 col-xl-5 offset-lg-1 col-lg-6 col-md-7 col-12" id="resumate">
+    <div class="offset-xl-1 col-xl-5 offset-lg-1 col-lg-6 col-md-6 col-12" id="resumate">
      <div class="row">
       <div class="col-xl-3 col-3">
        <span class="fa fa-clipboard-list fa-lg"></span>
@@ -94,16 +93,16 @@ $strChronoTitle = "&laquo; La chronologie (aussi annale, chronique) est une scie
    </div>
 <!-- -- -- -- -- Rubrique "En Bref" -- -- -- -- -->
    <div class="row" style="margin-top:5px;">
-    <div class="col-lg-12-hidden col-md-12 col-sm-12 col-xs-12 bxshadow" id="bref" title="Postquam interiecto temporis amet ipsum expensis pluribus studiis experitur opportunitate professionem amplecti metus. Et sic, per elit disciplina, et percusserit me, ascenderunt in gradibus post annos decem quam ne ad spem Nostram praeveniens exspectationem correspondent. Igitur et effectus huius operis quaestio rursus ad triumphum delaturos est secundum rationem, vel potius ad source codice. Cum novus challenges operantur secundum similitudinem, et moderatorum ad meliorem partem virgam incorporate munus, actum productio modi, (re) invenire linguarum ...&nbsp;&laquo;Evolutio Morpheus, evoutio in ...&raquo;">
-	 <p>Après avoir <span class="text-lighter">auto-financer mes études</span> sur plusieurs périodes entrecoupées d'expériences professionnelles, je saisis l'opportunité d'embrasser une carrière dans la restauration.</p>
-	 <p>Ainsi, de formations en promotions, <span class="text-lighter">je gravis les échelons</span> et me heurte dix ans plus tard à des perspectives qui ne correspondent plus à mes attentes.</p>
-	 <p>Dès lors, le fruit de cette remise en question professionnelle sera très logiquement le retour aux sources, ou plutôt au <span class="text-lighter-italic">code source</span>.</p>
-	 <p>Depuis, je travaille à <span class="text-lighter">assimiler</span> les nouveaux enjeux, <span class="text-lighter">incorporer</span> les fonctionnalités et frameworks récents, <span class="text-lighter">actualiser</span> les méthodes de production, <span class="text-lighter">(re)découvrir</span> des languages de programmation...</p>
-	 <blockquote>"L'&eacute;volution Morpheus, l'&eacute;voution..."</blockquote>
+    <div class="col-xl-12-hidden col-lg-12 col-md-12 col-sm-12 col-12 bxshadow" id="bref" title="Postquam interiecto temporis amet ipsum expensis pluribus studiis experitur opportunitate professionem amplecti metus. Et sic, per elit disciplina, et percusserit me, ascenderunt in gradibus post annos decem quam ne ad spem Nostram praeveniens exspectationem correspondent. Igitur et effectus huius operis quaestio rursus ad triumphum delaturos est secundum rationem, vel potius ad source codice. Cum novus challenges operantur secundum similitudinem, et moderatorum ad meliorem partem virgam incorporate munus, actum productio modi, (re) invenire linguarum ...&nbsp;&laquo;Evolutio Morpheus, evoutio in ...&raquo;">
+	  <p>Après avoir <span class="text-lighter">auto-financer mes études</span> sur plusieurs périodes entrecoupées d'expériences professionnelles, je saisis l'opportunité d'embrasser une carrière dans la restauration.</p>
+	  <p>Ainsi, de formations en promotions, <span class="text-lighter">je gravis les échelons</span> et me heurte dix ans plus tard à des perspectives qui ne correspondent plus à mes attentes.</p>
+	  <p>Dès lors, le fruit de cette remise en question professionnelle sera très logiquement le retour aux sources, ou plutôt au <span class="text-lighter-italic">code source</span>.</p>
+	  <p>Depuis, je travaille à <span class="text-lighter">assimiler</span> les nouveaux enjeux, <span class="text-lighter">incorporer</span> les fonctionnalités et frameworks récents, <span class="text-lighter">actualiser</span> les méthodes de production, <span class="text-lighter">(re)découvrir</span> des languages de programmation...</p>
+	  <blockquote>"L'&eacute;volution Morpheus, l'&eacute;voution..."</blockquote>
     </div>
    </div>
 <!-- -- -- -- -- Rubrique "Thématique" -- -- -- -- -->
-   <div class="col-lg-12-hidden col-md-12 col-sm-12 col-xs-12" id="thema">
+   <div class="col-xl-12-hidden col-lg-12 col-md-12 col-sm-12 col-xs-12" id="thema">
 	 <div class="row">
 	  <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 theRubTitle" title="La passion depuis toujours">L'informatique</div>
 
@@ -242,13 +241,14 @@ $strChronoTitle = "&laquo; La chronologie (aussi annale, chronique) est une scie
 		</div>
 	  </div>
     </div>
-   </div>
+   </div></div>
 <!-- -- -- -- -- Rubrique "Chronologie" -- -- -- -- -->
-   <div class="col-lg-12-hidden col-md-12 col-sm-12 col-xs-12" id="chrono">
+   <div class="col-xl-12-hidden col-lg-12 col-md-12 col-sm-12 col-12" id="chrono">
 <?php // Fonction de construction de la chronologie
 fctDisplayChrono();
 ?>	 
-   </div><hr class="body-hr">
+   </div>
+   <hr class="body-hr">
 <!-- -- -- -- -- Rubrique "Curricula vitae" -- -- -- -- -->
    <div class="row" id="cv">
     <div class="offset-lg-1 col-lg-10 offset-md-1 col-md-10 offset-sm-1 col-sm-10 offset-1 col-10" title="Hé oui, au pluriel ça donne ça..." style="padding-top:5px;margin-top:5px;background-color:transparent;">

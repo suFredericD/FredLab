@@ -7,7 +7,7 @@
  * 				Contexte :	 Css 3.0
  *              Fonction :   page de styles d'affichage CSS
  *   Date mise en oeuvre :   13/11/2019
- *          Dernière MàJ :   15/12/2019
+ *          Dernière MàJ :   17/12/2019
  **************************************************************************************************/
 /*
 Palette
@@ -766,7 +766,6 @@ footer{
 	border: 1px outset #000;
 	color: #333 !important;
 	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.62);
-	-webkit-font-smoothing: antialiased;
 }
 #secAccueilMain{
 	display: flex;

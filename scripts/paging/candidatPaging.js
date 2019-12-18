@@ -27,11 +27,11 @@ const arrSubjectsLabels = document.getElementsByClassName("col-xl-12 sublabel");
 const arrSubjectsBlocks = document.getElementsByClassName("row subcertif");
 /* *** *** *** VARIABLES *** *** *** */
 var arrDisplaySubjects = new Array();           // Controller : display catégories de certifications
-for ( i = 1 ; i <= arrSubjectsLabels.length ; i++ ) {
+for ( i = 0 ; i < arrSubjectsLabels.length ; i++ ) {
     arrDisplaySubjects[i] = false;
 }
 var arrDisplayCursus = new Array();             // Controller : display types de cursus affiché
-for ( i = 1 ; i <= arrTitles.length ; i++ ) {
+for ( i = 0 ; i < arrTitles.length ; i++ ) {
     arrDisplayCursus[i] = false;
 }
 /* *** *** *** INITIALISATIONS *** *** *** */
@@ -39,7 +39,7 @@ for ( i = 1 ; i <= arrTitles.length ; i++ ) {
 /* *** *** *** ANIMATIONS *** *** *** */
 // Animation du titre header
 const intAmimationStartDelay = 500;
-$( document ).ready(function() {
+$( document ).ready(function() {                        // Controller : chargement de la page
     var itvAnimeTitle = setInterval(function(){
         $("#main_title").toggle("pulsate",intAmimationStartDelay);
         $("#main_title").show("pulsate",intAmimationStartDelay);
