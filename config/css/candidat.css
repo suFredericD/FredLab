@@ -7,7 +7,7 @@
  * 				Contexte :	 Css 3.0
  *              Fonction :   page de styles d'affichage CSS (candidat.php)
  *   Date mise en oeuvre :   13/11/2019
- *          Dernière MàJ :   16/12/2019
+ *          Dernière MàJ :   18/12/2019
  *************************************************************************************************/
 /***** ***** ***** Containers ***** ***** *****/
 
@@ -233,146 +233,134 @@
 	letter-spacing: 0.09em;
 }
 /***** ***** ***** Section Chronologie ***** ***** *****/
-#chrono,
-#chr_content{
+#chr_content .row,
+#chr_articles .row,
+.chr_imgcell{
+	padding: 10px 10px 10px 10px;
 	background-color: transparent;
 }
-.chr_infoscell,
-.chr_infos,
-.chr_infos ul,
-.details{
-	background-color: #777;
-	cursor: default;
+#chr_content,
+#chr_articles,
+#chr_articles article{
+	background-color: transparent;
 }
-#chrono label,
-.chr_mainrow,
-.chr_titles,
-.chr_activity,
-.chr_icon,
-.chr_bg,
-.chr_libelle,
-.chr_duration,
-.chr_timing,
-.chr_date,
-.chr_arrow,
-.chr_locations,
-.chrl_infos,
-.chl_name,
-.chl_city,
-.chl_dep{
-	background-color: #C1C1C1;
-	cursor: default;
+#chrono .row{
+	padding: 10px 10px 10px 10px;
 }
-.chl_name{
-	transition-property: all;
-	transition-duration: 1250ms;
-	-o-transition-property: all;
-	-o-transition-duration: 1250ms;
-	-moz-transition-property: all;
-	-moz-transition-duration: 1250ms;
-	-webkit-transition-property: all;
-	-webkit-transition-duration: 1250ms;
+.chr_text,
+.chr_type,
+[id*="act_infos"],
+.act_rowinfos,
+.act_rowinfos div{
+	background-color: #999;
 }
-[id*="activity"]{
-	display: none;
-}
-[id*="activity"]:target{
-	display: block;
-}
-.chr_bg{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.chr_bg a{
-	padding-left: 20px;
-	padding-right: 20px;
+#chrono,
+#chr_resume .row,
+#chr_resume label,
+#chr_articles article,
+#chr_resume,
+#chr_content,
+[id*="act_infos"],
+.art_row,
+.art_row label,
+.chr_type,
+.chr_text,
+.chr_reslabel{
 	border-top-left-radius: 25px;
 	border-bottom-right-radius: 25px;
-	font-family: "Desyrel";
-	font-size: 26px;
 }
-.chr_bg a:hover{
-	background-color: #777;
-	color: #046259;
-	text-decoration: none;
-	text-shadow: 2px 2px 5px #000;
+#chr_articles article{
+	border: 1px inset #002A3A;
+	box-shadow: 4px 4px 8px #000;
+}
+#chr_articles article label,
+#chr_resume,
+
+.chr_type,
+.chr_text{
+	border: 1px inset #002A3A;
 }
 #chrono{
-	border-top-left-radius: 25px;
-	border-bottom-right-radius: 25px;
-	box-shadow: 2px 2px 4px #009DA5;
+	opacity: 0.9;
+	padding: 0px 10px 10px 10px;
+	background-color: transparent;
 }
-.chr_mainrow{
+.art_row,
+#chr_resume .row{
+	border: 2px inset #000;
+	box-shadow: 4px 4px 8px #000;
+	background-color: hsl(0, 0%, 12%) !important;
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#999999", endColorstr="#1e1e1e");
+    background-image: -khtml-gradient(linear, left top, left bottom, from(#999999), to(#1e1e1e));
+    background-image: -moz-linear-gradient(top, #999999, #1e1e1e);
+    background-image: -ms-linear-gradient(top, #999999, #1e1e1e);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #999999), color-stop(100%, #1e1e1e));
+    background-image: -webkit-linear-gradient(top, #999999, #1e1e1e);
+    background-image: -o-linear-gradient(top, #999999, #1e1e1e);
+    background-image: linear-gradient(#999999, #1e1e1e);
+    color: #C1C1C1 !important;
+}
+#chr_resume .row{
+	padding: 10px 10px 10px 10px;
+}
+#chr_articles .row,
+.art_row,.chr_details{
 	display: flex;
 	justify-content: center;
-	align-items: flex-start;
-	margin: 10px 20px 10px 20px;
-	padding: 10px 30px 10px 4px;
-	border: 1px inset #002A3A;
-	border-top-left-radius: 25px;
-	border-bottom-right-radius: 25px;
+	align-items: stretch;
 }
-#chrono div{
-	margin-top: 2px;
-	margin-bottom: 2px;
-	border-top-left-radius: 25px;
-	border-bottom-right-radius: 25px;
+.chr_type,
+.chr_imgcell,
+.chr_olcell,
+.chr_reslabel,
+.row_time div{
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
-.chr_activity,.chr_infoscell{
+#chr_articles article{
+	margin-bottom: 20px;
+	display: none;
+}
+#chr_resume label{
+	padding: 14px 0px 14px 0px;
+	border: 2px outset #000;
+	background-color: hsl(0, 0%, 12%) !important;
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#999999", endColorstr="#1e1e1e");
+    background-image: -khtml-gradient(linear, left top, left bottom, from(#999999), to(#1e1e1e));
+    background-image: -moz-linear-gradient(top, #999999, #1e1e1e);
+    background-image: -ms-linear-gradient(top, #999999, #1e1e1e);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #999999), color-stop(100%, #1e1e1e));
+    background-image: -webkit-linear-gradient(top, #999999, #1e1e1e);
+    background-image: -o-linear-gradient(top, #999999, #1e1e1e);
+    background-image: linear-gradient(#999999, #1e1e1e);
+    -webkit-font-smoothing: antialiased;
+    color: #C1C1C1 !important;
+	text-shadow: 1px 1px 2px #000;
+	font-family: "Desyrel";
+	letter-spacing: 0.06em;
+	line-height: -0.1em;
+	font-size: 12px;
+}
+#chr_articles article label,.chr_reslabel{
 	padding-top: 4px;
 	padding-bottom: 4px;
-	border-top-left-radius: 25px;
-	border-bottom-right-radius: 25px;
-	box-shadow: 2px 2px 4px #002A3A;
-}
-.chr_duration{
-	font-family: "Desyrel";
-	font-size: 20px;
-	letter-spacing: 0.06em;
-}
-#chr_years{
-	display: flex;
-	justify-content: center;
-	align-items: flex-start;
-}
-.chr_yearitems{
-	background-image: url('../../media/pics/sablier_verre02.jpg');
-	background-size: contain;
-	cursor: default;
-}
-#small_chrono{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: 0px 10px 10px 6px;
-	border-top-left-radius: 25px;
-	border-bottom-right-radius: 25px;
-}
-.chh_year{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 30px;
-	background-color: hsl(150, 31%, 35%) !important;
+	background-color: hsl(0, 0%, 59%) !important;
 	background-repeat: repeat-x;
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#abd3bf", endColorstr="#3d7459");
-	background-image: -khtml-gradient(linear, left top, left bottom, from(#abd3bf), to(#3d7459));
-	background-image: -moz-linear-gradient(top, #abd3bf, #3d7459);
-	background-image: -ms-linear-gradient(top, #abd3bf, #3d7459);
-	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #abd3bf), color-stop(100%, #3d7459));
-	background-image: -webkit-linear-gradient(top, #abd3bf, #3d7459);
-	background-image: -o-linear-gradient(top, #abd3bf, #3d7459);
-	background-image: linear-gradient(#abd3bf, #3d7459);
-	border-color: #3d7459 #3d7459 hsl(150, 31%, 25%);
-	-webkit-font-smoothing: antialiased;
-	border: 1px inset #002A3A;
-	box-shadow: 2px 2px 4px #000;
-	color: #002A3A !important;
-	text-shadow: 2px 2px 4px #037A63;
-	font-family: "Vanilla";
-	font-size: 14px;
-	letter-spacing: 0.06em;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f7f7f7", endColorstr="#969696");
+	background-image: -khtml-gradient(linear, left top, left bottom, from(#f7f7f7), to(#969696));
+	background-image: -moz-linear-gradient(top, #f7f7f7, #969696);
+	background-image: -ms-linear-gradient(top, #f7f7f7, #969696);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f7f7f7), color-stop(100%, #969696));
+	background-image: -webkit-linear-gradient(top, #f7f7f7, #969696);
+	background-image: -o-linear-gradient(top, #f7f7f7, #969696);
+	background-image: linear-gradient(#f7f7f7, #969696);
+	border: 1px outset #000;
+	color: #333 !important;
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.62);
+	font-family: "Acme";
 	cursor: pointer;
 	transition-property: all;
 	transition-duration: 1250ms;
@@ -383,201 +371,122 @@
 	-webkit-transition-property: all;
 	-webkit-transition-duration: 1250ms;
 }
-.chh_year:hover,.year_label:hover{
-	background-color: hsl(150, 7%, 24%) !important;
-	background-repeat: repeat-x;
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#bdc6c1", endColorstr="#38413d");
-	background-image: -khtml-gradient(linear, left top, left bottom, from(#bdc6c1), to(#38413d));
-	background-image: -moz-linear-gradient(top, #bdc6c1, #38413d);
-	background-image: -ms-linear-gradient(top, #bdc6c1, #38413d);
-	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #bdc6c1), color-stop(100%, #38413d));
-	background-image: -webkit-linear-gradient(top, #bdc6c1, #38413d);
-	background-image: -o-linear-gradient(top, #bdc6c1, #38413d);
-	background-image: linear-gradient(#bdc6c1, #38413d);
-	border-color: #38413d #38413d hsl(150, 7%, 11%);
-	color: #000 !important;
-	text-shadow: 2px 2px 4px #002A3A;
-	-webkit-font-smoothing: antialiased;
-	border-top-left-radius: 25px;
-	border-bottom-right-radius: 25px;
+#chr_articles article label:hover,.chr_reslabel:hover{
+	background-color: hsl(0, 0%, 12%) !important;
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#999999", endColorstr="#1e1e1e");
+    background-image: -khtml-gradient(linear, left top, left bottom, from(#999999), to(#1e1e1e));
+    background-image: -moz-linear-gradient(top, #999999, #1e1e1e);
+    background-image: -ms-linear-gradient(top, #999999, #1e1e1e);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #999999), color-stop(100%, #1e1e1e));
+    background-image: -webkit-linear-gradient(top, #999999, #1e1e1e);
+    background-image: -o-linear-gradient(top, #999999, #1e1e1e);
+    background-image: linear-gradient(#999999, #1e1e1e);
+    color: #C1C1C1 !important;
+	text-shadow: 1px 1px 2px #000;
+	
 }
-.year_label{
-	height: 22px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: hsl(150, 31%, 35%) !important;
-	background-repeat: repeat-x;
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#abd3bf", endColorstr="#3d7459");
-	background-image: -khtml-gradient(linear, left top, left bottom, from(#abd3bf), to(#3d7459));
-	background-image: -moz-linear-gradient(top, #abd3bf, #3d7459);
-	background-image: -ms-linear-gradient(top, #abd3bf, #3d7459);
-	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #abd3bf), color-stop(100%, #3d7459));
-	background-image: -webkit-linear-gradient(top, #abd3bf, #3d7459);
-	background-image: -o-linear-gradient(top, #abd3bf, #3d7459);
-	background-image: linear-gradient(#abd3bf, #3d7459);
-	border-color: #3d7459 #3d7459 hsl(150, 31%, 25%);
-	-webkit-font-smoothing: antialiased;
+#chr_articles article label:hover{
+	padding-top: 12px;
+	padding-left: 12px;
+}
+.chr_reslabel{
+	margin-bottom: 10px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	box-shadow: 2px 2px 4px #000;
+	font-size: 8px;
+	line-height: 0.98em;
+}
+.chr_reslabel:hover{
+	box-shadow: 1px 1px 2px #000;
+}
+#chr_articles article label{
+	padding: 10px 6px 10px 6px;
+	box-shadow: 4px 4px 8px #000;
+}
+#chr_articles article label:hover{
+	box-shadow: 2px 2px 4px #000;
+}
+[id*="act_infos"],
+.art_row label{
 	border: 1px inset #002A3A;
-	box-shadow: 1px 1px 3px #333;
-	font-family: "Vanilla";
-	font-size: 16px;
-	letter-spacing: 0.09em;
-	color: #002A3A;
-	text-shadow: 1px 1px 3px #009DA5;
-	transition-property: all;
-	transition-duration: 1250ms;
-	-o-transition-property: all;
-	-o-transition-duration: 1250ms;
-	-moz-transition-property: all;
-	-moz-transition-duration: 1250ms;
-	-webkit-transition-property: all;
-	-webkit-transition-duration: 1250ms;
 }
-.year_label-on{
-	background-color: hsl(150, 7%, 24%) !important;
-	background-repeat: repeat-x;
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#bdc6c1", endColorstr="#38413d");
-	background-image: -khtml-gradient(linear, left top, left bottom, from(#bdc6c1), to(#38413d));
-	background-image: -moz-linear-gradient(top, #bdc6c1, #38413d);
-	background-image: -ms-linear-gradient(top, #bdc6c1, #38413d);
-	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #bdc6c1), color-stop(100%, #38413d));
-	background-image: -webkit-linear-gradient(top, #bdc6c1, #38413d);
-	background-image: -o-linear-gradient(top, #bdc6c1, #38413d);
-	background-image: linear-gradient(#bdc6c1, #38413d);
-	border-color: #38413d #38413d hsl(150, 7%, 11%);
-	color: #000 !important;
-	text-shadow: 2px 2px 4px #002A3A;
-	font-family: "Vanilla";
-	font-size: 20px;
-	letter-spacing: 0.09em;
-	-webkit-font-smoothing: antialiased;
-	border: 1px inset #002A3A;
-	box-shadow: 1px 1px 3px #333;
-	border-top-left-radius: 25px;
-	border-bottom-right-radius: 25px;
+[id*="act_infos"]{
+	margin-top: 10px;
 }
-[class*="year_item"]{
-	opacity: 0.8;
-	background-color: #C1C1C1;
-	cursor: crosshair;
-	border: 1px inset #333;
-	border-top-left-radius: 25px;
-	border-bottom-right-radius: 25px;
-	font-family: "Desyrel";
-	font-size: 20px;
-	letter-spacing: 0.05em;
-	color: #002A3A;
-	text-shadow: 1px 1px 3px #009DA5;
-}
-.chi_title{
-	padding-top: 8px;
-	padding-bottom: 8px;
-	background-color: hsl(150, 7%, 24%) !important;
-	background-repeat: repeat-x;
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#bdc6c1", endColorstr="#38413d");
-	background-image: -khtml-gradient(linear, left top, left bottom, from(#bdc6c1), to(#38413d));
-	background-image: -moz-linear-gradient(top, #bdc6c1, #38413d);
-	background-image: -ms-linear-gradient(top, #bdc6c1, #38413d);
-	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #bdc6c1), color-stop(100%, #38413d));
-	background-image: -webkit-linear-gradient(top, #bdc6c1, #38413d);
-	background-image: -o-linear-gradient(top, #bdc6c1, #38413d);
-	background-image: linear-gradient(#bdc6c1, #38413d);
-	border-color: #38413d #38413d hsl(150, 7%, 11%);
-	color: #002A3D !important;
-	text-shadow: 3px 3px 5px #046259;
-	font-family: "Vanilla";
-	font-size: 30px;
-	letter-spacing: 0.13em;
-	-webkit-font-smoothing: antialiased;
-	border: 1px inset #002A3A;
-	box-shadow: 1px 1px 3px #009DA5;
-	border-top-left-radius: 25px;
-	border-bottom-right-radius: 25px;
-	cursor: default;
-}
-.chr_timing{
+[id*="act_infos"] a,[id*="act_infos"] p{
 	font-family: "SecretTypewriter";
-	font-size: 20px;
+	letter-spacing: 0.045em;
+	color: #C1C1C1;
+	text-shadow: 2px 2px 4px #009DA5;
+}
+[id*="act_infos"] p{
 	color: #000;
-	text-shadow: 1px 1px 3px #777;
-	height: max-content;
-}
-.chr_date{
-	height: 50px;
-}
-.chr_arrow{
-	height: max-content;
-}
-.chr_titles,.chr_libelle{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-family: "Desyrel";
-	letter-spacing: 0.06em;
-	color: #002A3A;
-	text-shadow: 1px 1px 3px #333;
-}
-.chr_titles{
-	font-size: 30px;
-}
-.chr_libelle{
-	font-size: 30px;
-}
-.chr_icon{
-	font-size: 32px;
-	color: #002A3A;
-}
-#chrono label,.details{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	-webkit-font-smoothing: antialiased;
-	border-top-left-radius: 25px;
-	border-bottom-right-radius: 25px;
-	font-family: "ImpactLabel";
-	font-size: 26px;
-	letter-spacing: 0.010em;
-	color: #002A3A;
 	text-shadow: 2px 2px 4px #C1C1C1;
 }
-.chr_infos ul,.chr_infos ul li{
-	font-family: "Desyrel";
-	letter-spacing: 0.06em;
-	color: #002A3A;
-	text-shadow: 1px 1px 3px #555;
+[id*="act_infos"] a{
+	padding-bottom: 10px;
+	text-decoration: underline;
+	color: #000;
+	text-shadow: 2px 2px 4px #009DA5;
+	font-size: 8px;
+	line-height: 1.15em;
+	font-size: 9px;
 }
-.chr_infos ul{
-	font-size: 30px;
-	text-align: left;
+[id*="act_infos"] a:hover{
+	color: #C1C1C1;
+	text-shadow: 2px 2px 4px #000;
 }
-.chr_infos ul li{
-	margin-left: 20px;
-	padding-left: 20px;
-	font-size: 22px;
+.chr_type,.chr_date,.chr_lapse{
+	font-family: "SecretTypewriter";
+	letter-spacing: 0.045em;
+	color: #000;
+	text-shadow: 1px 1px 2px #C1C1C1;
+	font-size: 9px;
 }
-.chl_name,.chl_city,.chl_dep{
+.chr_lapse{
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
-.chl_name{
-	font-family: "Belligerent";
-	font-size: 24px;
+.chr_lapse,.chr_lapse span{
+	vertical-align: middle;
 }
-.chl_name:hover{
-	background-color: #002A3A;
-	color: #C1C1C1;
-	text-shadow: 1px 1px 3px #009DA5;
+.img_logo{
+	border: 1px inset #002A3A;
+	max-height: 40px;
+	max-width: 40px;
 }
-.chl_city{
-	font-family: "District";
-	font-size: 18px;
+.chr_text{
+	margin-top: 10px;
+	margin-right: 10px;
+	padding: 4px 10px 4px 10px;
+	font-family: "Acme";
+	font-size: 8px;
+	letter-spacing: 0.045em;
+	color: #000;
+	text-shadow: 1px 1px 2px #C1C1C1;
 }
-.chl_dep{
-	font-family: "SecretTypewriter";
-	font-size: 26px;
+.chr_text a{
+	font-size: 9px;
 }
+.chr_text ul{
+	padding: 10px 4px 10px 4px;
+	line-height: 0.95em;
+}
+.chr_text ul li{
+	padding-bottom: 2px;
+	padding: 4px 4px 4px 10px;
+	line-height: 0.95em;
+	text-align: left;
+	font-size: 8px;
+}
+.chr_text ul ul{
+	padding-left: 10px;
+}
+/***** ***** ***** Bannière frise chronologique ***** ***** *****/
+
 /***** ***** ***** Section Thématique ***** ***** *****/
 #thema{
 	opacity: 0.9;
@@ -586,8 +495,6 @@
 	border: 1px inset #002A3A;
 	border-top-left-radius: 25px;
 	border-bottom-right-radius: 25px;
-	-webkit-box-shadow: 6px 4px 12px #000000;
-	-moz-box-shadow: 6px 4px 12px #000000;
 	box-shadow: 6px 4px 12px #000000;
 	color: #002A3A;
 	text-shadow: 1px 1px 3px #000;
@@ -596,12 +503,15 @@
 	background-color: transparent;
 }
 #ocrLogo{
+	padding-top: 30px;
+	padding-bottom: 10px;
 	height: 80px;
 }
 .theRubTitle{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin-bottom: 10px;
 	line-height: 60px;
 	font-family: "CaptureIt";
 	font-size: 34px;
@@ -612,8 +522,9 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 60px;
-	margin-bottom: 20px;
+	height: 40px;
+	margin-bottom: 10px;
+	font-size: 24px;
 }
 .sublabel{
 	padding: 10px 0px 10px 0px;
@@ -622,19 +533,19 @@
 	border-bottom-right-radius: 25px;
 	border: 1px outset #000;
 	box-shadow: 4px 6px 8px #002A3A;
-	background-color: hsl(150, 31%, 35%) !important;
+	background-color: hsl(0, 0%, 59%) !important;
 	background-repeat: repeat-x;
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#abd3bf", endColorstr="#3d7459");
-	background-image: -khtml-gradient(linear, left top, left bottom, from(#abd3bf), to(#3d7459));
-	background-image: -moz-linear-gradient(top, #abd3bf, #3d7459);
-	background-image: -ms-linear-gradient(top, #abd3bf, #3d7459);
-	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #abd3bf), color-stop(100%, #3d7459));
-	background-image: -webkit-linear-gradient(top, #abd3bf, #3d7459);
-	background-image: -o-linear-gradient(top, #abd3bf, #3d7459);
-	background-image: linear-gradient(#abd3bf, #3d7459);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f7f7f7", endColorstr="#969696");
+	background-image: -khtml-gradient(linear, left top, left bottom, from(#f7f7f7), to(#969696));
+	background-image: -moz-linear-gradient(top, #f7f7f7, #969696);
+	background-image: -ms-linear-gradient(top, #f7f7f7, #969696);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f7f7f7), color-stop(100%, #969696));
+	background-image: -webkit-linear-gradient(top, #f7f7f7, #969696);
+	background-image: -o-linear-gradient(top, #f7f7f7, #969696);
+	background-image: linear-gradient(#f7f7f7, #969696);
 	-webkit-font-smoothing: antialiased;
 	font-family: "Magenta";
-	font-size: 44px;
+	font-size: 30px;
 	color: #002A3D !important;
 	text-shadow: 2px 2px 4px #009DA5;
 	letter-spacing: 0.055em;
@@ -652,19 +563,18 @@
 	border-bottom-left-radius: 25px;
 	border: 1px inset #002A3D;
 	box-shadow: 1px 1px 2px #000;
-	background-color: hsl(150, 7%, 24%) !important;
-	background-repeat: repeat-x;
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#bdc6c1", endColorstr="#38413d");
-	background-image: -khtml-gradient(linear, left top, left bottom, from(#bdc6c1), to(#38413d));
-	background-image: -moz-linear-gradient(top, #bdc6c1, #38413d);
-	background-image: -ms-linear-gradient(top, #bdc6c1, #38413d);
-	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #bdc6c1), color-stop(100%, #38413d));
-	background-image: -webkit-linear-gradient(top, #bdc6c1, #38413d);
-	background-image: -o-linear-gradient(top, #bdc6c1, #38413d);
-	background-image: linear-gradient(#bdc6c1, #38413d);
-	border-color: #38413d #38413d hsl(150, 7%, 11%);
-	color: #C1C1C1 !important;
-	text-shadow: 2px 2px 4px #000;
+	background-color: hsl(0, 0%, 12%) !important;
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#999999", endColorstr="#1e1e1e");
+    background-image: -khtml-gradient(linear, left top, left bottom, from(#999999), to(#1e1e1e));
+    background-image: -moz-linear-gradient(top, #999999, #1e1e1e);
+    background-image: -ms-linear-gradient(top, #999999, #1e1e1e);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #999999), color-stop(100%, #1e1e1e));
+    background-image: -webkit-linear-gradient(top, #999999, #1e1e1e);
+    background-image: -o-linear-gradient(top, #999999, #1e1e1e);
+    background-image: linear-gradient(#999999, #1e1e1e);
+    color: #C1C1C1 !important;
+	text-shadow: 1px 1px 2px #000;
 }
 .subcertif{
 	display: none;
@@ -872,9 +782,15 @@
 	.cdtrubtitle{
 		font-size: 16px;
 	}
+	#ocrLogo{
+		height: 100px;
+	}
 	.subTitle{
 		margin-top: 10px;
 		font-size: 28px;
+	}
+	.sublabel{
+		font-size: 32px;
 	}
 	.certifLabel a{
 		font-size: 18px;
@@ -888,9 +804,56 @@
 	#linkedin a,#resumate div{
 		font-size: 24px;
 	}
+	#chr_resume label{
+		font-size: 18px;
+	}
+	.chr_reslabel{
+		padding-top: 4px;
+		padding-bottom: 4px;
+		line-height: 0.99em;
+		font-size: 11px;
+	}
+	#chr_articles article label{
+		padding-top: 4px;
+		padding-bottom: 4px;
+	}
+	.chr_type{
+		font-size: 10px;
+	}
+	[id*="act_infos"] a{
+		font-size: 9px;
+		line-height: auto;
+	}
+	.chr_date{
+		font-size: 8px;
+	}
+	.chr_lapse{
+		font-size: 10px;
+		letter-spacing: 0.015em;
+	}
+	.img_logo{
+		max-height: 50px;
+		max-width: 50px;
+	}
+	.chr_text{
+		padding: 10px 30px 10px 10px;
+	}
+	.chr_text ul{
+		padding-left: 40px;
+		line-height: 1.25em;
+	}
+	.chr_text ul li,.chr_text a{
+		font-size: 9px;
+	}
+	.chr_text ul li{
+		text-align: justify;
+	}
 }
 /* *** *** *** Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+	#resumate .row div{
+		font-size: 20px;
+	}
     #bref{
 		padding-bottom: 40px;
 		}
@@ -911,6 +874,12 @@
 		height: 50px;
 		width: 50px;
 	}
+	.sublabel{
+		font-size: 36px;
+	}
+	.cdtrubtitle{
+		font-size: 16px;
+	}
 	.cdtrubtitle{
 		font-size: 18px;
 	}
@@ -922,6 +891,40 @@
 	}
 	#linkedin a,#resumate div{
 		font-size: 24px;
+	}
+	#chr_resume label{
+		font-size: 24px;
+	}
+	.chr_reslabel{
+		padding-top: 8px;
+		padding-bottom: 8px;
+		line-height: auto;
+		font-size: 14px;
+	}
+	[id*="act_infos"] a{
+		font-size: 14px;
+	}
+	.chr_type{
+		font-size: 14px;
+	}
+	.chr_text ul{
+		font-size: 14px;
+	}
+	.chr_text ul li{
+		font-size: 12px;
+		padding-bottom: 4px;
+		padding-top: 4px;
+	}
+	.chr_date{
+		font-size: 12px;
+	}
+	.chr_lapse{
+		font-size: 14px;
+		letter-spacing: 0.025em;
+	}
+	.img_logo{
+		max-height: 80px;
+		max-width: 80px;
 	}
 }
 /* *** *** *** Large devices (desktops, 992px and up) */
@@ -945,10 +948,46 @@
 			font-size: 32px;
 		}
 		.subTitle{
+			height: 60px;
 			font-size: 32px;
+		}
+		.sublabel{
+			font-size: 40px;
 		}
 		.itemLabel,.itemText{
 			font-size: 24px;
+		}
+		#ocrLogo{
+			padding-top: 0px;
+		}
+		#chr_resume label{
+			font-size: 26px;
+		}
+		#chr_resume label{
+			font-size: 34px;
+		}
+		#chr_articles article label{
+			font-size: 26px;
+		}
+		[id*="act_infos"] a{
+			font-size: 22px;
+		}
+		.chr_type,.chr_lapse{
+			font-size: 20px;
+		}
+		.chr_date{
+			font-size: 16px;
+		}
+		.img_logo{
+			max-height: 120px;
+			max-width: 120px;
+		}
+		.chr_text ul li{
+			line-height: 1em;
+			padding-bottom: 6px;
+			padding-top: 6px;
+			font-size: 18px;
+			letter-spacing: 0.065em;
 		}
 }
 /* *** *** *** Extra large devices (large desktops, 1200px and up) */
@@ -968,6 +1007,9 @@
 	.subTitle{
 		font-size: 34px;
 	}
+	.sublabel{
+		font-size: 44px;
+	}
 	.domName{
 		font-size: 19px;
 	}
@@ -979,6 +1021,35 @@
 	}
 	.itemLabel,.itemText{
 		font-size: 20px;
+	}
+	/***** ***** ***** Section Chronologie ***** ***** *****/
+	#chr_articles article label{
+		font-size: 40px;
+	}
+	#chr_resume label{
+		font-size: 40px;
+	}
+	.chr_type{
+		font-size: 24px;
+	}
+	[id*="act_infos"] a,[id*="act_infos"] p{
+		font-size: 32px;
+	}
+	.chr_date{
+		font-size: 22px;
+	}
+	.chr_lapse{
+		font-size: 28px;
+	}
+	.img_logo{
+		max-height: 140px;
+		max-width: 180px;
+	}
+	.chr_text{
+		font-size: 30px;
+	}
+	.chr_text ul li{
+		font-size: 22px;
 	}
 }
 /* Extra large devices (large desktops)

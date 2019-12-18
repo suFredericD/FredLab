@@ -1,14 +1,14 @@
 <?php
 /*******************************************************************************************************
- *   FredLab Projetcs Incorporated
+ *   FredLab Projects Incorporated
  *                Projet :   FredLab
  *                  Page :   chrono.php
- *                Chemin :   http://127.0.0.1:8080/FredLab/scripts/paging/chrono.php
+ *                Chemin :   http://www.fred-lab.com/scripts/paging/chrono.php
  *                  Type :   page de script
  *              Contexte :   php 7.3
  *              Fonction :   construction de la présentation chronologique
  *   Date mise en oeuvre :   07/12/2019
- *          Dernière MàJ :   10/12/2019
+ *          Dernière MàJ :   18/12/2019
  *******************************************************************************************************/
 /***** *****    INCLUSIONS ET SCRIPTS   ***** *****/
 
@@ -21,54 +21,38 @@ function fctDisplayChrono(){
     $intYearNow = $datNow->format("Y");
     $arrActivities = fct_SelectAllActivitiesDesc();
     $intActivities = count($arrActivities);
-    print_r($arrActivities);
 ?>
 	 <div class="row">
-<!-- -- -- Section gauche : années -- -- -->
-      <div class="col-xl-2 col-lg-2 chr_bg" id="chr_years">
-       <div class="row chr_bg" id="chy_container">
+<!-- -- -- -- Section gauche : aperçu -- -- -- -->
+      <aside class="col-xl-3 col-lg-4 col-md-4 col-sm-4 col-4" id="chr_resume">
+       <div class="row">
+        <label class="col-xl-12" title="Chronologie">Chronicon</label>
 <?php
-    for ( $i = $intYearNow ; $i > 1998 ; $i--){
-        $arrYearActivities = fct_SelectActivitiesFromYear($i);
-        if ( is_array($arrYearActivities) ){
-            $inYearActivities = count($arrYearActivities);
-        } else {
-            $inYearActivities = 0;
-        }
-        $strYearItemsId = "div" . $i;
+    for ( $i = 1 ; $i <= $intActivities ; $i++ ){
+        $strResumeLabel = "res_label" . $i;
 ?>
-        <div class="offset-xl-1 col-xl-10 offset-lg-1 col-lg-10 year_label" id="<?php echo $i;?>"><?php echo $i;?></div>
-        <div class="offset-xl-1 col-xl-10 offset-lg-1 col-lg-10 chr_bg">
-         <div class="row chr_yearitems" id="<?php echo $strYearItemsId;?>">
-<?php   for ( $j = 1 ; $j <= $inYearActivities ; $j++){
-            $strItemId = $i . "-" . $arrYearActivities[$j]['Id'];
-?>
-          <div class="col-xl-12 col-lg-12 year_item" id="<?php echo $strItemId;?>"><?php echo $arrYearActivities[$j]['Label'];?></div>
-<?php
-        }?>
-         </div>
-        </div>
+        <div class="offset-xl-1 col-xl-10 col-12 chr_reslabel" id="<?php echo $strResumeLabel;?>"><?php echo $arrActivities[$i]['Label'];?></div>
 <?php
     }?>
        </div>
-      </div>
-<!-- -- -- Section droite : content -- -- -->
-      <div class="col-xl-10 col-lg-10" id="chr_content">
+      </aside>
+<!-- -- -- -- Section droite : affichage du contenu -- -- -- -->
+      <section class="col-xl-9 col-lg-8 col-md-8 col-sm-8 col-8" id="chr_content">
+       <div class="row">
+
+<!-- -- -- -- Section droite : contenu -- -- -- -->
+        <section class="col-xl-12" id="chr_articles">
+         <div class="row">
 <?php
-    for ( $i = 1 ; $i <= $intActivities ; $i++){
-        $arrLocations = fct_SelectAllLocationsFromActivity($arrActivities[$i]['Id']);
-        if ( $arrActivities[$i]['Type'] != "Professionnelle" ){
-            $strOwnerLabel = "Organisme";
-            $strAltLogo = "Logo de l'organisme : " . $arrActivities[$i]['Owner'];
-            $strLogoLinkTitle = "Vers le site de l'organisme...";
-            $strRoleLabel = "Diplôme";
+    for ( $i = 1 ; $i <= $intActivities ; $i++ ){
+        $strActivityBlocId = "activity" . $i;
+        $strActBlocLabelId = "act_label" . $i;
+        $strActBlocInfos = "act_infos" . $i;
+        if ( $arrActivities[$i]['Type'] != "Expérience" ){
+            $strOwnerLinkTitle = "Vers le site de l'établissement...";
         } else {
-            $strOwnerLabel = "Employeur";
-            $strAltLogo = "Logo de l'entreprise : " . $arrActivities[$i]['Owner'];
-            $strLogoLinkTitle = "Vers le site de l'entreprise...";
-            $strRoleLabel = "Poste";
+            $strOwnerLinkTitle = "Vers le site de l'entreprise...";
         }
-        $strLogoFile = "../media/logos/" . $arrActivities[$i]['OwnerLogo'];
         $datStart = new DateTime($arrActivities[$i]['Start']);
         if ( $arrActivities[$i]['End'] != $datNow->format("Y-m-d") ){
             $datEnd = new DateTime($arrActivities[$i]['End']);
@@ -84,88 +68,61 @@ function fctDisplayChrono(){
             if ( intval($datDiff->format('%a')) < 365 ){
                 $strDateDiff = $datDiff->format('%m') . " mois";
             } else {
-
                 $strDateDiff = $datDiff->format('%y') . " ans et " . $datDiff->format('%m') . " mois";
             }
         }
-        $strActivityRowId = "activity" . $arrActivities[$i]['Id'];
 ?>
-<!-- -- -- Mini-chronologie -- -- -->
-       <div class="row" id="small_chrono"></div>
-       <div class="row chr_mainrow" id="<?php echo $strActivityRowId;?>">
-<!-- -- -- Type d'activité -- -- -->
-        <label class="col-xl-3 col-lg-3">Activité</label>
-        <div class="col-xl-9 col-lg-9 chr_activity">
-         <div class="row chr_bg">
-          <div class="col-xl-9 col-lg-9 chr_titles"><?php echo $arrActivities[$i]['Type'];?></div>
-          <div class="col-xl-3 col-lg-3 chr_icon"><?php echo $arrActivities[$i]['TypeIcon'];?></div>
-         </div>
-        </div>
-<!-- -- -- Employeur ou organisme -- -- -->
-        <label class="col-xl-3 col-lg-3"><?php echo $strOwnerLabel;?></label>
-        <div class="col-xl-7 col-lg-7 chr_bg">
-         <a href="<?php echo $arrActivities[$i]['OwnerUrl'];?>" title="<?php echo $strLogoLinkTitle;?>" target="_blank"><?php echo $arrActivities[$i]['Owner'];?></a>
-        </div>
-        <div class="col-xl-2 col-lg-2 chr_bg">
-         <a href="<?php echo $arrActivities[$i]['OwnerUrl'];?>" title="<?php echo $strLogoLinkTitle;?>" target="_blank">
-          <img class="img-fluid" src="<?php echo $strLogoFile;?>" alt="<?php echo $strAltLogo;?>">
-         </a>
-        </div>
-<!-- -- -- Poste ou Diplôme -- -- -->
-        <label class="col-xl-3 col-lg-3"><?php echo $strRoleLabel;?></label>
-        <div class="col-xl-9 col-lg-9 chr_libelle"><?php echo $arrActivities[$i]['Label'];?></div>
-<!-- -- -- Poste ou Diplôme -- -- -->
-        <label class="col-xl-3 col-lg-3">Durée</label>
-        <div class="col-xl-9 col-lg-9 chr_duration"><?php echo $strDateDiff;?></div>
-<!-- -- -- Timing -- -- -->
-        <div class="col-xl-2 col-lg-2 chr_timing">
-         <div class="row">
-          <div class="col-xl-12 col-lg-12 chr_date"><?php echo $strDateEnd;?></div>
-          <div class="col-xl-12 col-lg-12 chr_arrow">
-           <img class="img-fluid" src="../media/pics/arrow.png">
-          </div>
-          <div class="col-xl-12 col-lg-12 chr_date"><?php echo $datStart->format("d/m/Y");?></div>
-         </div>
-        </div>
-<!-- -- -- Informations détaillées -- -- -->
-        <div class="col-xl-10 col-lg-10 chr_infoscell">
-         <div class="row chr_infos">
-          <div class="offset-xl-1 col-xl-10 offset-lg-1 col-lg-10 details">En détails...</div>
-          <div class="offset-xl-1 col-xl-10 offset-lg-1 col-lg-10 chr_infos">
-           <?php echo $arrActivities[$i]['Content'];?>
-          </div>
-         </div>
-        </div>
-<?php
-        if ( is_array($arrLocations) ){
-            $intLocations = count($arrLocations);
-            if ( $intLocations > 1 ){
-                $strLocLabel = "Lieux d'exercice";
-            } else {
-                $strLocLabel = "Lieu d'exercice";
-            }
-?>
-<!-- -- -- Localisations -- -- -->
-        <div class="offset-xl-1 col-xl-10 offset-lg-1 col-lg-10 chr_locations">
-         <div class="row chrl_infos">
-          <label class="col-xl-12 col-lg-12"><?php echo $strLocLabel;?></label>
-<?php       for ( $j = 1 ; $j <= $intLocations ; $j++ ){
-                $strAddress = $arrLocations[$j]['Address'] . ", " . $arrLocations[$j]['Postal'] . " " . $arrLocations[$j]['City'];
-?>
-          <div class="col-xl-7 col-lg-7 chl_name" title="<?php echo $strAddress;?>"><?php echo $arrLocations[$j]['Name'];?></div>
-          <div class="col-xl-4 col-lg-4 chl_city"><?php echo $arrLocations[$j]['City'];?></div>
-          <div class="col-xl-1 col-lg-1 chl_dep"><?php echo $arrLocations[$j]['Department'];?></div>
-<?php       }?>
-         </div>
-        </div>
-<?php
-        }?>
-       </div>
+<!-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -->
+<!-- -- -- -- Activité n°<?php echo $i . " : " . $arrActivities[$i]['Label'];?> -- -- -- -->
+         <article class="col-xl-12" id="<?php echo $strActivityBlocId;?>">
+          <div class="row art_row">
+           <label class="col-xl-8 col-lg-7 col-md-7 col-sm-7 col-12" for="<?php echo $strActivityBlocId;?>" id="<?php echo $strActBlocLabelId;?>"><?php echo $arrActivities[$i]['Label'];?></label>
+           <div class="offset-xl-1 col-xl-3 offset-lg-1 col-lg-4 offset-md-1 col-md-4 offset-sm-1 col-sm-4 col-12 chr_type"><?php echo $arrActivities[$i]['TypeIcon'] . "&nbsp;". $arrActivities[$i]['Type'];?></div>
+<!-- -- -- Activité n°<?php echo $i . " : informations";?> -- -- -->
+           <div class="col-xl-8 col-lg-8 col-md-8 col-sm-9 col-12" id="<?php echo $strActBlocInfos;?>">
+            <div class="row act_rowinfos">
+<!-- -- -- Activité n°<?php echo $i . " : période";?> -- -- -->
+             <div class="col-xl-4 col-lg-4 col-md-5 col-sm-4 col-4">
+              <div class="row row_time">
+               <div class="col-xl-12 chr_date"><?php echo $datEnd->format("d/m/Y");?></div>
+               <div class="col-xl-12">
+                <img class="img-fluid" src="../media/pics/arrow.png">
+               </div>
+               <div class="col-xl-12 chr_date"><?php echo $datStart->format("d/m/Y");?></div>
+              </div>
+             </div>
+<!-- -- -- Activité n°<?php echo $i . " : entreprise ou établissement";?> -- -- -->
+             <div class="col-xl-8 col-lg-8 col-md-7 col-sm-8 col-12 chr_details">
+              <div class="row chr_details">
+               <div class="col-xl-12 chr_olcell">
+<?php   if ( $arrActivities[$i]['Label'] != "Intérim - Prospection" ){?>
+                <a class="chr_ownlink" href="<?php echo $arrActivities[$i]['OwnerUrl'];?>" title="<?php echo $strOwnerLinkTitle;?>" target="_blank">
+                 <?php echo $arrActivities[$i]['Owner'];?>
+                </a>
+<?php   } else {?>
+                <p><?php echo $arrActivities[$i]['Owner'];?></p>
+<?php   }?>
+               </div>
+<!-- -- -- Activité n°<?php echo $i . " : durée";?> -- -- -->
+               <div class="col-xl-2 col-lg-2 col-md-3 col-sm-3 col-12 chr_lapse"><span class="fa fa-hourglass-half"></span></div>
+               <div class="col-xl-10 col-lg-10 col-md-9 col-sm-9 col-12 chr_lapse"><?php echo $strDateDiff;?></div>
+              </div>
+             </div>
+             </div>
+            </div>        
+<!-- -- -- Activité n°<?php echo $i . " : logo";?> -- -- -->
+            <div class="col-xl-4 col-lg-4 col-md-3 col-sm-2 col-4 chr_imgcell">
+             <img class="img-fluid img_logo" src="../media/logos/<?php echo $arrActivities[$i]['OwnerLogo'];?>">
+            </div>
+            <div class="offset-xl-1 col-xl-10 offset-lg-1 col-lg-10 chr_text"><?php echo $arrActivities[$i]['Content'];?></div>
+          </article>
 <?php
     }?>
-      </div>
-
+         </div>
+        </section>
 <!-- -- -- Fin : chronologie -- -- -->
-     </div></div>
+       </div>
+      </section>
+     </div>
 <?php
 }
