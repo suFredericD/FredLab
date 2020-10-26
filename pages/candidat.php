@@ -114,7 +114,7 @@ $strChronoTitle = "&laquo; La chronologie (aussi annale, chronique) est une scie
       <div class="row domRow">
        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-3 col-3 domIcon"><span class="fab fa-java fa-2x"></span></div>
        <div class="col-xl-7 col-lg-7 col-md-7 col-sm-6 col-6 domName">Java</div>
-       <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-1 domVersion">11</div>
+       <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-1 domVersion">9</div>
       </div>
       <div class="row domRow">
        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-3 col-3 domIcon"><span class="fab fa-php fa-2x"></span></div>
@@ -180,14 +180,44 @@ $strChronoTitle = "&laquo; La chronologie (aussi annale, chronique) est une scie
         <a href="https://www.m2iformation.fr/" target="_blank"><img class="img-fluid" id="miiLogo" src="../media/logos/m2i.jpg"></a>
        </div>
        <div class="col-xl-10 col-lg-9 subTitle">POEC JAVA Fullstack</div>
-       <div class="col-xl-12">
+       <div id ="javaBloc" class="col-xl-12">
         <div class="row">
-         <div class="col-xl-4">Java, JEE, JSF</div>
-         <div class="col-xl-4">JPA, Hibernate</div>
-         <div class="col-xl-4">POO / MVC</div>
-         <div class="col-xl-12">Frameworks :</div>
-         <div class="col-xl-6">Spring</div>
-         <div class="col-xl-6">Angular</div>
+         <div class="col-xl-5 col-md-4 javaStep">
+          <div class="row">
+           <div class="col-xl-12 javaSubtitle">Java</div>
+           <div class="col-xl-12 javaItem">OpenJdk 8</div>
+           <div class="col-xl-12 javaItem">OpenJdk 11</div>
+          </div>
+         </div>
+
+         <div class="offset-xl-1 col-xl-6 offset-md-1 col-md-7 javaStep">
+          <div class="row">
+           <div class="col-xl-12 javaSubtitle">JEE, JSF</div>
+           <div class="col-xl-4 col-md-4 javaItem">MVC</div>
+           <div class="col-xl-8 col-md-8 javaItem">Managed beans</div>
+           <div class="col-xl-4 col-md-4 javaItem">Servlets</div>
+           <div class="col-xl-4 col-md-4 javaItem">Filtres</div>
+           <div class="col-xl-4 col-md-4 javaItem">JAX-RS</div>
+          </div>
+         </div>
+
+         <div class="col-xl-7 col-md-6 javaStep">
+          <div class="row">
+           <div class="col-xl-12 javaSubtitle">Frameworks</div>
+           <div class="col-xl-4 col-md-6 javaItem">Spring</div>
+           <div class="col-xl-4 col-md-6 javaItem">Angular</div>
+           <div class="col-xl-4 col-md-12 javaItem">NodeJs</div>
+          </div>
+         </div>
+
+         <div class="offset-xl-1 col-xl-4 offset-md-1 col-md-5 javaStep">
+          <div class="row">
+           <div class="col-xl-12 javaSubtitle">Data</div>
+           <div class="col-xl-4 javaItem">JPA</div>
+           <div class="col-xl-8 javaItem">Hibernate</div>
+          </div>
+         </div>
+         
         </div>
        </div>
       </div>

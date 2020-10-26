@@ -633,6 +633,8 @@
 /* ** ** ** Bloc Domaines ** ** ** */
 .domRow{
 	margin: 6px 8px 0px 6px;
+	padding-top: 2px;
+	padding-bottom: 2px;
 	border: 1px inset #555;
 	border-top-left-radius: 25px;
 	border-bottom-right-radius: 25px;
@@ -684,6 +686,38 @@
 }
 #jQLogo{
 	max-height: 34px;
+}
+#javaBloc{
+	margin-right: 30px;
+	margin-bottom: 20px;
+	padding-right: 30px;
+}
+.javaStep,.javaStep div,.javaStep div div{
+	background-color: #333;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.javaStep{
+	margin-bottom: 10px;
+	border: 1px inset #000;
+	border-top-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+	box-shadow: 1px 1px 3px #002A3A;
+}
+.javaSubtitle{
+	font-family: "Vanilla";
+	font-size: 16px;
+	font-weight: 100;
+	letter-spacing: 0.03em;
+	text-shadow: 1px 1px 3px #42dbd4;
+}
+.javaItem{
+	font-family: "SecretTypewriter";
+	font-size: 16px;
+	font-weight: 500;
+	color: #000;
+	letter-spacing: 0.03em;
 }
 /* ** ** ** Bloc Formation ** ** ** */
 #formationLabel{
