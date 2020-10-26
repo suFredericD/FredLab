@@ -112,9 +112,14 @@ $strChronoTitle = "&laquo; La chronologie (aussi annale, chronique) est une scie
        <div class="col-xl-12 col-lg-12 subTitle">Mes domaines</div>
       </div>
       <div class="row domRow">
+       <div class="col-xl-2 col-lg-2 col-md-2 col-sm-3 col-3 domIcon"><span class="fab fa-java fa-2x"></span></div>
+       <div class="col-xl-7 col-lg-7 col-md-7 col-sm-6 col-6 domName">Java</div>
+       <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-1 domVersion">11</div>
+      </div>
+      <div class="row domRow">
        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-3 col-3 domIcon"><span class="fab fa-php fa-2x"></span></div>
        <div class="col-xl-7 col-lg-7 col-md-7 col-sm-6 col-6 domName">PHP</div>
-       <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-1 domVersion">7.3</div>
+       <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-1 domVersion">7.4</div>
       </div>
       <div class="row domRow">
        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-3 col-3 domIcon"><span class="fa fa-database fa-2x"></span></div>
@@ -139,7 +144,7 @@ $strChronoTitle = "&laquo; La chronologie (aussi annale, chronique) est une scie
       <div class="row domRow">
        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-3 col-3 domIcon"><span class="fab fa-bootstrap fa-2x"></span></div>
        <div class="col-xl-7 col-lg-7 col-md-7 col-sm-6 col-6 domName">BootStrap</div>
-       <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-1 domVersion">4.0</div>
+       <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-1 domVersion">4.5</div>
       </div>
       <div class="row domRow">
        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-3 col-3 domIcon"><span class="fab fa-font-awesome fa-2x"></span></div>
@@ -164,12 +169,28 @@ $strChronoTitle = "&laquo; La chronologie (aussi annale, chronique) est une scie
       <div class="row domRow">
        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-3 col-3 domIcon"><img class="img-fluid" id="vscLogo" src="../media/logos/vscLogo.png"></div>
        <div class="col-xl-7 col-lg-7 col-md-7 col-sm-6 col-6 domName">Visual Studio Code</div>
-       <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-1 domVersion">1.40</div>
+       <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-1 domVersion">1.50</div>
        
       </div>
      </div>
 <!-- -- -- -- -- Certifications -- -- -- -- -->
      <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 theRubText">
+      <div class="row">
+       <div class="col-xl-2 col-lg-3 subTitle">
+        <a href="https://www.m2iformation.fr/" target="_blank"><img class="img-fluid" id="miiLogo" src="../media/logos/m2i.jpg"></a>
+       </div>
+       <div class="col-xl-10 col-lg-9 subTitle">POEC JAVA Fullstack</div>
+       <div class="col-xl-12">
+        <div class="row">
+         <div class="col-xl-4">Java, JEE, JSF</div>
+         <div class="col-xl-4">JPA, Hibernate</div>
+         <div class="col-xl-4">POO / MVC</div>
+         <div class="col-xl-12">Frameworks :</div>
+         <div class="col-xl-6">Spring</div>
+         <div class="col-xl-6">Angular</div>
+        </div>
+       </div>
+      </div>
       <div class="row">
        <div class="col-xl-2 col-lg-3 subTitle">
         <a href="https://www.openclassrooms.com/fr/" target="_blank"><img class="img-fluid" id="ocrLogo" src="../media/logos/openclassrooms.png"></a>
@@ -203,11 +224,11 @@ $strChronoTitle = "&laquo; La chronologie (aussi annale, chronique) est une scie
       </div>
 <?php
       }?>
-     </div>
+     </div><hr>
     <!-- -- -- -- -- Ma formation -- -- -- -- -->
-    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 theRubText">
+    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 theRubText"><hr>
      <div class="row">
-      <div class="col-xl-12 col-lg-12 subTitle">Ma formation</div>
+      <div class="col-xl-12 col-lg-12 subTitle">Ma formation de base</div>
      </div>
      <div class="row">
       <div class="col-xl-8 col-lg-8" id="formationLabel">

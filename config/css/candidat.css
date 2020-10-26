@@ -498,11 +498,16 @@
 	color: #002A3A;
 	text-shadow: 1px 1px 3px #000;
 }
-#thema .row,#thema div{
+#thema .row, #thema div{
 	background-color: transparent;
 }
 #ocrLogo{
 	padding-top: 30px;
+	padding-bottom: 10px;
+	height: 70px;
+}
+#miiLogo{
+	padding-top: 10px;
 	padding-bottom: 10px;
 	height: 80px;
 }
