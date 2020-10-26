@@ -652,7 +652,7 @@ footer{
 }
 .animated-green{
     color: hsl(174, 95%, 10%);
-    animation: wheelHueGreen 90s infinite;
+    animation: wheelHueGreen 60s infinite;
 }
 /***** ***** ***** Page d'accueil ***** ***** *****/
 #secAccueilTitle,#secAccueilTitle div,
@@ -846,6 +846,50 @@ footer{
 #acc_divme img{
 	height: 140px;
 }
+/* ** Bloc : latest news ** */
+#lateNews, #lateNews .row, #accHorn1{
+	border-top-left-radius: 25px;
+}
+#lateNews, #accHorn2, #accNewsContent, #lateNews .row{
+	border-bottom-right-radius: 25px;
+}
+#lateNews, #lateNews .row, #accNewsTitle, #accHorn1, #accHorn2, #accNewsContent{
+	background-color: #000;
+}
+#lateNews{
+	opacity: 0.8;
+	margin-top: 5px;
+	margin-bottom: 20px;
+
+	border: 2px outset #009175;
+}
+#accNewsTitle, #accHorn1, #accHorn2{
+	border-bottom: 2px outset #009175;
+}
+#accNewsTitle{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #009175;
+	font-family: "CaptureIt";
+	font-size: 40px;
+	letter-spacing: 0.07em;	
+}
+#accHorn1, #accHorn2{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #009175;
+}
+#accHorn1{
+	padding-left: 15px;
+}
+#accHorn2{
+	padding-right: 20px;
+}
+#accNewsContent{
+	min-height: 300px;
+}
+
 /* ** Gestion des blocs ** */
 #accCandidat,#accCoding{
 	opacity: 0.9;

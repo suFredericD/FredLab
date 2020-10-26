@@ -54,14 +54,19 @@ $strArtisanLinkTitle = "Voir sa ganache...";
       </section>
 <!-- -- -- -- Section : accueil présentation -- -- -- -->
       <section class="row accueil_main" id="secAccueilMain">
-       <article class="offset-xl-1 col-xl-10 offset-lg-1 col-lg-10" id="acc_welcometext">
-        <p>Ici, chaque ligne de code
-           est amoureusement bichonnèe,
-           tapèe <em>à la main</em> par <a href="index.php#accCandidat" data-toggle="meBubble" data-animation="true" html="true" title="<?php echo $strArtisanLinkTitle;?>">un artisan passioné</a>,
-           à partir de languages <em>rigoureusement sèlectionnès</em>
-           pour vous garantir une expèrience
-           de navigation de <em>qualitè supèrieure</em>.<br><br>
-           &laquo;&nbsp;<cite>Et le code source, ça se partage !</cite>&nbsp;&raquo;&nbsp;&#9472;&nbsp;<strong>Aristote</strong></p>
+<!-- -- -- -- Section : Latest news -- -- -- -- -->
+       <article id="lateNews" class="offset-xl-1 col-xl-10">
+        <div class="row">
+         <div id="accHorn1" class="col-xl-1 animated-green"><span class="fa fa-bullhorn fa-3x"></span></div>
+         <div id="accNewsTitle" class="col-xl-10 animated-green">Latest news</div>
+         <div id="accHorn2" class="col-xl-1 animated-green"><span class="fa fa-bullhorn fa-3x"></span></div>
+         
+         <div id="accNewsContent" class="col-xl-12">
+          <div class="row">
+
+          </div>
+         </div>
+        </div>
        </article>
 <!-- -- -- -- Section : Espace candidat -- -- -- -->
        <label class="offset-xl-3 col-xl-6 offset-lg-3 col-lg-6" for="accCandidat">
@@ -116,6 +121,15 @@ $strArtisanLinkTitle = "Voir sa ganache...";
          </p>
         </div>
        </div>
+       <article class="offset-xl-1 col-xl-10 offset-lg-1 col-lg-10" id="acc_welcometext">
+        <p>Ici, chaque ligne de code
+           est amoureusement bichonnèe,
+           tapèe <em>à la main</em> par <a href="index.php#accCandidat" data-toggle="meBubble" data-animation="true" html="true" title="<?php echo $strArtisanLinkTitle;?>">un artisan passioné</a>,
+           à partir de languages <em>rigoureusement sèlectionnès</em>
+           pour vous garantir une expèrience
+           de navigation de <em>qualitè supèrieure</em>.<br><br>
+           &laquo;&nbsp;<cite>Et le code source, ça se partage !</cite>&nbsp;&raquo;&nbsp;&#9472;&nbsp;<strong>Aristote</strong></p>
+       </article>
       </section>
 <?php
 // ***** ***** ***** Footer HTML ***** ***** *****
