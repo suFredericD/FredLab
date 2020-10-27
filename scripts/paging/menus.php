@@ -30,6 +30,10 @@ function fct_BuildHorizontalMenu($objPageInfos){
          <li class="nav-item">
           <a class="nav-link btn-nav" href="<?php echo $objPageInfos->getIndexPath();?>index.php" title="You are here &lArr;">Accueil</a>
          </li>
+<!-- Page des news -->
+         <li class="nav-item">
+          <a class="nav-link btn-nav" href="<?php echo $objPageInfos->getPath();?>news.php" title="Consulter les actualités du site...">News</a>
+         </li>
 <!-- Espace candidat -->
          <li class="nav-item dropdown justify-content-center">
           <a class="nav-link dropdown-toggle" href="<?php echo $objPageInfos->getPath();?>candidat.php" id="navbarCandidat" title="De l'origine de Fred juqu'à nos jours..." role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
