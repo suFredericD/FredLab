@@ -8,10 +8,11 @@
  *              Contexte :   php 7.3
  *              Fonction :   page d'accueil
  *   Date mise en oeuvre :   24/10/2019
- *          Dernière MàJ :   15/12/2019
+ *          Dernière MàJ :   27/10/2020
  *********************************************************************************/
 /***** *****    INCLUSIONS ET SCRIPTS   ***** *****/
 require("scripts/admin/variables.php");                             // Variables globales du site
+require("scripts/admin/bdd.php");                                   // Script de connexion à la base de données
 require("scripts/classes/page.php");                                // Script de définition de la classe 'Page'
 require("scripts/paging/htmlPaging.php");                           // Script de construction de la structure html des pages
 require("scripts/paging/mainPaging.php");                           // Script de construction des composants graphiques
@@ -37,6 +38,7 @@ fct_BuildHeaderGraph($objPageInfos);
 fct_BuildHorizontalMenu($objPageInfos);
 // ***** ***** ***** Corps du contenu ***** ***** *****
 $strArtisanLinkTitle = "Voir sa ganache...";
+$arrLatestNews = fct_SelectLastNews();
 ?>
       <section class="row" id="secAccueilTitle">
        <div class="offset-xl-1 col-xl-10 col-lg-12">
@@ -63,7 +65,21 @@ $strArtisanLinkTitle = "Voir sa ganache...";
          
          <div id="accNewsContent" class="col-xl-12">
           <div class="row">
-
+<?php
+  for ($i=1; $i<=3; $i++) {
+    $datFullNewsDate = new DateTime($arrLatestNews[$i]['Date']);
+    $strNewsDate = $datFullNewsDate->format("d/m/Y");
+?>
+<!-- -- -- -- Article : News n°<?php echo $i;?> -- -- -- -- -->
+           <article class="offset-xl-1 col-xl-10 accNewsItem">
+            <div class="row">
+             <div class="col-xl-3 accNewsDate"><?php echo $strNewsDate;?></div>
+             <div class="col-xl-9 accNewsSub"><?php echo $arrLatestNews[$i]['Title'];?></div>
+             <div class="col-xl-12 accNewsText"><?php echo $arrLatestNews[$i]['Content'];?></div>
+            </div>
+           </article>
+<?php
+  }?>
           </div>
          </div>
         </div>

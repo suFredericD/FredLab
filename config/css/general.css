@@ -61,6 +61,13 @@ Palette
 		 url('../fonts/alphaecho_regular/alpha_echo-webfont.ttf') format('truetype'),
 		 url('../fonts/alphaecho_regular/alpha_echo-webfont.svg') format('svg');
 }
+@font-face{
+	font-family: "Banksia";
+	src: url('../fonts/banksia_regular/banksia-webfont.eot') format('eot'),
+		 url('../fonts/banksia_regular/banksia-webfont.woff') format('woff'),
+		 url('../fonts/banksia_regular/banksia-webfont.ttf') format('truetype'),
+		 url('../fonts/banksia_regular/banksia-webfont.svg') format('svg');
+}
 @font-face{									/* Belligerent */
 	font-family: "Belligerent";
 	src: url('../fonts/belligerentmadness_regular/belligerent-webfont.eot') format('eot'),
@@ -853,11 +860,12 @@ footer{
 #lateNews, #accHorn2, #accNewsContent, #lateNews .row{
 	border-bottom-right-radius: 25px;
 }
-#lateNews, #lateNews .row, #accNewsTitle, #accHorn1, #accHorn2, #accNewsContent{
+#lateNews, #lateNews .row, #accNewsTitle,
+#accHorn1, #accHorn2, #accNewsContent{
 	background-color: #000;
 }
 #lateNews{
-	opacity: 0.8;
+	opacity: 0.9;
 	margin-top: 5px;
 	margin-bottom: 20px;
 
@@ -888,8 +896,41 @@ footer{
 }
 #accNewsContent{
 	min-height: 300px;
+	padding-bottom: 5px;
 }
-
+.accNewsItem, .accNewsDate, .accNewsSub, .accNewsText{
+	background-color: #444;
+}
+.accNewsItem{
+	opacity: 1;
+	margin-top: 5px;
+	border: 1px inset #009175;
+	border-top-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+}
+.accNewsDate{
+	color: #037A63;
+	font-family: "SecretTypeWriter";
+	font-size: 20px;
+	text-shadow: 1px 1px 1px #000;
+	border: 1px inset #046259;
+	border-top-left-radius: 25px;
+}
+.accNewsSub{
+	color: #037A63;
+	font-family: "CaptureIt";
+	font-size: 22px;
+	text-shadow: 2px 1px 1px #000;
+	border: 1px inset #046259;
+}
+.accNewsText{
+	color: #000;
+	font-family: "Banksia";
+	font-size: 18px;
+	font-weight: 300;
+	text-shadow: 1px 1px 1px #666;
+	border-bottom-right-radius: 25px;
+}
 /* ** Gestion des blocs ** */
 #accCandidat,#accCoding{
 	opacity: 0.9;

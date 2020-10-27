@@ -8,7 +8,7 @@
  *              Contexte :   php 7.3
  *              Fonction :   page d'accueil de l'espace cadidat
  *   Date mise en oeuvre :   25/10/2019
- *          Dernière MàJ :   17/12/2019
+ *          Dernière MàJ :   26/10/2020
  *********************************************************************************/
 /***** *****    INCLUSIONS ET SCRIPTS   ***** *****/
 require("../scripts/admin/variables.php");                  // Variables globales du site
