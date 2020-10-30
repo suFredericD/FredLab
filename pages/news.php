@@ -31,6 +31,7 @@ $strPageFile = $arrFileName[$intFileCount];                         // Nom du fi
 $objPageInfos = new Page();                                         // Incrémentation de l'objet 'Page'
 $objPageInfos->setName($strPageFile);
 // ***** ***** ***** Variables de la page ***** ***** *****
+$arrAllNews = fct_SelectAllNews();
 
 // ***** ***** ***** PAGE HTML   ***** ***** *****
 // ***** ***** ***** En-tête HTML ***** ***** *****
@@ -41,7 +42,25 @@ fct_BuildHeaderGraph($objPageInfos);
 fct_BuildHorizontalMenu($objPageInfos);
 // ***** ***** ***** Corps du contenu ***** ***** *****
 ?>
-
+    <h1>Des nouvelles du labo...</h1><hr class="body-hr">
+    <section class="col-xl-12" id="secNews">
+     <div class="row">
+<?php
+    for ($i=1; $i<=count($arrAllNews);$i++) {
+        $datFullNewsDate = new DateTime($arrAllNews[$i]['Date']);
+        $strNewsDate = $datFullNewsDate->format("d/m/Y");
+?>
+      <article class="offset-xl-1 col-xl-10 newsItem">
+       <div class="row">
+        <div class="col-xl-2 newsDate"><?php echo $strNewsDate;?></div>
+        <div class="col-xl-10 newsSub"><?php echo $arrAllNews[$i]['Title'];?></div>
+        <div class="col-xl-12 newsText"><?php echo $arrAllNews[$i]['Content'];?></div>
+       </div>
+      </article>
+<?php
+    }?>
+     </div>
+    </section>
 <?php
 // ***** ***** ***** Footer HTML ***** ***** *****
 fct_BuildFooterHtml($objPageInfos);

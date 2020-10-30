@@ -60,7 +60,7 @@ $arrLatestNews = fct_SelectLastNews();
        <article id="lateNews" class="offset-xl-1 col-xl-10">
         <div class="row">
          <div id="accHorn1" class="col-xl-1 animated-green"><span class="fa fa-bullhorn fa-3x"></span></div>
-         <div id="accNewsTitle" class="col-xl-10 animated-green">Latest news</div>
+         <div id="accNewsTitle" class="col-xl-10 animated-green"><a class="accNewsLink" href="pages/news.php" title="Consulter toutes les actualités du site...">Latest news</a></div>
          <div id="accHorn2" class="col-xl-1 animated-green"><span class="fa fa-bullhorn fa-3x"></span></div>
          
          <div id="accNewsContent" class="col-xl-12">
@@ -75,7 +75,7 @@ $arrLatestNews = fct_SelectLastNews();
             <div class="row">
              <div class="col-xl-3 accNewsDate"><?php echo $strNewsDate;?></div>
              <div class="col-xl-9 accNewsSub"><?php echo $arrLatestNews[$i]['Title'];?></div>
-             <div class="col-xl-12 accNewsText"><?php echo $arrLatestNews[$i]['Content'];?></div>
+             <div class="col-xl-12 accNewsText"><?php echo $arrLatestNews[$i]['Resume'];?></div>
             </div>
            </article>
 <?php

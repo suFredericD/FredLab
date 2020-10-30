@@ -186,6 +186,9 @@ a:hover{
 	color: #1333A4;
 	text-shadow: 3px 2px 5px #2F7FC0;
 }
+strong{
+	font-weight: 700;
+}
 /***** ***** ***** Titrages HTML ***** ***** *****/
 h1,h2,h3,h4{
 	background-color: transparent;
@@ -243,6 +246,13 @@ h4,h4 a{
 h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover{
 	color: #009DA5;
 	text-shadow: 2px 2px 3px #000000;
+}
+.fredlabtext{
+	font-family: "TechniqueBrk";
+	font-size: 18px;
+	letter-spacing: 0.03em;
+	color: #333;
+	text-shadow: 1px 1px 3px #037A63;
 }
 /***** ***** ***** En-tête graphique ***** ***** *****/
 #site-header{
@@ -877,10 +887,16 @@ footer{
 #accNewsTitle{
 	padding-top: 10px;
 	padding-bottom: 10px;
+}
+.accNewsLink{
 	color: #009175;
 	font-family: "CaptureIt";
 	font-size: 40px;
 	letter-spacing: 0.07em;	
+}
+.accNewsLink:hover{
+	color: #666;
+
 }
 #accHorn1, #accHorn2{
 	display: flex;
@@ -898,7 +914,7 @@ footer{
 	min-height: 300px;
 	padding-bottom: 5px;
 }
-.accNewsItem, .accNewsDate, .accNewsSub, .accNewsText{
+.accNewsItem, .accNewsDate, .accNewsSub{
 	background-color: #444;
 }
 .accNewsItem{
@@ -924,6 +940,7 @@ footer{
 	border: 1px inset #046259;
 }
 .accNewsText{
+	background-color: #666;
 	color: #000;
 	font-family: "Banksia";
 	font-size: 18px;
