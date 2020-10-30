@@ -131,7 +131,10 @@ function fct_BuildFooterHtml($objPageInfos){
       </article>
 <!-- -- -- -- Mentions -- -- -- -->
       <article class="col-xl-12" id="copy">
-       <p class="site-author">&nbsp;FredLab&nbsp;Projects&nbsp;Inc.<i>&nbsp;&#x24b8;</i>&nbsp;2019&nbsp;</p>
+<?php
+     $datToday = new DateTime();
+?>
+       <p class="site-author">&nbsp;FredLab&nbsp;Projects&nbsp;Inc.<i>&nbsp;&#x24b8;</i>&nbsp;2019-<?php echo $datToday->format("Y");?></p>
       </article>
      </section>
     </footer>
