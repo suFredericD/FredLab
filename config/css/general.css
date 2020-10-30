@@ -948,6 +948,14 @@ footer{
 	text-shadow: 1px 1px 1px #666;
 	border-bottom-right-radius: 25px;
 }
+.accNlnk{
+	font-size: 18px;
+	text-shadow: 1px 1px 1px #046259;
+}
+.accNlnk:hover{
+	color: #046259;
+	text-shadow: 2px 2px 2px #000;
+}
 /* ** Gestion des blocs ** */
 #accCandidat,#accCoding{
 	opacity: 0.9;
