@@ -71,8 +71,8 @@ function fct_BuildHeaderHtml($objPageInfos){
 // Valeur de retour : code html
 function fct_BuildFooterHtml($objPageInfos){
 ?>
-<!-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -->
-<!-- -- -- -- -- -- Fin du contenu -- -- -- -- -- -->
+<!-- -- -- -- -- -- Début du contenu -- -- -- -- -- -- -- -->
+<!-- -- -- -- -- -- Fin du contenu -- -- -- -- -- -- -- -- -->
      </section>
 <!-- -- -- -- Bootstrap Core JavaScript -- -- -- -->
      <script src="<?php echo $GLOBALS['strAjax'];?>"></script><!-- Scripting Ajax -->

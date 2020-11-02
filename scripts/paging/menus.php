@@ -8,7 +8,7 @@
  *              Contexte :   php 7.3
  *              Fonction :   construction des menus du site
  *   Date mise en oeuvre :   24/10/2019
- *          Dernière MàJ :   11/12/2019
+ *          Dernière MàJ :   02/11/2020
  *********************************************************************************/
 // Fonction de construction du menu horizontal
 //       Paramètres :
@@ -59,9 +59,19 @@ function fct_BuildHorizontalMenu($objPageInfos){
            <a class="dropdown-item" href="<?php echo $objPageInfos->getPath();?>coding.php?view=fonts" title="Voir toutes les Webfonts...">Les Webfonts</a>
           </div>
          </li>
+<!-- Espace cryptos -->
+<li class="nav-item dropdown justify-content-center">
+          <a class="nav-link dropdown-toggle" href="<?php echo $objPageInfos->getPath();?>crypto_main.php" id="navbarCrypto" title="Pour les cryptomonnaies" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           <span class="fab fa-bitcoin"></span>&nbsp;&nbsp;Cryptos</a>
+	   <div class="dropdown-menu dropdown-menu-right custom-dpdmenu" aria-labelledby="navbarCrypto">
+           <a class="dropdown-item" href="<?php echo $objPageInfos->getPath();?>crypto_main.php" title="Accéder à l'espace cryptomonnaies...">Espace Cryptos</a>
+           <div class="dropdown-divider custom-dpd-divider"></div>
+
+          </div>
+         </li>
+<!-- Fermeture du menu -->
         </ul>
        </div>
       </nav>
-<!-- -- -- -- -- Corps du contenu -- -- -- -- -->
 <?php
 }?>

@@ -8,7 +8,7 @@
  *              Contexte :   JavaScript
  *              Fonction :   script de mise en page et animation de la page d'accueil
  *   Date mise en oeuvre :   14/11/2019
- *          Dernière MàJ :   16/12/2019
+ *          Dernière MàJ :   02/11/2020
  *********************************************************************************************/
 /* *** *** *** CONSTANTES *** *** *** */
 const divSiteTitle = document.getElementById("main_title");                 // Bloc : titre du site
@@ -21,6 +21,10 @@ const divCandidat = document.getElementById("accCandidat");                 // B
 const lblCoding = secMain.getElementsByTagName("label")[1];                 // Label du bloc 'Espace coding'
 const lnkCoding = lblCoding.getElementsByTagName("a")[0];                   // Lien  du bloc 'Espace coding'
 const divCoding = document.getElementById("accCoding");                     // Bloc : Espace coding
+
+const lblCrypto = secMain.getElementsByTagName("label")[2];                 // Label du bloc 'Espace crypto'
+const lnkCrypto = lblCoding.getElementsByTagName("a")[0];                   // Lien  du bloc 'Espace crypto'
+const divCrypto = document.getElementById("accCrypto");                     // Bloc : Espace crypto
 
 const strLinkBaseColor = getComputedStyle(lnkCandidat).color;               // Couleur d'origine des liens de bloc
 const strLabelBaseClass = lblCandidat.className;                            // Classe d'origine des labels de bloc
@@ -125,9 +129,17 @@ function fctChangeCandidatLabel(){
 function fctChangeCodingLabel(){
     fctChangeLabels(1);
 }
+//  Fonction de redisposition du label du bloc 'Espace crypto'
+//  EvenListener        : click
+//  Paramètres          : none
+//  Valeur de retour    : none
+function fctChangeCryptoLabel(){
+    fctChangeLabels(2);
+}
 /* *** *** *** EVENT LISTENERS *** *** *** */
 lnkCandidat.addEventListener("click", fctChangeCandidatLabel);      // Clic : label Candidat
 lnkCoding.addEventListener("click", fctChangeCodingLabel);          // Clic : label Codeur
+lnkCrypto.addEventListener("click", fctChangeCryptoLabel);          // Clic : label Codeur
 var itvCloseButtonclick = setTimeout(function(){                    // Clic : fermeture paragraphe d'intro
     document.getElementById("acc_welcomeclose").addEventListener("click", function(){
         $("#acc_welcometext").hide("fold", 1850);

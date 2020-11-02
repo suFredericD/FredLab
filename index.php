@@ -8,7 +8,7 @@
  *              Contexte :   php 7.3
  *              Fonction :   page d'accueil
  *   Date mise en oeuvre :   24/10/2019
- *          Dernière MàJ :   27/10/2020
+ *          Dernière MàJ :   02/11/2020
  *********************************************************************************/
 /***** *****    INCLUSIONS ET SCRIPTS   ***** *****/
 require("scripts/admin/variables.php");                             // Variables globales du site
@@ -137,6 +137,30 @@ $arrLatestNews = fct_SelectLastNews();
          </p>
         </div>
        </div>
+<!-- -- -- -- Section : Espace cryptos -- -- -- -->
+       <label class="offset-xl-3 col-xl-6 offset-lg-3 col-lg-6" for="accCrypto">
+        <a href="index.php#accCrypto" title="Tout pour les cryptomonnaies...">
+         <span class="fab fa-bitcoin"></span>&nbsp;&nbsp;Espace cryptos</a>
+       </label>
+       <div class="col-xl-12-hidden" id="accCrypto">
+        <div class="row">
+<!-- -- -- -- Présentation de l'espace coding -- -- -- -->
+         <div class="col-xl-2 no-bg-no-bd">
+          <img class="img-fluid" src="media/pics/altcoins01.jpg" alt="Image d'illustration" title="Money, money, money...">
+         </div>
+         <p class="col-xl-10 accRubTitle">Tout pour les cryptomonnaies</p>
+         <p class="col-xl-12 accRubText">Pour bien commencer, trouver des bons plans ou gagner plus de ces passionnantes et versatiles cryptomonnaies,
+          <a href="pages/crypto_main.php" title="Accéder à l'espace cryptomonnaies">l'espace crypto</a>, c'est ici que ça se passe :
+          <ul class="offset-xl-1 col-xl-10" id="accUlCrypto">
+            <li>Les microwallets : petits portefeuilles numériques multi-coins, les indispensables pour commencer...</li>
+            <li>Les bons plans : petites applications et sites qui distribuent des cryptos, pour gagner ses premiers coins...</li>
+            <li>Les exchanges : les plateformes d'échange, pour jouer dans la cour des grands...</li>
+            <li>Brave browser : un navigateur chrome-like performant, avec un excellent ad-block et qui vous rémunère en crypto chaque mois...</li>
+          </ul>
+         </p>
+        </div>
+       </div>
+<!-- -- -- -- Encart texte d'accueil -- -- -- -->
        <article class="offset-xl-1 col-xl-10 offset-lg-1 col-lg-10" id="acc_welcometext">
         <p>Ici, chaque ligne de code
            est amoureusement bichonnèe,

@@ -7,7 +7,7 @@
  * 				Contexte :	 Css 3.0
  *              Fonction :   page de styles d'affichage CSS
  *   Date mise en oeuvre :   13/11/2019
- *          Dernière MàJ :   17/12/2019
+ *          Dernière MàJ :   02/11/2020
  **************************************************************************************************/
 /*
 Palette
@@ -957,7 +957,7 @@ footer{
 	text-shadow: 2px 2px 2px #000;
 }
 /* ** Gestion des blocs ** */
-#accCandidat,#accCoding{
+#accCandidat,#accCoding,#accCrypto{
 	opacity: 0.9;
 	background-color: #999;
 	padding: 15px 50px 5px 50px;
@@ -968,7 +968,7 @@ footer{
 	color: #002A3A !important;
 	cursor: default;
 }
-#accCandidat:target,#accCoding:target,#acc_divme{
+#accCandidat:target,#accCoding:target,#accCrypto:target,#acc_divme{
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -1020,10 +1020,10 @@ footer{
 	color: #002A3D;
 	text-shadow: 1px 1px 3px #999;
 }
-#accUlText li{
+#accUlText li, #accUlCrypto li{
 	vertical-align: middle;
 }
-#accUlText li a{
+#accUlText li a, #accUlCrypto li a{
 	background-color: transparent;
 	font-family: inherit;
 	font-size: inherit;
@@ -1063,6 +1063,20 @@ footer{
 	font-size: 24px;
 	color: #002A3D;
 	text-shadow: 2px 2px 4px #037A63;
+}
+/* ** Bloc sur les cryptos ** */
+#accUlCrypto{
+	padding-left: 6%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-top-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+	text-align: justify;
+	font-family: "Acme";
+	font-size: 22px;
+	letter-spacing: 0.045em;
+	color: #002A3D;
+	text-shadow: 1px 1px 3px #999;
 }
 /***** ***** ***** ***** ***** ***** ***** ***** *****/
 /* * *** ***** ***** Media queries ***** ***** *** * */

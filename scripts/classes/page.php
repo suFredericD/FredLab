@@ -8,7 +8,7 @@
  *              Contexte :   php 7.3
  *              Fonction :   page de définition de la classe page
  *   Date mise en oeuvre :   24/10/2019
- *          Dernière MàJ :   13/10/2019
+ *          Dernière MàJ :   02/11/2020
  *******************************************************************************************/
 /***** *****    INCLUSIONS ET SCRIPTS   ***** *****/
 
@@ -40,15 +40,25 @@ class Page{
 			"index.php" => array(
 				"title" => "FredLab - Accueil",
 				"description" => "Bienvenue",
-				"keywords" => "informaticien, programmeur, projets, programmation, php, javascript, languages"),
+				"keywords" => "informaticien, programmeur, projets, programmation, php, javascript, languages, java, poo, mvc"),
+			"news.php" => array(
+				"title" => "FredLab - News",
+				"description" => "Bienvenue dans l'espace news",
+				"keywords" => "informaticien, programmeur, projets, programmation, php, javascript, languages, java, poo, mvc"),
 			"candidat.php" => array(
 				"title" => "FredLab - Candidat",
 				"description" => "Bienvenue dans l'espace candidat",
-				"keywords" => "informaticien, programmeur, projets, programmation, php, javascript, languages"),
+				"keywords" => "informaticien, programmeur, projets, programmation, php, javascript, languages, java, poo, mvc"),
 			"coding.php" => array(
 				"title" => "FredLab - Codeurs",
 				"description" => "Bienvenue dans l'espace codeur",
-				"keywords" => "informaticien, programmeur, projets, programmation, php, javascript, languages")
+				"keywords" => "informaticien, programmeur, projets, programmation, php, javascript, languages, java, poo, mvc"),
+			"crypto_main.php" => array(
+				"title" => "FredLab - Cryptos",
+				"description" => "Bienvenue dans l'espace cryptomonnaies",
+				"keywords" => "bitcoin, litecoin, ethereum, dash, stellar, tron, dogecoin, digibyte, pivx, 
+							   compound, binance, coinbase, brave, uphold, stormgain,
+							   faucetpay, coinpot, expresscrypto")
 			);
 		$this->setTitle($arrPages[$strNewName]['title']);					// Titre de la page
 		$this->setDescription($arrPages[$strNewName]['description']);		// Rôle de la page
