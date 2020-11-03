@@ -8,7 +8,7 @@
  *              Contexte :   JavaScript
  *              Fonction :   script de mise en page et animation de la page coding.php
  *   Date mise en oeuvre :   10/12/2019
- *          Dernière MàJ :   16/12/2019
+ *          Dernière MàJ :   02/11/2020
  *********************************************************************************************/
 /* *** *** *** ELEMENTS *** *** *** */
 const liUtilsLinks = document.getElementById("utils_links");        // Bouton : liens utiles
@@ -40,7 +40,7 @@ $( document ).ready(function() {
     }, 4000);
 });
 /* *** *** *** FONCTIONS *** *** *** */
-//  Fonction d'affichage/masquage de la section liens utiles
+//  Fonction d'affichage/masquage de la section 'liens utiles'
 //  EvenListener        : liUtilsLinks, lblUtilsLinks
 //  Paramètres          : none
 //  Valeur de retour    : none
@@ -53,8 +53,7 @@ function fctDisplayUtilsLinks(){
         bolDisplayUtilsLinks = false;
     }
 }
-/* *** *** *** FONCTIONS *** *** *** */
-//  Fonction d'affichage/masquage d'une rubrique de la section liens utiles
+//  Fonction d'affichage/masquage d'une rubrique de la section 'liens utiles'
 //  EvenListener        : arrReferersLabels
 //  Paramètres          : intRefererId
 //  Valeur de retour    : none
@@ -66,7 +65,6 @@ function fctDisplayReferersLinks(intRefererId){
     } else {
         $(strRefererId).show("pulsate", 1000);
         arrDisplayReferers[intRefererId] = true;
-        //arrReferersLabels[intRefererId].getElementsByTagName("span")[1].className = "far fa-caret-square-down fa-xs";
     }
 }
 /* *** *** *** APPELS DE FONCTIONS *** *** *** */

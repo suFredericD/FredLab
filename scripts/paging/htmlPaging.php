@@ -8,7 +8,7 @@
  *              Contexte :   php 7.3
  *              Fonction :   construction de la structure des pages html
  *   Date mise en oeuvre :   24/10/2019
- *          Dernière MàJ :   13/12/2019
+ *          Dernière MàJ :   02/11/2020
  *******************************************************************************************************/
 /***** *****    INCLUSIONS ET SCRIPTS   ***** *****/
 
@@ -87,6 +87,8 @@ function fct_BuildFooterHtml($objPageInfos){
      <script src="<?php echo $objPageInfos->getScriptsPath();?>paging/chronoPaging.js"></script><!-- JavaScript : mise en page chronologie -->
 <?php     } else if ( $objPageInfos->getName() == "coding.php" ){?>
      <script src="<?php echo $objPageInfos->getScriptsPath();?>paging/coding.js"></script><!-- JavaScript : mise en page coding -->
+<?php     } else if ( $objPageInfos->getName() == "crypto_main.php" ){?>
+     <script src="<?php echo $objPageInfos->getScriptsPath();?>paging/cryptos.js"></script><!-- JavaScript : mise en page crypto -->
 <?php     }?>
 
     </body>
