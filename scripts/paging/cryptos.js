@@ -16,6 +16,7 @@ const lnkExchanges = document.getElementById("lnkExchanges");     // Bouton exch
 const lnkBrowser = document.getElementById("lnkBrowser");         // Bouton navigateurs
 const lnkPTC = document.getElementById("lnkPTC");                 // Bouton PTC
 const lnkFaucets = document.getElementById("lnkFaucets");         // Bouton faucets
+const lnkGames = document.getElementById("lnkGames");             // Bouton jeux
 
 const secWallets = document.getElementById("secWallets");         // 
 
@@ -34,6 +35,7 @@ $( document ).ready(function() {
         $("#main_title").toggle("pulsate",intAmimationStartDelay);
         $("#main_title").show("pulsate",intAmimationStartDelay);
     }, 4000);
+
 });
 /* *** *** *** FONCTIONS *** *** *** */
 //  Fonction d'affichage/masquage de la section 'multiwallets'

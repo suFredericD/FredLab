@@ -11,6 +11,8 @@
  *************************************************************************************************/
 /***** ***** ***** Containers ***** ***** *****/
 #secCryptos{
+    margin-top: 10px;
+    margin-bottom: 30px;
     padding-top: 10px;
     padding-bottom: 5px;
     border-top-left-radius: 25px;
@@ -18,23 +20,28 @@
 }
 #cryMenu{
     position: fixed;
+    top: 20%;
     left: 2%;
     z-index: 100;
-    max-width: 12%;
+    max-width: 24%;
     background-color: transparent;
     border-top-left-radius: 25px;
     border-bottom-right-radius: 25px;
 }
 #cryContent{
-    min-height: 350px;
+    min-height: 450px;
     border-top-left-radius: 25px;
     border-bottom-right-radius: 25px;
 }
 /***** ***** ***** Classes et balises ***** ***** *****/
-#lnkWallets,#lnkExchanges,#lnkFaucets,#lnkBrowser,#lnkPTC{
+#crySubTitle{
+    font-family: "SecretTypewriter";
+    font-weight: bold;
+}
+/***** ***** ***** Menu de la page ***** ***** *****/
+#lnkWallets, #lnkExchanges, #lnkFaucets, #lnkBrowser, #lnkPTC, #lnkGames{
     margin-bottom: 5px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding: 5px 0px 5px 0px;
     background-color: hsl(150, 5%, 35%) !important;
 	background-repeat: repeat-x;
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#bcc2bf", endColorstr="#545d59");
@@ -49,13 +56,13 @@
     color: #002A3A;
     font-family: "2Dumb";
     font-weight: 500;
-    font-size: 21px;
+    font-size: 10px;
     text-shadow: 1px 1px 2px #009175;
     border: 1px inset #000;
     border-top-left-radius: 25px;
 	border-bottom-right-radius: 25px;
 }
-#lnkWallets:hover,#lnkExchanges:hover,#lnkFaucets:hover,#lnkBrowser:hover,#lnkPTC:hover{
+#lnkWallets:hover, #lnkExchanges:hover, #lnkFaucets:hover, #lnkBrowser:hover, #lnkPTC:hover, #lnkGames:hover{
     background-color: hsl(150, 22%, 12%) !important;
 	background-repeat: repeat-x;
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#699f84", endColorstr="#17251e");
@@ -70,49 +77,83 @@
     text-shadow: 1px 1px 2px #002A3A;
     cursor: pointer;
 }
+.crMenuLogos{
+    max-width: 50px;
+}
 
 /***** ***** ***** ***** ***** ***** ***** ***** *****/
 /* * *** ***** ***** Media queries ***** ***** *** * */
 /***** ***** ***** ***** ***** ***** ***** ***** *****/
 /* *** *** *** Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
+    #secCryptos{
+        margin-top: 20px;
+    }
     #cryMenu{
+        top: 23%;
         min-width: 18%;
     }
     #cryContent{
         min-height: 400px;
     }
-    #lnkWallets,#lnkExchanges,#lnkFaucets,#lnkBrowser,#lnkPTC{
+    #lnkWallets,#lnkExchanges,#lnkFaucets,#lnkBrowser,#lnkPTC,#lnkGames{
         font-size: 12px;
         letter-spacing: -0.08em;
+    }
+    .crMenuLogos{
+        max-width: 60px;
     }
 }
 /* *** *** *** Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-    #lnkWallets,#lnkExchanges,#lnkFaucets,#lnkBrowser,#lnkPTC{
+    #secCryptos{
+        margin-top: 20px;
+    }
+    #cryMenu{
+        top: 25%;
+        max-width: 20%;
+    }
+    #cryContent{
+        min-height: 500px;
+    }
+    #lnkWallets,#lnkExchanges,#lnkFaucets,#lnkBrowser,#lnkPTC,#lnkGames{
         font-size: 12px;
         letter-spacing: -0.08em;
+    }
+    .crMenuLogos{
+        max-width: 70px;
     }
 }
 /* *** *** *** Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
     #cryMenu{
-        min-width: 14%;
+        top: 30%;
+        min-width: 18%;
     }
-    #lnkWallets,#lnkExchanges,#lnkFaucets,#lnkBrowser,#lnkPTC{
+    #lnkWallets,#lnkExchanges,#lnkFaucets,#lnkBrowser,#lnkPTC,#lnkGames{
         font-size: 16px;
         letter-spacing: -0.08em;
+    }
+    .crMenuLogos{
+        max-width: 80px;
     }
 }
 /* *** *** *** Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+    #secCryptos{
+        margin-top: 30px;
+    }
     #cryMenu{
-        min-width: 15%;
+        top: 35%;
+        max-width: 8%;
         margin-top: 40px;
     }
-    #lnkWallets,#lnkExchanges,#lnkFaucets,#lnkBrowser,#lnkPTC{
-        font-size: 20px;
+    #lnkWallets,#lnkExchanges,#lnkFaucets,#lnkBrowser,#lnkPTC,#lnkGames{
+        font-size: 18px;
         letter-spacing: 0em;
+    }
+    .crMenuLogos{
+        max-width: 90px;
     }
 }
 /* Extra large devices (large desktops)
