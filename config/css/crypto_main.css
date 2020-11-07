@@ -7,7 +7,7 @@
  * 				Contexte :	 Css 3.0
  *              Fonction :   page de styles d'affichage CSS (crypto_main.php)
  *   Date mise en oeuvre :   02/11/2020
- *          Dernière MàJ :   03/11/2020
+ *          Dernière MàJ :   07/11/2020
  *************************************************************************************************/
 /***** ***** ***** Containers ***** ***** *****/
 #secCryptos{
@@ -15,21 +15,16 @@
     margin-bottom: 30px;
     padding-top: 10px;
     padding-bottom: 5px;
+    background-color: transparent;
     border-top-left-radius: 25px;
 	border-bottom-right-radius: 25px;
 }
 #cryMenu{
-    position: fixed;
-    top: 20%;
-    left: 2%;
-    z-index: 100;
-    max-width: 24%;
     background-color: transparent;
     border-top-left-radius: 25px;
     border-bottom-right-radius: 25px;
 }
-#cryContent{
-    min-height: 450px;
+#cryContent, #cryContent .row, #crySubTitle, #cryText{
     border-top-left-radius: 25px;
     border-bottom-right-radius: 25px;
 }
@@ -59,8 +54,17 @@
     font-size: 10px;
     text-shadow: 1px 1px 2px #009175;
     border: 1px inset #000;
+    box-shadow: 1px 1px 2px #468853;
     border-top-left-radius: 25px;
-	border-bottom-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    transition-property: all;
+	transition-duration: 1250ms;
+	-o-transition-property: all;
+	-o-transition-duration: 1250ms;
+	-moz-transition-property: all;
+	-moz-transition-duration: 1250ms;
+	-webkit-transition-property: all;
+	-webkit-transition-duration: 1250ms;
 }
 #lnkWallets:hover, #lnkExchanges:hover, #lnkFaucets:hover, #lnkBrowser:hover, #lnkPTC:hover, #lnkGames:hover{
     background-color: hsl(150, 22%, 12%) !important;
@@ -73,87 +77,110 @@
 	background-image: -webkit-linear-gradient(top, #699f84, #17251e);
 	background-image: -o-linear-gradient(top, #699f84, #17251e);
 	background-image: linear-gradient(#699f84, #17251e);
-    color: #000;
-    text-shadow: 1px 1px 2px #002A3A;
+    color: #009175;
+    text-shadow: 2px 2px 3px #002A3A;
+    box-shadow: 2px 2px 3px #002A3A;
     cursor: pointer;
 }
 .crMenuLogos{
-    max-width: 50px;
+    max-width: 70px;
+    max-height: 40px;
 }
+[id*="crRub"], [id*="crRub"] .row, [id*="crRub"] .row div{
+    border-top-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+}
+[id*="crRub"]{
+    margin-bottom: 5px;
+    background-color: transparent;
+}
+[id*="crRub"] .row{
+    padding: 5px 5px 5px 5px;
+    background-color: hsl(150, 22%, 12%) !important;
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#699f84", endColorstr="#17251e");
+	background-image: -khtml-gradient(linear, left top, left bottom, from(#699f84), to(#17251e));
+	background-image: -moz-linear-gradient(top, #699f84, #17251e);
+	background-image: -ms-linear-gradient(top, #699f84, #17251e);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #699f84), color-stop(100%, #17251e));
+	background-image: -webkit-linear-gradient(top, #699f84, #17251e);
+	background-image: -o-linear-gradient(top, #699f84, #17251e);
+	background-image: linear-gradient(#699f84, #17251e);
+}
+[id*="crRub"] .row div{
+    margin-bottom: 5px;
+    background-color: transparent;
+    border: 1px inset #000;
+    box-shadow: 1px 1px 2px #468853;
+    transition-property: all;
+	transition-duration: 1250ms;
+	-o-transition-property: all;
+	-o-transition-duration: 1250ms;
+	-moz-transition-property: all;
+	-moz-transition-duration: 1250ms;
+	-webkit-transition-property: all;
+	-webkit-transition-duration: 1250ms;
+}
+[id*="crRub"] .row div:hover{
+    background-color: hsl(150, 5%, 35%) !important;
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#bcc2bf", endColorstr="#545d59");
+	background-image: -khtml-gradient(linear, left top, left bottom, from(#bcc2bf), to(#545d59));
+	background-image: -moz-linear-gradient(top, #bcc2bf, #545d59);
+	background-image: -ms-linear-gradient(top, #bcc2bf, #545d59);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #bcc2bf), color-stop(100%, #545d59));
+	background-image: -webkit-linear-gradient(top, #bcc2bf, #545d59);
+	background-image: -o-linear-gradient(top, #bcc2bf, #545d59);
+	background-image: linear-gradient(#bcc2bf, #545d59);
+}
+/***** ***** ***** Section 'contenu' ***** ***** *****/
+
 
 /***** ***** ***** ***** ***** ***** ***** ***** *****/
 /* * *** ***** ***** Media queries ***** ***** *** * */
 /***** ***** ***** ***** ***** ***** ***** ***** *****/
 /* *** *** *** Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-    #secCryptos{
-        margin-top: 20px;
-    }
-    #cryMenu{
-        top: 23%;
-        min-width: 18%;
-    }
-    #cryContent{
-        min-height: 400px;
-    }
     #lnkWallets,#lnkExchanges,#lnkFaucets,#lnkBrowser,#lnkPTC,#lnkGames{
         font-size: 12px;
         letter-spacing: -0.08em;
     }
     .crMenuLogos{
-        max-width: 60px;
+        max-width: 80px;
+        max-height: 50px;
     }
 }
 /* *** *** *** Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-    #secCryptos{
-        margin-top: 20px;
-    }
-    #cryMenu{
-        top: 25%;
-        max-width: 20%;
-    }
-    #cryContent{
-        min-height: 500px;
-    }
     #lnkWallets,#lnkExchanges,#lnkFaucets,#lnkBrowser,#lnkPTC,#lnkGames{
         font-size: 12px;
         letter-spacing: -0.08em;
     }
     .crMenuLogos{
-        max-width: 70px;
+        max-width: 90px;
+        max-height: 50px;
     }
 }
 /* *** *** *** Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-    #cryMenu{
-        top: 30%;
-        min-width: 18%;
-    }
     #lnkWallets,#lnkExchanges,#lnkFaucets,#lnkBrowser,#lnkPTC,#lnkGames{
         font-size: 16px;
         letter-spacing: -0.08em;
     }
     .crMenuLogos{
-        max-width: 80px;
+        max-width: 100px;
+        max-height: 60px;
     }
 }
 /* *** *** *** Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-    #secCryptos{
-        margin-top: 30px;
-    }
-    #cryMenu{
-        top: 35%;
-        max-width: 8%;
-        margin-top: 40px;
-    }
     #lnkWallets,#lnkExchanges,#lnkFaucets,#lnkBrowser,#lnkPTC,#lnkGames{
         font-size: 18px;
         letter-spacing: 0em;
     }
     .crMenuLogos{
-        max-width: 90px;
+        max-width: 120px;
+        max-height: 70px;
     }
 }
 /* Extra large devices (large desktops)
