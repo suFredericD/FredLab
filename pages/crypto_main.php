@@ -8,7 +8,7 @@
  *              Contexte :   php 7.4
  *              Fonction :   page principale sur les cryptos
  *   Date mise en oeuvre :   02/11/2020
- *          Dernière MàJ :   07/11/2020
+ *          Dernière MàJ :   10/11/2020
  *********************************************************************************/
 /***** *****    INCLUSIONS ET SCRIPTS   ***** *****/
 require("../scripts/admin/variables.php");                  // Variables globales du site
@@ -31,9 +31,10 @@ $strPageFile = $arrFileName[$intFileCount];                         // Nom du fi
 $objPageInfos = new Page();                                         // Incrémentation de l'objet 'Page'
 $objPageInfos->setName($strPageFile);
 // ***** ***** ***** Variables de la page ***** ***** *****
-$arrAllCryptoApp = fct_SelectAllcryptoApp();
+$arrAllCryptoApp = fct_SelectAllCryptoApp();
 $intCryptoApps = count($arrAllCryptoApp);
-$arrAllCryptoAppTypes = fct_SelectAllcryptoAppTypes();
+$arrAllCryptoAppTypes = fct_SelectAllCryptoAppTypes();
+$arrAllCryptoCoins = fct_SelectAllCryptoCoinsBySlug();
 
 // ***** ***** ***** PAGE HTML   ***** ***** *****
 // ***** ***** ***** En-tête HTML ***** ***** *****
@@ -43,11 +44,12 @@ fct_BuildHeaderGraph($objPageInfos);
 // ***** ***** ***** Menu principal ***** ***** *****
 fct_BuildHorizontalMenu($objPageInfos);
 // ***** ***** ***** Corps du contenu ***** ***** *****
-$strWelcomeText = "<span class=\"far fa-hand-point-left\"></span>&nbsp;&nbsp;&nbsp;"
-                . "<span class=\"fa fa-hand-point-left\"></span>&nbsp;&nbsp;&nbsp;"
-                . "<span class=\"far fa-hand-point-left\"></span>&nbsp;&nbsp;&nbsp;"
-                . "<span class=\"fa fa-hand-point-left\"></span>&nbsp;&nbsp;&nbsp;"
-                . "<span class=\"far fa-hand-point-left\"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
+$strWelcomeText = "<span class=\"fa fa-angle-left\"></span>&nbsp;&nbsp;&nbsp;"
+                . "<span class=\"fa fa-angle-left\"></span>&nbsp;&nbsp;&nbsp;"
+                . "<span class=\"fa fa-angle-left\"></span>&nbsp;&nbsp;&nbsp;"
+                . "<span class=\"fa fa-angle-left\"></span>&nbsp;&nbsp;&nbsp;"
+                . "<span class=\"fa fa-angle-left\"></span>&nbsp;&nbsp;&nbsp;"
+                . "<span class=\"fa fa-angle-left\"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
                 . "Sélectionner une catégorie pour afficher les articles correspondants...<hr>";
 ?>
     <h1 class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 no-bg-no-bd">Les crypto-monnaies</h1>
@@ -67,7 +69,7 @@ $strWelcomeText = "<span class=\"far fa-hand-point-left\"></span>&nbsp;&nbsp;&nb
                 for ($j=1;$j<=$intCryptoApps;$j++) {
                         if($arrAllCryptoApp[$j]['TypeId']==$arrAllCryptoAppTypes[$i]['Id']) {
 ?>
-           <div class="col-xl-11" title="<?php echo $arrAllCryptoApp[$j]['Resume'];?>">
+           <div class="offset-xl-1 col-xl-10" title="<?php echo $arrAllCryptoApp[$j]['Resume'];?>">
             <img src="../media/logos/<?php echo $arrAllCryptoApp[$j]['Logo'];?>" class="img-fluid crMenuLogos">
            </div>
 <?php
@@ -86,7 +88,35 @@ $strWelcomeText = "<span class=\"far fa-hand-point-left\"></span>&nbsp;&nbsp;&nb
        <article id="cryContent" class="col-xl-9 col-lg-9 col-md-8 col-sm-8 col-8">
         <div class="row">
          <div id="crySubTitle" class="col-xl-12"><p><?php echo $strWelcomeText;?></p></div>
-         <div id="cryText" class="col-xl-12"><p></p></div>
+         <div id="cryText" class="row">
+<?php
+        for ($i=1;$i<=$intCryptoApps;$i++) {
+                $strLinkText = "Visiter " . $arrAllCryptoApp[$i]['Name'] . "...";
+                $strLinkTitle = "Ouvrir un nouvel onglet sur le site de " . $arrAllCryptoApp[$i]['Name'] . "...";
+?>
+          <div id="<?php echo "app".$i;?>" class="offset-xl-1 col-xl-10">
+           <div class="row">
+            <div class="offset-xl-1 col-xl-3 crAppLogo">
+             <a href="<?php echo $arrAllCryptoApp[$i]['Url'];?>" title="<?php echo $strLinkTitle;?>" target="_blank">
+              <img class="img-fluid" src="../media/logos/<?php echo $arrAllCryptoApp[$i]['Logo'];?>">
+             </a>
+            </div>
+            <div class="offset-xl-1 col-xl-6 crAppType">
+             <div class="row">
+              <div class="col-xl-5 crAppCatLabel">Categorie</div>
+              <div class="col-xl-5 crAppCatName" title="<?php echo $arrAllCryptoApp[$i]['TypeDescription'];?>"><?php echo $arrAllCryptoApp[$i]['Type'];?></div>
+              <div class="col-xl-2 crAppCatLogo"><?php echo $arrAllCryptoApp[$i]['TypeIcon'];?></div>
+             </div>
+            </div><hr>
+            <div class="offset-xl-1 col-xl-10 crAppText"><?php echo $arrAllCryptoApp[$i]['Description'];?></div>
+            <div class="offset-xl-2 col-xl-8 crAppText">
+             <a href="<?php echo $arrAllCryptoApp[$i]['Url'];?>" title="<?php echo $strLinkTitle;?>" target="_blank"><?php echo $strLinkText;?></a>
+            </div>
+           </div>
+          </div>
+<?php   }
+?>
+         </div>
         </div>
        </article>
       </div>

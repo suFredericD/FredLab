@@ -62,6 +62,13 @@ Palette
 		 url('../fonts/alphaecho_regular/alpha_echo-webfont.svg') format('svg');
 }
 @font-face{
+	font-family: "ArmaLiteRifle";
+	src: url('../fonts/armaliterifle_regular/armalite_rifle-webfont.eot') format('eot'),
+		 url('../fonts/armaliterifle_regular/armalite_rifle-webfont.woff') format('woff'),
+		 url('../fonts/armaliterifle_regular/armalite_rifle-webfont.ttf') format('truetype'),
+		 url('../fonts/armaliterifle_regular/armalite_rifle-webfont.svg') format('svg');
+}
+@font-face{
 	font-family: "Banksia";
 	src: url('../fonts/banksia_regular/banksia-webfont.eot') format('eot'),
 		 url('../fonts/banksia_regular/banksia-webfont.woff') format('woff'),
